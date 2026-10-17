@@ -860,7 +860,7 @@ function model(lat,lng,quick=false){
  if(score<40)cultivar='No fruit-production recommendation from this model. Verify local evidence before any trial.';
  return {score,tier:score>=80?'prime':score>=40?'marginal':'bad',factor,cultivar,zone:z,land:true,coast};
 }
-const colors={prime:'#3c8357',marginal:'#d5b75c',bad:'#b55e4d',water:'#8eaaa4'};
+const colors={prime:'#8ab682',marginal:'#d5b75c',bad:'#d28d79',water:'#8eaaa4'};
 function color(score){if(score===null)return [142,170,164];const stops=[[0,[174,78,66]],[39,[190,105,74]],[40,[218,174,81]],[65,[205,189,95]],[79,[141,163,79]],[80,[75,139,77]],[100,[27,87,53]]];for(let i=1;i<stops.length;i++)if(score<=stops[i][0]){const a=stops[i-1],b=stops[i],t=(score-a[0])/(b[0]-a[0]);return a[1].map((v,j)=>Math.round(v+(b[1][j]-v)*t));}return stops.at(-1)[1];}
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const map=L.map('map',{zoomControl:false,minZoom:.5,maxZoom:12,maxBounds:[[-85,-180],[85,180]],maxBoundsViscosity:1,zoomSnap:.25,zoomDelta:.5,worldCopyJump:false,zoomAnimation:!reduceMotion,fadeAnimation:!reduceMotion}).setView([17,5],2);
@@ -875,7 +875,7 @@ const CARTO_API_KEY='';
 const useCARTO=Boolean(CARTO_API_KEY);
 map.createPane('basemap');map.getPane('basemap').style.zIndex=220;
 if(!useCARTO)map.getPane('basemap').style.filter='grayscale(1) invert(1) brightness(.52) sepia(.22)';
-const basemap=L.tileLayer(useCARTO?'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key='+encodeURIComponent(CARTO_API_KEY):'https://tile.openstreetmap.org/{z}/{x}/{y}.png',{pane:'basemap',attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'+(useCARTO?' &copy; <a href="https://carto.com/attributions">CARTO</a>':''),maxZoom:19,noWrap:true,subdomains:'abcd',referrerPolicy:'strict-origin-when-cross-origin'}).addTo(map);
+const basemap=L.tileLayer(useCARTO?'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key='+encodeURIComponent(CARTO_API_KEY):'https://tile.openstreetmap.org/{z}/{x}/{y}.png',{pane:'basemap',attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'+(useCARTO?' &copy; <a href="https://carto.com/attributions">CARTO</a>':''),maxZoom:19,noWrap:true,bounds:[[-85.05112878,-180],[85.05112878,180]],subdomains:'abcd',referrerPolicy:'strict-origin-when-cross-origin'}).addTo(map);
 if(useCARTO)$('provider-label').textContent='CARTO Dark Matter · internet required';
 let tileFailures=0;
 basemap.on('tileerror',()=>{if(++tileFailures>=3){$('tile-status').hidden=false;$('tile-status').textContent='Background tiles unavailable · embedded atlas remains active';}});
