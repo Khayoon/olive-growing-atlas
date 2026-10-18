@@ -1,4 +1,55 @@
-# Olea — cultivated olive climate atlas
+# Olea — edible-olive production evidence atlas
+
+[Open the Troodos production review](https://khayoon.github.io/olive-growing-atlas/#lat=35.03&lng=32.99&z=8.75&p=34.949912,32.830595&purpose=production)
+
+## Version 5: production evidence, local freezes and commercial planting risk
+
+The default map no longer paints favorable seasonal averages green as evidence of reliable annual production. It separates **observed consecutive annual harvests at study points**, conditional sites, commercial planting risk and unverified land. The previous seasonal climate index remains available through the assessment selector.
+
+- **Green points:** at least five consecutive positive reported crop-year yields at that study coordinate. This establishes observed harvests under recorded management, not stable mature yields, future freeze safety, an orchard boundary or suitability of neighboring land.
+- **Amber:** exposure, cultivar or management conditions need local evidence, or the seasonal screen identifies constraints.
+- **Red:** a commercial siting recommendation is exceeded in Cyprus, or the seasonal screen identifies a major constraint. This is not a lethal-temperature/altitude prediction.
+- **Gray:** dependable annual production is unverified. It does not mean olives cannot grow there.
+
+### Whole-range elevation review
+
+All native land cells in the embedded Cyprus window are audited, including the whole Troodos range. This window is not a surveyed Troodos boundary. The Cyprus Department of Agriculture's 2022 handbook, PDF page 9, advises against cold-wind-exposed northern sites above 300 m, while sheltered eastern/southern sites may extend to 1,000 m. The default review therefore flags cells above 1,000 m as exceeding that commercial siting envelope, and treats 300–1,000 m as conditional because actual shelter is unmeasured. This **Cyprus-specific planning rule is not exported as a worldwide altitude cutoff**.
+
+Cultivar profiles use the same handbook: Koroneiki is advised **below 500 m** (PDF page 6); Kalamon and Amfissis are described up to **600 m** (PDF page 7). None of these contours proves individual tree death or parcel-level production failure. Source DEM resolution is roughly 1 km and differs from surveyed station or orchard elevations.
+
+### Actual freeze observations
+
+The official January 2016 station table reports Panagia Bridge −4.5°C at 440 m, Saittas −4.7°C at 640 m, Stavros Psokas −5°C at 780 m, Platania −9.6°C at 1,120 m, Prodromos −9.7°C at 1,380 m and Troodos Square −12°C at 1,725 m. These are observed monthly minima, not monthly mean lows.
+
+The official daily archive supplies **5,650 accepted unique Prodromos Tmin/Tmax pairs**, 2010-01-01 through 2025-10-31. The observed minimum is **−10.7°C on 2015-01-09**. During 2010–2024, ≤−5°C was observed in 11 of 15 calendar years and ≤−7°C in seven. Gaps remain explicit: these are observed counts, not estimated return periods. The 2025 record is partial. Daily extrema cannot establish hourly freeze duration or cultivar chilling units.
+
+Raw CSV checksums, accepted daily records, plausible-value/date checks, duplicate handling and per-year coverage are retained. Publication does not imply independent sensor QC or homogenization. Modern/named-site map anchors are not proof of identical historical thermometer positions. **No station temperatures are interpolated across the range or used as invented numerical bias corrections.**
+
+### Orchard elevations and what they establish
+
+The Guzelyurt EUL trial reports an actual orchard altitude of **41 m**, exact study coordinates, irrigation and Koroneiki fruit yields **0.41, 4.78, 9.58, 6.08 and 6.81 kg/tree** for crop years 2013–2017. These are five observed annual harvests from young developing trees. They do not validate mature yield stability, rare-freeze safety or mountain production, and irrigated results do not validate rainfed performance.
+
+Oleastro reports current production from its own groves; its map point is the facility, with no published surveyed orchard altitude or annual series. A former Vavatsinia grove's operator-reported **600 m** altitude is retained as historical context; its destruction in the July 2021 wildfire prevents using it as a current production control. No exact grove coordinate was retrieved, so none is invented.
+
+Official descriptions of olive cultivation at **Pelendri (800 m)** and **Askas (~900 m)** report village altitudes, not measured orchard elevations. The IOC's Cyprus chapter also reports cultivation up to 900 m and productive trees in Pitsilia. A blanket exclusion of all upland olives would therefore be unsupported. These records demonstrate cultivation without establishing reliable annual harvests on every slope.
+
+**Remaining gap:** no retrieved high-elevation Troodos orchard combines a surveyed orchard elevation, consecutive annual yield series and a matching long-term local freeze series. Only Prodromos has a retrieved long daily series; six stations provide the January 2016 spatial comparison. Eastern uplands, parcel wind shelter, cold-air pooling, late frost and cultivar-specific hourly chilling remain unvalidated. The atlas does not assign a numerical reliable-yield probability.
+
+### Current evidence files
+
+- [CYPRUS_PRODUCTION_EVIDENCE.json](CYPRUS_PRODUCTION_EVIDENCE.json): sources, six stations, actual orchard points, village-versus-orchard elevation provenance and explicit gaps.
+- [PRODUCTION_REVIEW_MODEL.js](PRODUCTION_REVIEW_MODEL.js): separate categorical review rules; the seasonal climate model is retained.
+- [PRODUCTION_REVIEW_VALIDATION.json](PRODUCTION_REVIEW_VALIDATION.json): every native Cyprus land cell, elevation bands, station comparisons, cultivar boundaries and orchard non-transfer checks.
+- [Prodromos accepted daily records](stations/CY_PRODROMOS_DAILY.json): 5,650 unique paired observations, processing and missing-day coverage.
+
+Primary sources: [Cyprus cultivation handbook](https://www.moa.gov.cy/moa/da/da.nsf/All/B9B43BD726856F98C22588640039CBCF/%24file/%CE%97%20%CE%BA%CE%B1%CE%BB%CE%BB%CE%B9%CE%AD%CF%81%CE%B3%CE%B5%CE%B9%CE%B1%20%CF%84%CE%B7%CF%82%20%CE%95%CE%BB%CE%B9%CE%AC%CF%82.pdf?OpenElement=), [January 2016 station observations](https://www.moa.gov.cy/moa/dm/dm.nsf/All/357B4C9319C712C9C2258597003C8B5C/%24file/GAZ_Jan2016_UK.pdf), [Cyprus DoM daily archive](https://www.data.gov.cy/en/dataset/412), [Guzelyurt original field study, Tables 3–6](https://pakbs.org/pjbot/papers/1560039128.pdf), [IOC Cyprus chapter](https://www.internationaloliveoil.org/?download_publication=17208).
+
+The Cyprus Department of Meteorology daily dataset is **CC BY 4.0**. This atlas filters and summarizes it; missing days are not filled. Other primary-source documents are linked and factual observations summarized, without republishing their full copyrighted works.
+
+## Retained seasonal-climate layer and earlier evidence
+
+The sections below document the optional version 4 climate layer and archived prior evaluations. They do not validate the new production review as a forecast of dependable annual yields.
+
 
 [Open the map](https://khayoon.github.io/olive-growing-atlas/) · [Cyprus terrain view](https://khayoon.github.io/olive-growing-atlas/#lat=35.05&lng=33.1&z=8.75&p=34.936,32.864)
 

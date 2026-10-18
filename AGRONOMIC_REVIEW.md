@@ -1,3 +1,7 @@
+# Version 5 production review
+
+Default colors now distinguish production evidence and commercial planting risk from the optional seasonal climate layer. See CYPRUS_PRODUCTION_EVIDENCE.json and PRODUCTION_REVIEW_VALIDATION.json. Local freeze observations and actual orchard elevations are retained separately; no reliable annual yield probability is calibrated. Earlier reviews below remain archived.
+
 # Version 4 terrain update
 
 The review below is archived version 3 evidence. Version 4 adds native terrain-aware CHELSA windows and removes generic quarterly-mean chilling from the numeric index. See README.md, TERRAIN_MODEL.js and TERRAIN_VALIDATION.json for current behavior and limits. The new index is not validated for reliable annual yield. Local observations and coarse freeze conflicts remain unchanged.

@@ -83,3 +83,7 @@ SOFTWARE.
 
 
 CHELSA native 30 arcsecond windows and source DEM are derived from the public source files listed in NATIVE_CLIMATE_SOURCES.json. Native elevation is displayed; no universal elevation cutoff is applied. The v3.2 statement above describes the archived coastline-only release. Version 4 changes the seasonal-climate index and adds native terrain-aware values.
+
+
+CYPRUS LOCAL PRODUCTION REVIEW v5.0
+Cyprus Department of Meteorology, National Open Data Portal daily maximum/minimum temperature and rainfall dataset, https://www.data.gov.cy/en/dataset/412 , CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Adapted here through date/value validation, station/date deduplication, exclusion of conflicting dates, extraction of accepted Prodromos pairs and period summaries; no gap filling or independent homogenization. Raw source SHA256 and download URL in CYPRUS_PRODUCTION_EVIDENCE.json. Official January 2016 station minima and the 2022 Cyprus agriculture handbook are attributed through primary source links. Field-study measurements are summarized with citations; full source publications are not redistributed.

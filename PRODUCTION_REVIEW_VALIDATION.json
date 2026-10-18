@@ -1,0 +1,142 @@
+{
+  "version": "5.0",
+  "scope": "Cyprus-wide native land-cell audit including the whole Troodos range; not a surveyed Troodos boundary or validation of future annual yields.",
+  "nativeLandCellsChecked": 13209,
+  "cellsAbove1000M": 436,
+  "allCellsAbove1000MFlagged": true,
+  "greenAreaCells": 0,
+  "elevationBands": [
+    {
+      "aboveM": 0,
+      "throughM": 300,
+      "landCells": 8483,
+      "formerSeasonalHighMatchCells": 7492,
+      "productionUnverifiedCells": 7492,
+      "productionConditionalCells": 991,
+      "productionHighRiskCells": 0
+    },
+    {
+      "aboveM": 300,
+      "throughM": 500,
+      "landCells": 2063,
+      "formerSeasonalHighMatchCells": 2063,
+      "productionUnverifiedCells": 0,
+      "productionConditionalCells": 2063,
+      "productionHighRiskCells": 0
+    },
+    {
+      "aboveM": 500,
+      "throughM": 700,
+      "landCells": 1272,
+      "formerSeasonalHighMatchCells": 1272,
+      "productionUnverifiedCells": 0,
+      "productionConditionalCells": 1272,
+      "productionHighRiskCells": 0
+    },
+    {
+      "aboveM": 700,
+      "throughM": 1000,
+      "landCells": 955,
+      "formerSeasonalHighMatchCells": 955,
+      "productionUnverifiedCells": 0,
+      "productionConditionalCells": 955,
+      "productionHighRiskCells": 0
+    },
+    {
+      "aboveM": 1000,
+      "throughM": 2000,
+      "landCells": 436,
+      "formerSeasonalHighMatchCells": 378,
+      "productionUnverifiedCells": 0,
+      "productionConditionalCells": 0,
+      "productionHighRiskCells": 436
+    }
+  ],
+  "stationControls": [
+    {
+      "name": "Panagia Bridge F.S.",
+      "reportedStationElevationM": 440,
+      "sourceDEMElevationM": 505,
+      "january2016ObservedMinC": -4.5,
+      "seasonalScore": 96,
+      "productionStatus": "conditional",
+      "coordinateNote": "Approximate historical named-site context; municipal-hosted study gives 2012–2021 station position and 454m elevation, differing from 2016 published440m."
+    },
+    {
+      "name": "Saittas",
+      "reportedStationElevationM": 640,
+      "sourceDEMElevationM": 609,
+      "january2016ObservedMinC": -4.7,
+      "seasonalScore": 99,
+      "productionStatus": "conditional",
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    },
+    {
+      "name": "Stavros Psokas F.S.",
+      "reportedStationElevationM": 780,
+      "sourceDEMElevationM": 955,
+      "january2016ObservedMinC": -5,
+      "seasonalScore": 97,
+      "productionStatus": "conditional",
+      "coordinateNote": "Approximate forest-station locality only; historical thermometer GPS unverified."
+    },
+    {
+      "name": "Platania F.S.",
+      "reportedStationElevationM": 1120,
+      "sourceDEMElevationM": 1161,
+      "january2016ObservedMinC": -9.6,
+      "seasonalScore": 91,
+      "productionStatus": "high_risk",
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    },
+    {
+      "name": "Prodromos C.F.C. (AWS)",
+      "reportedStationElevationM": 1380,
+      "sourceDEMElevationM": 1342,
+      "january2016ObservedMinC": -9.7,
+      "seasonalScore": 86,
+      "productionStatus": "high_risk",
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    },
+    {
+      "name": "Troodos Square",
+      "reportedStationElevationM": 1725,
+      "sourceDEMElevationM": 1724,
+      "january2016ObservedMinC": -12,
+      "seasonalScore": 54,
+      "productionStatus": "high_risk",
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    }
+  ],
+  "independentlyRecomputedProdromosDays": 5650,
+  "prodromosObserved2010to2024": {
+    "calendarYears": 15,
+    "yearsWithObservedMinAtMostMinus5": 11,
+    "yearsWithObservedMinAtMostMinus7": 7,
+    "coverage": "Gaps retained; observed counts, not return periods"
+  },
+  "orchardControl": {
+    "name": "Guzelyurt · five crop-year Koroneiki trial",
+    "reportedOrchardElevationM": 41,
+    "cropYears": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "fruitKgTree": [
+      0.41,
+      4.78,
+      9.58,
+      6.08,
+      6.81
+    ],
+    "irrigatedStatus": "annual_harvests",
+    "rainfedStatus": "conditional",
+    "mountainTransfer": false
+  },
+  "modelSHA256": "397c0edf15b7cd8a7b4e0daf74d8e98956f9bb50e7a50535fe613e6a6c5ea4ce",
+  "limitations": "Six named stations show real regional freeze exposure in January2016. Only Prodromos has a retrieved multiyear daily series. No measured point interpolation or all-range reliability claim is justified. Eastern higher villages and wind/aspect/cold-air pooling still need parcel-local records.",
+  "failures": []
+}

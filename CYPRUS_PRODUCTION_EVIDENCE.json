@@ -1,0 +1,500 @@
+{
+  "version": "5.0",
+  "checked": "2026-10-18",
+  "scope": "Production evidence and commercial planting flags. No calibrated prediction of dependable annual yields.",
+  "sources": {
+    "handbook": {
+      "url": "https://www.moa.gov.cy/moa/da/da.nsf/All/B9B43BD726856F98C22588640039CBCF/%24file/%CE%97%20%CE%BA%CE%B1%CE%BB%CE%BB%CE%B9%CE%AD%CF%81%CE%B3%CE%B5%CE%B9%CE%B1%20%CF%84%CE%B7%CF%82%20%CE%95%CE%BB%CE%B9%CE%AC%CF%82.pdf?OpenElement=",
+      "title": "Cyprus Department of Agriculture, Olive cultivation, 2022",
+      "pages": {
+        "generalExposureAndFreeze": 9,
+        "koroneiki": 6,
+        "tableCultivars": 7
+      }
+    },
+    "january2016": {
+      "url": "https://www.moa.gov.cy/moa/dm/dm.nsf/All/357B4C9319C712C9C2258597003C8B5C/$file/GAZ_Jan2016_UK.pdf",
+      "title": "Cyprus Department of Meteorology, January 2016 observed station table"
+    },
+    "daily": {
+      "url": "https://www.data.gov.cy/en/dataset/412",
+      "download": "https://www.data.gov.cy/sites/default/files/Min%20Max%20and%20Rain_all%20%282025%29.csv",
+      "sha256": "34957d0fdcca8a85af949be8ffdd185e2065b279324c39fa0c84bfc13df83ed9",
+      "license": "CC BY 4.0",
+      "attribution": "Cyprus Department of Meteorology, National Open Data Portal"
+    },
+    "ioc": {
+      "url": "https://www.internationaloliveoil.org/?download_publication=17208",
+      "title": "Following Olive Footprints, Cyprus chapter, 2012",
+      "pdfPages": [
+        114,
+        115,
+        116
+      ],
+      "finding": "Cultivation from sea level to 900 m; productive trees in Pitsilia. Year-to-year production varies with alternate bearing and rainfed management. Regional context, not parcel annual reliability."
+    }
+  },
+  "stations": [
+    {
+      "id": "panagia-bridge",
+      "name": "Panagia Bridge F.S.",
+      "elevationM": 440,
+      "jan2016LowestMinC": -4.5,
+      "jan2016MeanMinC": 2.0,
+      "lat": 35.0176,
+      "lng": 33.0824,
+      "anchorQuality": "Approximate historical named-site context; municipal-hosted study gives 2012–2021 station position and 454m elevation, differing from 2016 published440m.",
+      "coordinateSource": "https://kalopanayiotis.com.cy/wp-content/uploads/2025/01/esia_apliki_final_april_2024.pdf",
+      "january2016MinC": -4.5,
+      "coordinateNote": "Approximate historical named-site context; municipal-hosted study gives 2012–2021 station position and 454m elevation, differing from 2016 published440m."
+    },
+    {
+      "id": "saittas",
+      "name": "Saittas",
+      "elevationM": 640,
+      "jan2016LowestMinC": -4.7,
+      "jan2016MeanMinC": 2.7,
+      "lat": 34.8632083,
+      "lng": 32.9113833,
+      "anchorQuality": "Named-site context at modern AWS coordinates; historical-location continuity not verified.",
+      "january2016MinC": -4.7,
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    },
+    {
+      "id": "stavros-psokas",
+      "name": "Stavros Psokas F.S.",
+      "elevationM": 780,
+      "jan2016LowestMinC": -5.0,
+      "jan2016MeanMinC": 2.5,
+      "lat": 35.027,
+      "lng": 32.633,
+      "anchorQuality": "Approximate forest-station locality only; historical thermometer GPS unverified.",
+      "january2016MinC": -5.0,
+      "coordinateNote": "Approximate forest-station locality only; historical thermometer GPS unverified."
+    },
+    {
+      "id": "platania",
+      "name": "Platania F.S.",
+      "elevationM": 1120,
+      "jan2016LowestMinC": -9.6,
+      "jan2016MeanMinC": 0.1,
+      "lat": 34.9477833,
+      "lng": 32.9258194,
+      "anchorQuality": "Named-site context at modern AWS coordinates; historical-location continuity not verified.",
+      "january2016MinC": -9.6,
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    },
+    {
+      "id": "prodromos",
+      "name": "Prodromos C.F.C. (AWS)",
+      "elevationM": 1380,
+      "jan2016LowestMinC": -9.7,
+      "jan2016MeanMinC": -2.2,
+      "lat": 34.949912,
+      "lng": 32.830595,
+      "anchorQuality": "Named-site context at modern AWS coordinates; historical-location continuity not verified.",
+      "additionalObservations": [
+        {
+          "minC": -10.7,
+          "date": "2015-01-09",
+          "source": "https://www.data.gov.cy/sites/default/files/Min%20Max%20and%20Rain_all%20%282025%29.csv"
+        },
+        {
+          "minC": -8.4,
+          "date": "2017-01-28",
+          "source": "https://www.data.gov.cy/sites/default/files/Min%20Max%20and%20Rain_all%20%282025%29.csv"
+        },
+        {
+          "minC": -9.0,
+          "date": "2025-02-23",
+          "alsoDate": "2025-02-24",
+          "source": "https://www.dom.org.cy/CLIMATOLOGY/English/Monthly%20Weather%20Bulletin/2025/02_Monthly%20Weather%20Report_Feb2025_ENG.pdf"
+        }
+      ],
+      "january2016MinC": -9.7,
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified.",
+      "dailySummary": {
+        "name": "Πρόδρομος Δασ. Κολ.",
+        "start": "2010-01-01",
+        "end": "2025-10-31",
+        "rawRows": 5814,
+        "validPairedDays": 5650,
+        "duplicateDates": 0,
+        "identicalDuplicateRowsDropped": 0,
+        "conflictingDatesExcluded": [],
+        "minimumC": -10.7,
+        "minimumDates": [
+          "2015-01-09"
+        ],
+        "years": [
+          {
+            "year": 2010,
+            "validDays": 335,
+            "expectedDays": 365,
+            "minimumC": -5.0,
+            "minimumDates": [
+              "2010-02-06"
+            ],
+            "daysBelow0": 11,
+            "daysAtMostMinus3": 4,
+            "daysAtMostMinus5": 1,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 2
+          },
+          {
+            "year": 2011,
+            "validDays": 365,
+            "expectedDays": 365,
+            "minimumC": -4.9,
+            "minimumDates": [
+              "2011-02-02"
+            ],
+            "daysBelow0": 13,
+            "daysAtMostMinus3": 3,
+            "daysAtMostMinus5": 0,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 0
+          },
+          {
+            "year": 2012,
+            "validDays": 365,
+            "expectedDays": 366,
+            "minimumC": -6.5,
+            "minimumDates": [
+              "2012-03-01"
+            ],
+            "daysBelow0": 31,
+            "daysAtMostMinus3": 15,
+            "daysAtMostMinus5": 4,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 1
+          },
+          {
+            "year": 2013,
+            "validDays": 364,
+            "expectedDays": 365,
+            "minimumC": -8.0,
+            "minimumDates": [
+              "2013-12-12"
+            ],
+            "daysBelow0": 16,
+            "daysAtMostMinus3": 9,
+            "daysAtMostMinus5": 5,
+            "daysAtMostMinus7": 1,
+            "daysAtMostMinus10": 0,
+            "iceDays": 4
+          },
+          {
+            "year": 2014,
+            "validDays": 365,
+            "expectedDays": 365,
+            "minimumC": -2.5,
+            "minimumDates": [
+              "2014-02-04"
+            ],
+            "daysBelow0": 15,
+            "daysAtMostMinus3": 0,
+            "daysAtMostMinus5": 0,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 0
+          },
+          {
+            "year": 2015,
+            "validDays": 355,
+            "expectedDays": 365,
+            "minimumC": -10.7,
+            "minimumDates": [
+              "2015-01-09"
+            ],
+            "daysBelow0": 42,
+            "daysAtMostMinus3": 11,
+            "daysAtMostMinus5": 6,
+            "daysAtMostMinus7": 5,
+            "daysAtMostMinus10": 1,
+            "iceDays": 7
+          },
+          {
+            "year": 2016,
+            "validDays": 352,
+            "expectedDays": 366,
+            "minimumC": -9.7,
+            "minimumDates": [
+              "2016-01-26"
+            ],
+            "daysBelow0": 46,
+            "daysAtMostMinus3": 14,
+            "daysAtMostMinus5": 9,
+            "daysAtMostMinus7": 5,
+            "daysAtMostMinus10": 0,
+            "iceDays": 5
+          },
+          {
+            "year": 2017,
+            "validDays": 361,
+            "expectedDays": 365,
+            "minimumC": -8.4,
+            "minimumDates": [
+              "2017-01-28"
+            ],
+            "daysBelow0": 49,
+            "daysAtMostMinus3": 18,
+            "daysAtMostMinus5": 9,
+            "daysAtMostMinus7": 3,
+            "daysAtMostMinus10": 0,
+            "iceDays": 3
+          },
+          {
+            "year": 2018,
+            "validDays": 353,
+            "expectedDays": 365,
+            "minimumC": -3.2,
+            "minimumDates": [
+              "2018-01-19"
+            ],
+            "daysBelow0": 16,
+            "daysAtMostMinus3": 1,
+            "daysAtMostMinus5": 0,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 0
+          },
+          {
+            "year": 2019,
+            "validDays": 346,
+            "expectedDays": 365,
+            "minimumC": -5.6,
+            "minimumDates": [
+              "2019-01-09"
+            ],
+            "daysBelow0": 28,
+            "daysAtMostMinus3": 7,
+            "daysAtMostMinus5": 1,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 1
+          },
+          {
+            "year": 2020,
+            "validDays": 364,
+            "expectedDays": 366,
+            "minimumC": -9.4,
+            "minimumDates": [
+              "2020-02-09"
+            ],
+            "daysBelow0": 38,
+            "daysAtMostMinus3": 10,
+            "daysAtMostMinus5": 5,
+            "daysAtMostMinus7": 2,
+            "daysAtMostMinus10": 0,
+            "iceDays": 1
+          },
+          {
+            "year": 2021,
+            "validDays": 357,
+            "expectedDays": 365,
+            "minimumC": -8.0,
+            "minimumDates": [
+              "2021-12-20"
+            ],
+            "daysBelow0": 39,
+            "daysAtMostMinus3": 7,
+            "daysAtMostMinus5": 3,
+            "daysAtMostMinus7": 2,
+            "daysAtMostMinus10": 0,
+            "iceDays": 1
+          },
+          {
+            "year": 2022,
+            "validDays": 344,
+            "expectedDays": 365,
+            "minimumC": -8.6,
+            "minimumDates": [
+              "2022-01-20"
+            ],
+            "daysBelow0": 43,
+            "daysAtMostMinus3": 21,
+            "daysAtMostMinus5": 13,
+            "daysAtMostMinus7": 6,
+            "daysAtMostMinus10": 0,
+            "iceDays": 4
+          },
+          {
+            "year": 2023,
+            "validDays": 355,
+            "expectedDays": 365,
+            "minimumC": -6.9,
+            "minimumDates": [
+              "2023-02-09"
+            ],
+            "daysBelow0": 19,
+            "daysAtMostMinus3": 9,
+            "daysAtMostMinus5": 2,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 1
+          },
+          {
+            "year": 2024,
+            "validDays": 366,
+            "expectedDays": 366,
+            "minimumC": -4.7,
+            "minimumDates": [
+              "2024-11-26"
+            ],
+            "daysBelow0": 18,
+            "daysAtMostMinus3": 2,
+            "daysAtMostMinus5": 0,
+            "daysAtMostMinus7": 0,
+            "daysAtMostMinus10": 0,
+            "iceDays": 0
+          },
+          {
+            "year": 2025,
+            "validDays": 303,
+            "expectedDays": 365,
+            "minimumC": -9.0,
+            "minimumDates": [
+              "2025-02-23",
+              "2025-02-24"
+            ],
+            "daysBelow0": 28,
+            "daysAtMostMinus3": 15,
+            "daysAtMostMinus5": 8,
+            "daysAtMostMinus7": 3,
+            "daysAtMostMinus10": 0,
+            "iceDays": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "troodos-square",
+      "name": "Troodos Square",
+      "elevationM": 1725,
+      "jan2016LowestMinC": -12.0,
+      "jan2016MeanMinC": -2.6,
+      "lat": 34.924542,
+      "lng": 32.881496,
+      "anchorQuality": "Named-site context at modern AWS coordinates; historical-location continuity not verified.",
+      "january2016MinC": -12.0,
+      "coordinateNote": "Named-site context at modern AWS coordinates; historical-location continuity not verified."
+    }
+  ],
+  "orchards": [
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "name": "Guzelyurt · five crop-year Koroneiki trial",
+      "lat": 35.1862611111,
+      "lng": 32.9724555556,
+      "coordinateKind": "orchard",
+      "coordinateNote": "Original field study experimental-site description, journal p1775 (PDF1); point only, no orchard boundary.",
+      "elevationM": 41,
+      "elevationNote": "41 m reported for the actual experimental orchard, not a village altitude.",
+      "evidenceKind": "Five consecutive measured crop-year harvests",
+      "finding": "Young irrigated high-density trial, planted May 2012. Annual Koroneiki fruit and oil harvests were measured over five crop seasons.",
+      "waterScenario": "irrigated",
+      "yieldSeries": {
+        "cultivar": "Koroneiki",
+        "unit": "kg fruit/tree",
+        "seasonStartYears": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "values": [
+          0.41,
+          4.78,
+          9.58,
+          6.08,
+          6.81
+        ]
+      },
+      "oilYieldKgTree": [
+        0.08,
+        0.99,
+        2.12,
+        1.38,
+        1.56
+      ],
+      "harvestDates": [
+        "2014-01-04",
+        "2015-01-13",
+        "2016-01-11",
+        "2017-01-10",
+        "2018-01-07"
+      ],
+      "reliabilityNote": "Five consecutive crop-year harvest measurements at this lowland irrigated trial point. No demonstrated mountain transfer, mature yield stability or rare-freeze safety. Trees were still developing; no matching local daily extreme-freeze series is reported. Irrigation every five days May–October.",
+      "url": "https://pakbs.org/pjbot/papers/1560039128.pdf",
+      "sourceTables": {
+        "title": "Performance and oil quality of seven olive cultivars under high density planting system in Northern Cyprus",
+        "authors": "Usanmaz, Kahramanoglu, Alas and Okatan",
+        "year": 2019,
+        "doi": "10.30848/PJB2019-5(42)",
+        "url": "https://pakbs.org/pjbot/papers/1560039128.pdf",
+        "sitePage": "1775 (PDF1)",
+        "irrigationPage": "1776 (PDF2)",
+        "fruitYieldTable": "Table4,1777(PDF3)",
+        "harvestTable": "Table3,1777(PDF3)",
+        "oilYieldTable": "Table6,1778(PDF4)"
+      },
+      "measurementDesign": "Three replicate blocks; 24 measured trees per replication and cultivar; young orchard development affects year-to-year variation."
+    },
+    {
+      "id": "oleastro-current-operator",
+      "name": "Oleastro · Anogyra facility / own groves",
+      "lat": 34.7563749,
+      "lng": 32.7579041,
+      "coordinateKind": "facility",
+      "coordinateNote": "Operator homepage HTML contact-map data-lat/data-lon; this is the facility point, not an orchard footprint",
+      "elevationM": null,
+      "elevationNote": "Not reported by operator; do not substitute Anogyra village altitude",
+      "evidenceKind": "Operator-reported production · no annual yield series",
+      "finding": "Operator states production from own groves, oil extraction and picking season October–January.",
+      "waterScenario": "unknown",
+      "reliabilityNote": "Named operating producer, without public annual yield series or measured orchard elevation.",
+      "url": "https://www.oleastro.com.cy/en/"
+    }
+  ],
+  "unmappedCultivationContext": [
+    {
+      "name": "Vavatsinia forest grove, Troodos",
+      "elevationM": 600,
+      "elevationNote": "Operator-reported actual former grove altitude; exact grove coordinate unavailable.",
+      "finding": "Former grove destroyed by July2021 wildfire; operator reports revival in progress.",
+      "reliabilityNote": "Destroyed by wildfire in July 2021; not a current yield control and not freeze damage.",
+      "url": "https://aparthenasa.com/"
+    },
+    {
+      "name": "Pelendri",
+      "elevationM": 800,
+      "elevationNote": "Village altitude, not surveyed orchard elevation",
+      "finding": "Official Cyprus Tourism publication describes olive cultivation among other fruit crops.",
+      "reliabilityNote": "Cultivation context only. No exact orchard altitude, annual yield series or plot boundary.",
+      "url": "https://www.visitcyprus.com/wp-content/uploads/2016/05/EDEN_Tourism_Local_Gastronomy_11_2015_EN_25112021.pdf"
+    },
+    {
+      "name": "Askas",
+      "elevationM": 900,
+      "elevationNote": "Approximate village altitude, not surveyed orchard elevation",
+      "finding": "Government-hosted Cyprus rural tourism brochure lists olives among villagers' cultivated crops.",
+      "reliabilityNote": "Cultivation context only. No exact orchard altitude, annual yield series or plot boundary.",
+      "url": "https://www.mfa.gov.cy/mfa/Embassies/Embassy_Warsaw.nsf/0/1BF9EB3C47B38970C12588AA002E4AAF/$file/6.%20RURAL%20CYPRUS.%20A%20GUIDE%20TO%20TRADITIONAL%20ACCOMODATION.pdf"
+    }
+  ],
+  "coverageLimit": "Six named stations show real regional freeze exposure in January2016. Only Prodromos has a retrieved multiyear daily series. No measured point interpolation or all-range reliability claim is justified. Eastern higher villages and wind/aspect/cold-air pooling still need parcel-local records.",
+  "classification": {
+    "green": "Study point with at least five consecutive positive annual harvest values; no area extrapolation or future reliability guarantee.",
+    "amber": "Exposure/cultivar/management dependent or unresolved climate constraints.",
+    "red": "Commercial siting guidance exceeded in Cyprus, or major climate constraint. Not a universal lethal boundary.",
+    "gray": "Annual production not verified, not evidence of unsuitability.",
+    "cyprusEnvelope": "Native Cyprus DEM >1000 m exceeds handbook general sheltered commercial siting envelope. 300–1000 m remains conditional because cold-wind exposure/shelter is unmeasured. Koroneiki >500 m, Kalamon/Amfissis >600 m exceed their local cultivar guidance. No global altitude rule.",
+    "noFreezeInterpolation": true,
+    "noHarvestExtrapolation": true
+  }
+}
