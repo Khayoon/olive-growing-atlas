@@ -700,7 +700,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </section>
   <section class="tab-panel" id="panel-layers" role="tabpanel" aria-labelledby="tab-layers" hidden>
    <div class="section-label">Make the map your own</div>
-   <div class="layer-row"><div class="layer-copy"><b>Global suitability grid</b><small>1° model, interpolated canvas surface</small></div><label class="switch"><input id="toggle-grid" type="checkbox" checked aria-label="Global suitability grid"><i></i></label></div>
+   <div class="layer-row"><div class="layer-copy"><b>Global suitability grid</b><small>0.5° model, continuous regional transitions</small></div><label class="switch"><input id="toggle-grid" type="checkbox" checked aria-label="Global suitability grid"><i></i></label></div>
    <div class="layer-row"><div class="layer-copy"><b>Known growing regions</b><small>Illustrative cultivation envelopes</small></div><label class="switch"><input id="toggle-zones" type="checkbox" checked aria-label="Known growing regions"><i></i></label></div>
    <div class="layer-row"><div class="layer-copy"><b>Extreme microclimate pins</b><small>Cold, heat, altitude &amp; humidity outliers</small></div><label class="switch"><input id="toggle-extremes" type="checkbox" checked aria-label="Extreme microclimate pins"><i></i></label></div>
    <div class="layer-row"><div class="layer-copy"><b>The olive belts</b><small>30°–45° north &amp; south of the equator</small></div><label class="switch"><input id="toggle-belts" type="checkbox" checked aria-label="30 to 45 degree olive belt lines"><i></i></label></div>
@@ -711,7 +711,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <section class="tab-panel method-copy" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes" hidden>
    <div class="section-label">The art of the exception</div><h3>Two baselines.<br>One adaptable tree.</h3><p>The Mediterranean’s wet winters and dry, sunny summers are the classic olive template. Csa and Csb climates provide a useful starting point, rather than a guarantee.</p><div class="method-box"><span class="eyebrow">34.48° N · 134.28° E</span><h3>Japan’s olive island</h3><p>Shodoshima and nearby Okayama sit between the Chugoku and Shikoku mountains. Seasonal rain shadows and marine moderation make the Seto Inland Sea relatively dry by Japanese standards.</p><p>This is still humid subtropical country. Typhoons, rainy-season downpours and fungal disease remain real risks. The map treats it as a managed prime exception.</p></div><h3>Survival is not a harvest.</h3><p>A sheltered tree in southern England may live for decades but crop unreliably. Similarly, cold-hardy cultivars cannot remove the risk of a severe Texas freeze.</p><p>Peru’s coastal olive valleys are an irrigated, cool-ocean exception at low latitude, rather than simply an altitude exception.</p><button class="text-button" id="notes-method">Read model, thresholds &amp; sources ↗</button>
   </section>
-  <footer class="sidebar-footer"><em>Explore a possibility. Verify a planting site.</em><br>Heuristic estimates · no live weather or soil data<br>Natural Earth land · Leaflet 1.9.4 · Model v1.0</footer>
+  <footer class="sidebar-footer"><em>Explore a possibility. Verify a planting site.</em><br>Heuristic estimates · no live weather or soil data<br>Natural Earth land · Leaflet 1.9.4 · Model v1.1</footer>
  </aside>
  <section class="map-shell" aria-label="Interactive world olive suitability map">
   <button class="mobile-toggle" id="mobile-toggle" aria-label="Open dashboard" aria-expanded="false" aria-controls="sidebar">☰</button>
@@ -725,7 +725,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <div class="modal-backdrop" id="about-modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><div class="modal-top"><h2 id="modal-title">Reading the landscape.</h2><button class="close-modal" id="close-modal" aria-label="Close model information">×</button></div><div class="method-copy">
  <p>This is a deterministic <strong>educational screening model</strong>, not a measured climate raster or orchard recommendation. Scores are an index, not a probability of success or yield. Irrigation is assumed only where explicitly noted.</p>
  <table><thead><tr><th>Tier</th><th>Score</th><th>Working envelope</th></tr></thead><tbody><tr><td>Prime / optimal</td><td>80–100</td><td>Mild winters; warm summers; dry-season or managed rain-shadow conditions.</td></tr><tr><td>Marginal</td><td>40–79</td><td>Freeze, heat, drought, humidity or limited ripening; site selection and management essential.</td></tr><tr><td>Unsuitable</td><td>0–39</td><td>Insufficient chill, regular severe freezes, hyper-aridity without irrigation or excessive wetness.</td></tr></tbody></table>
- <h3>What goes into the surface?</h3><p>A 1° global grid combines a latitude response (peak at 30°–45°), a coast-distance approximation from embedded Natural Earth 1:50m land, regional dry-season / monsoon / desert / mountain penalties, and curated regional adjustments. The surface interpolates between cells and clips to land. The point inspector runs the same model at the clicked coordinate, so small local differences from the coarse surface are expected.</p>
+ <h3>What goes into the surface?</h3><p>A 0.5° global grid combines a smooth latitude response, a coast-distance approximation from embedded Natural Earth 1:50m land, overlapping elliptical desert / monsoon / mountain / continental-cold priors, and curated regional adjustments. Region influence tapers by distance to polygon edges; rectangular geographic cutoffs are not used. The surface interpolates between cells and clips to land. The point inspector runs the same model at the clicked coordinate, so small local differences from the coarse surface are expected.</p>
  <p>Curated polygons are hand-drawn geographic envelopes, not surveyed orchard boundaries. Their benchmark scores are deliberately assigned screening priors; tapering outside each zone avoids abrupt model seams. A land mask cannot resolve every islet, coastal farm or lake shore. Shodoshima has an explicit island outline; open-water clicks have no growing score.</p>
  <h3>Thresholds, with context</h3><ul><li><strong>Chill:</strong> 200–500 hours below 7.2°C is a useful simplified reference for some cultivars. Requirements and the response to warm spells vary; winter average lows of 2–10°C do not prove that chill is met.</li><li><strong>Cold:</strong> occasional −7 to −10°C events can cause serious injury. Below roughly −12°C the risk of severe damage or death is high, but duration, acclimation, age and cultivar matter. A latitude above 46° is a penalty, not a universal death line.</li><li><strong>Heat and water:</strong> 25–35°C summer highs and roughly 400–1,100 mm annual rain are reference conditions, not universal thresholds. At 40°C and beyond, water and heat stress increase. Irrigation, rainfall seasonality and drainage can change outcomes substantially.</li><li><strong>Humidity:</strong> olives require aerated roots. The model flags monsoon climates; it does not measure waterlogging, fungal pressure, soil permeability or actual humidity.</li><li><strong>Cultivars:</strong> suggestions such as Arbequina, Leccino, Frantoio, Koroneiki, Picual and local cold-hardiness trials are starting points. Verify nursery provenance, pollination partners and local performance.</li></ul>
  <h3>Sources &amp; credits</h3><p><a href="https://ucanr.edu/blog/napa-master-gardener-column/article/growing-olive-trees-napa-county" target="_blank" rel="noopener">UC Agriculture &amp; Natural Resources · olive climate and chilling</a><br><a href="https://www.internationaloliveoil.org/?download_publication=198433" target="_blank" rel="noopener">International Olive Council · Olivæ 130, climatic requirements</a><br><a href="https://www.data.jma.go.jp/cpd/longfcst/en/tourist/file/Shikoku.html" target="_blank" rel="noopener">Japan Meteorological Agency · Shikoku’s climate and rain shadow</a><br><a href="https://www.gov-online.go.jp/pdf/hlj/20211101/hlj202111_22-23_Island_of_Olives_and_Soy_Sauce.pdf" target="_blank" rel="noopener">Government of Japan · Shodoshima’s olive cultivation</a><br><a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth v5.1.2 · public-domain land geometry</a><br><a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet 1.9.4 · BSD-2-Clause</a> · <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></p>
@@ -820,48 +820,82 @@ const maskPixels=maskCtx.getImageData(0,0,MW,MH).data,dist=new Float32Array(MW*M
 for(let i=0;i<dist.length;i++)dist[i]=maskPixels[i*4+3]>100?1000:0;
 for(let y=0;y<MH;y++)for(let x=0;x<MW;x++){const i=y*MW+x;if(x)dist[i]=Math.min(dist[i],dist[i-1]+1);if(y)dist[i]=Math.min(dist[i],dist[i-MW]+1);if(x&&y)dist[i]=Math.min(dist[i],dist[i-MW-1]+1.414);if(x<MW-1&&y)dist[i]=Math.min(dist[i],dist[i-MW+1]+1.414);}
 for(let y=MH-1;y>=0;y--)for(let x=MW-1;x>=0;x--){const i=y*MW+x;if(x<MW-1)dist[i]=Math.min(dist[i],dist[i+1]+1);if(y<MH-1)dist[i]=Math.min(dist[i],dist[i+MW]+1);if(x<MW-1&&y<MH-1)dist[i]=Math.min(dist[i],dist[i+MW+1]+1.414);if(x&&y<MH-1)dist[i]=Math.min(dist[i],dist[i+MW-1]+1.414);}
-function coastDistance(lat,lng){return dist[clamp(Math.floor((90-lat)*2),0,MH-1)*MW+clamp(Math.floor((lng+180)*2),0,MW-1)]/2;}
-function inBox(lat,lng,a,b,c,d){return lat>=a&&lat<=b&&lng>=c&&lng<=d;}
+// Smooth climate priors replace rectangular on/off geographic tests.
+// These remain broad educational heuristics, not observed climate data.
+function smoothstep(a,b,x){const t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t);}
+function coastDistance(lat,lng){
+ const x=clamp((lng+180)*2-.5,0,MW-1),y=clamp((90-lat)*2-.5,0,MH-1),x0=Math.floor(x),y0=Math.floor(y),x1=Math.min(x0+1,MW-1),y1=Math.min(y0+1,MH-1),tx=x-x0,ty=y-y0;
+ return ((dist[y0*MW+x0]*(1-tx)+dist[y0*MW+x1]*tx)*(1-ty)+(dist[y1*MW+x0]*(1-tx)+dist[y1*MW+x1]*tx)*ty)/2;
+}
+// Elliptical fields: [latitude, longitude, north/south scale, east/west scale].
+// Overlapping centers follow broad climate corridors without straight borders.
+const climateFields={
+ desert:[[23,-7,6,12],[24,12,6,15],[25,31,6,13],[23,46,6,12],[29,59,5,10],[-24,122,7,11],[-24,136,7,10],[-24,16,8,4],[30,-112,6,7],[-23,-69.5,7,2.5]],
+ humid:[[27,111,10,15],[25,89,8,13],[31,137,8,7],[30,-84,8,10],[-25,-46,9,10],[-27,151,9,5],[-28,31,7,5]],
+ mountain:[[32,82,3,10],[34,94,4,10],[44,-111,8,4],[46,10,2,6],[-19,-68,5,1.5],[-29,-69.6,6,1.3],[-39,-71,6,1.4],[-48,-73,6,1.8]],
+ cold:[[51,68,14,35],[49,107,12,24],[49,-98,13,24]]
+};
+function climateField(lat,lng,centers){
+ let strongest=0;
+ for(const [y,x,ry,rx]of centers){const dy=(lat-y)/ry,dx=normalizeLng(lng-x)/rx;strongest=Math.max(strongest,Math.exp(-.5*(dx*dx+dy*dy)));}
+ return strongest;
+}
+function edgeDistanceKm(lat,lng,ring){
+ const kx=111.195*Math.max(.08,Math.cos(lat*Math.PI/180)),ky=111.195;
+ let best=Infinity;
+ for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+  const ax=(ring[j][0]-lng)*kx,ay=(ring[j][1]-lat)*ky,bx=(ring[i][0]-lng)*kx,by=(ring[i][1]-lat)*ky,dx=bx-ax,dy=by-ay;
+  const t=clamp(-(ax*dx+ay*dy)/(dx*dx+dy*dy||1),0,1);
+  best=Math.min(best,Math.hypot(ax+t*dx,ay+t*dy));
+ }
+ return best;
+}
+for(const z of zones){
+ z.transitionKm=clamp(edgeDistanceKm(...z.center,z.poly)*.65,3,85);
+ // The bounding box only skips distant calculations; it never assigns scores.
+ z.fadeKm=clamp(z.transitionKm*1.8,12,150);
+}
+function regionInfluence(lat,lng,z){
+ const padY=z.fadeKm/111.195,padX=padY/Math.max(.08,Math.cos(lat*Math.PI/180));
+ if(lng<z.bbox[0]-padX||lng>z.bbox[2]+padX||lat<z.bbox[1]-padY||lat>z.bbox[3]+padY)return 0;
+ const inside=inRing(lng,lat,z.poly),d=edgeDistanceKm(lat,lng,z.poly);
+ return smoothstep(-z.fadeKm,z.transitionKm,inside?d:-d);
+}
 function model(lat,lng,quick=false){
  lng=normalizeLng(lng);const z=zoneAt(lat,lng);
  const onLand=quick==='grid'||(quick?maskPixels[(clamp(Math.floor((90-lat)*2),0,MH-1)*MW+clamp(Math.floor((lng+180)*2),0,MW-1))*4+3]>100:isLand(lat,lng));
  if(!onLand)return {score:null,tier:'water',factor:'Open water · no growing suitability',cultivar:'Choose a land location. Small coastal islets may be below mask resolution.',zone:z,land:false};
- const a=Math.abs(lat),coast=coastDistance(lat,lng),continental=clamp((coast-.8)/8,0,1);
- let score=95-Math.max(0,30-a)*4.6-Math.max(0,a-40)*6.3-continental*(a>32?44:19);
- let factor='Seasonal climate & local water balance need verification';
- let cultivar='Trial locally proven cultivars; confirm chilling, frost exposure and drainage.';
- let hazard=false;
- if(a<20){score=Math.min(score,12+a*.55);factor='Insufficient winter chill hours';hazard=true;}
- else if(a<27){score-=14;factor='Low winter chill & warm-winter flowering risk';}
- if(a>46){score=Math.min(score,Math.max(0,42-(a-46)*5)-continental*20);factor='Lethal winter freeze risk or insufficient ripening heat';hazard=true;}
- if(a>58){score=0;factor='Severe winter freeze & insufficient growing season';}
- // Regional climatological priors. No measured temperatures are fabricated.
- const desert=inBox(lat,lng,16,31,-17,60)||inBox(lat,lng,20,31,45,61)||inBox(lat,lng,-30,-16,112,145)||inBox(lat,lng,-29,-16,12,20)||inBox(lat,lng,26,37,-116,-103)||inBox(lat,lng,-28,-15,-73,-67);
- const monsoon=inBox(lat,lng,18,40,73,123)||inBox(lat,lng,24,37,129,145)||inBox(lat,lng,25,37,-94,-75)||inBox(lat,lng,-36,-20,-58,-35)||inBox(lat,lng,-34,-20,146,154)||inBox(lat,lng,-33,-20,27,35);
- const mountain=inBox(lat,lng,29,37,73,104)||inBox(lat,lng,44,48,5,16)||inBox(lat,lng,-52,-20,-71,-68)||inBox(lat,lng,37,49,-116,-105);
- const continentalCold=(inBox(lat,lng,36,65,-112,-65)||inBox(lat,lng,40,65,25,135));
- if(monsoon){score=Math.min(score,57)-7;factor='Excess summer humidity & fungal pressure';hazard=true;}
- if(desert){score=Math.min(score,22);factor='Hyper-aridity · inadequate rainfall without irrigation';hazard=true;}
- if(mountain){score=Math.min(score,25);factor='High-elevation cold & frost exposure';hazard=true;}
- if(continentalCold){score=Math.min(score,Math.max(0,32-(a-36)*3));factor='Lethal winter freeze risk in continental interiors';hazard=true;}
- if(a<12){score=Math.min(score,10);factor='Insufficient winter chill; tropical wetness may compound risk';}
- // Curated envelopes anchor known cultivation and explicitly managed edge cases.
- if(z){score=z.score;factor=z.factor;cultivar=z.cultivar;}
- else if(!hazard){
-  // Smooth influence close to a known envelope, with no large geographic jump.
-  let influence=0,weighted=0;
-  for(const q of zones){const dx=Math.max(q.bbox[0]-lng,0,lng-q.bbox[2])*Math.cos(lat*Math.PI/180),dy=Math.max(q.bbox[1]-lat,0,lat-q.bbox[3]);const d=Math.hypot(dx,dy);if(d<2.8){const w=.6*Math.pow(1-d/2.8,2);influence+=w;weighted+=q.score*w;}}
-  if(influence>0){const blend=Math.min(.7,influence);score=score*(1-blend)+weighted/influence*blend;}
- }
+ const a=Math.abs(lat),coast=coastDistance(lat,lng),continental=smoothstep(.3,10,coast);
+ const warmWinter=smoothstep(16,30,a),coldWinter=1-smoothstep(40,59,a),window=warmWinter*coldWinter;
+ let score=6+73*window-continental*(12+30*smoothstep(27,43,a));
+ const desert=climateField(lat,lng,climateFields.desert),humid=climateField(lat,lng,climateFields.humid),mountain=climateField(lat,lng,climateFields.mountain),cold=climateField(lat,lng,climateFields.cold)*smoothstep(29,46,a);
+ const constraints=[
+  [60*(1-warmWinter),'Insufficient winter chill hours'],
+  [70*(1-coldWinter),'Lethal winter freeze risk or insufficient ripening heat'],
+  [57*desert,'Hyper-aridity · inadequate rainfall without irrigation'],
+  [30*humid,'Excess summer humidity & fungal pressure'],
+  [43*mountain,'High-elevation cold & frost exposure'],
+  [61*cold,'Lethal winter freeze risk in continental interiors']
+ ];
+ // Multiplicative attenuation stays continuous where climate influences overlap.
+ score*=1-.77*desert;score*=1-.38*humid;score*=1-.57*mountain;score*=1-.87*cold;
+ let factor=constraints.reduce((best,v)=>v[0]>best[0]?v:best,[13,'Seasonal climate & local water balance need verification'])[1];
+ let cultivar='Locally trialed Arbequina or Leccino in cooler sites; Picual or Koroneiki in warm dry sites.';
+ let strongest=0,total=0,weighted=0;
+ for(const q of zones){const w=regionInfluence(lat,lng,q);if(!w)continue;strongest=Math.max(strongest,w);const weight=w*w*w*w;total+=weight;weighted+=q.score*weight;}
+ if(total)score=score*(1-strongest)+(weighted/total)*strongest;
+ // Prime scores require substantial support from a curated growing-region prior.
+ score=Math.min(score,79+21*smoothstep(.25,.9,strongest));
  score=Math.round(clamp(score,0,100));
- // Unanchored locations cannot be certified as prime from latitude alone.
- if(!z)score=Math.min(score,79);
- if(!z&&score>=40){cultivar=monsoon?'Locally tested cultivars with disease monitoring; prioritize aerated, well-drained soil.':desert?'No rainfed recommendation. Trial heat-adapted stock only after water and chill assessment.':'Locally trialed Arbequina or Leccino in cooler sites; Picual or Koroneiki in warm dry sites.';}
+ if(z){factor=z.factor;cultivar=z.cultivar;}
+ else if(humid>.55)cultivar='Locally tested cultivars with disease monitoring; prioritize aerated, well-drained soil.';
+ else if(desert>.55)cultivar='No rainfed recommendation. Trial heat-adapted stock only after water and chill assessment.';
  if(score<40)cultivar='No fruit-production recommendation from this model. Verify local evidence before any trial.';
  return {score,tier:score>=80?'prime':score>=40?'marginal':'bad',factor,cultivar,zone:z,land:true,coast};
 }
+
 const colors={prime:'#8ab682',marginal:'#d5b75c',bad:'#d28d79',water:'#8eaaa4'};
-function color(score){if(score===null)return [142,170,164];const stops=[[0,[174,78,66]],[39,[190,105,74]],[40,[218,174,81]],[65,[205,189,95]],[79,[141,163,79]],[80,[75,139,77]],[100,[27,87,53]]];for(let i=1;i<stops.length;i++)if(score<=stops[i][0]){const a=stops[i-1],b=stops[i],t=(score-a[0])/(b[0]-a[0]);return a[1].map((v,j)=>Math.round(v+(b[1][j]-v)*t));}return stops.at(-1)[1];}
+function color(score){if(score===null)return [142,170,164];const stops=[[0,[160,79,67]],[30,[180,101,75]],[50,[210,166,82]],[68,[205,187,94]],[80,[100,148,78]],[100,[27,87,53]]];for(let i=1;i<stops.length;i++)if(score<=stops[i][0]){const a=stops[i-1],b=stops[i],t=(score-a[0])/(b[0]-a[0]);return a[1].map((v,j)=>Math.round(v+(b[1][j]-v)*t));}return stops.at(-1)[1];}
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const map=L.map('map',{zoomControl:false,minZoom:.5,maxZoom:12,maxBounds:[[-85,-180],[85,180]],maxBoundsViscosity:1,zoomSnap:.25,zoomDelta:.5,worldCopyJump:false,zoomAnimation:!reduceMotion,fadeAnimation:!reduceMotion}).setView([17,5],2);
 function worldView(animate=false){map.fitBounds([[-56,-170],[71,179]],{paddingTopLeft:[28,90],paddingBottomRight:[28,150],animate:animate&&!reduceMotion,duration:.8});}
@@ -882,15 +916,15 @@ basemap.on('tileerror',()=>{if(++tileFailures>=3){$('tile-status').hidden=false;
 basemap.on('tileload',()=>{tileFailures=0;$('tile-status').hidden=true;});
 L.control.zoom({position:'bottomright'}).addTo(map);L.control.scale({position:'bottomleft',imperial:false,maxWidth:95}).addTo(map);
 map.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com">Natural Earth</a>');
-// One-degree, deterministic model samples; latitude is rendered in Web Mercator.
-const GW=360,GH=166,MAXLAT=83,grid=document.createElement('canvas');grid.width=GW;grid.height=GH;
+// Half-degree deterministic samples; continuously reprojected into Web Mercator.
+const GW=720,GH=332,STEP=.5,MAXLAT=83,grid=document.createElement('canvas');grid.width=GW;grid.height=GH;
 const gctx=grid.getContext('2d'),im=gctx.createImageData(GW,GH);
-for(let y=0;y<GH;y++)for(let x=0;x<GW;x++){const lat=MAXLAT-y-.5,lng=x-179.5,m=model(lat,lng,'grid'),c=color(m.score),i=(y*GW+x)*4;im.data[i]=c[0];im.data[i+1]=c[1];im.data[i+2]=c[2];im.data[i+3]=255;}
+for(let y=0;y<GH;y++)for(let x=0;x<GW;x++){const lat=MAXLAT-(y+.5)*STEP,lng=-180+(x+.5)*STEP,m=model(lat,lng,'grid'),c=color(m.score),i=(y*GW+x)*4;im.data[i]=c[0];im.data[i+1]=c[1];im.data[i+2]=c[2];im.data[i+3]=Math.round(85+155*smoothstep(5,65,m.score));}
 gctx.putImageData(im,0,0);
 // Resample once into Web Mercator with bilinear interpolation in both directions.
 const projected=document.createElement('canvas');projected.width=1080;projected.height=1080;
 const pctx=projected.getContext('2d'),pim=pctx.createImageData(1080,1080),mercMax=Math.log(Math.tan(Math.PI/4+MAXLAT*Math.PI/360));
-for(let y=0;y<1080;y++){const lat=(2*Math.atan(Math.exp(mercMax*(1-2*y/1079)))-Math.PI/2)*180/Math.PI,sy=clamp(MAXLAT-lat-.5,0,GH-1),y0=Math.floor(sy),y1=Math.min(GH-1,y0+1),ty=sy-y0;for(let x=0;x<1080;x++){const sx=clamp(x/1079*(GW-1),0,GW-1),x0=Math.floor(sx),x1=Math.min(GW-1,x0+1),tx=sx-x0,i=(y*1080+x)*4;for(let c=0;c<3;c++){const a=im.data[(y0*GW+x0)*4+c]*(1-tx)+im.data[(y0*GW+x1)*4+c]*tx,b=im.data[(y1*GW+x0)*4+c]*(1-tx)+im.data[(y1*GW+x1)*4+c]*tx;pim.data[i+c]=Math.round(a*(1-ty)+b*ty);}pim.data[i+3]=255;}}
+for(let y=0;y<1080;y++){const lat=(2*Math.atan(Math.exp(mercMax*(1-2*y/1079)))-Math.PI/2)*180/Math.PI,sy=clamp((MAXLAT-lat)/STEP-.5,0,GH-1),y0=Math.floor(sy),y1=Math.min(GH-1,y0+1),ty=sy-y0;for(let x=0;x<1080;x++){const sx=clamp(x/1079*(GW-1),0,GW-1),x0=Math.floor(sx),x1=Math.min(GW-1,x0+1),tx=sx-x0,i=(y*1080+x)*4;for(let c=0;c<4;c++){const a=im.data[(y0*GW+x0)*4+c]*(1-tx)+im.data[(y0*GW+x1)*4+c]*tx,b=im.data[(y1*GW+x0)*4+c]*(1-tx)+im.data[(y1*GW+x1)*4+c]*tx;pim.data[i+c]=Math.round(a*(1-ty)+b*ty);}}}
 pctx.putImageData(pim,0,0);
 // Draw the projected continuous surface, then clip to the embedded land geometry.
 const SuitabilityLayer=L.Layer.extend({
@@ -960,7 +994,7 @@ selectRegion('seto',false);
 const state=new URLSearchParams(location.hash.slice(1));
 if(state.has('lat')&&state.has('lng')&&state.has('z')){const lat=Number(state.get('lat')),lng=Number(state.get('lng')),zoom=Number(state.get('z'));if([lat,lng,zoom].every(Number.isFinite)&&Math.abs(lat)<=83&&Math.abs(lng)<=180&&zoom>=.5&&zoom<=12)map.setView([lat,lng],zoom);const point=state.get('p')?.split(',').map(Number);if(point?.length===2&&point.every(Number.isFinite)&&Math.abs(point[0])<=90&&Math.abs(point[1])<=180)inspect(...point);}
 // Public read-only model hooks for reproducible checks and reuse.
-window.OleaAtlas=Object.freeze({model,zones,version:'1.0',map,layers:{surface,zoneLayer,extremePins,beltLayer},isLand,selectRegion,inspect});
+window.OleaAtlas=Object.freeze({model,zones,version:'1.1',map,layers:{surface,zoneLayer,extremePins,beltLayer},isLand,selectRegion,inspect});
 })();
 </script>
 </body>

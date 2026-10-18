@@ -21,7 +21,7 @@ Leaflet 1.9.4, CSS, Natural Earth v5.1.2 1:50m land geometry, model logic and al
 
 ## Model
 
-The deterministic 0–100 index combines a 30°–45° latitude optimum, a coast-distance proxy calculated from embedded land, broad desert/monsoon/continental/mountain penalties, and curated regional benchmark priors. A 1° grid is bilinearly interpolated into Web Mercator and clipped to the land polygons. The point inspector evaluates the same rules at the actual coordinate; it can differ from the coarse raster, especially around small islands and boundaries. Unanchored locations are capped at 79 because latitude alone is insufficient to establish prime suitability.
+The deterministic 0–100 index combines a 30°–45° latitude optimum, a coast-distance proxy calculated from embedded land, smooth, overlapping elliptical desert/monsoon/continental/mountain priors, and curated regional benchmark priors. A 0.5° grid is bilinearly interpolated into Web Mercator and clipped to the land polygons. The point inspector evaluates the same rules at the actual coordinate; it can differ from the coarse raster, especially around small islands and boundaries. Prime scores require substantial influence from a curated growing-region prior. Those priors taper continuously with distance to the actual polygon edges, rather than rectangular bounding boxes. Unsuitable areas use reduced opacity so the background remains legible.
 
 | Tier | Index | Meaning |
 | --- | --- | --- |
