@@ -24,3 +24,12 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+CHELSA V2.1 / CHELSA-BIOCLIM+
+Climate data: CC0 1.0 (public domain), Swiss Federal Institute WSL.
+Reference period: 1981-2010. This application samples published COG
+overviews to a 10-arc-minute grid and derives olive screening indices.
+Brun et al. (2022), doi:10.5194/essd-14-5573-2022.
+Karger et al. (2017), doi:10.1038/sdata.2017.122.
+Source URLs and transformations: DATA_SOURCES.json.

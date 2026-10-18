@@ -1,0 +1,132 @@
+{
+  "version": "2.0",
+  "dataset": "CHELSA V2.1 / CHELSA-BIOCLIM+",
+  "period": "1981-2010",
+  "grid": {
+    "width": 2160,
+    "height": 1044,
+    "west": -180.00013888885002,
+    "north": 83.99986041515001,
+    "dx": 0.16666666600000002,
+    "dy": 0.166666666
+  },
+  "dataSha256": "576ec4784440bba21515cf1b93f5dbee601d81a10fba87371829d32e5ea86bff",
+  "sampledClimateCells": 27170,
+  "overlayInspectorMaxDelta": 0,
+  "quarterRainMaxDifferenceMm": 2.299999999999983,
+  "controls": [
+    {
+      "name": "Andalusia",
+      "irrigated": 98,
+      "rainfed": 98,
+      "overlay": 98,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Shodoshima",
+      "irrigated": 79,
+      "rainfed": 79,
+      "overlay": 79,
+      "factor": "Wet warm season · fungal-management pressure"
+    },
+    {
+      "name": "California",
+      "irrigated": 99,
+      "rainfed": 81,
+      "overlay": 99,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Central Chile",
+      "irrigated": 94,
+      "rainfed": 94,
+      "overlay": 94,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Perth",
+      "irrigated": 96,
+      "rainfed": 96,
+      "overlay": 96,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Western Cape",
+      "irrigated": 95,
+      "rainfed": 95,
+      "overlay": 95,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Toronto",
+      "irrigated": 26,
+      "rainfed": 26,
+      "overlay": 26,
+      "factor": "Cold-winter constraint · monthly mean lows"
+    },
+    {
+      "name": "Sahara",
+      "irrigated": 79,
+      "rainfed": 1,
+      "overlay": 79,
+      "factor": "Excess summer heat / high seasonal heat load"
+    },
+    {
+      "name": "Amazon",
+      "irrigated": 0,
+      "rainfed": 0,
+      "overlay": 0,
+      "factor": "Warm-winter flowering / chilling constraint"
+    },
+    {
+      "name": "Lhasa",
+      "irrigated": 0,
+      "rainfed": 0,
+      "overlay": 0,
+      "factor": "Cold-winter constraint · monthly mean lows"
+    },
+    {
+      "name": "Mendoza",
+      "irrigated": 98,
+      "rainfed": 33,
+      "overlay": 98,
+      "factor": "Favorable temperature & seasonal water balance"
+    },
+    {
+      "name": "Southern England",
+      "irrigated": 30,
+      "rainfed": 30,
+      "overlay": 30,
+      "factor": "Insufficient summer warmth for reliable fruiting"
+    },
+    {
+      "name": "Tokyo",
+      "irrigated": 79,
+      "rainfed": 79,
+      "overlay": 79,
+      "factor": "Wet warm season · fungal-management pressure"
+    },
+    {
+      "name": "Delhi",
+      "irrigated": 66,
+      "rainfed": 66,
+      "overlay": 66,
+      "factor": "Warm-winter flowering / chilling constraint"
+    },
+    {
+      "name": "Qinghai Plateau",
+      "irrigated": 0,
+      "rainfed": 0,
+      "overlay": 0,
+      "factor": "Insufficient summer warmth for reliable fruiting"
+    },
+    {
+      "name": "Tacna",
+      "irrigated": 72,
+      "rainfed": 2,
+      "overlay": 72,
+      "factor": "Warm-winter flowering / chilling constraint"
+    }
+  ],
+  "failures": []
+}

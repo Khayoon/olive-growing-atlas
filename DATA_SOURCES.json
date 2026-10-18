@@ -1,0 +1,685 @@
+{
+  "dataset": "CHELSA V2.1 / CHELSA-BIOCLIM+",
+  "period": "1981-2010",
+  "license": "CC0 1.0",
+  "grid": {
+    "width": 2160,
+    "height": 1044,
+    "west": -180.00013888885002,
+    "north": 83.99986041515001,
+    "dx": 0.16666666600000002,
+    "dy": 0.166666666
+  },
+  "fields": [
+    {
+      "id": "bio05",
+      "multiplier": 10,
+      "source_unit": "°C",
+      "name": "Mean Daily Maximum Near-Surface Air Temperature of the Warmest Month"
+    },
+    {
+      "id": "bio06",
+      "multiplier": 10,
+      "source_unit": "°C",
+      "name": "Mean Daily Minimum Near-Surface Air Temperature of the Coldest Month"
+    },
+    {
+      "id": "bio10",
+      "multiplier": 10,
+      "source_unit": "°C",
+      "name": "Mean Daily Mean Near-Surface Air Temperature of the Warmest Quarter"
+    },
+    {
+      "id": "bio11",
+      "multiplier": 10,
+      "source_unit": "°C",
+      "name": "Mean Daily Mean Near-Surface Air Temperature of the Quarter"
+    },
+    {
+      "id": "bio12",
+      "multiplier": 1,
+      "source_unit": "kg m-2 year-1",
+      "name": "Annual Precipitation"
+    },
+    {
+      "id": "bio18",
+      "multiplier": 1,
+      "source_unit": "kg m-2 month-1",
+      "name": "Mean Monthly Precipitation of the Warmest Quarter"
+    },
+    {
+      "id": "bio19",
+      "multiplier": 1,
+      "source_unit": "kg m-2 month-1",
+      "name": "Mean Monthly Precipitation of the Coldest Quarter"
+    },
+    {
+      "id": "hursmean",
+      "multiplier": 1,
+      "source_unit": "percent",
+      "name": "Mean Monthly Near-Surface Relative Humidity"
+    },
+    {
+      "id": "fcf",
+      "multiplier": 1,
+      "source_unit": "count",
+      "name": "Frost Change Frequency"
+    }
+  ],
+  "nodata": -32768,
+  "encoding": "gzip / little-endian int16 / field-major row-major",
+  "resampling": "Nearest-neighbor read of published COG overviews to approximately 10 arc-minute grid; not native 1 km detail",
+  "binary_sha256": "576ec4784440bba21515cf1b93f5dbee601d81a10fba87371829d32e5ea86bff",
+  "compressed_sha256": "d52e0d8a5ac8eb834d201fcc4ae50b3d786d8ed696d0ecd4d0d66d43a5426a24",
+  "bytes": {
+    "raw": 45100800,
+    "gzip": 12026933
+  },
+  "sources": {
+    "bio05": {
+      "variable": "bio05",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio05/1981-2010/CHELSA_bio05_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio05/1981-2010/CHELSA_bio05_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:21:20.797Z",
+        "ETag": "\"623e41da0fc5aaa8dc1c602902c71d1d-15\"",
+        "Size": "165253968"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "air_temperature",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio05",
+        "variable_long_name": "Mean Daily Maximum Near-Surface Air Temperature of the Warmest Month",
+        "variable_unit": "°C",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        -33.74999999999997,
+        46.950000000000045
+      ],
+      "array_sha256": "c3532a7bcd04a85ad407a9b27dfe52ee2fd5b74948a6b0d83595eaa907a57c8a"
+    },
+    "bio06": {
+      "variable": "bio06",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio06/1981-2010/CHELSA_bio06_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio06/1981-2010/CHELSA_bio06_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:21:23.183Z",
+        "ETag": "\"0003ccc8b449c047975f8ba4916d7013-14\"",
+        "Size": "155691034"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "air_temperature",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio06",
+        "variable_long_name": "Mean Daily Minimum Near-Surface Air Temperature of the Coldest Month",
+        "variable_unit": "°C",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        -65.84999999999997,
+        26.350000000000023
+      ],
+      "array_sha256": "551e002d9cc1cead6911e5fc8e53b75b21f1b4e00c090226cd8d707e8aaf510d"
+    },
+    "bio10": {
+      "variable": "bio10",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio10/1981-2010/CHELSA_bio10_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio10/1981-2010/CHELSA_bio10_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:21:37.510Z",
+        "ETag": "\"c04fb7b2efa50d6b554b3d39cdec1040-15\"",
+        "Size": "161375656"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "air_temperature",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio10",
+        "variable_long_name": "Mean Daily Mean Near-Surface Air Temperature of the Warmest Quarter",
+        "variable_unit": "°C",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        -38.549999999999955,
+        38.950000000000045
+      ],
+      "array_sha256": "dccc4dec38cc0ec222916452ec45ccae90a504599574aac224cd058b8bbd8503"
+    },
+    "bio11": {
+      "variable": "bio11",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio11/1981-2010/CHELSA_bio11_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio11/1981-2010/CHELSA_bio11_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:21:41.242Z",
+        "ETag": "\"c5d9ac8cf89d56c05c860fbfb2468300-14\"",
+        "Size": "151513880"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "air_temperature",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio11",
+        "variable_long_name": "Mean Daily Mean Near-Surface Air Temperature of the Quarter",
+        "variable_unit": "°C",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        -63.049999999999955,
+        31.150000000000034
+      ],
+      "array_sha256": "d11c005d686b4be0dcf1028d26b7e3e80c88b57c844cb2258ed2256d53dae108"
+    },
+    "bio12": {
+      "variable": "bio12",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio12/1981-2010/CHELSA_bio12_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio12/1981-2010/CHELSA_bio12_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:21:48.813Z",
+        "ETag": "\"767eceef94e3bcc39d5ad154a29e2425-33\"",
+        "Size": "349254899"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "crs": "EPSG:4326",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "precipitation_flux",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio12",
+        "variable_long_name": "Annual Precipitation",
+        "variable_unit": "kg m-2 year-1",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        0,
+        19758
+      ],
+      "array_sha256": "23e81de81233737405ec9577d27361c3cf83afdf194f3675cc63b8ea72ac51a5"
+    },
+    "bio18": {
+      "variable": "bio18",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio18/1981-2010/CHELSA_bio18_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio18/1981-2010/CHELSA_bio18_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:22:35.169Z",
+        "ETag": "\"22741bb9bad5f938c00364ad5b725f8f-52\"",
+        "Size": "549240986"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": 0,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "precipitation_flux",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio18",
+        "variable_long_name": "Mean Monthly Precipitation of the Warmest Quarter",
+        "variable_unit": "kg m-2 month-1",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        0,
+        5853.5
+      ],
+      "array_sha256": "695fdfe6cff2c9da1ce112be8729f81d3ef5a278c9ac14df427871ee86cd2cf5"
+    },
+    "bio19": {
+      "variable": "bio19",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio19/1981-2010/CHELSA_bio19_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/bio19/1981-2010/CHELSA_bio19_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:22:44.901Z",
+        "ETag": "\"a3c397c58e35867fb12fcba52a7853fb-47\"",
+        "Size": "496674789"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.1,
+      "offset": 0,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "precipitation_flux",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "bio19",
+        "variable_long_name": "Mean Monthly Precipitation of the Coldest Quarter",
+        "variable_unit": "kg m-2 month-1",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        0,
+        5330.200000000001
+      ],
+      "array_sha256": "49a5abc865c71d9601d63be056e87798aff2a3dcc62f56cfd64c05be4a9d8f14"
+    },
+    "hursmean": {
+      "variable": "hursmean",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/hursmean/1981-2010/CHELSA_hursmean_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/hursmean/1981-2010/CHELSA_hursmean_1981-2010_V.2.1.tif",
+        "LastModified": "2025-10-22T21:32:20.984Z",
+        "ETag": "\"7325da7fc4fe307b75e158d394711291-42\"",
+        "Size": "441186221"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "crs": "EPSG:4326",
+      "scale": 0.01,
+      "offset": 0,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "relative_humidity",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "hursmean",
+        "variable_long_name": "Mean Monthly Near-Surface Relative Humidity",
+        "variable_unit": "percent",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        31.36,
+        97
+      ],
+      "array_sha256": "74bdeb40634cfab90d442732a3d1990af567b1a5b03cc6eeddb4c4bd4ddbc63b"
+    },
+    "fcf": {
+      "variable": "fcf",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/fcf/1981-2010/CHELSA_fcf_1981-2010_V.2.1.tif",
+      "source_object": {
+        "Key": "chelsa/global/bioclim/fcf/1981-2010/CHELSA_fcf_1981-2010_V.2.1.tif",
+        "LastModified": "2025-09-07T10:22:47.980Z",
+        "ETag": "\"a43ef6f35191f45c94c6d9643ecc0c27-8\"",
+        "Size": "93621043"
+      },
+      "source_shape": [
+        20880,
+        43200
+      ],
+      "source_bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "crs": "EPSG:4326",
+      "scale": 1,
+      "offset": 0,
+      "nodata": 65535,
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+      ],
+      "tags": {
+        "cf_standard_name": "-",
+        "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+        "contact": "dirk.karger@wsl.ch",
+        "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+        "datetime": "1981-2010",
+        "forcing_activity_id": "Reanalysis",
+        "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+        "forcing_experiment_id": "Observation",
+        "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+        "forcing_source_id": "ERA5",
+        "frequency": "bioclim",
+        "institution_id": "WSL",
+        "note": "-",
+        "product": "model-output",
+        "project": "CHELSA",
+        "source_id": "CHELSA_V2.1",
+        "variable": "fcf",
+        "variable_long_name": "Frost Change Frequency",
+        "variable_unit": "count",
+        "version": "2.1",
+        "AREA_OR_POINT": "Area"
+      },
+      "grid_shape": [
+        1044,
+        2160
+      ],
+      "range": [
+        0,
+        383
+      ],
+      "array_sha256": "fdeb3821e6ccb0ab17a872151658c29d515849642c979b102f960561654fc2d4"
+    }
+  },
+  "retrieved_utc": "2026-10-18T13:46:37.445772+00:00",
+  "dataset_url": "https://www.chelsa-climate.org/datasets/chelsa_bioclim",
+  "citation": "Brun et al. (2022), ESSD 14, 5573–5603, doi:10.5194/essd-14-5573-2022; Karger et al. (2017), Scientific Data 4, 170122, doi:10.1038/sdata.2017.122",
+  "score_rasters": {
+    "irrigated_offset": 40590720,
+    "rainfed_offset": 42845760,
+    "type": "uint8",
+    "nodata": 255
+  },
+  "field_interpretation": {
+    "bio18": "Three-month precipitation total, mm. Verified against independent sums of monthly CHELSA pr and tas at 16 controls; source long_name says monthly mean, but numeric values match quarter totals.",
+    "bio19": "Three-month precipitation total, mm; source long_name says monthly mean. Raw data retained without multiplying by three.",
+    "bio06": "Mean daily minimum of the coldest month; NOT an absolute winter minimum.",
+    "hursmean": "Mean annual near-surface relative humidity; NOT summer-specific humidity.",
+    "fcf": "Annual freeze–thaw transition count; NOT number of frost days."
+  },
+  "excluded_fields": {
+    "kg0": "Categorical COG overviews can average class codes; omitted rather than publish ambiguous classes.",
+    "gdd10": "Contains negative values and nodata in controls; not needed by this model and omitted."
+  }
+}
