@@ -824,7 +824,8 @@
         "sourceKind": "Orchard study event report; instrument/station ID not specified",
         "gridC": -4.9,
         "interpretation": "The orchard report and nearby airport both show colder exposure than the orchard map cell. Airport data do not establish the orchard’s exact temperature or permit a regional additive correction."
-      }
+      },
+      "productionReliability": "annual_harvests_observed_12_seasons"
     },
     {
       "id": "it_maiolati_freeze",
@@ -1301,7 +1302,7 @@
   "stationDocumentation": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
   "validation": {
     "version": "3.1",
-    "timeUTC": "2026-10-18T16:20:59.334Z",
+    "timeUTC": "2026-10-18T16:27:01.815Z",
     "developmentSites": [
       "us-hi-lalamilo",
       "es_pedro_abad_longterm",

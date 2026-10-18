@@ -7,7 +7,7 @@ function assessOliveSite(site,cultivar='trial',irrigated=true){
  return {category:waterMismatch?'management_unknown':profile.category,
   label:waterMismatch?'Rainfed production untested':profile.label,
   explanation:waterMismatch?'This field trial used irrigation. Its harvest evidence cannot establish rainfed suitability. '+profile.explanation:profile.explanation,
-  reliableAnnualYield:'not_established',score:null,
+  reliableAnnualYield:waterMismatch?'not_established':site.productionReliability||'not_established',score:null,
   basis:'Local field and weather observations; no synthetic numerical score',
   freeze:site.freeze||null,chill:site.chill||null};
 }
