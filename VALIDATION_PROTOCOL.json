@@ -1,0 +1,14 @@
+{
+  "declared_utc": "2026-10-18T15:34:06.679305+00:00",
+  "purpose": "Independent orchard compatibility checks of a climate screen, not fitted yield or reliability probability.",
+  "rule_freeze_mean": "Keep existing v2.1 annual extreme minimum response curve. Extend globally using annual TNn-derived 1991-2020 mean, retain PRISM where available as local higher-resolution supplemental mean.",
+  "rule_freeze_tail": "Display 1991-2025 coldest annual TNn and fraction of annual minima <= -7, -10 and -12.2 C. Policy cap: observed <= -12.2 C at least once -> max59; <= -10C in >=20% years -> max39; <=-7C in >=20% years -> max79. These are explicit conservative risk-policy choices, not calibrated mortality probabilities.",
+  "core_temperature_wetness": "Freeze v2.1 non-freeze curves before sampling the orchard evidence. Do not tune to evaluation scores.",
+  "eligibility": "Use all independently gathered primary orchard studies with exact/explicit location precision and field production/damage evidence. Regional context without orchard coordinates is excluded from point metrics.",
+  "irrigation": "Use documented regime. If unknown, report both and classify only if both satisfy the relevant criterion.",
+  "production_metric": "Multi-year measured fruit/oil production (>=3 years) should be compatible with >=40 in the corresponding documented water regime. >=80 is not required for humid managed groves. Cultivar failures remain separate.",
+  "failure_metric": "Documented repeated climate-related nonflowering or damaging freezes should not be called favorable (score<80). Alternate bearing alone is not a climate-negative label.",
+  "challenge_metric": "Short trials, cultivar-conditional fruiting, damage+recovery and location ambiguity are reported separately and not promoted into strong reliable-yield labels.",
+  "split": "All independently collected sites are evaluation-only in this release. Existing curated pins and v2.1 checks are prior-used contextual controls, not independent validation.",
+  "reporting": "Publish every eligible result, including contradictions, sample counts by class and geographic clustering; do not claim global accuracy, specificity without negatives, or reliable annual harvest probability."
+}

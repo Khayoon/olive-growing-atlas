@@ -1,0 +1,1099 @@
+{
+  "version": "3.0",
+  "crop": "Cultivated Olea europaea subsp. europaea, table/oil cultivars",
+  "selection": "Primary studies selected without inspecting v3 scores. Source-derived coordinates only; city centroids and conflicting coordinates excluded.",
+  "interpretation": "Field evidence checks climate compatibility and whether hazards are flagged. Repeated fruiting is not a validated probability of reliable annual economic harvest.",
+  "protocol": {
+    "declared_utc": "2026-10-18T15:34:06.679305+00:00",
+    "purpose": "Independent orchard compatibility checks of a climate screen, not fitted yield or reliability probability.",
+    "rule_freeze_mean": "Keep existing v2.1 annual extreme minimum response curve. Extend globally using annual TNn-derived 1991-2020 mean, retain PRISM where available as local higher-resolution supplemental mean.",
+    "rule_freeze_tail": "Display 1991-2025 coldest annual TNn and fraction of annual minima <= -7, -10 and -12.2 C. Policy cap: observed <= -12.2 C at least once -> max59; <= -10C in >=20% years -> max39; <=-7C in >=20% years -> max79. These are explicit conservative risk-policy choices, not calibrated mortality probabilities.",
+    "core_temperature_wetness": "Freeze v2.1 non-freeze curves before sampling the orchard evidence. Do not tune to evaluation scores.",
+    "eligibility": "Use all independently gathered primary orchard studies with exact/explicit location precision and field production/damage evidence. Regional context without orchard coordinates is excluded from point metrics.",
+    "irrigation": "Use documented regime. If unknown, report both and classify only if both satisfy the relevant criterion.",
+    "production_metric": "Multi-year measured fruit/oil production (>=3 years) should be compatible with >=40 in the corresponding documented water regime. >=80 is not required for humid managed groves. Cultivar failures remain separate.",
+    "failure_metric": "Documented repeated climate-related nonflowering or damaging freezes should not be called favorable (score<80). Alternate bearing alone is not a climate-negative label.",
+    "challenge_metric": "Short trials, cultivar-conditional fruiting, damage+recovery and location ambiguity are reported separately and not promoted into strong reliable-yield labels.",
+    "split": "All independently collected sites are evaluation-only in this release. Existing curated pins and v2.1 checks are prior-used contextual controls, not independent validation.",
+    "reporting": "Publish every eligible result, including contradictions, sample counts by class and geographic clustering; do not claim global accuracy, specificity without negatives, or reliable annual harvest probability."
+  },
+  "sites": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Source prints 37°57′32″N, 4°27′44″W; 162m.",
+      "studyCluster": "pedro_abad_2016",
+      "geographicCluster": "southern_iberia",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Drip 2000m3/ha/year, sometimes extended to October.",
+      "cultivars": [
+        "Arbequina",
+        "Arbequina IRTA-i18",
+        "Arbosana",
+        "Koroneiki",
+        "Fs-17"
+      ],
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "harvestYears": 12,
+      "annualReliability": "sustained_with_climate_losses",
+      "observations": "Twelve annual harvested crops after planting in 2000. Mean fruit yield 13.1t/ha/year for Arbequina and 14.2 for Arbosana; marked losses after freezes and flowering heat.",
+      "yieldSeries": {
+        "unit": "tonnes fresh fruit/ha",
+        "seasonStartYears": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013
+        ],
+        "cultivar": "Arbequina",
+        "values": [
+          16.6,
+          17.2,
+          21.6,
+          6.3,
+          8.0,
+          9.9,
+          10.5,
+          10.9,
+          15.3,
+          13.3,
+          8.9,
+          19.4
+        ]
+      },
+      "freezeEvidence": "Trees damaged by winter 2004-2005 temperatures below -9C and 2011-2012 below -6C; winter waterlogging and >30C bloom heat also recorded.",
+      "sources": [
+        {
+          "title": "Cultivar and Tree Density As Key Factors in the Long-Term Performance of Super High-Density Olive Orchards",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01226/full",
+          "doi": "10.3389/fpls.2016.01226",
+          "locator": "Materials and methods; Tables 1-3; climatic episodes"
+        }
+      ]
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "name": "Commercial Arbequina orchard, Cordoba, Spain",
+      "lat": 37.64889,
+      "lng": -4.731579,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Decimal coordinates printed in study; western longitude is negative.",
+      "studyCluster": "cordoba_commercial_2015",
+      "geographicCluster": "southern_iberia",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2011,
+        2013
+      ],
+      "harvestYears": 2,
+      "annualReliability": "unknown",
+      "observations": "Mature commercial orchard produced 10-12t/ha in both study harvest years; healthy, irrigated, 285 trees/ha. The intervening year was not measured, so uninterrupted annual cropping is not established.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Analysis of fruit and oil quantity and quality distribution in high-density olive trees in order to improve the mechanical harvesting process",
+          "url": "https://sjar.revistas.csic.es/index.php/sjar/article/download/6513/2390?inline=1",
+          "doi": "10.5424/sjar/2015132-6513",
+          "locator": "Material and methods: test orchard, seasons and yields"
+        }
+      ]
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "name": "Lombo rainfed Cobrancosa orchard, Portugal",
+      "lat": 41.446556,
+      "lng": -6.822067,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Exact decimal coordinates printed in section 2.1.",
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "rainfed",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Cobrancosa"
+      ],
+      "years": [
+        2017,
+        2018
+      ],
+      "harvestYears": 2,
+      "annualReliability": "unknown",
+      "observations": "18-year-old commercial grove; fruit harvested and weighed in both seasons. Nitrogen treatments altered yields; disease and fruit-fly damage measured. Two seasons cannot establish long-term reliability.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "The effect of nitrogen fertilization on the incidence of olive fruit fly, olive leaf spot and olive anthracnose in two olive cultivars grown in rainfed conditions",
+          "url": "https://bibliotecadigital.ipb.pt/bitstream/10198/20240/1/44.pdf",
+          "doi": "10.1016/j.scienta.2019.108658",
+          "locator": "Section 2.1, Figure 6; 2017 and 2018 fruit harvests"
+        }
+      ]
+    },
+    {
+      "id": "pt_lombo_madural",
+      "name": "Lombo rainfed Madural orchard, Portugal",
+      "lat": 41.457075,
+      "lng": -6.832459,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Exact decimal coordinates printed in section 2.1.",
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "rainfed",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Madural"
+      ],
+      "years": [
+        2017,
+        2018
+      ],
+      "harvestYears": 2,
+      "annualReliability": "unknown",
+      "observations": "50-year-old commercial grove with two weighed fruit harvests; increased nitrogen increased yield and delayed maturity. Same study and geographic cluster as nearby Cobrancosa plot; not independent climate replication.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "The effect of nitrogen fertilization on the incidence of olive fruit fly, olive leaf spot and olive anthracnose in two olive cultivars grown in rainfed conditions",
+          "url": "https://bibliotecadigital.ipb.pt/bitstream/10198/20240/1/44.pdf",
+          "doi": "10.1016/j.scienta.2019.108658",
+          "locator": "Section 2.1, Figure 6; 2017 and 2018 fruit harvests"
+        }
+      ]
+    },
+    {
+      "id": "gr_messinia_ac",
+      "name": "Messinia non-calcareous rainfed orchard, Greece",
+      "lat": 37.0389675,
+      "lng": 21.9130617,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "37°02′20.283″N, 21°54′47.022″E; 152m, source section 2.1.",
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "rainfed",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Koroneiki"
+      ],
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "harvestYears": 3,
+      "annualReliability": "irregular",
+      "observations": "40-year-old orchard; unfertilized-control cumulative fruit yield 77.40kg/tree over three harvests (25.80 annual mean). Study describes strong alternate bearing; high average production does not establish stable annual crops.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Enhancing the Yield of Mature Olive Trees via Comparative Fertilization Strategies, including a Foliar Application with Fulvic and Humic Acids, in Non-Irrigated Orchards with Calcareous and Non-Calcareous Soils",
+          "url": "https://mdpi-res.com/d_attachment/horticulturae/horticulturae-10-00167/article_deploy/horticulturae-10-00167.pdf?version=1707714682",
+          "doi": "10.3390/horticulturae10020167",
+          "locator": "Section 2.1, Table 2, Figures 1-2; Tables 3-8"
+        }
+      ]
+    },
+    {
+      "id": "gr_messinia_al",
+      "name": "Messinia calcareous rainfed orchard, Greece",
+      "lat": 37.0363786,
+      "lng": 21.9075306,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "37°02′10.963″N, 21°54′27.110″E; 178m, source section 2.1.",
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "rainfed",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Koroneiki"
+      ],
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "harvestYears": 3,
+      "annualReliability": "irregular",
+      "observations": "Mature orchard with three annual harvested crops and treatment-dependent yields. Source describes marked alternate bearing. Nearby paired orchard shares climate cluster; poor years are not treated as climatic non-suitability.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Enhancing the Yield of Mature Olive Trees via Comparative Fertilization Strategies, including a Foliar Application with Fulvic and Humic Acids, in Non-Irrigated Orchards with Calcareous and Non-Calcareous Soils",
+          "url": "https://mdpi-res.com/d_attachment/horticulturae/horticulturae-10-00167/article_deploy/horticulturae-10-00167.pdf?version=1707714682",
+          "doi": "10.3390/horticulturae10020167",
+          "locator": "Section 2.1, Table 2, Figures 1-2; Tables 3-8"
+        }
+      ]
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "name": "Sicily Arbequina high-density trial, Italy",
+      "lat": 37.7666667,
+      "lng": 12.5,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "37°46′N, 12°30′E; 160m, Table 1 (minute precision).",
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2010,
+        2011
+      ],
+      "harvestYears": 2,
+      "annualReliability": "unknown",
+      "observations": "Trial planted 2005. Fruit and chemically/sensorially assessed oil harvested both years. Main comparison covers only 2010 and 2011; earlier age-yield discussion is not counted as an independently verified annual series.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Growth and Yields of Arbequina High-Density Planting Systems in Three Different Olive Growing Areas in Italy",
+          "url": "https://iris.unipa.it/bitstream/10447/102669/1/Argentina_collegiale.pdf",
+          "recordUrl": "https://research.unipg.it/handle/11391/1328110",
+          "locator": "Materials and methods, Table 1 and yield discussion; main field measurements in 2010 and 2011"
+        }
+      ]
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "name": "Apulia Arbequina high-density trial, Italy",
+      "lat": 41.0166667,
+      "lng": 16.75,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "41°01′N, 16°45′E; 110m, Table 1 (minute precision).",
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2010,
+        2011
+      ],
+      "harvestYears": 2,
+      "annualReliability": "unknown",
+      "observations": "Planted 2006; two harvest seasons, comparable yield to Sicily and successful oil extraction/quality assessment. Same study cluster as Sicily and Umbria.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Growth and Yields of Arbequina High-Density Planting Systems in Three Different Olive Growing Areas in Italy",
+          "url": "https://iris.unipa.it/bitstream/10447/102669/1/Argentina_collegiale.pdf",
+          "recordUrl": "https://research.unipg.it/handle/11391/1328110",
+          "locator": "Materials and methods, Table 1 and yield discussion; main field measurements in 2010 and 2011"
+        }
+      ]
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "name": "Umbria Arbequina high-density trial, Italy",
+      "lat": 42.95,
+      "lng": 12.4166667,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "42°57′N, 12°25′E; 350m, Table 1 (minute precision).",
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2010,
+        2011
+      ],
+      "harvestYears": 2,
+      "annualReliability": "irregular",
+      "observations": "Planted 2006. Successful edible-oil harvests but lower production than warmer trial sites; study attributes slower growth to shorter growing season. This is a production constraint, not a tree-presence record.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Growth and Yields of Arbequina High-Density Planting Systems in Three Different Olive Growing Areas in Italy",
+          "url": "https://iris.unipa.it/bitstream/10447/102669/1/Argentina_collegiale.pdf",
+          "recordUrl": "https://research.unipg.it/handle/11391/1328110",
+          "locator": "Materials and methods, Table 1 and yield discussion; main field measurements in 2010 and 2011"
+        }
+      ]
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "43°28′37″N, 13°07′09″E; 405m, section 2.1.",
+      "studyCluster": "maiolati_2016",
+      "geographicCluster": "italian_trials",
+      "evaluationGroup": "freeze_challenge",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "rainfed",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Arbequina",
+        "FS17",
+        "Ascolana dura",
+        "Orbetana",
+        "Mignolone",
+        "19 other cultivated varieties"
+      ],
+      "years": [
+        2012,
+        2013
+      ],
+      "harvestYears": 0,
+      "annualReliability": "unproven_freeze_affected",
+      "observations": "Three-year-old orchard; 20 trees/cultivar assessed. Arbequina, FS17, Raggia and Sargano di San Benedetto completely defoliated; Arbequina/FS17 later regenerated mainly from trunk base. No yield series measured.",
+      "yieldSeries": null,
+      "freezeEvidence": {
+        "eventYear": 2012,
+        "absoluteMinimumC": -6.4,
+        "episodeDays": 12,
+        "episodeMeanMinimumC": -4.7,
+        "precedingWarmDecadeMeanMinimumC": 6.5,
+        "interpretation": "Duration and deacclimation matter; annual extreme minimum alone cannot reproduce damage severity."
+      },
+      "sources": [
+        {
+          "title": "Frost tolerance of 24 olive cultivars and subsequent vegetative re-sprouting as indication of recovery ability",
+          "url": "https://www.d3a.univpm.it/sites/www.d3a.univpm.it/files/d3a/Lavori%20scientifici/001%20-%20Lodolini%20et%20al%202016%20-%20SCI%20HORTIC-AMSTERDAM%20-%20211%20-%20152-157.pdf",
+          "locator": "pp.153-156, study site, weather episode, defoliation and regrowth results"
+        }
+      ]
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "name": "Taous comparative cultivated-olive trial, Tunisia",
+      "lat": 34.9333333,
+      "lng": 10.6,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "34°56′N, 10°36′E printed for Taous; minute precision, not a precise tree location.",
+      "studyCluster": "taous_2019",
+      "geographicCluster": "sfax_tunisia",
+      "evaluationGroup": "categorical_productivity",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Zeitoun Ennwader"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "harvestYears": 9,
+      "annualReliability": "reported_low_alternate_bearing",
+      "observations": "Comparative orchard planted 2005; three trees observed 2007-2015. High yield and low alternate bearing reported categorically; annual numeric yield values not published. Irrigation and fertilization stated. Do not substitute high categorical yield with invented tonnage.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "Zeitoun Ennwader: A new olive oil cultivar in Tunisia with high oil quality and low alternate bearing",
+          "url": "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/download/766/918/2434",
+          "recordUrl": "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/766",
+          "locator": "pp.523-525, experimental site; 2007-2015 production observations and Table 2"
+        }
+      ]
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "name": "Roseworthy NOVA cultivated variety collection, South Australia",
+      "lat": -34.52,
+      "lng": 138.68,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Decimal coordinates in Adelaide thesis section 2.2 describing the same NOVA collection; elevation 68m.",
+      "studyCluster": "nova_2005",
+      "geographicCluster": "south_australia",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "See primary study; water regime documented separately.",
+      "cultivars": [
+        "Picual",
+        "Barnea",
+        "Arbequina",
+        "Hojiblanca",
+        "Manzanilla de Sevilla",
+        "others"
+      ],
+      "years": [
+        2002,
+        2003,
+        2004
+      ],
+      "harvestYears": 3,
+      "annualReliability": "young_orchard_unknown_mature_reliability",
+      "observations": "Replicated cultivated varieties, many DNA-verified; fruit weighed three years. Picual, Barnea and Arbequina among early productive cultivars. Irrigated using soil-moisture monitoring. Table 9 uses age-adjusted relative yields, including negatives; those cannot be presented as actual harvest weights.",
+      "yieldSeries": null,
+      "freezeEvidence": null,
+      "sources": [
+        {
+          "title": "National Olive Variety Assessment (NOVA), Stage 2, RIRDC 05/155",
+          "url": "https://www.floridaolive.org/wp-content/uploads/2020/08/Australian-Olive-Variety-Assesment-stage2-1.pdf",
+          "publisherUrl": "https://agrifutures.com.au/wp-content/uploads/publications/05-155.pdf",
+          "locator": "pp.20-23 and 45: 2002-2004 fruit yield; Table 9 is age-adjusted relative yield, not actual harvest mass"
+        },
+        {
+          "title": "University of Adelaide thesis, chapter 2: Orchard layout, plant materials, and climatic recordings",
+          "url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/57515/8/02whole.pdf",
+          "locator": "Section 2.2: NOVA collection at Roseworthy; printed decimal coordinates, irrigation"
+        }
+      ]
+    },
+    {
+      "id": "uy-las-brujas",
+      "name": "INIA Las Brujas, Uruguay",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports station coordinate 34°40′S 56°20′W.",
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "conde-innamorato-2019",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Drip irrigation 100% ETc; raised beds; 4–6 preventive/disease-control sprays per season.",
+      "cultivars": [
+        "Arbequina",
+        "Picual",
+        "Frantoio",
+        "Leccino",
+        "Manzanilla de Sevilla",
+        "Barnea"
+      ],
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "harvestYears": 8,
+      "annualReliability": "variable",
+      "observations": "Average fruit yield: Arbequina 11.1, Picual 11.3 t/ha/year. Pronounced alternate bearing; 2013 near-zero except Barnea. All cultivar ABI values above 0.58.",
+      "reliabilityQualifier": "Eight-year production demonstrates feasibility with irrigation and fungicides; does not demonstrate a harvest every year.",
+      "sources": [
+        {
+          "title": "It Is Feasible to Produce Olive Oil in Temperate Humid Climate Regions",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01544/full",
+          "doi": "10.3389/fpls.2019.01544",
+          "locator": "Methods; Figure 3; Tables 5–6"
+        }
+      ]
+    },
+    {
+      "id": "uy-salto-grande",
+      "name": "INIA Salto Grande, Uruguay",
+      "lat": -31.266667,
+      "lng": -57.883333,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports station coordinate 31°16′S 57°53′W.",
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "conde-innamorato-2019",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Drip irrigation 100% ETc; freely drained soil; 4–6 disease-control sprays per season.",
+      "cultivars": [
+        "Arbequina",
+        "Picual",
+        "Manzanilla de Sevilla",
+        "Frantoio"
+      ],
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "harvestYears": 8,
+      "annualReliability": "variable",
+      "observations": "Average fruit yield Arbequina and Picual each 7.9 t/ha/year; Frantoio 2.3. High interannual variability.",
+      "reliabilityQualifier": "Humid managed production, with cultivar effects and alternate bearing; not an annual-yield guarantee.",
+      "sources": [
+        {
+          "title": "It Is Feasible to Produce Olive Oil in Temperate Humid Climate Regions",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01544/full",
+          "doi": "10.3389/fpls.2019.01544",
+          "locator": "Methods; Figure 3; Table 6"
+        }
+      ]
+    },
+    {
+      "id": "cl-huasco-inia",
+      "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports experiment coordinate 28°34′S 70°47′W.",
+      "studyCluster": "tapia-2009",
+      "geographicCluster": "tapia-2009",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Drip irrigation averaging 8000 m³/ha/year; two copper applications for leaf spot; 29 cultivars, 5–7 trees each.",
+      "cultivars": [
+        "Arbequina",
+        "Picholine",
+        "Manzanilla Racimo",
+        "Picual",
+        "Manzanilla de Sevilla",
+        "Frantoio",
+        "Ascolana Huasco",
+        "Leccino"
+      ],
+      "years": [
+        2003,
+        2004,
+        2005,
+        2006,
+        2007
+      ],
+      "harvestYears": 5,
+      "annualReliability": "variable",
+      "observations": "Five-year mean fruit production 37.37 kg/tree; cumulative about 186 kg/tree. Trial-average alternate bearing index 0.52; selected cultivars combined productivity and lower alternation.",
+      "reliabilityQualifier": "Five measured harvest years support managed production, with moderate alternate bearing.",
+      "sources": [
+        {
+          "title": "Preliminary Evaluation of 29 Olive Cultivars for Production and Alternate Bearing, Huasco Valley",
+          "url": "https://www.scielo.cl/scielo.php?lng=p&nrm=iso&pid=S0718-58392009000300004&script=sci_arttext&tlng=p",
+          "locator": "Materials and methods; abstract; 2003–2007 production"
+        }
+      ]
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "name": "Tierras Blancas, San Felipe, Chile",
+      "lat": -32.783333,
+      "lng": -70.7,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports orchard coordinate 32°47′S 70°42′W, altitude 800 m.",
+      "studyCluster": "selles-2006",
+      "geographicCluster": "selles-2006",
+      "evaluationGroup": "measured_multiyear_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Micro-sprinkler control 100% ETc and deficit treatments; mature 8-year-old table-olive orchard; pollinizers 15%.",
+      "cultivars": [
+        "Sevillana",
+        "Empeltre",
+        "Ascolana Tenera"
+      ],
+      "years": [
+        1999,
+        2000,
+        2001
+      ],
+      "harvestYears": 3,
+      "annualReliability": "variable",
+      "observations": "Fruit loads and harvest yields measured for three seasons, 1998–99 through 2000–01. 1999–2000 was the high-crop year; other two were low-crop years. Continuous deficit reduced high-year fruit load.",
+      "reliabilityQualifier": "Repeated table-olive production with ordinary alternate bearing, conditional on irrigation.",
+      "sources": [
+        {
+          "title": "Effect of Different Irrigation Treatments on Fruit Load, Fruit Size and Yield of Olive Trees cv. Sevillana",
+          "url": "https://scielo.conicyt.cl/scielo.php?pid=S0365-28072006000100006&script=sci_arttext",
+          "doi": "10.4067/S0365-28072006000100006",
+          "locator": "Methods and results; Tables 3–5"
+        }
+      ]
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "name": "Commercial orchard 15 km east of Aimogasta, Argentina",
+      "lat": -28.55,
+      "lng": -66.816667,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports orchard coordinate 28°33′S 66°49′W, altitude 800 m.",
+      "studyCluster": "correa-tedesco-2010",
+      "geographicCluster": "correa-tedesco-2010",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Mature table olives; five drip irrigation Kc levels 0.50–1.15; watered 2–3 times weekly.",
+      "cultivars": [
+        "Manzanilla fina"
+      ],
+      "years": [
+        2006,
+        2007
+      ],
+      "harvestYears": 2,
+      "annualReliability": "not-established",
+      "observations": "Fruit yields measured in both seasons. Second-year maximum at Kc 0.70–0.85; reduced irrigation reduced fruit number. No unirrigated treatment.",
+      "reliabilityQualifier": "Two-year irrigation experiment cannot establish long-term production reliability.",
+      "sources": [
+        {
+          "title": "Plant growth and yield responses in olive to different irrigation levels in an arid region of Argentina",
+          "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/68532/CONICET_Digital_Nro.e6a9d979-1374-43af-9b66-8ed5be45c515_A.pdf?isAllowed=y&sequence=2",
+          "doi": "10.1016/j.agwat.2010.06.020",
+          "locator": "Methods section 2.1 and yield results"
+        }
+      ]
+    },
+    {
+      "id": "ar-junin-inta",
+      "name": "INTA Junín Olive Germplasm Collection, Mendoza, Argentina",
+      "lat": -33.1,
+      "lng": -68.483333,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Both papers report experimental farm coordinate 33°06′S 68°29′W, altitude 653 m.",
+      "studyCluster": "junin-multiple-studies",
+      "geographicCluster": "junin-multiple-studies",
+      "evaluationGroup": "fruit_quality_sampling",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Surface irrigation approximately every 15 days for mature germplasm collection; shading experiment separately tests Arbequina.",
+      "cultivars": [
+        "Arbequina",
+        "Arauco",
+        "Blanqueta",
+        "Canino",
+        "Criolla Salvarredi",
+        "Villalonga"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "harvestYears": 5,
+      "annualReliability": "not-established",
+      "observations": "Fruit/oil sampled in three consecutive 2010–11 through 2012–13 seasons (Arbequina), and 18 varieties sampled during 2013–14 and 2014–15. Oil-extraction percentage is not orchard fruit yield.",
+      "reliabilityQualifier": "Repeated edible-olive harvest presence is supported; these quality studies do not establish harvest tonnage consistency.",
+      "sources": [
+        {
+          "title": "Effect of shading in different periods from flowering to maturity on fatty acid and phenolic composition of olive oil",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304423818303911",
+          "locator": "Experimental site and 2010–2013 seasons"
+        },
+        {
+          "title": "Promising olive varieties for extra virgin oil production in Mendoza, Argentina",
+          "url": "https://link.springer.com/article/10.1016/j.jssas.2022.06.003",
+          "doi": "10.1016/j.jssas.2022.06.003",
+          "locator": "Methods 2.1; Tables 1 and 4"
+        }
+      ]
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "name": "Beihe Olive Commercial Orchard, Xixi village, Xichang, China",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports orchard coordinate 27°44′N 102°14′E, elevation 1590 m.",
+      "studyCluster": "liu-2019-xichang",
+      "geographicCluster": "liu-2019-xichang",
+      "evaluationGroup": "short_production",
+      "eligible": true,
+      "priorUsed": true,
+      "waterScenario": "both",
+      "management": "Rainfed, flood and drip treatments. Irrigation late November–late May; winter/spring dry despite wet summer. Other practices follow commercial orchard management.",
+      "cultivars": [
+        "Coratina",
+        "Koroneiki"
+      ],
+      "years": [
+        2016,
+        2017
+      ],
+      "harvestYears": 2,
+      "annualReliability": "not-established",
+      "observations": "Two-season mean fruit kg/tree: Coratina rainfed 4.71, drip 30.38; Koroneiki rainfed 3.76, drip 28.19. Drip substantially increased flowering, fruit set and oil yield.",
+      "reliabilityQualifier": "Two-year site experiment supports managed fruiting, not blanket southern-China suitability or long-term regular yields.",
+      "sources": [
+        {
+          "title": "Drip Irrigation Elevated Olive Productivity in Southwest China",
+          "url": "https://journals.ashs.org/horttech/view/journals/horttech/29/2/article-p122.xml",
+          "doi": "10.21273/HORTTECH04211-18",
+          "locator": "Methods; Tables 2–3",
+          "accessibleCopy": "https://pdfs.semanticscholar.org/8c64/4cc64e7d94f3a2c57847d60c3533ada8514f.pdf"
+        }
+      ]
+    },
+    {
+      "id": "us-tx-weslaco",
+      "name": "Established Arbequina grove near Weslaco, Texas, USA",
+      "lat": 26.16,
+      "lng": -97.93,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Primary USDA-ARS paper explicitly reports grove coordinate N26.16 W97.93; 60 established trees.",
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "malik-2011-texas",
+      "evaluationGroup": "unreliable_flowering",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "unknown",
+      "management": "Established open-field grove; no imposed canopy cooling reported for this trial.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009
+      ],
+      "harvestYears": 4,
+      "annualReliability": "poor",
+      "observations": "Percent trees fruiting 2006–09: [0,63,0,0]. Flowering [0,79,0,0]. Inhibitory winter daytime warmth implicated.",
+      "reliabilityQualifier": "Three fruitless years of four; occasional survival/fruiting is not reliable production.",
+      "sources": [
+        {
+          "title": "Feasibility of Growing Olives on Selected Sites along Coastal Texas",
+          "url": "https://www.floridaolive.org/wp-content/uploads/2017/08/Growing-Olives-Texas-Coast.pdf",
+          "locator": "Methods 2.1; Tables 1–3",
+          "provenance": "Primary USDA-ARS author paper hosted by Florida Olive Council"
+        }
+      ]
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "name": "Texas Olive Ranch, Carrizo Springs, Texas, USA",
+      "lat": 28.41,
+      "lng": -99.73,
+      "coordinatePrecisionKm": 2,
+      "coordinateProvenance": "Paper reports commercial orchard coordinate N28.41 W99.73; 1000 randomly selected trees.",
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "malik-2011-texas",
+      "evaluationGroup": "unreliable_flowering",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "unknown",
+      "management": "Commercial 20,000-tree orchard; sampled cultivar clone I-18.",
+      "cultivars": [
+        "Arbequina I-18"
+      ],
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009
+      ],
+      "harvestYears": 4,
+      "annualReliability": "poor",
+      "observations": "Percent trees fruiting 2006–09: [0,99,0,18]. Flowering [0,99,0,14]. Winter daytime heat interruptions implicated.",
+      "reliabilityQualifier": "Two fruitless years and one sparse year of four; substantial single harvest cannot establish reliability.",
+      "sources": [
+        {
+          "title": "Feasibility of Growing Olives on Selected Sites along Coastal Texas",
+          "url": "https://www.floridaolive.org/wp-content/uploads/2017/08/Growing-Olives-Texas-Coast.pdf",
+          "locator": "Methods 2.1; Tables 1–3",
+          "provenance": "Primary USDA-ARS author paper hosted by Florida Olive Council"
+        }
+      ]
+    },
+    {
+      "id": "us-tx-orange",
+      "name": "Experimental Arbequina grove, Orange, Texas, USA",
+      "lat": 29.56,
+      "lng": -93.87,
+      "coordinatePrecisionKm": 100,
+      "coordinateProvenance": "Paper reports N29.56 W93.87 for Orange, but this appears offshore, south of Orange, Texas. Retained as reported and excluded pending correction by an independent primary location record; 50 replicate trees planted 2004.",
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "malik-2011-texas",
+      "evaluationGroup": "short_production",
+      "eligible": false,
+      "priorUsed": false,
+      "waterScenario": "unknown",
+      "management": "Small experimental planting; no commercial yield/economic test.",
+      "cultivars": [
+        "Arbequina"
+      ],
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009
+      ],
+      "harvestYears": 4,
+      "annualReliability": "not-established",
+      "observations": "Percent trees fruiting 2006–09: [56,73,42,63]. Moderate-to-extensive fruiting: [30,38,9,34]%.",
+      "reliabilityQualifier": "Repeated fruiting, but most trees did not crop heavily and commercial tonnage unmeasured.",
+      "sources": [
+        {
+          "title": "Feasibility of Growing Olives on Selected Sites along Coastal Texas",
+          "url": "https://www.floridaolive.org/wp-content/uploads/2017/08/Growing-Olives-Texas-Coast.pdf",
+          "locator": "Methods 2.1; Table 2",
+          "provenance": "Primary USDA-ARS author paper hosted by Florida Olive Council"
+        }
+      ],
+      "exclusionReason": "Coordinate not orchard-specific or source-coordinate conflict; excluded from spatial metrics."
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "coordinatePrecisionKm": 1,
+      "coordinateProvenance": "Final 2016 ASHS paper reports site coordinate and elevation 2700 ft; 2015 conference poster has a nearby differing station coordinate. Final paper coordinate retained.",
+      "studyCluster": "miyasaka-2016-hawaii",
+      "geographicCluster": "miyasaka-2016-hawaii",
+      "evaluationGroup": "cultivar_challenge",
+      "eligible": true,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Drip irrigation; volcanic well-drained soil; wind guards during establishment; intensive research management.",
+      "cultivars": [
+        "Arbequina",
+        "Arbosana",
+        "Koroneiki",
+        "Coratina",
+        "Frantoio",
+        "Leccino",
+        "Mission",
+        "Moraiolo",
+        "Pendolino",
+        "Taggiasca"
+      ],
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "harvestYears": 3,
+      "annualReliability": "poor",
+      "observations": "Arbequina, Arbosana, Koroneiki fruited in 2013–15; mean 2013–14 yield 2.14–2.45 kg/tree. Seven other cultivars unharvestable. Only two trees each harvested in 2015 after fruit drop.",
+      "reliabilityQualifier": "Low-chill cultivars can fruit repeatedly; small young-tree trial and uneven harvests do not establish reliable economic production.",
+      "sources": [
+        {
+          "title": "Promising Olive Cultivars for Oil Production in Hawaii",
+          "url": "https://journals.ashs.org/downloadpdf/journals/horttech/26/4/article-p497.pdf",
+          "doi": "10.21273/HORTTECH.26.4.497",
+          "locator": "Abstract; methods"
+        },
+        {
+          "title": "Reflective Guide to Growing Olives for Oil Production in Hawai‘i",
+          "url": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/NPH-16.pdf",
+          "locator": "Pages 2–3, 6–8; Table 3"
+        }
+      ]
+    },
+    {
+      "id": "us-ca-corning-context",
+      "name": "California Olive Ranch orchard near Corning, California, USA",
+      "lat": 39.9277,
+      "lng": -122.1792,
+      "coordinatePrecisionKm": 30,
+      "coordinateProvenance": "Representative town location only; paper names commercial orchard in Corning but gives no plot coordinates. Excluded from precise validation.",
+      "studyCluster": "polari-2021-corning",
+      "geographicCluster": "polari-2021-corning",
+      "evaluationGroup": "short_production",
+      "eligible": false,
+      "priorUsed": false,
+      "waterScenario": "irrigated",
+      "management": "Commercial super-high-density orchard, surface drip in spring and summer.",
+      "cultivars": [
+        "Arbequina",
+        "Arbosana",
+        "Koroneiki"
+      ],
+      "years": [
+        2016,
+        2017,
+        2018
+      ],
+      "harvestYears": 3,
+      "annualReliability": "not-established",
+      "observations": "Fruit sampled throughout ripening in three consecutive harvest seasons. Quality/composition study, not measured orchard yield consistency.",
+      "reliabilityQualifier": null,
+      "sources": [
+        {
+          "title": "Cultivar Determines Fatty Acids and Phenolics Dynamics for Olive Fruit and Oil in Super-High-Density Orchards",
+          "url": "https://mdpi-res.com/d_attachment/agronomy/agronomy-11-00313/article_deploy/agronomy-11-00313-v2.pdf",
+          "doi": "10.3390/agronomy11020313",
+          "locator": "Methods 2.1"
+        }
+      ],
+      "exclusionReason": "Coordinate not orchard-specific or source-coordinate conflict; excluded from spatial metrics."
+    },
+    {
+      "id": "cn-lishui-context",
+      "name": "Lishui cultivar trial, Zhejiang, China",
+      "lat": 28.467,
+      "lng": 119.922,
+      "coordinatePrecisionKm": 100,
+      "coordinateProvenance": "Representative city location only; accessible abstract locates trial in Lishui City without orchard coordinate. Mountainous municipal area is large. Excluded from precise validation.",
+      "studyCluster": "niu-2021-lishui",
+      "geographicCluster": "niu-2021-lishui",
+      "evaluationGroup": "short_production",
+      "eligible": false,
+      "priorUsed": false,
+      "waterScenario": "unknown",
+      "management": "Pollinizer selection emphasized. Accessible abstract does not report complete water or disease management or exact trial calendar.",
+      "cultivars": [
+        "Nichiskii I",
+        "Arbequina",
+        "Koroneiki",
+        "Fecciaro",
+        "Frantoio",
+        "Limona",
+        "Manzanilla",
+        "Nocellara del Belice",
+        "Peranzana",
+        "Taggiasca"
+      ],
+      "years": [],
+      "harvestYears": 0,
+      "annualReliability": "not-established",
+      "observations": "Five-year trial; third bearing year fruiting rates 100%,90%,65% and yields 16.4,10.9,5.9 kg/tree for Nichiskii I, Arbequina, Koroneiki. Abstract alone does not establish multi-year yield consistency.",
+      "reliabilityQualifier": null,
+      "sources": [
+        {
+          "title": "Screening of Outstanding Olive Varieties and Compatable Pollinizers for Southern China",
+          "url": "https://www.hnxb.org.cn/CN/10.11869/j.issn.100-8551.2021.04.0960",
+          "doi": "10.11869/j.issn.100-8551.2021.04.0960",
+          "locator": "English and Chinese abstracts"
+        }
+      ],
+      "exclusionReason": "Coordinate not orchard-specific or source-coordinate conflict; excluded from spatial metrics."
+    }
+  ],
+  "contextOnly": [
+    {
+      "id": "jp_kagawa_context",
+      "name": "Shodoshima/Kagawa edible-olive production",
+      "evidenceClass": "official_production_context",
+      "spatialEvaluationEligible": false,
+      "coordinates": null,
+      "reasonExcluded": "Official history establishes edible cultivars, fruit-processing and oil production since early 1900s, but no exact orchard coordinate with a multi-year measured harvest series found. Do not replace this with the existing benchmark pin.",
+      "sourceUrls": [
+        "https://www.pref.kagawa.lg.jp/noshishozu/noshi_olive/sori.html",
+        "https://www.kensanpin.org/en/olive/basic_info/",
+        "https://www.japanfruit.jp/Portals/0/images/fruit/endemic/pdf/oriibu.pdf"
+      ]
+    },
+    {
+      "id": "nz_management_context",
+      "name": "New Zealand MPI three-year olive-production management trial",
+      "evidenceClass": "official_multi_year_regional_production_context",
+      "spatialEvaluationEligible": false,
+      "coordinates": null,
+      "reasonExcluded": "Five grove trial across major regions; MPI reports 20-35kg/tree by project end after pruning/disease-control changes. Exact site coordinates and per-site annual series absent from public summary. Cannot geolocate regional yields to town/pin centroids.",
+      "sourceUrls": [
+        "https://www.mpi.govt.nz/dmsdocument/38924/direct/",
+        "https://www.olivesnz.org.nz/wp-content/uploads/2011/06/2011-Year-3-Final-Technical-Report-_Effects_of_Harvest_Maturity_on_Extra_Virgin_Olive-PFR-2011-25568-FINAL.pdf"
+      ]
+    },
+    {
+      "id": "za_growing_context",
+      "name": "Western Cape commercial cultivated olives",
+      "evidenceClass": "industry_cultivar_context",
+      "spatialEvaluationEligible": false,
+      "coordinates": null,
+      "reasonExcluded": "South African Olive Association documents edible table/oil cultivars and management. No exact-location multi-year quantitative harvest series located in this bounded search; no invented orchard coordinate.",
+      "sourceUrls": [
+        "https://www.saolive.co.za/olive-growing/"
+      ]
+    },
+    {
+      "id": "tn_mornag_excluded",
+      "name": "Mornag Chetoui irrigation experiment",
+      "evidenceClass": "coordinate_conflict_excluded",
+      "spatialEvaluationEligible": false,
+      "coordinates": null,
+      "reasonExcluded": "Three-year 2005-2007 primary yield study prints latitude 32°7 but describes Mornag plain 15km southeast of Tunis. Geographic inconsistency prevents a trustworthy point comparison without clarification; do not silently repair the coordinate.",
+      "sourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4912070/"
+      ]
+    },
+    {
+      "title": "Olives – Texas Fruit and Nut Production",
+      "url": "https://mytexas.ag.tamu.edu/publications/olives-texas-fruit-and-nut-production/",
+      "finding": "2021 freeze devastated production in Hill Country/Central/East Texas north of Highway 90. Trees killed to ground can take three years to fruit. Lower Rio Grande Valley olives often fail to flower. This is regional extension evidence, not orchard-coordinate observations; excluded from point-specific performance statistics."
+    },
+    {
+      "title": "Sostenibilidad del cultivo de olivo bajo un enfoque climatológico en una región árida, cabecera del desierto de Atacama",
+      "url": "https://revistacta.agrosavia.co/html/2652/",
+      "finding": "Tacna, Peru regional mean 5.41 t/ha for 2012–15, with SENAMHI La Yarada weather station 18°14′S 70°23′W. Station is not an identified yield orchard; do not pass station coordinates off as an orchard. Regional production corroboration only."
+    }
+  ]
+}

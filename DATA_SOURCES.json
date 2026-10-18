@@ -71,16 +71,65 @@
       "source_unit": "degC (converted from degF)",
       "name": "Mean annual extreme minimum temperature, CONUS only",
       "optional": true
+    },
+    {
+      "id": "globalExtremeMeanC",
+      "multiplier": 10,
+      "source_unit": "degC",
+      "name": "1991-2020 mean of annual minimum daily-minimum temperature",
+      "optional": true
+    },
+    {
+      "id": "freezeWorstC",
+      "multiplier": 10,
+      "source_unit": "degC",
+      "name": "Coldest annual TNn in 1991-2025 exposure window",
+      "optional": true
+    },
+    {
+      "id": "freezeYears7",
+      "multiplier": 1,
+      "source_unit": "years",
+      "name": "Number of observed years with annual TNn <= -7 C in 1991-2025",
+      "optional": true
+    },
+    {
+      "id": "freezeYears10",
+      "multiplier": 1,
+      "source_unit": "years",
+      "name": "Number of observed years with annual TNn <= -10 C in 1991-2025",
+      "optional": true
+    },
+    {
+      "id": "freezeYears12",
+      "multiplier": 1,
+      "source_unit": "years",
+      "name": "Number of observed years with annual TNn <= -12.2 C in 1991-2025",
+      "optional": true
+    },
+    {
+      "id": "freezeYears",
+      "multiplier": 1,
+      "source_unit": "years",
+      "name": "Number of valid annual TNn records in 1991-2025",
+      "optional": true
+    },
+    {
+      "id": "freezeWorstYear",
+      "multiplier": 1,
+      "source_unit": "year",
+      "name": "Calendar year of coldest annual TNn in 1991-2025",
+      "optional": true
     }
   ],
   "nodata": -32768,
   "encoding": "gzip / little-endian int16 / field-major row-major",
   "resampling": "Nearest-neighbor read of published COG overviews to approximately 10 arc-minute grid; not native 1 km detail",
-  "binary_sha256": "2b9a4039e80947f84c56b1ee085e530c26cf1c0a82649f63afdd2b339c3aafe9",
-  "compressed_sha256": "28f748a098580e680f7daa1287ddc810dd85f14ab21ab63169847fd797378096",
+  "binary_sha256": "ffb71a0d7fa4753684b91b991ebc07ca95460814ea95b21a68361bc37be6a4fb",
+  "compressed_sha256": "ef186c65b7e18eec64823753dbd146c132cdf4fcc429f3b7dcb13eb8b0fb115b",
   "bytes": {
-    "raw": 49610880,
-    "gzip": 12056786
+    "raw": 81181440,
+    "gzip": 13821000
   },
   "sources": {
     "bio05": {
@@ -673,8 +722,8 @@
   "dataset_url": "https://www.chelsa-climate.org/datasets/chelsa_bioclim",
   "citation": "Brun et al. (2022), ESSD 14, 5573–5603, doi:10.5194/essd-14-5573-2022; Karger et al. (2017), Scientific Data 4, 170122, doi:10.1038/sdata.2017.122",
   "score_rasters": {
-    "irrigated_offset": 45100800,
-    "rainfed_offset": 47355840,
+    "irrigated_offset": 76671360,
+    "rainfed_offset": 78926400,
     "type": "uint8",
     "nodata": 255
   },
@@ -709,14 +758,67 @@
       "available_climate_cells": 30403,
       "terms": "OSU permits redistribution and alteration with prominent unofficial-map disclaimer and no agency logos. This crop screen is not the official USDA Plant Hardiness Zone Map.",
       "caveats": "Mean of annual extremes, not worst historical freeze, event probability, freeze duration or a guarantee of survival. The 1991-2020 baseline excludes February 2021."
+    },
+    "global_freeze": {
+      "dataset": "ERA5-EX Dataset (v1.0)",
+      "doi": "10.6084/m9.figshare.31812172.v4",
+      "paper": "https://doi.org/10.1038/s41597-026-08312-x",
+      "license": "CC BY 4.0",
+      "attribution": [
+        {
+          "id": 23590828,
+          "full_name": "Shilei Peng",
+          "first_name": "Shilei",
+          "last_name": "Peng",
+          "is_active": true,
+          "url_name": "Shilei_Peng",
+          "orcid_id": ""
+        }
+      ],
+      "download_url": "https://ndownloader.figshare.com/files/70064676",
+      "file_name": "TNn_1950_2025.nc",
+      "source_md5": "bbd16bd9abc98170ec701b56c7cd91e5",
+      "source_sha256": "30e5c18c401f448aa942279e62dfe3173fe74238ca665599fe59833473fbd281",
+      "native_shape": [
+        76,
+        1801,
+        3600
+      ],
+      "native_resolution_degrees": 0.1,
+      "native_longitude": "0 to 359.9 E",
+      "native_latitude": "90 N to 90 S",
+      "source_units": "degC",
+      "source_reduction": "Annual minimum of daily minimum 2m air temperature from ERA5-Land",
+      "climatology": "1991-2020 mean, minimum 27 of 30 valid years",
+      "exposure_window": "1991-2025, minimum 30 of 35 valid years",
+      "resampling": "Nearest native 0.1-degree point at each existing 10-minute climate-cell center; longitude wrapped to 0-360. No spatial gap filling.",
+      "missing": "Masked/nonfinite/default netCDF fill values outside physical -150 to 80 C range excluded; fields use -32768 packed nodata.",
+      "coverage_cells": {
+        "globalExtremeMeanC": 796164,
+        "freezeWorstC": 796164,
+        "freezeYears": 796164,
+        "freezeWorstYear": 796164,
+        "freezeYears7": 796164,
+        "freezeYears10": 796164,
+        "freezeYears12": 796164
+      },
+      "caveats": [
+        "Reanalysis exposure counts are not mortality or crop-failure probabilities.",
+        "Annual minima do not measure freeze duration, timing or acclimation.",
+        "0.1 degree data do not resolve orchard cold pools or small-island climate.",
+        "Source authors report material regional errors against HadEX3, including Mediterranean TNn MAE about 2.5 C; differing spatial support prevents treating this as an orchard error bar.",
+        "CONUS PRISM remains the preferred annual-extreme climatology where present; global ERA5-EX supplies historical tail exposure everywhere available."
+      ],
+      "retrieved_utc": "2026-10-18T15:39:17.785921+00:00"
     }
   },
-  "model_version": "2.1",
+  "model_version": "3.0",
   "crop_scope": "Fruit production of cultivated Olea europaea subsp. europaea (oil and table cultivars), excluding African/wild olive occurrence data and non-Olea lookalikes.",
   "score_rules": {
     "warm_winter": "When cold-quarter mean exceeds 11 C, score cannot exceed the cultivar-unspecific flowering-proxy response.",
     "wet_summer": "Wetness response below 90 caps score to min(79, response).",
-    "freeze": "Where available, PRISM mean annual extreme minimum response independently caps score. Missing extremes remain unknown; no regional box overrides."
+    "freeze": "Global ERA5-EX 1991-2020 annual TNn mean caps score; CONUS PRISM refines mean where available. No monthly-mean substitute or spatial gap filling.",
+    "freeze_tail": "1991-2025: >=1 year <=-12.2C caps59; >=20% years <=-7C caps79; >=20% years <=-10C caps39. Require>=30 valid years. Conservative policy choices, not crop-death probabilities."
   },
-  "model_core_sha256": "279bf202ede64f2ece2b59aa193083618b3cc20fcadfdaf64e9da58429b9db82"
+  "model_core_sha256": "a9360ad68254f0b7bfd982a9499f2e1ee404d10de8d43ba0e0eb7904ceb82a93"
 }

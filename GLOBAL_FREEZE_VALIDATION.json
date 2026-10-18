@@ -1,0 +1,200 @@
+{
+  "sourceMD5": "bbd16bd9abc98170ec701b56c7cd91e5",
+  "manifestMD5": "bbd16bd9abc98170ec701b56c7cd91e5",
+  "scalarControls": [
+    {
+      "name": "Spain",
+      "lat": 37.6,
+      "lng": -4.2,
+      "native_sample_lat": 37.6,
+      "native_sample_lng": 355.7,
+      "expected": {
+        "freezeWorstC": -5.0,
+        "freezeYears": 35,
+        "freezeWorstYear": 2012,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": -3.2
+      },
+      "passed": true
+    },
+    {
+      "name": "Japan",
+      "lat": 34.48,
+      "lng": 134.28,
+      "native_sample_lat": 34.4,
+      "native_sample_lng": 134.2,
+      "expected": {},
+      "passed": true
+    },
+    {
+      "name": "Chile",
+      "lat": -34.4,
+      "lng": -71.2,
+      "native_sample_lat": -34.4,
+      "native_sample_lng": 288.7,
+      "expected": {
+        "freezeWorstC": -4.4,
+        "freezeYears": 35,
+        "freezeWorstYear": 2017,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": -1.8
+      },
+      "passed": true
+    },
+    {
+      "name": "Western Australia",
+      "lat": -33.1,
+      "lng": 116.1,
+      "native_sample_lat": -33.1,
+      "native_sample_lng": 116.1,
+      "expected": {
+        "freezeWorstC": 1.3,
+        "freezeYears": 35,
+        "freezeWorstYear": 2004,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": 2.7
+      },
+      "passed": true
+    },
+    {
+      "name": "South Africa",
+      "lat": -33.6,
+      "lng": 19.3,
+      "native_sample_lat": -33.6,
+      "native_sample_lng": 19.2,
+      "expected": {
+        "freezeWorstC": -5.8,
+        "freezeYears": 35,
+        "freezeWorstYear": 2003,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": -0.9
+      },
+      "passed": true
+    },
+    {
+      "name": "Texas",
+      "lat": 30.1,
+      "lng": -98.9,
+      "native_sample_lat": 30.1,
+      "native_sample_lng": 261.1,
+      "expected": {
+        "freezeWorstC": -14.4,
+        "freezeYears": 35,
+        "freezeWorstYear": 2021,
+        "freezeYears7": 7,
+        "freezeYears10": 4,
+        "freezeYears12": 1,
+        "globalExtremeMeanC": -5.0
+      },
+      "passed": true
+    },
+    {
+      "name": "Uruguay",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "native_sample_lat": -34.6,
+      "native_sample_lng": 303.7,
+      "expected": {
+        "freezeWorstC": -3.5,
+        "freezeYears": 35,
+        "freezeWorstYear": 2009,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": -0.4
+      },
+      "passed": true
+    },
+    {
+      "name": "China",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "native_sample_lat": 27.7,
+      "native_sample_lng": 102.2,
+      "expected": {
+        "freezeWorstC": -10.5,
+        "freezeYears": 35,
+        "freezeWorstYear": 2008,
+        "freezeYears7": 8,
+        "freezeYears10": 1,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": -5.3
+      },
+      "passed": true
+    },
+    {
+      "name": "Hawaii",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "native_sample_lat": 20.1,
+      "native_sample_lng": 204.2,
+      "expected": {
+        "freezeWorstC": 12.3,
+        "freezeYears": 35,
+        "freezeWorstYear": 2005,
+        "freezeYears7": 0,
+        "freezeYears10": 0,
+        "freezeYears12": 0,
+        "globalExtremeMeanC": 14.1
+      },
+      "passed": true
+    },
+    {
+      "name": "North Atlantic ocean",
+      "lat": 0,
+      "lng": -30,
+      "native_sample_lat": 0.1,
+      "native_sample_lng": 330.1,
+      "expected": {},
+      "passed": true
+    },
+    {
+      "name": "Toronto",
+      "lat": 43.65,
+      "lng": -79.38,
+      "native_sample_lat": 43.6,
+      "native_sample_lng": 280.6,
+      "expected": {
+        "freezeWorstC": -23.6,
+        "freezeYears": 35,
+        "freezeWorstYear": 2015,
+        "freezeYears7": 35,
+        "freezeYears10": 35,
+        "freezeYears12": 34,
+        "globalExtremeMeanC": -18.1
+      },
+      "passed": true
+    }
+  ],
+  "allScalarControlsPassed": true,
+  "localObservationComparisons": [
+    {
+      "id": "it_maiolati_freeze",
+      "eventYear": 2012,
+      "observedC": -6.4,
+      "observedRelation": "=",
+      "modeledC": -13.9,
+      "nativeOrchardNearestC": -11.4,
+      "differenceAtLeastC": 7.5,
+      "interpretation": "Reported local event temperature differs materially from reanalysis. A broad hazard flag does not validate local freeze severity; no bias correction or score override is fitted to this example."
+    },
+    {
+      "id": "es_pedro_abad_longterm",
+      "eventYear": 2005,
+      "observedC": -9,
+      "observedRelation": "<",
+      "modeledC": -4.9,
+      "nativeOrchardNearestC": -4.4,
+      "differenceAtLeastC": 4.1,
+      "interpretation": "Reported local event temperature differs materially from reanalysis. A broad hazard flag does not validate local freeze severity; no bias correction or score override is fitted to this example."
+    }
+  ]
+}

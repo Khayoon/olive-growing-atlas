@@ -44,3 +44,7 @@ USDA-ARS logo:  https://prism.oregonstate.edu/inc/images/usda-ars_logo.png
 OSU logo:  https://prism.oregonstate.edu/inc/images/oregonstate_logo.png
 
 This atlas alters/resamples the source data to derive crop-screening scores. It is not the official USDA Plant Hardiness Zone Map. USDA-ARS and OSU logos are omitted. Source: https://prism.oregonstate.edu/phzm/ ; 1991-2020 mean annual extreme minima, CONUS only.
+
+
+ERA5-EX global annual extremes
+Peng, Shilei (2026). ERA5-EX Dataset (v1.0), Figshare version4. DOI:10.6084/m9.figshare.31812172.v4 . CC BY4.0: https://creativecommons.org/licenses/by/4.0/ . Source TNn_1950_2025.nc, MD5 bbd16bd9abc98170ec701b56c7cd91e5 . This application derives1991-2020 means and1991-2025 minima/threshold counts, converts to packed0.1C values, and samples the native0.1-degree grid onto a10-arc-minute grid. The crop suitability score is the application's interpretation, not the dataset author's model. Methods: https://doi.org/10.1038/s41597-026-08312-x .
