@@ -1,0 +1,73 @@
+{
+  "version": "4.0",
+  "nativeGrid": {
+    "west": 32.099860262749985,
+    "north": 35.79986060795001,
+    "dx": 0.0083333333,
+    "dy": 0.0083333333,
+    "width": 336,
+    "height": 156
+  },
+  "nativeDataSha256": "c6bfb01a3cc2d9f1584b8a15a42ec6c49b4461eb15ee91182b42ad61797ccff1",
+  "overviewSha256": "c95f7d7357181761d216b8a994973102ff583fe147064d17c12f55b98b356b76",
+  "controls": [
+    {
+      "name": "Mount Olympus",
+      "lat": 34.936,
+      "lng": 32.864,
+      "elevationM": 1887,
+      "coldestMonthMeanLowC": -4.7,
+      "warmQuarterMeanC": 19.2,
+      "rainfed": 38,
+      "irrigated": 38,
+      "freezeAssessed": true
+    },
+    {
+      "name": "Troodos village",
+      "lat": 34.92,
+      "lng": 32.88,
+      "elevationM": 1724,
+      "coldestMonthMeanLowC": -3.5,
+      "warmQuarterMeanC": 20.1,
+      "rainfed": 54,
+      "irrigated": 54,
+      "freezeAssessed": true
+    },
+    {
+      "name": "Paphos",
+      "lat": 34.77,
+      "lng": 32.42,
+      "elevationM": 46,
+      "coldestMonthMeanLowC": 11.7,
+      "warmQuarterMeanC": 26.1,
+      "rainfed": 96,
+      "irrigated": 96,
+      "freezeAssessed": false
+    },
+    {
+      "name": "Limassol",
+      "lat": 34.69,
+      "lng": 33.04,
+      "elevationM": 33,
+      "coldestMonthMeanLowC": 10.8,
+      "warmQuarterMeanC": 27.8,
+      "rainfed": 93,
+      "irrigated": 96,
+      "freezeAssessed": false
+    },
+    {
+      "name": "Nicosia",
+      "lat": 35.17,
+      "lng": 33.36,
+      "elevationM": 151,
+      "coldestMonthMeanLowC": 6.8,
+      "warmQuarterMeanC": 29.3,
+      "rainfed": 86,
+      "irrigated": 95,
+      "freezeAssessed": true
+    }
+  ],
+  "overviewCellsChecked": 285,
+  "scope": "Data encoding, native terrain contrast, scenario consistency and retained freeze caps. Not validation of reliable annual orchard yield.",
+  "failures": []
+}

@@ -1,0 +1,206 @@
+{
+  "grid": {
+    "west": 32.099860262749985,
+    "north": 35.79986060795001,
+    "dx": 0.0083333333,
+    "dy": 0.0083333333,
+    "width": 336,
+    "height": 156
+  },
+  "fields": [
+    {
+      "id": "bio05",
+      "multiplier": 10
+    },
+    {
+      "id": "bio06",
+      "multiplier": 10
+    },
+    {
+      "id": "bio10",
+      "multiplier": 10
+    },
+    {
+      "id": "bio11",
+      "multiplier": 10
+    },
+    {
+      "id": "bio12",
+      "multiplier": 1
+    },
+    {
+      "id": "bio18",
+      "multiplier": 1
+    },
+    {
+      "id": "bio19",
+      "multiplier": 1
+    },
+    {
+      "id": "hursmean",
+      "multiplier": 1
+    },
+    {
+      "id": "fcf",
+      "multiplier": 1
+    },
+    {
+      "id": "elevationM",
+      "multiplier": 1
+    }
+  ],
+  "nodata": -32768,
+  "rawBytes": 1048320,
+  "sha256": "c6bfb01a3cc2d9f1584b8a15a42ec6c49b4461eb15ee91182b42ad61797ccff1",
+  "source": "CHELSA V2.1 native 30 arcsecond window, not overview resampling",
+  "sources": {
+    "bio05": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio05/1981-2010/CHELSA_bio05_1981-2010_V.2.1.tif",
+      "source_etag": "\"623e41da0fc5aaa8dc1c602902c71d1d-15\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "array_sha256": "eb03b8ae41f7745b4067375f91d6efee3d76427c758edb728c0faa2e1ca0fd31"
+    },
+    "bio06": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio06/1981-2010/CHELSA_bio06_1981-2010_V.2.1.tif",
+      "source_etag": "\"0003ccc8b449c047975f8ba4916d7013-14\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "array_sha256": "08b066c16b8e29ded74e9e6cf735d1c9604601e3a4356d5f26c5fe0afe04d38a"
+    },
+    "bio10": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio10/1981-2010/CHELSA_bio10_1981-2010_V.2.1.tif",
+      "source_etag": "\"c04fb7b2efa50d6b554b3d39cdec1040-15\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "array_sha256": "3f92ad08e45d447fc9a8371cb114eee1223ca2269e40921ed30881537cea138a"
+    },
+    "bio11": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio11/1981-2010/CHELSA_bio11_1981-2010_V.2.1.tif",
+      "source_etag": "\"c5d9ac8cf89d56c05c860fbfb2468300-14\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "array_sha256": "e55ee93876d4e5c9324a743536ab0337f67a94be10882d10a0fc6f3ca136e0f6"
+    },
+    "bio12": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio12/1981-2010/CHELSA_bio12_1981-2010_V.2.1.tif",
+      "source_etag": "\"767eceef94e3bcc39d5ad154a29e2425-33\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 1.0,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "array_sha256": "3dbc4281b66e2c9ca7c079f043e9277b0a7999347d97be21b6631866dd1f6b9c"
+    },
+    "bio18": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio18/1981-2010/CHELSA_bio18_1981-2010_V.2.1.tif",
+      "source_etag": "\"22741bb9bad5f938c00364ad5b725f8f-52\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "array_sha256": "d75392bc324b45ee9e2c99c88cafdbf6802b9607de4a6f43e19e255be8682b47"
+    },
+    "bio19": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio19/1981-2010/CHELSA_bio19_1981-2010_V.2.1.tif",
+      "source_etag": "\"a3c397c58e35867fb12fcba52a7853fb-47\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.1,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "array_sha256": "855bbbd7119311df1bb2a23f82b67624b4e39904bd1974d4d485ed3cc565fddf"
+    },
+    "hursmean": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/hursmean/1981-2010/CHELSA_hursmean_1981-2010_V.2.1.tif",
+      "source_etag": "\"7325da7fc4fe307b75e158d394711291-42\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 0.01,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "array_sha256": "3358b70ad6df0bc59604ad4210ce31f398beb9300c1455d4018c8336b6dae68f"
+    },
+    "fcf": {
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/fcf/1981-2010/CHELSA_fcf_1981-2010_V.2.1.tif",
+      "source_etag": "\"a43ef6f35191f45c94c6d9643ecc0c27-8\"",
+      "window": [
+        25452,
+        5784,
+        336,
+        156
+      ],
+      "nativeResolutionDegrees": 0.008333333333333333,
+      "scale": 1.0,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "array_sha256": "82ae766b9cfa739ab75373be4b7be979f8d4d742718c0dac9d27d975b218b1cf"
+    }
+  },
+  "elevation": {
+    "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/input/static/dem_latlong.sdat",
+    "header": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/input/static/dem_latlong.sgrd",
+    "encoding": "little endian signed int16; 43200 columns x 20880 rows, south-up; same 30 arcsecond grid",
+    "use": "Display elevation, not an arbitrary global altitude cutoff."
+  },
+  "runtime_access": {
+    "library": "GeoTIFF.js 2.1.3 (MIT), bundled in the HTML",
+    "source": "Original global CHELSA COGs listed in sources; HTTP range reads, no API key",
+    "native_grid": "43200 x 20880, 30 arcseconds; source overviews used for larger windows",
+    "offline": "Global 10 arcminute overview plus native Cyprus window embedded; other native windows require public source access",
+    "freeze": "Existing regional freeze history remains sampled at 10 arcminutes. No elevation adjustment or missing-data infill is applied to it."
+  }
+}

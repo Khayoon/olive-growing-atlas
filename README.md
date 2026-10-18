@@ -1,79 +1,60 @@
-# Olea — cultivated edible-olive climate and orchard atlas
+# Olea — cultivated olive climate atlas
 
-**[Open the interactive map](https://khayoon.github.io/olive-growing-atlas/)**
+[Open the map](https://khayoon.github.io/olive-growing-atlas/) · [Cyprus terrain view](https://khayoon.github.io/olive-growing-atlas/#lat=35.05&lng=33.1&z=8.75&p=34.936,32.864)
 
-Version 3.2 corrects coastal rendering and shows missing data explicitly. It retains the version 3.1 local weather and cultivar assessments for three documented orchards. The regional grid remains version 3.0. It embeds global annual extreme-temperature history and source-linked edible-olive orchard evidence. The intended crop is **Olea europaea subsp. europaea**, including table and oil cultivars. Wild/African olive distributions and unrelated plants called olive are excluded.
+Version 4 uses actual terrain-aware **CHELSA V2.1 1981–2010 climate data** for cultivated edible *Olea europaea* subsp. *europaea*. A climate match is a screening index, **not a prediction of reliable annual yield**.
 
-Download `index.html` and open it in a current browser. Leaflet, Natural Earth land, climate values, both water scenarios and all orchard evidence are embedded. No API key, local GeoJSON or server is required. Optional OpenStreetMap background tiles and external source links need a connection. The file is approximately 24 MB and uses browser `DecompressionStream('gzip')`.
+## Terrain and coastlines
 
-## Coastal display fix (v3.2)
+At zoom 6.5 and above, the browser reads windows directly from the original global CHELSA Cloud Optimized GeoTIFFs. Native resolution is 30 arcseconds, approximately 0.9 km north–south. Larger viewports use source overviews; the displayed resolution reports this. No API key is needed. Native detail outside Cyprus requires internet access and public-source availability.
 
-The black strips were a combination of missing coastal freeze records, transparent interpolation, and coarse clipping geometry. The display now uses detailed Natural Earth 1:10 million land **and lake** outlines, rendered at viewport resolution. Available coastal scores interpolate using valid neighbors only, without fading toward missing pixels. The source cell must itself have a score; interpolation never fills a missing cell.
+A native **336 × 156 cell Cyprus window**, including source DEM elevation, is embedded for immediate and offline use. The world overview retains the original 10 arcminute (~18.5 km) seasonal data. Natural Earth 1:10 million land/lake geometry clips the display; this cartographic scale is not a 10 m climate resolution. Valid-neighbor interpolation avoids coastal fades. Available seasonal climate remains colored when freeze coverage is missing; actual missing climate is neutral gray. Ocean and mapped lakes remain uncolored.
 
-Land without a combined climate/freeze score is shown in neutral **gray diagonal hatching**, with a matching legend and no-score inspector. Ocean and mapped lakes remain uncolored. This improves the coastline display; it does not create higher-resolution climate observations or alter the climate model, source values, score rasters, or local station assessments.
+Cyprus controls from native source cells:
 
-[Geometry sources and hashes](GEOMETRY_SOURCES.json) · [Rendering validation](RENDERING_VALIDATION.json) · [Display sampling logic](SURFACE_SAMPLING.js)
+| Location | Source DEM elevation | Coldest-month mean low | Rainfed climate match |
+|---|---:|---:|---:|
+| Mount Olympus | 1,887 m | −4.7°C | 38 |
+| Troodos village | 1,724 m | −3.5°C | 54 |
+| Paphos | 46 m | 11.7°C | 96 |
+| Limassol | 33 m | 10.8°C | 93 |
+| Nicosia | 151 m | 6.8°C | 86 |
 
-## What the map now does
+These are modeled climate/elevation cell estimates, not station measurements. The [Cyprus Department of Meteorology](https://agromet.dom.org.cy/crops/crop/1) describes cultivated olive in lowland and semi-mountainous areas, mainly up to about 700 m. This context is not implemented as a universal altitude cutoff: foothills differ from the cold highest peaks.
 
-- Global **ERA5-EX annual TNn** supplies actual published annual minima of daily minimum 2 m air temperature, not the average low of a winter month.
-- The inspector shows a **1991–2020 mean annual extreme low**, the **coldest annual value and year in 1991–2025**, and counts of years at or below −7°C and −10°C. The historical window includes the 2021 Texas freeze.
-- The 2023 PRISM/USDA CONUS dataset remains the finer-resolution annual-extreme mean where available. ERA5-EX supplies global historical exposure. These products can disagree; their values are labeled separately.
-- Nine CHELSA 1981–2010 seasonal-climate fields retain temperature, flowering-proxy, heat, wetness and water-supply constraints.
-- **Rainfed** and **reliable irrigation** scenarios differ only in water scarcity. Irrigation never removes freeze, flowering, heat or wetness constraints.
-- **Orchard evidence** opens actual field studies with cultivars, water regime, measured harvests/failures, annual-reliability qualifiers, model comparisons and primary-source links. Square study markers are independent of illustrative cultivation regions.
-- Missing extreme-temperature data produce **no combined score**, not an invented latitude estimate. Small islands and narrow coasts can lack a valid sampled freeze cell; Shodoshima retains its documented cultivation context even where the displayed cell lacks freeze data.
+## What is scored
 
-## What the orchard checks establish
+[TERRAIN_MODEL.js](TERRAIN_MODEL.js) combines seasonal cold, summer warmth, heat, wetness, water and freeze–thaw curves from [MODEL.js](MODEL.js), weighted 25%, 30%, 10%, 15%, 12% and 8%, with limiting-component, rainfed-water and wet-season caps. Irrigation changes water scarcity alone.
 
-25 records were collected from primary studies before inspecting version 3 scores. 22 have usable study coordinates; three vague or conflicting locations are excluded. Eight records with measured multi-year harvests represent **seven distinct climate cells across six studies**. All seven score at least 40 under the documented water regime. This checks broad compatibility with managed fruit production, not a requirement that every productive orchard score 80.
+The previous generic quarter-mean chilling response is removed from the numeric index. **A quarterly mean cannot establish cultivar-specific flower induction.** Hourly chilling, warm interruptions, pollination and dependable fruit set remain unassessed. High seasonal climate match must not be interpreted as a verified reliable orchard location.
 
-Two precisely located Texas flowering-failure trials and one Italian freeze-damage site all score below 80. Those are three hazard-site flags across two studies, not validation of freeze magnitude or a global failure-class accuracy estimate. Nearby plots sharing a climate cell count once. Short trials, categorical productivity, fruit-quality sampling and cultivar challenges remain separate.
+Regional freeze constraints remain where available: PRISM 1991–2020 mean annual extreme lows in CONUS, otherwise ERA5-EX 1991–2020 mean annual TNn. ERA5-EX coldest event/year and threshold counts cover 1991–2025. Conservative caps remain 59 for any year ≤−12.2°C, 79 for ≥20% of valid years ≤−7°C, and 39 for ≥20% ≤−10°C, requiring at least 30 valid years. These are planning rules, not fitted loss probabilities.
 
-**Local weather and cultivar checks:** gold-ring markers and sidebar shortcuts open Lalamilo, Pedro Abad and Maiolati. Local evidence takes precedence over a standalone regional orchard verdict. Choose the cultivar to see documented fruiting, non-harvest or relative freeze-damage outcomes. Published DMA chilling requirements (Arbequina 339, Leccino 612, Frantoio 671 CU) are explicitly separated from Lalamilo's reported 141/161 hours below 12.5°C. These exposures are not universal cultivar requirements, and no DMA CU are inferred from quarterly means or incomplete daily data.
+**Fine climate detail does not refine freeze history:** retained global extremes are sampled at 10 arcminutes from a native 0.1° product. No elevation correction, neighboring freeze infill or invented station measurement is applied. Where coarse extreme minima conflict with colder native mountain normals, the inspector flags the resolution conflict. Where freeze history is unavailable, the score is labeled **seasonal climate only**.
 
-Local freeze reports are below −9°C at Pedro Abad in 2005 and −6.4°C at Maiolati on 15 February 2012. Regional estimates −4.9°C and −13.9°C remain visible as conflicts. Nearby NOAA daily archives are supplied with QC, coverage, station distances and elevations. Córdoba airport (36 km away) independently records −8.2°C in 2005; it is not the orchard thermometer. Frontone (31.5 km away) cannot substitute for Maiolati. AMAP ST34 is about 0.63 km away, but only metadata were obtained; the study does not identify its station ID.
+## Field evidence and validation limits
 
-**This release resolves misleading interpretations, not the underlying regional numerical biases.** There is insufficient directly obtained hourly/on-site history to calibrate a defensible spatial correction or a reliable-yield model. The regional raster and its original discrepancies are unchanged. The local cases receive categorical assessments, not invented 0–100 scores.
+The 25 documentary orchard records, 22 usable study coordinates, and three local weather/cultivar assessments remain available. Gold rings distinguish observed outcomes at Lalamilo, Pedro Abad and Maiolati from gridded estimates. DMA chilling units remain separate from simple hours below a temperature threshold. Orchard freezes and nearby NOAA records retain their stations, distances, QC and discrepancies.
 
-The three sites are now development cases. Excluding them leaves six measured-production climate cells (five studies), all scoring at least 40, and two Texas flowering-failure sites (one study), both flagged below 80. These remaining checks are regression comparisons of the existing screen, not fresh independent validation.
+Original version 3 production/failure results are **archived comparisons**, not validation of the revised terrain index. Neither the literature sample nor native data checks establish worldwide dependable annual harvests. Cold pools, freeze duration, acclimation, late frost, disease, drainage, irrigation feasibility and alternate bearing need local assessment.
 
-The literature sample is small and geographically uneven. This is an externally checked **climate screening model**, not a calibrated probability of reliable annual yield or commercial profitability. Read [the full agronomic review](AGRONOMIC_REVIEW.md).
+New [terrain checks](TERRAIN_VALIDATION.json) verify native checksums, five independently sampled Cyprus source locations, coast-to-summit contrast, map/inspector scenario consistency, 285 sampled overview cells and retained freeze caps. Browser checks confirmed native loading outside Cyprus in the Alps and Netherlands. These are implementation/data checks, not crop-yield accuracy estimates.
 
-## Model and data detail
+## Standalone use and evidence
 
-| Source | Coverage / period | Meaning |
-| --- | --- | --- |
-| CHELSA V2.1 / BIOCLIM+ | Global, 1981–2010 | Nine seasonal climate fields, original source approximately 1 km, sampled to 10′ |
-| ERA5-EX v1.0, Figshare v4 | Global native land grid 0.1°, annual 1950–2025; app uses 1991–2025 | TNn: minimum of daily minimum temperature each calendar year |
-| PRISM / USDA 2023 | CONUS, 1991–2020, source 800 m | Mean annual extreme minimum; preferred mean where available |
+Open `index.html` in a current browser supporting `DecompressionStream`. Leaflet 1.9.4 and GeoTIFF.js 2.1.3 are bundled. The global overview, native Cyprus data, coastlines, regions and orchard evidence work offline; background tiles, external source links and other native climate windows need a connection. GitHub Pages serves `main / (root)`.
 
-The app's common grid is 2160 × 1044, approximately **10 arc-minutes** (18.5 km north–south). Nearest native ERA5-EX points are sampled at each cell center, wrapping longitude from −180–180 to 0–360. There is no gap filling. Display smoothing adds no observations. The mean uses at least 27/30 valid years; historical exposure requires at least 30/35 valid years. Threshold counts use original float values before temperature packing to 0.1°C.
+- [NATIVE_CLIMATE_SOURCES.json](NATIVE_CLIMATE_SOURCES.json): native fields, units, source URLs, checksums, DEM encoding and global runtime access.
+- [TERRAIN_MODEL_META.json](TERRAIN_MODEL_META.json), [TERRAIN_MODEL.js](TERRAIN_MODEL.js), [TERRAIN_VALIDATION.json](TERRAIN_VALIDATION.json): revised index and bounded checks.
+- [GEOMETRY_SOURCES.json](GEOMETRY_SOURCES.json): pinned land/lake sources and processing.
+- [DATA_SOURCES.json](DATA_SOURCES.json), [DATA_VALIDATION.json](DATA_VALIDATION.json), [GLOBAL_FREEZE_VALIDATION.json](GLOBAL_FREEZE_VALIDATION.json): retained coarse processing and original version 3 checks.
+- [ORCHARD_EVIDENCE.json](ORCHARD_EVIDENCE.json), [ORCHARD_VALIDATION.json](ORCHARD_VALIDATION.json), [VALIDATION_PROTOCOL.json](VALIDATION_PROTOCOL.json): studies and archived version 3 comparisons.
+- [LOCAL_STATIONS.json](LOCAL_STATIONS.json), [LOCAL_VALIDATION.json](LOCAL_VALIDATION.json), [LOCAL_VALIDATION_PROTOCOL.json](LOCAL_VALIDATION_PROTOCOL.json), [LOCAL_ASSESSMENT_MODEL.js](LOCAL_ASSESSMENT_MODEL.js), [stations/](stations/): unchanged observations and categorical local assessments.
 
-The model retains the previous non-freeze curves. Mean annual extremes independently cap the score. Conservative planning rules also cap it at 59 when at least one observed year reaches ≤−12.2°C, at 79 when ≥20% of valid years reach ≤−7°C, and at 39 when ≥20% reach ≤−10°C. These are explicit risk-policy choices, not fitted crop-death probabilities. [MODEL.js](MODEL.js) is a readable copy of the function embedded in the standalone HTML.
+## Attribution
 
-Annual TNn cannot resolve freeze duration, deacclimation, bloom heat, spring frost, disease, drainage, pollination, irrigation feasibility or alternate bearing. Flower induction depends on sustained cool temperatures, warm interruptions and cultivar; a damaging cold snap is not a requirement. A ±3°C mean-freeze sensitivity in the orchard records is illustrative only and holds historical tail caps fixed; it is not a confidence interval.
+CHELSA: [CC0 and dataset documentation](https://www.chelsa-climate.org/datasets/chelsa_bioclim), [terrain methods](https://www.chelsa-climate.org/models/chelsa_v2.0), [Brun et al. (2022)](https://doi.org/10.5194/essd-14-5573-2022), [Karger et al. (2017)](https://doi.org/10.1038/sdata.2017.122).
 
-## Downloadable evidence
+ERA5-EX: Peng, Shilei (2026), Dataset v1.0, pinned [Figshare version 4](https://doi.org/10.6084/m9.figshare.31812172.v4), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This atlas derives period aggregates, threshold counts and resampling. [Methods](https://doi.org/10.1038/s41597-026-08312-x).
 
-- [DATA_SOURCES.json](DATA_SOURCES.json): native units/axes, period, resampling, source URLs, licence, hashes and model rules.
-- [DATA_VALIDATION.json](DATA_VALIDATION.json): map/inspector consistency and controls across continents.
-- [GLOBAL_FREEZE_VALIDATION.json](GLOBAL_FREEZE_VALIDATION.json): independent scalar source checks and local freeze discrepancies.
-- [ORCHARD_EVIDENCE.json](ORCHARD_EVIDENCE.json): source-derived coordinates, management, cultivars, evidence classes and exclusions.
-- [ORCHARD_VALIDATION.json](ORCHARD_VALIDATION.json): every result, shared-cell grouping, counterexamples and primary citations.
-- [LOCAL_STATIONS.json](LOCAL_STATIONS.json): local source observations, cultivar outcomes and station metadata.
-- [LOCAL_VALIDATION.json](LOCAL_VALIDATION.json): 52,589 independently checked accepted station values, 12 local behavior checks and remaining regional comparisons.
-- [LOCAL_VALIDATION_PROTOCOL.json](LOCAL_VALIDATION_PROTOCOL.json): development split, units, completeness and scope.
-- [LOCAL_ASSESSMENT_MODEL.js](LOCAL_ASSESSMENT_MODEL.js): categorical point-assessment logic. Regional `MODEL.js` is unchanged.
-- [stations/](stations/): accepted 1991–2025 daily Tmin/Tmax with source/measurement flags and annual coverage. GHCN quality-flagged and missing values excluded; no gap filling.
-- [VALIDATION_PROTOCOL.json](VALIDATION_PROTOCOL.json): rules declared before orchard score extraction.
-
-## Attribution and reuse
-
-ERA5-EX: **Peng, Shilei (2026), ERA5-EX Dataset v1.0, Figshare version 4**, [doi:10.6084/m9.figshare.31812172.v4](https://doi.org/10.6084/m9.figshare.31812172.v4), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This atlas derives different-period aggregates, threshold-year counts and a coarser sampled grid. [Methods paper](https://doi.org/10.1038/s41597-026-08312-x). The authors report substantial regional differences against HadEX3; those are not orchard-point error bars or a universal correction.
-
-CHELSA data are [CC0](https://www.chelsa-climate.org/datasets/chelsa_bioclim); see [Brun et al. (2022)](https://doi.org/10.5194/essd-14-5573-2022) and [Karger et al. (2017)](https://doi.org/10.1038/sdata.2017.122).
-
-PRISM data have separate [OSU terms](https://prism.oregonstate.edu/phzm/). **This altered, derived crop screen is not the official USDA Plant Hardiness Zone Map**; agency logos are omitted. Natural Earth land is public domain; Leaflet 1.9.4 is BSD-2-Clause; optional background tiles use [OpenStreetMap](https://www.openstreetmap.org/copyright). See [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
-
-GitHub Pages serves `main / (root)`. The map remains a standalone HTML application; the adjacent evidence files make its claims reviewable.
+PRISM follows [OSU terms](https://prism.oregonstate.edu/phzm/). **This derived crop screen is not the official USDA Plant Hardiness Zone Map**; agency logos are omitted. Natural Earth is public domain; Leaflet is BSD-2-Clause; GeoTIFF.js is MIT; background tiles © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Full library notices are embedded in the HTML and retained in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).

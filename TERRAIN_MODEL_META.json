@@ -1,0 +1,16 @@
+{
+  "version": "4.0",
+  "type": "Climate compatibility screen, not reliable-yield probability",
+  "grid": {
+    "width": 2160,
+    "height": 1044,
+    "west": -180.00013888885002,
+    "north": 83.99986041515001,
+    "dx": 0.16666666600000002,
+    "dy": 0.166666666
+  },
+  "overviewSha256": "c95f7d7357181761d216b8a994973102ff583fe147064d17c12f55b98b356b76",
+  "modelSha256": "063cc4fe6f07a0d570ff1f01c8b91029bfade203bd99dc531587ac34cf2a31ed",
+  "flowering": "Not calculated from quarterly means. Cultivar-specific chilling remains unassessed.",
+  "freeze": "Actual regional history constrains compatibility where available; missing freeze records do not suppress independently available seasonal climate. Scope is labeled at each location."
+}

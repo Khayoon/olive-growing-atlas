@@ -1,5 +1,5 @@
 {
-  "version": "3.2",
+  "version": "4.0",
   "source": "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_10m_land.geojson",
   "dataset": "Natural Earth land v5.1.2 at 1:10 million scale",
   "licence": "public domain",
@@ -10,5 +10,5 @@
   "processing": "Lakes excluded from land rendering and inspection. Coordinates rounded to 4 decimal degrees; properties omitted; geometry gzip/base64 embedded. No handmade island polygons added.",
   "compressed_bytes": 3574240,
   "raw_bytes": 11520967,
-  "rendering": "Viewport sampling with valid-neighbor-normalized interpolation. Source cells with no score remain missing and receive neutral hatching. No geographic filling or model changes."
+  "rendering": "Viewport sampling from native CHELSA windows where loaded, embedded native Cyprus otherwise, then the global overview. Valid-neighbor interpolation; neutral gray only for missing seasonal climate. Separate coarse regional freeze coverage is labeled in the inspector."
 }

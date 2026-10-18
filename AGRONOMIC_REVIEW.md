@@ -1,3 +1,7 @@
+# Version 4 terrain update
+
+The review below is archived version 3 evidence. Version 4 adds native terrain-aware CHELSA windows and removes generic quarterly-mean chilling from the numeric index. See README.md, TERRAIN_MODEL.js and TERRAIN_VALIDATION.json for current behavior and limits. The new index is not validated for reliable annual yield. Local observations and coarse freeze conflicts remain unchanged.
+
 # Version 3.1 local evidence revision
 
 The point assessments correct how the three known regional conflicts are interpreted. They do not constitute a newly calibrated global model. Read [the local validation report](LOCAL_VALIDATION.json) and [protocol](LOCAL_VALIDATION_PROTOCOL.json). The v3 review below describes the unchanged regional screen and its original evaluation.
