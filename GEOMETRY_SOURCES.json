@@ -1,0 +1,14 @@
+{
+  "version": "3.2",
+  "source": "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_10m_land.geojson",
+  "dataset": "Natural Earth land v5.1.2 at 1:10 million scale",
+  "licence": "public domain",
+  "source_sha256": "1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416",
+  "processed_sha256": "435d5b76de4b7f46e7d80d9f51db2f9aa65a3a19ed80844b3adfa253e3ba8136",
+  "water_source": "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_10m_lakes.geojson",
+  "water_source_sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+  "processing": "Lakes excluded from land rendering and inspection. Coordinates rounded to 4 decimal degrees; properties omitted; geometry gzip/base64 embedded. No handmade island polygons added.",
+  "compressed_bytes": 3574240,
+  "raw_bytes": 11520967,
+  "rendering": "Viewport sampling with valid-neighbor-normalized interpolation. Source cells with no score remain missing and receive neutral hatching. No geographic filling or model changes."
+}

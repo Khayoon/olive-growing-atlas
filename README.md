@@ -2,9 +2,17 @@
 
 **[Open the interactive map](https://khayoon.github.io/olive-growing-atlas/)**
 
-Version 3.1 adds local weather and cultivar assessments for three documented orchards. The regional grid remains version 3.0. It embeds global annual extreme-temperature history and source-linked edible-olive orchard evidence. The intended crop is **Olea europaea subsp. europaea**, including table and oil cultivars. Wild/African olive distributions and unrelated plants called olive are excluded.
+Version 3.2 corrects coastal rendering and shows missing data explicitly. It retains the version 3.1 local weather and cultivar assessments for three documented orchards. The regional grid remains version 3.0. It embeds global annual extreme-temperature history and source-linked edible-olive orchard evidence. The intended crop is **Olea europaea subsp. europaea**, including table and oil cultivars. Wild/African olive distributions and unrelated plants called olive are excluded.
 
-Download `index.html` and open it in a current browser. Leaflet, Natural Earth land, climate values, both water scenarios and all orchard evidence are embedded. No API key, local GeoJSON or server is required. Optional OpenStreetMap background tiles and external source links need a connection. The file is approximately 20 MB and uses browser `DecompressionStream('gzip')`.
+Download `index.html` and open it in a current browser. Leaflet, Natural Earth land, climate values, both water scenarios and all orchard evidence are embedded. No API key, local GeoJSON or server is required. Optional OpenStreetMap background tiles and external source links need a connection. The file is approximately 24 MB and uses browser `DecompressionStream('gzip')`.
+
+## Coastal display fix (v3.2)
+
+The black strips were a combination of missing coastal freeze records, transparent interpolation, and coarse clipping geometry. The display now uses detailed Natural Earth 1:10 million land **and lake** outlines, rendered at viewport resolution. Available coastal scores interpolate using valid neighbors only, without fading toward missing pixels. The source cell must itself have a score; interpolation never fills a missing cell.
+
+Land without a combined climate/freeze score is shown in neutral **gray diagonal hatching**, with a matching legend and no-score inspector. Ocean and mapped lakes remain uncolored. This improves the coastline display; it does not create higher-resolution climate observations or alter the climate model, source values, score rasters, or local station assessments.
+
+[Geometry sources and hashes](GEOMETRY_SOURCES.json) · [Rendering validation](RENDERING_VALIDATION.json) · [Display sampling logic](SURFACE_SAMPLING.js)
 
 ## What the map now does
 

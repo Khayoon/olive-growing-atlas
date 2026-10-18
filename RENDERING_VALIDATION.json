@@ -1,0 +1,95 @@
+{
+  "version": "3.2",
+  "waterMaskChecks": 4,
+  "climateDataUnchanged": true,
+  "climateSha256": "ffb71a0d7fa4753684b91b991ebc07ca95460814ea95b21a68361bc37be6a4fb",
+  "validCellCenterChecks": 9656,
+  "missingCellCenterChecks": 17514,
+  "interpolationRegressionChecks": 6,
+  "landPolygons": 6837,
+  "lakePolygons": 1366,
+  "geometryHashMatches": true,
+  "controls": [
+    {
+      "name": "The Hague",
+      "lat": 52.08,
+      "lng": 4.3,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    },
+    {
+      "name": "Alkmaar",
+      "lat": 52.63,
+      "lng": 4.75,
+      "onLand": true,
+      "display": "suitability color",
+      "sourceScore": 38
+    },
+    {
+      "name": "Texel",
+      "lat": 53.05,
+      "lng": 4.8,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    },
+    {
+      "name": "Paphos",
+      "lat": 34.77,
+      "lng": 32.42,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    },
+    {
+      "name": "Limassol",
+      "lat": 34.685,
+      "lng": 33.04,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    },
+    {
+      "name": "Karpas peninsula",
+      "lat": 35.6,
+      "lng": 34.4,
+      "onLand": true,
+      "display": "suitability color",
+      "sourceScore": 60
+    },
+    {
+      "name": "Shodoshima",
+      "lat": 34.48,
+      "lng": 134.28,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    },
+    {
+      "name": "Amsterdam",
+      "lat": 52.37,
+      "lng": 4.9,
+      "onLand": true,
+      "display": "suitability color",
+      "sourceScore": 40
+    },
+    {
+      "name": "Lelystad polder",
+      "lat": 52.51,
+      "lng": 5.47,
+      "onLand": true,
+      "display": "neutral missing-data hatching",
+      "sourceScore": null
+    }
+  ],
+  "scope": "Rendering, coastline and source-mask checks. Missing coastal data are visibly hatched, never assigned synthetic suitability scores.",
+  "browserChecks": {
+    "CyprusCoast": "verified",
+    "NetherlandsCoast": "verified",
+    "IJsselmeerAndMarkermeerWater": "verified",
+    "irrigationSwitch": "verified",
+    "overlayToggle": "verified",
+    "browserErrors": []
+  }
+}
