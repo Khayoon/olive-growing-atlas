@@ -969,9 +969,10 @@ for(const z of zones){
  const marker=L.marker(z.center,{icon:L.divIcon({className:'benchmark-marker '+(z.kind==='extreme'?'extreme':'')+(['iberia','seto'].includes(z.id)?' anchor':''),iconSize:['iberia','seto'].includes(z.id)?[12,12]:[8,8],iconAnchor:['iberia','seto'].includes(z.id)?[6,6]:[4,4]}),keyboard:true,title:z.name,alt:z.name+' olive growing benchmark'}).addTo(z.kind==='extreme'?extremePins:primePins);
  marker.bindTooltip(z.name,{direction:'top',offset:[0,-8]});marker.on('click',()=>selectRegion(z.id,false));pinMap.set(z.id,marker);
 }
-const anchorLabels=[['iberia','MEDITERRANEAN'],['seto','SETO INLAND SEA'],['california','CALIFORNIA'],['chile','CENTRAL CHILE'],['cape','WESTERN CAPE'],['perth','SW AUSTRALIA']];
+// Keep regional names level with their geographic anchors instead of lifting them north.
+const anchorLabels=[['iberia','MEDITERRANEAN','right'],['seto','SETO INLAND SEA','top'],['california','CALIFORNIA','left'],['chile','CENTRAL CHILE','left'],['cape','WESTERN CAPE','left'],['perth','SW AUSTRALIA','right']];
 const anchorLabelLayer=L.layerGroup().addTo(zoneLayer);
-for(const [id,label]of anchorLabels){const z=zones.find(v=>v.id===id);L.tooltip({permanent:true,direction:'top',offset:[0,-12],className:'zone-label',interactive:false,opacity:.9}).setLatLng(z.center).setContent(label).addTo(anchorLabelLayer);}
+for(const [id,label,direction]of anchorLabels){const z=zones.find(v=>v.id===id),offset=direction==='top'?[0,-12]:direction==='left'?[-8,0]:[8,0];L.tooltip({permanent:true,direction,offset,className:'zone-label',interactive:false,opacity:.9}).setLatLng(z.center).setContent(label).addTo(anchorLabelLayer);}
 function setTab(name){document.querySelectorAll('.tab').forEach(b=>{const active=b.dataset.tab===name;b.classList.toggle('active',active);b.setAttribute('aria-selected',active);b.tabIndex=active?0:-1;});for(const n of ['explore','layers','notes'])$('panel-'+n).hidden=n!==name;}
 document.querySelectorAll('.tab').forEach((b,i)=>{b.onclick=()=>setTab(b.dataset.tab);b.onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...document.querySelectorAll('.tab')],j=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;setTab(tabs[j].dataset.tab);tabs[j].focus();};});
 function coord(lat,lng){return Math.abs(lat).toFixed(3)+'° '+(lat>=0?'N':'S')+' &nbsp; / &nbsp; '+Math.abs(lng).toFixed(3)+'° '+(lng>=0?'E':'W');}
