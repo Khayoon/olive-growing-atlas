@@ -1,3 +1,15 @@
+# Version 3.1 local evidence revision
+
+The point assessments correct how the three known regional conflicts are interpreted. They do not constitute a newly calibrated global model. Read [the local validation report](LOCAL_VALIDATION.json) and [protocol](LOCAL_VALIDATION_PROTOCOL.json). The v3 review below describes the unchanged regional screen and its original evaluation.
+
+- Lalamilo: distinguish Arbequina, Arbosana and Koroneiki fruiting from seven non-harvested cultivars. Irrigated trial outcomes cannot establish rainfed suitability. The 141/161 hours below 12.5°C are published logger summaries, not independently recomputed values or physiological minima. DMA CU thresholds from Aybar et al. (2015) are model-specific and not interchangeable with those hours.
+- Pedro Abad: retain the study's damaging 2005 freeze below −9°C. Nearby Córdoba airport measured −8.2°C that year with complete daily coverage. Both contradict an interpretation of the regional favorable score as orchard frost safety, but the airport is 36 km away.
+- Maiolati: retain reported −6.4°C and prolonged exposure after a mild spell. Young Arbequina and FS17 trees were especially damaged; Ascolana dura and Orbetana performed relatively better. A less negative event minimum is not a reason to call this orchard frost-safe. Frontone is a separate distant station; ST34 metadata do not prove the study used that station.
+
+No additive temperature offsets are extrapolated across mountains, valleys or islands. No short trial is promoted into a reliable annual commercial-yield label. Development examples are excluded from the remaining six production-cell/two failure-site comparisons. The underlying regional discrepancies remain unresolved pending adequate on-site temperature series and independent calibration/validation.
+
+---
+
 # Agronomic review: global freezes and actual edible-olive orchards (v3.0)
 
 This is a climate-compatibility screen for cultivated table/oil olives, not a validated reliable-annual-yield probability. Global extreme-temperature data are now included; the orchard checks and their failures are published separately from the score.

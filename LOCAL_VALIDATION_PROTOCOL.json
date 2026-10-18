@@ -1,0 +1,16 @@
+{
+  "version": "3.1",
+  "declared_utc": "2026-10-18T16:18:01.637682+00:00",
+  "development_sites": [
+    "us-hi-lalamilo",
+    "es_pedro_abad_longterm",
+    "it_maiolati_freeze"
+  ],
+  "scope": "Cultivar-aware point assessments, separate from unchanged v3.0 global raster. No spatial bias correction from isolated events.",
+  "weather_qc": "GHCN-Daily TMIN/TMAX: omit -9999 and nonblank quality flags. Retain measurement/source flags. Daily records cannot be called hourly chill observations. No gap filling.",
+  "completeness": "Annual minimum is a lower-bound exposure statement unless >=95% of calendar days have accepted TMIN. An observed value can demonstrate cold exposure despite incomplete coverage; missing days cannot demonstrate safety.",
+  "chill": "Published DMA requirements: Arbequina 339, Leccino 612, Frantoio 671 CU (Aybar et al. 2015 Table 2). CU are model-specific, not hours <7.2 or <12.5 C. No transferable CU requirement is supplied for Arbosana or Koroneiki. Do not infer CU from seasonal means or incomplete daily series.",
+  "hawaii": "Use observed cultivar outcomes and published on-site hourly summaries as conditional fruiting evidence, not a universal 141-hour requirement or proof of economic annual yield.",
+  "freeze": "Use source-study event minima as local event values; keep nearby station checks separate with distances and elevations. Single events do not replace 35-year gridded statistics.",
+  "validation": "Exclude the three development sites from remaining regional compatibility metrics. Keep every v3 result and discrepancy; report presentation fixes separately from predictive validation."
+}

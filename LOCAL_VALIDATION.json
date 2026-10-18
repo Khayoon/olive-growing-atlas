@@ -1,0 +1,68 @@
+{
+  "version": "3.1",
+  "timeUTC": "2026-10-18T16:20:59.334Z",
+  "developmentSites": [
+    "us-hi-lalamilo",
+    "es_pedro_abad_longterm",
+    "it_maiolati_freeze"
+  ],
+  "title": "Local evidence/QC regression checks; not independent validation of new predictive parameters",
+  "localCaseChecks": 12,
+  "localCaseChecksPassed": 12,
+  "stationValuesChecked": 52589,
+  "stationChecks": [
+    {
+      "id": "USC00515260",
+      "values": 13318,
+      "sourceHashMatches": true,
+      "dailyReductionsMatch": true,
+      "spatialCorrectionApplied": false,
+      "hourlyChillCalculated": false
+    },
+    {
+      "id": "SP000008410",
+      "values": 25408,
+      "sourceHashMatches": true,
+      "dailyReductionsMatch": true,
+      "spatialCorrectionApplied": false,
+      "hourlyChillCalculated": false
+    },
+    {
+      "id": "ITM00016179",
+      "values": 13863,
+      "sourceHashMatches": true,
+      "dailyReductionsMatch": true,
+      "spatialCorrectionApplied": false,
+      "hourlyChillCalculated": false
+    }
+  ],
+  "regionalScreenUnchanged": true,
+  "regionalModelCoreSha256": "a9360ad68254f0b7bfd982a9499f2e1ee404d10de8d43ba0e0eb7904ceb82a93",
+  "regionalDataSha256": "ffb71a0d7fa4753684b91b991ebc07ca95460814ea95b21a68361bc37be6a4fb",
+  "remainingRegionalComparisons": {
+    "production": {
+      "sites": 7,
+      "cells": 6,
+      "studyClusters": 5,
+      "compatible": 6
+    },
+    "hazard": {
+      "sites": 2,
+      "cells": 2,
+      "studyClusters": 1,
+      "compatible": 2
+    }
+  },
+  "resolvedInterpretation": [
+    "Lalamilo no longer described solely by a generic zero: local cultivar-dependent fruiting is displayed separately.",
+    "Pedro Abad not locally frost-safe: observed damaging event is prioritized over a favorable regional score.",
+    "Maiolati event minimum shown as -6.4 C, with duration and relative cultivar response; reanalysis -13.9 C never relabeled as observed."
+  ],
+  "unresolved": [
+    "No raw hourly Lalamilo logger data to independently recompute DMA CU.",
+    "Nearby NOAA records are not orchard observations; Lalamilo and Frontone annual coverage is incomplete.",
+    "No directly obtained 2012 AMAP daily readings; metadata do not identify which station supplied the study weather.",
+    "No justified regional bias correction from isolated orchard events. The two numerical reanalysis biases remain.",
+    "Cultivar trial evidence does not establish reliable annual economic yield."
+  ]
+}

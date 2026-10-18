@@ -48,3 +48,8 @@ This atlas alters/resamples the source data to derive crop-screening scores. It 
 
 ERA5-EX global annual extremes
 Peng, Shilei (2026). ERA5-EX Dataset (v1.0), Figshare version4. DOI:10.6084/m9.figshare.31812172.v4 . CC BY4.0: https://creativecommons.org/licenses/by/4.0/ . Source TNn_1950_2025.nc, MD5 bbd16bd9abc98170ec701b56c7cd91e5 . This application derives1991-2020 means and1991-2025 minima/threshold counts, converts to packed0.1C values, and samples the native0.1-degree grid onto a10-arc-minute grid. The crop suitability score is the application's interpretation, not the dataset author's model. Methods: https://doi.org/10.1038/s41597-026-08312-x .
+
+LOCAL STATION OBSERVATIONS (v3.1)
+NOAA/NCEI GHCN-Daily daily public observations; original station file URLs and SHA-256 in LOCAL_STATIONS.json. Extracted accepted Tmin/Tmax values 1991-2025 with original measurement/source flags. Missing and quality-flagged values omitted; no gap filling. Documentation: https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt
+AMAP Marche public station metadata: https://apimeteo.regione.marche.it/Stazione/ST34 ; raw 2012 station readings were not obtained.
+Cultivar flowering parameters: Aybar et al. (2015), https://doi.org/10.5424/sjar/2015131-6375 . Lalamilo study: Miyasaka & Hamasaki (2016), https://doi.org/10.21273/HORTTECH.26.4.497 ; extension source https://www.ctahr.hawaii.edu/oc/freepubs/pdf/NPH-16.pdf . Local minimum/damage reports remain attributed to the source orchard papers in ORCHARD_EVIDENCE.json.

@@ -1,0 +1,1370 @@
+{
+  "version": "3.1",
+  "protocol": {
+    "version": "3.1",
+    "declared_utc": "2026-10-18T16:18:01.637682+00:00",
+    "development_sites": [
+      "us-hi-lalamilo",
+      "es_pedro_abad_longterm",
+      "it_maiolati_freeze"
+    ],
+    "scope": "Cultivar-aware point assessments, separate from unchanged v3.0 global raster. No spatial bias correction from isolated events.",
+    "weather_qc": "GHCN-Daily TMIN/TMAX: omit -9999 and nonblank quality flags. Retain measurement/source flags. Daily records cannot be called hourly chill observations. No gap filling.",
+    "completeness": "Annual minimum is a lower-bound exposure statement unless >=95% of calendar days have accepted TMIN. An observed value can demonstrate cold exposure despite incomplete coverage; missing days cannot demonstrate safety.",
+    "chill": "Published DMA requirements: Arbequina 339, Leccino 612, Frantoio 671 CU (Aybar et al. 2015 Table 2). CU are model-specific, not hours <7.2 or <12.5 C. No transferable CU requirement is supplied for Arbosana or Koroneiki. Do not infer CU from seasonal means or incomplete daily series.",
+    "hawaii": "Use observed cultivar outcomes and published on-site hourly summaries as conditional fruiting evidence, not a universal 141-hour requirement or proof of economic annual yield.",
+    "freeze": "Use source-study event minima as local event values; keep nearby station checks separate with distances and elevations. Single events do not replace 35-year gridded statistics.",
+    "validation": "Exclude the three development sites from remaining regional compatibility metrics. Keep every v3 result and discrepancy; report presentation fixes separately from predictive validation."
+  },
+  "cultivarRequirements": {
+    "method": "De Melo-Abreu sequential model, parameters reported by Aybar et al. (2015), Table 2",
+    "unit": "DMA chilling units (CU), not simple hours",
+    "source": "https://doi.org/10.5424/sjar/2015131-6375",
+    "requirements": {
+      "Arbequina": 339,
+      "Leccino": 612,
+      "Frantoio": 671
+    },
+    "caution": "Region-calibrated flowering model; not validated for Hawaii. Arbosana and Koroneiki requirements are not numerically parameterized here. No CU are computed from quarterly means or incomplete daily station observations."
+  },
+  "sites": [
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "coordinatePrecisionKm": 1,
+      "waterScenario": "irrigated",
+      "station": {
+        "id": "USC00515260",
+        "name": "Lalamilo Field Office 191.1",
+        "lat": 20.0131,
+        "lng": -155.6686,
+        "elevationM": 797.1,
+        "orchardId": "us-hi-lalamilo",
+        "distanceKm": 1.56,
+        "elevationDifferenceM": -26,
+        "source": "NOAA GHCN-Daily",
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00515260.dly",
+        "sha256": "293d9c87c5d0faaf785caf4a48870ec3b1077d81436796bc8fb7fbb1e898a5f2",
+        "downloadedUTC": "2026-10-18T16:18:01.706137+00:00",
+        "qualityRejectedValues": 260,
+        "annualMinima": [
+          {
+            "year": 1991,
+            "days": 246,
+            "expectedDays": 365,
+            "coverage": 0.674,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "1991-01-02"
+          },
+          {
+            "year": 1992,
+            "days": 241,
+            "expectedDays": 366,
+            "coverage": 0.6585,
+            "adequate": false,
+            "minimumC": 3.3,
+            "date": "1992-02-03"
+          },
+          {
+            "year": 1993,
+            "days": 243,
+            "expectedDays": 365,
+            "coverage": 0.6658,
+            "adequate": false,
+            "minimumC": 2.8,
+            "date": "1993-02-04"
+          },
+          {
+            "year": 1994,
+            "days": 242,
+            "expectedDays": 365,
+            "coverage": 0.663,
+            "adequate": false,
+            "minimumC": 3.3,
+            "date": "1994-01-31"
+          },
+          {
+            "year": 1995,
+            "days": 246,
+            "expectedDays": 365,
+            "coverage": 0.674,
+            "adequate": false,
+            "minimumC": 2.2,
+            "date": "1995-02-13"
+          },
+          {
+            "year": 1996,
+            "days": 233,
+            "expectedDays": 366,
+            "coverage": 0.6366,
+            "adequate": false,
+            "minimumC": 6.7,
+            "date": "1996-02-12"
+          },
+          {
+            "year": 1997,
+            "days": 240,
+            "expectedDays": 365,
+            "coverage": 0.6575,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "1997-01-23"
+          },
+          {
+            "year": 1998,
+            "days": 246,
+            "expectedDays": 365,
+            "coverage": 0.674,
+            "adequate": false,
+            "minimumC": 2.8,
+            "date": "1998-02-03"
+          },
+          {
+            "year": 1999,
+            "days": 240,
+            "expectedDays": 365,
+            "coverage": 0.6575,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "1999-01-04"
+          },
+          {
+            "year": 2000,
+            "days": 241,
+            "expectedDays": 366,
+            "coverage": 0.6585,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "2000-02-14"
+          },
+          {
+            "year": 2001,
+            "days": 232,
+            "expectedDays": 365,
+            "coverage": 0.6356,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2001-02-07"
+          },
+          {
+            "year": 2002,
+            "days": 245,
+            "expectedDays": 365,
+            "coverage": 0.6712,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2002-12-31"
+          },
+          {
+            "year": 2003,
+            "days": 213,
+            "expectedDays": 365,
+            "coverage": 0.5836,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "2003-01-17"
+          },
+          {
+            "year": 2004,
+            "days": 244,
+            "expectedDays": 366,
+            "coverage": 0.6667,
+            "adequate": false,
+            "minimumC": 3.3,
+            "date": "2004-01-12"
+          },
+          {
+            "year": 2005,
+            "days": 244,
+            "expectedDays": 365,
+            "coverage": 0.6685,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "2005-03-17"
+          },
+          {
+            "year": 2006,
+            "days": 244,
+            "expectedDays": 365,
+            "coverage": 0.6685,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "2006-02-07"
+          },
+          {
+            "year": 2007,
+            "days": 248,
+            "expectedDays": 365,
+            "coverage": 0.6795,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "2007-01-29"
+          },
+          {
+            "year": 2008,
+            "days": 249,
+            "expectedDays": 366,
+            "coverage": 0.6803,
+            "adequate": false,
+            "minimumC": 5.6,
+            "date": "2008-02-25"
+          },
+          {
+            "year": 2009,
+            "days": 219,
+            "expectedDays": 365,
+            "coverage": 0.6,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2009-01-20"
+          },
+          {
+            "year": 2010,
+            "days": 188,
+            "expectedDays": 365,
+            "coverage": 0.5151,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2010-12-06"
+          },
+          {
+            "year": 2011,
+            "days": 210,
+            "expectedDays": 365,
+            "coverage": 0.5753,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "2011-10-20"
+          },
+          {
+            "year": 2012,
+            "days": 240,
+            "expectedDays": 366,
+            "coverage": 0.6557,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "2012-02-06"
+          },
+          {
+            "year": 2013,
+            "days": 220,
+            "expectedDays": 365,
+            "coverage": 0.6027,
+            "adequate": false,
+            "minimumC": 7.2,
+            "date": "2013-01-25"
+          },
+          {
+            "year": 2014,
+            "days": 202,
+            "expectedDays": 365,
+            "coverage": 0.5534,
+            "adequate": false,
+            "minimumC": 6.1,
+            "date": "2014-12-08"
+          },
+          {
+            "year": 2015,
+            "days": 157,
+            "expectedDays": 365,
+            "coverage": 0.4301,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2015-01-12"
+          },
+          {
+            "year": 2016,
+            "days": 58,
+            "expectedDays": 366,
+            "coverage": 0.1585,
+            "adequate": false,
+            "minimumC": 5.6,
+            "date": "2016-02-07"
+          },
+          {
+            "year": 2017,
+            "days": 52,
+            "expectedDays": 365,
+            "coverage": 0.1425,
+            "adequate": false,
+            "minimumC": 9.4,
+            "date": "2017-10-02"
+          },
+          {
+            "year": 2018,
+            "days": 215,
+            "expectedDays": 365,
+            "coverage": 0.589,
+            "adequate": false,
+            "minimumC": 6.7,
+            "date": "2018-02-09"
+          },
+          {
+            "year": 2019,
+            "days": 203,
+            "expectedDays": 365,
+            "coverage": 0.5562,
+            "adequate": false,
+            "minimumC": 3.9,
+            "date": "2019-01-16"
+          },
+          {
+            "year": 2020,
+            "days": 46,
+            "expectedDays": 366,
+            "coverage": 0.1257,
+            "adequate": false,
+            "minimumC": 6.1,
+            "date": "2020-01-23"
+          },
+          {
+            "year": 2021,
+            "days": 113,
+            "expectedDays": 365,
+            "coverage": 0.3096,
+            "adequate": false,
+            "minimumC": 4.4,
+            "date": "2021-02-08"
+          },
+          {
+            "year": 2022,
+            "days": 190,
+            "expectedDays": 365,
+            "coverage": 0.5205,
+            "adequate": false,
+            "minimumC": 5.6,
+            "date": "2022-03-11"
+          },
+          {
+            "year": 2023,
+            "days": 104,
+            "expectedDays": 365,
+            "coverage": 0.2849,
+            "adequate": false,
+            "minimumC": 5,
+            "date": "2023-01-26"
+          }
+        ],
+        "hourlyChillCalculated": false,
+        "warning": "Nearby station, not the orchard logger. Different exposure and observation schedules matter. Incomplete years cannot establish an absence of damaging freezes."
+      },
+      "sources": [
+        {
+          "title": "Promising Olive Cultivars for Oil Production in Hawaii",
+          "url": "https://journals.ashs.org/downloadpdf/journals/horttech/26/4/article-p497.pdf",
+          "doi": "10.21273/HORTTECH.26.4.497",
+          "locator": "Abstract; methods"
+        },
+        {
+          "title": "Reflective Guide to Growing Olives for Oil Production in Hawai‘i",
+          "url": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/NPH-16.pdf",
+          "locator": "Pages 2–3, 6–8; Table 3"
+        }
+      ],
+      "developmentCase": true,
+      "cultivarOutcomes": {
+        "trial": {
+          "category": "conditional",
+          "label": "Cultivar-dependent fruiting",
+          "explanation": "Arbequina, Arbosana and Koroneiki repeatedly fruited in 2013–15. Yields were low and uneven; this does not establish dependable commercial crops. The generic grid is not applicable as a blanket no-fruiting verdict here."
+        },
+        "Arbequina": {
+          "category": "conditional",
+          "label": "Fruiting demonstrated · reliability unproven",
+          "explanation": "Arbequina fruited in 2013–15 at the irrigated high-elevation trial. Seven trees per cultivar; 2013–14 mean yields across the three cultivars were 2.14–2.45 kg/tree. In 2015 only two trees per cultivar were harvested after substantial fruit drop."
+        },
+        "Arbosana": {
+          "category": "conditional",
+          "label": "Fruiting demonstrated · reliability unproven",
+          "explanation": "Arbosana fruited in 2013–15 at the irrigated high-elevation trial. Seven trees per cultivar; 2013–14 mean yields across the three cultivars were 2.14–2.45 kg/tree. In 2015 only two trees per cultivar were harvested after substantial fruit drop."
+        },
+        "Koroneiki": {
+          "category": "conditional",
+          "label": "Fruiting demonstrated · reliability unproven",
+          "explanation": "Koroneiki fruited in 2013–15 at the irrigated high-elevation trial. Seven trees per cultivar; 2013–14 mean yields across the three cultivars were 2.14–2.45 kg/tree. In 2015 only two trees per cultivar were harvested after substantial fruit drop."
+        },
+        "Coratina": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Coratina did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Frantoio": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Frantoio did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Leccino": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Leccino did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Mission": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Mission did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Moraiolo": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Moraiolo did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Pendolino": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Pendolino did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        },
+        "Taggiasca": {
+          "category": "unsupported",
+          "label": "No harvest demonstrated in this trial",
+          "explanation": "Taggiasca did not provide a harvestable crop in the Lalamilo comparison. Higher chilling demand is a proposed explanation, not an experimentally measured threshold. This result cannot be extended to cooler Kula or all Hawaii."
+        }
+      },
+      "chill": {
+        "method": "Published on-site hours below 12.5°C, December–March",
+        "seasons": [
+          {
+            "season": "2012–13",
+            "hours": 141
+          },
+          {
+            "season": "2013–14",
+            "hours": 161
+          }
+        ],
+        "source": "Miyasaka & Hamasaki (2016), HortTechnology 26:497–505",
+        "url": "https://doi.org/10.21273/HORTTECH.26.4.497",
+        "interpretation": "Exposure accompanying fruiting, not a minimum physiological requirement. Not DMA CU. Raw hourly logger series was not available for independent recomputation."
+      }
+    },
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "coordinatePrecisionKm": 2,
+      "waterScenario": "irrigated",
+      "station": {
+        "id": "SP000008410",
+        "name": "Córdoba Aeropuerto",
+        "lat": 37.8442,
+        "lng": -4.8458,
+        "elevationM": 90,
+        "orchardId": "es_pedro_abad_longterm",
+        "distanceKm": 35.99,
+        "elevationDifferenceM": -72,
+        "source": "NOAA GHCN-Daily",
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/SP000008410.dly",
+        "sha256": "0b8c0c24d9fba2b6e9a28528b654acccc9c7e6734615626172e980ebbba8b005",
+        "downloadedUTC": "2026-10-18T16:18:01.870962+00:00",
+        "qualityRejectedValues": 0,
+        "annualMinima": [
+          {
+            "year": 1991,
+            "days": 337,
+            "expectedDays": 365,
+            "coverage": 0.9233,
+            "adequate": false,
+            "minimumC": -2,
+            "date": "1991-01-31"
+          },
+          {
+            "year": 1992,
+            "days": 366,
+            "expectedDays": 366,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -6.4,
+            "date": "1992-01-23"
+          },
+          {
+            "year": 1993,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -4.2,
+            "date": "1993-01-11"
+          },
+          {
+            "year": 1994,
+            "days": 337,
+            "expectedDays": 365,
+            "coverage": 0.9233,
+            "adequate": false,
+            "minimumC": -5.2,
+            "date": "1994-12-27"
+          },
+          {
+            "year": 1995,
+            "days": 337,
+            "expectedDays": 365,
+            "coverage": 0.9233,
+            "adequate": false,
+            "minimumC": -4.4,
+            "date": "1995-01-14"
+          },
+          {
+            "year": 1996,
+            "days": 366,
+            "expectedDays": 366,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -1.5,
+            "date": "1996-02-24"
+          },
+          {
+            "year": 1997,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": 1.8,
+            "date": "1997-12-07"
+          },
+          {
+            "year": 1998,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -3.2,
+            "date": "1998-12-05"
+          },
+          {
+            "year": 1999,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -3.8,
+            "date": "1999-02-16"
+          },
+          {
+            "year": 2000,
+            "days": 366,
+            "expectedDays": 366,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -1.8,
+            "date": "2000-01-23"
+          },
+          {
+            "year": 2001,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -0.8,
+            "date": "2001-12-16"
+          },
+          {
+            "year": 2002,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -0.6,
+            "date": "2002-02-20"
+          },
+          {
+            "year": 2003,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -2.1,
+            "date": "2003-01-17"
+          },
+          {
+            "year": 2004,
+            "days": 366,
+            "expectedDays": 366,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -4.8,
+            "date": "2004-12-28"
+          },
+          {
+            "year": 2005,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -8.2,
+            "date": "2005-01-28"
+          },
+          {
+            "year": 2006,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -1.1,
+            "date": "2006-01-05"
+          },
+          {
+            "year": 2007,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -2.6,
+            "date": "2007-01-25"
+          },
+          {
+            "year": 2008,
+            "days": 365,
+            "expectedDays": 366,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -1.8,
+            "date": "2008-11-28"
+          },
+          {
+            "year": 2009,
+            "days": 364,
+            "expectedDays": 365,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -2.9,
+            "date": "2009-01-10"
+          },
+          {
+            "year": 2010,
+            "days": 361,
+            "expectedDays": 365,
+            "coverage": 0.989,
+            "adequate": true,
+            "minimumC": -0.8,
+            "date": "2010-01-10"
+          },
+          {
+            "year": 2011,
+            "days": 363,
+            "expectedDays": 365,
+            "coverage": 0.9945,
+            "adequate": true,
+            "minimumC": -0.5,
+            "date": "2011-12-31"
+          },
+          {
+            "year": 2012,
+            "days": 358,
+            "expectedDays": 366,
+            "coverage": 0.9781,
+            "adequate": true,
+            "minimumC": -4.8,
+            "date": "2012-02-05"
+          },
+          {
+            "year": 2013,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -2.7,
+            "date": "2013-12-08"
+          },
+          {
+            "year": 2014,
+            "days": 364,
+            "expectedDays": 365,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -2.9,
+            "date": "2014-12-31"
+          },
+          {
+            "year": 2015,
+            "days": 363,
+            "expectedDays": 365,
+            "coverage": 0.9945,
+            "adequate": true,
+            "minimumC": -2.6,
+            "date": "2015-01-01"
+          },
+          {
+            "year": 2016,
+            "days": 356,
+            "expectedDays": 366,
+            "coverage": 0.9727,
+            "adequate": true,
+            "minimumC": -2,
+            "date": "2016-02-17"
+          },
+          {
+            "year": 2017,
+            "days": 362,
+            "expectedDays": 365,
+            "coverage": 0.9918,
+            "adequate": true,
+            "minimumC": -2.9,
+            "date": "2017-01-18"
+          },
+          {
+            "year": 2018,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -3.1,
+            "date": "2018-02-09"
+          },
+          {
+            "year": 2019,
+            "days": 362,
+            "expectedDays": 365,
+            "coverage": 0.9918,
+            "adequate": true,
+            "minimumC": -2.5,
+            "date": "2019-01-11"
+          },
+          {
+            "year": 2020,
+            "days": 366,
+            "expectedDays": 366,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -2.5,
+            "date": "2020-12-31"
+          },
+          {
+            "year": 2021,
+            "days": 364,
+            "expectedDays": 365,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -3.5,
+            "date": "2021-01-03"
+          },
+          {
+            "year": 2022,
+            "days": 365,
+            "expectedDays": 365,
+            "coverage": 1,
+            "adequate": true,
+            "minimumC": -1.6,
+            "date": "2022-01-20"
+          },
+          {
+            "year": 2023,
+            "days": 364,
+            "expectedDays": 365,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -3.9,
+            "date": "2023-01-26"
+          },
+          {
+            "year": 2024,
+            "days": 364,
+            "expectedDays": 366,
+            "coverage": 0.9945,
+            "adequate": true,
+            "minimumC": -1.9,
+            "date": "2024-01-08"
+          },
+          {
+            "year": 2025,
+            "days": 364,
+            "expectedDays": 365,
+            "coverage": 0.9973,
+            "adequate": true,
+            "minimumC": -3.8,
+            "date": "2025-01-16"
+          }
+        ],
+        "hourlyChillCalculated": false,
+        "warning": "Nearby station, not the orchard logger. Different exposure and observation schedules matter. Incomplete years cannot establish an absence of damaging freezes."
+      },
+      "sources": [
+        {
+          "title": "Cultivar and Tree Density As Key Factors in the Long-Term Performance of Super High-Density Olive Orchards",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2016.01226/full",
+          "doi": "10.3389/fpls.2016.01226",
+          "locator": "Materials and methods; Tables 1-3; climatic episodes"
+        }
+      ],
+      "developmentCase": true,
+      "cultivarOutcomes": {
+        "trial": {
+          "category": "freeze_risk",
+          "label": "Production demonstrated · damaging freezes",
+          "explanation": "Twelve measured harvests demonstrate cultivated olive production with irrigation. The 2005 damaging freeze below −9°C contradicts treating the regional 98/100 score as locally frost-safe."
+        },
+        "Arbequina": {
+          "category": "freeze_risk",
+          "label": "Productive trial · freeze exposure remains",
+          "explanation": "Arbequina was included in this irrigated long-term trial. Local freeze damage is documented; this evidence supplies no cultivar-specific lethal threshold or annual crop-loss probability."
+        },
+        "Arbosana": {
+          "category": "freeze_risk",
+          "label": "Productive trial · freeze exposure remains",
+          "explanation": "Arbosana was included in this irrigated long-term trial. Local freeze damage is documented; this evidence supplies no cultivar-specific lethal threshold or annual crop-loss probability."
+        },
+        "Koroneiki": {
+          "category": "freeze_risk",
+          "label": "Productive trial · freeze exposure remains",
+          "explanation": "Koroneiki was included in this irrigated long-term trial. Local freeze damage is documented; this evidence supplies no cultivar-specific lethal threshold or annual crop-loss probability."
+        },
+        "FS17": {
+          "category": "freeze_risk",
+          "label": "Productive trial · freeze exposure remains",
+          "explanation": "FS17 was included in this irrigated long-term trial. Local freeze damage is documented; this evidence supplies no cultivar-specific lethal threshold or annual crop-loss probability."
+        }
+      },
+      "freeze": {
+        "eventYear": 2005,
+        "observedRelation": "<",
+        "observedC": -9,
+        "date": null,
+        "sourceKind": "Orchard study event report; instrument/station ID not specified",
+        "gridC": -4.9,
+        "interpretation": "The orchard report and nearby airport both show colder exposure than the orchard map cell. Airport data do not establish the orchard’s exact temperature or permit a regional additive correction."
+      }
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "coordinatePrecisionKm": 2,
+      "waterScenario": "rainfed",
+      "station": {
+        "id": "ITM00016179",
+        "name": "Frontone",
+        "lat": 43.517,
+        "lng": 12.733,
+        "elevationM": 574,
+        "orchardId": "it_maiolati_freeze",
+        "distanceKm": 31.47,
+        "elevationDifferenceM": 169,
+        "source": "NOAA GHCN-Daily",
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/ITM00016179.dly",
+        "sha256": "56d3dff59d9c4bd748ab3307995f400c7af26f639c01150147b3cbada3fc80f0",
+        "downloadedUTC": "2026-10-18T16:18:01.976539+00:00",
+        "qualityRejectedValues": 22,
+        "annualMinima": [
+          {
+            "year": 1991,
+            "days": 256,
+            "expectedDays": 365,
+            "coverage": 0.7014,
+            "adequate": false,
+            "minimumC": -11.2,
+            "date": "1991-02-07"
+          },
+          {
+            "year": 1992,
+            "days": 143,
+            "expectedDays": 366,
+            "coverage": 0.3907,
+            "adequate": false,
+            "minimumC": -4,
+            "date": "1992-02-20"
+          },
+          {
+            "year": 1993,
+            "days": 1,
+            "expectedDays": 365,
+            "coverage": 0.0027,
+            "adequate": false,
+            "minimumC": 18.2,
+            "date": "1993-07-17"
+          },
+          {
+            "year": 1995,
+            "days": 3,
+            "expectedDays": 365,
+            "coverage": 0.0082,
+            "adequate": false,
+            "minimumC": 1.8,
+            "date": "1995-01-20"
+          },
+          {
+            "year": 1996,
+            "days": 2,
+            "expectedDays": 366,
+            "coverage": 0.0055,
+            "adequate": false,
+            "minimumC": 12.4,
+            "date": "1996-10-09"
+          },
+          {
+            "year": 1998,
+            "days": 2,
+            "expectedDays": 365,
+            "coverage": 0.0055,
+            "adequate": false,
+            "minimumC": 13.6,
+            "date": "1998-11-02"
+          },
+          {
+            "year": 1999,
+            "days": 62,
+            "expectedDays": 365,
+            "coverage": 0.1699,
+            "adequate": false,
+            "minimumC": -4.2,
+            "date": "1999-12-24"
+          },
+          {
+            "year": 2000,
+            "days": 272,
+            "expectedDays": 366,
+            "coverage": 0.7432,
+            "adequate": false,
+            "minimumC": -5.3,
+            "date": "2000-01-26"
+          },
+          {
+            "year": 2001,
+            "days": 262,
+            "expectedDays": 365,
+            "coverage": 0.7178,
+            "adequate": false,
+            "minimumC": -4.8,
+            "date": "2001-12-25"
+          },
+          {
+            "year": 2002,
+            "days": 258,
+            "expectedDays": 365,
+            "coverage": 0.7068,
+            "adequate": false,
+            "minimumC": -4,
+            "date": "2002-01-04"
+          },
+          {
+            "year": 2003,
+            "days": 250,
+            "expectedDays": 365,
+            "coverage": 0.6849,
+            "adequate": false,
+            "minimumC": -5.2,
+            "date": "2003-01-13"
+          },
+          {
+            "year": 2004,
+            "days": 236,
+            "expectedDays": 366,
+            "coverage": 0.6448,
+            "adequate": false,
+            "minimumC": -4.5,
+            "date": "2004-01-25"
+          },
+          {
+            "year": 2006,
+            "days": 234,
+            "expectedDays": 365,
+            "coverage": 0.6411,
+            "adequate": false,
+            "minimumC": -5.6,
+            "date": "2006-01-26"
+          },
+          {
+            "year": 2007,
+            "days": 230,
+            "expectedDays": 365,
+            "coverage": 0.6301,
+            "adequate": false,
+            "minimumC": -5,
+            "date": "2007-12-15"
+          },
+          {
+            "year": 2008,
+            "days": 220,
+            "expectedDays": 366,
+            "coverage": 0.6011,
+            "adequate": false,
+            "minimumC": -3.8,
+            "date": "2008-02-18"
+          },
+          {
+            "year": 2009,
+            "days": 224,
+            "expectedDays": 365,
+            "coverage": 0.6137,
+            "adequate": false,
+            "minimumC": -5.8,
+            "date": "2009-12-20"
+          },
+          {
+            "year": 2010,
+            "days": 219,
+            "expectedDays": 365,
+            "coverage": 0.6,
+            "adequate": false,
+            "minimumC": -4,
+            "date": "2010-01-28"
+          },
+          {
+            "year": 2011,
+            "days": 233,
+            "expectedDays": 365,
+            "coverage": 0.6384,
+            "adequate": false,
+            "minimumC": -3.4,
+            "date": "2011-03-09"
+          },
+          {
+            "year": 2012,
+            "days": 223,
+            "expectedDays": 366,
+            "coverage": 0.6093,
+            "adequate": false,
+            "minimumC": -7.8,
+            "date": "2012-02-07"
+          },
+          {
+            "year": 2013,
+            "days": 224,
+            "expectedDays": 365,
+            "coverage": 0.6137,
+            "adequate": false,
+            "minimumC": -3,
+            "date": "2013-02-10"
+          },
+          {
+            "year": 2014,
+            "days": 215,
+            "expectedDays": 365,
+            "coverage": 0.589,
+            "adequate": false,
+            "minimumC": -3.8,
+            "date": "2014-12-30"
+          },
+          {
+            "year": 2015,
+            "days": 208,
+            "expectedDays": 365,
+            "coverage": 0.5699,
+            "adequate": false,
+            "minimumC": -4.6,
+            "date": "2015-01-01"
+          },
+          {
+            "year": 2016,
+            "days": 196,
+            "expectedDays": 366,
+            "coverage": 0.5355,
+            "adequate": false,
+            "minimumC": -2.2,
+            "date": "2016-01-18"
+          },
+          {
+            "year": 2017,
+            "days": 205,
+            "expectedDays": 365,
+            "coverage": 0.5616,
+            "adequate": false,
+            "minimumC": -6.2,
+            "date": "2017-01-07"
+          },
+          {
+            "year": 2018,
+            "days": 212,
+            "expectedDays": 365,
+            "coverage": 0.5808,
+            "adequate": false,
+            "minimumC": -9,
+            "date": "2018-02-28"
+          },
+          {
+            "year": 2019,
+            "days": 213,
+            "expectedDays": 365,
+            "coverage": 0.5836,
+            "adequate": false,
+            "minimumC": -2.8,
+            "date": "2019-01-04"
+          },
+          {
+            "year": 2020,
+            "days": 215,
+            "expectedDays": 366,
+            "coverage": 0.5874,
+            "adequate": false,
+            "minimumC": -0.4,
+            "date": "2020-02-27"
+          },
+          {
+            "year": 2021,
+            "days": 211,
+            "expectedDays": 365,
+            "coverage": 0.5781,
+            "adequate": false,
+            "minimumC": -4.6,
+            "date": "2021-02-14"
+          },
+          {
+            "year": 2022,
+            "days": 219,
+            "expectedDays": 365,
+            "coverage": 0.6,
+            "adequate": false,
+            "minimumC": -1.8,
+            "date": "2022-01-10"
+          },
+          {
+            "year": 2023,
+            "days": 222,
+            "expectedDays": 365,
+            "coverage": 0.6082,
+            "adequate": false,
+            "minimumC": -2.2,
+            "date": "2023-02-08"
+          },
+          {
+            "year": 2024,
+            "days": 213,
+            "expectedDays": 366,
+            "coverage": 0.582,
+            "adequate": false,
+            "minimumC": 0,
+            "date": "2024-01-12"
+          },
+          {
+            "year": 2025,
+            "days": 132,
+            "expectedDays": 365,
+            "coverage": 0.3616,
+            "adequate": false,
+            "minimumC": -1.4,
+            "date": "2025-01-15"
+          }
+        ],
+        "hourlyChillCalculated": false,
+        "warning": "Nearby station, not the orchard logger. Different exposure and observation schedules matter. Incomplete years cannot establish an absence of damaging freezes."
+      },
+      "sources": [
+        {
+          "title": "Frost tolerance of 24 olive cultivars and subsequent vegetative re-sprouting as indication of recovery ability",
+          "url": "https://www.d3a.univpm.it/sites/www.d3a.univpm.it/files/d3a/Lavori%20scientifici/001%20-%20Lodolini%20et%20al%202016%20-%20SCI%20HORTIC-AMSTERDAM%20-%20211%20-%20152-157.pdf",
+          "locator": "pp.153-156, study site, weather episode, defoliation and regrowth results"
+        }
+      ],
+      "developmentCase": true,
+      "cultivarOutcomes": {
+        "trial": {
+          "category": "freeze_risk",
+          "label": "Cultivar-sensitive freeze damage",
+          "explanation": "Young trees were severely damaged during prolonged freezing at a reported local minimum of −6.4°C. The reanalysis overstates this event’s minimum severity; it is not evidence of observed −13.9°C at the orchard."
+        },
+        "Arbequina": {
+          "category": "freeze_risk",
+          "label": "Severe damage observed",
+          "explanation": "Arbequina suffered complete defoliation and poor canopy recovery in this young-tree trial. Low chilling requirement does not imply frost hardiness."
+        },
+        "FS17": {
+          "category": "freeze_risk",
+          "label": "Severe damage observed",
+          "explanation": "FS17 suffered complete defoliation and poor canopy recovery in this young-tree trial. Low chilling requirement does not imply frost hardiness."
+        },
+        "Ascolana dura": {
+          "category": "conditional",
+          "label": "Better relative freeze tolerance",
+          "explanation": "Ascolana dura had less damage and better recovery than susceptible cultivars in this event. Relative tolerance is not immunity or a reliable annual yield estimate."
+        },
+        "Orbetana": {
+          "category": "conditional",
+          "label": "Better relative freeze tolerance",
+          "explanation": "Orbetana had less damage and better recovery than susceptible cultivars in this event. Relative tolerance is not immunity or a reliable annual yield estimate."
+        }
+      },
+      "freeze": {
+        "eventYear": 2012,
+        "observedRelation": "=",
+        "observedC": -6.4,
+        "date": "2012-02-15",
+        "sourceKind": "Study-area weather reported by Lodolini et al.; climatic records credited to Centro Agrometeo ASSAM",
+        "gridC": -13.9,
+        "duration": "Study reports a 12-day freezing episode, mean minimum −4.7°C, after a mild January spell (mean minimum 6.5°C during January 7–17).",
+        "interpretation": "Use −6.4°C for the reported local event. −13.9°C is the sampled reanalysis value, not a station measurement. Freeze duration, acclimation and young tree age matter even at a less extreme minimum."
+      },
+      "nearbyStationMetadata": {
+        "codice": "ST34",
+        "nome": "Maiolati Spontini",
+        "comune": "Maiolati Spontini",
+        "provincia": "AN",
+        "indirizzo": "loc. Colle Celeste",
+        "latString": "43°28'36.847''",
+        "longString": "13°7'37.099''",
+        "longitudine": 13.12697,
+        "latitudine": 43.4769,
+        "altitudine": "350",
+        "statoCodice": "ATTIVA",
+        "stato": "Stazione attiva",
+        "proprietario": "AMAP",
+        "inizio": "2009-04-15T00:00:00",
+        "fine": "2026-10-16T05:20:00",
+        "listaSensori": {
+          "totale": 8,
+          "lista": [
+            {
+              "idSensoreStazione": 19073,
+              "idSensoreClasse": 7,
+              "descrizioneClasse": "Sensore di vento a m. 10 dal suolo",
+              "haGiornalieri": true,
+              "haMensili": true,
+              "haAnnuali": true,
+              "haGrafico": false,
+              "link": "https://apimeteo.regione.marche.it/Sensore/7",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19074,
+              "idSensoreClasse": 1,
+              "descrizioneClasse": "Sensore di temperatura in aria a m. 1.50 dal suolo",
+              "haGiornalieri": true,
+              "haMensili": true,
+              "haAnnuali": true,
+              "haGrafico": true,
+              "link": "https://apimeteo.regione.marche.it/Sensore/1",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19075,
+              "idSensoreClasse": 12,
+              "descrizioneClasse": "Sensore di umidità",
+              "haGiornalieri": true,
+              "haMensili": true,
+              "haAnnuali": true,
+              "haGrafico": true,
+              "link": "https://apimeteo.regione.marche.it/Sensore/12",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19077,
+              "idSensoreClasse": 3,
+              "descrizioneClasse": "Sensore di temperatura nel suolo a m. 0.05 di profondità",
+              "haGiornalieri": true,
+              "haMensili": false,
+              "haAnnuali": false,
+              "haGrafico": false,
+              "link": "https://apimeteo.regione.marche.it/Sensore/3",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19078,
+              "idSensoreClasse": 4,
+              "descrizioneClasse": "Sensore di temperatura nel suolo a m. 0.10 di profondità",
+              "haGiornalieri": true,
+              "haMensili": false,
+              "haAnnuali": false,
+              "haGrafico": false,
+              "link": "https://apimeteo.regione.marche.it/Sensore/4",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19079,
+              "idSensoreClasse": 5,
+              "descrizioneClasse": "Sensore di temperatura nel suolo a m. 0.20 di profondità",
+              "haGiornalieri": true,
+              "haMensili": false,
+              "haAnnuali": false,
+              "haGrafico": false,
+              "link": "https://apimeteo.regione.marche.it/Sensore/5",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19080,
+              "idSensoreClasse": 6,
+              "descrizioneClasse": "Sensore di temperatura nel suolo a m. 0.50 di profondità",
+              "haGiornalieri": true,
+              "haMensili": false,
+              "haAnnuali": false,
+              "haGrafico": false,
+              "link": "https://apimeteo.regione.marche.it/Sensore/6",
+              "nota": ""
+            },
+            {
+              "idSensoreStazione": 19081,
+              "idSensoreClasse": 10,
+              "descrizioneClasse": "Sensore di precipitazione",
+              "haGiornalieri": true,
+              "haMensili": true,
+              "haAnnuali": true,
+              "haGrafico": true,
+              "link": "https://apimeteo.regione.marche.it/Sensore/10",
+              "nota": ""
+            }
+          ]
+        }
+      },
+      "localNetworkNote": "AMAP ST34 Colle Celeste: 43.47690 N, 13.12697 E, 350 m, approximately 0.63 km from the orchard. Its public metadata confirm a nearby station, but the paper does not identify its station ID; do not attribute the published event value to ST34. Raw 2012 readings require a provider data request and are not included."
+    }
+  ],
+  "stationDocumentation": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+  "validation": {
+    "version": "3.1",
+    "timeUTC": "2026-10-18T16:20:59.334Z",
+    "developmentSites": [
+      "us-hi-lalamilo",
+      "es_pedro_abad_longterm",
+      "it_maiolati_freeze"
+    ],
+    "title": "Local evidence/QC regression checks; not independent validation of new predictive parameters",
+    "localCaseChecks": 12,
+    "localCaseChecksPassed": 12,
+    "stationValuesChecked": 52589,
+    "stationChecks": [
+      {
+        "id": "USC00515260",
+        "values": 13318,
+        "sourceHashMatches": true,
+        "dailyReductionsMatch": true,
+        "spatialCorrectionApplied": false,
+        "hourlyChillCalculated": false
+      },
+      {
+        "id": "SP000008410",
+        "values": 25408,
+        "sourceHashMatches": true,
+        "dailyReductionsMatch": true,
+        "spatialCorrectionApplied": false,
+        "hourlyChillCalculated": false
+      },
+      {
+        "id": "ITM00016179",
+        "values": 13863,
+        "sourceHashMatches": true,
+        "dailyReductionsMatch": true,
+        "spatialCorrectionApplied": false,
+        "hourlyChillCalculated": false
+      }
+    ],
+    "regionalScreenUnchanged": true,
+    "regionalModelCoreSha256": "a9360ad68254f0b7bfd982a9499f2e1ee404d10de8d43ba0e0eb7904ceb82a93",
+    "regionalDataSha256": "ffb71a0d7fa4753684b91b991ebc07ca95460814ea95b21a68361bc37be6a4fb",
+    "remainingRegionalComparisons": {
+      "production": {
+        "sites": 7,
+        "cells": 6,
+        "studyClusters": 5,
+        "compatible": 6
+      },
+      "hazard": {
+        "sites": 2,
+        "cells": 2,
+        "studyClusters": 1,
+        "compatible": 2
+      }
+    },
+    "resolvedInterpretation": [
+      "Lalamilo no longer described solely by a generic zero: local cultivar-dependent fruiting is displayed separately.",
+      "Pedro Abad not locally frost-safe: observed damaging event is prioritized over a favorable regional score.",
+      "Maiolati event minimum shown as -6.4 C, with duration and relative cultivar response; reanalysis -13.9 C never relabeled as observed."
+    ],
+    "unresolved": [
+      "No raw hourly Lalamilo logger data to independently recompute DMA CU.",
+      "Nearby NOAA records are not orchard observations; Lalamilo and Frontone annual coverage is incomplete.",
+      "No directly obtained 2012 AMAP daily readings; metadata do not identify which station supplied the study weather.",
+      "No justified regional bias correction from isolated orchard events. The two numerical reanalysis biases remain.",
+      "Cultivar trial evidence does not establish reliable annual economic yield."
+    ]
+  }
+}

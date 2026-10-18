@@ -2,7 +2,7 @@
 
 **[Open the interactive map](https://khayoon.github.io/olive-growing-atlas/)**
 
-Version 3 embeds global annual extreme-temperature history and source-linked edible-olive orchard evidence. The intended crop is **Olea europaea subsp. europaea**, including table and oil cultivars. Wild/African olive distributions and unrelated plants called olive are excluded.
+Version 3.1 adds local weather and cultivar assessments for three documented orchards. The regional grid remains version 3.0. It embeds global annual extreme-temperature history and source-linked edible-olive orchard evidence. The intended crop is **Olea europaea subsp. europaea**, including table and oil cultivars. Wild/African olive distributions and unrelated plants called olive are excluded.
 
 Download `index.html` and open it in a current browser. Leaflet, Natural Earth land, climate values, both water scenarios and all orchard evidence are embedded. No API key, local GeoJSON or server is required. Optional OpenStreetMap background tiles and external source links need a connection. The file is approximately 20 MB and uses browser `DecompressionStream('gzip')`.
 
@@ -22,7 +22,13 @@ Download `index.html` and open it in a current browser. Leaflet, Natural Earth l
 
 Two precisely located Texas flowering-failure trials and one Italian freeze-damage site all score below 80. Those are three hazard-site flags across two studies, not validation of freeze magnitude or a global failure-class accuracy estimate. Nearby plots sharing a climate cell count once. Short trials, categorical productivity, fruit-quality sampling and cultivar challenges remain separate.
 
-**Counterexamples are retained:** low-chill edible cultivars fruited at Lalamilo, Hawaii, where the generic model scores 0. Reported local freezes also differ materially from ERA5-EX at Pedro Abad and Maiolati. The data are not bias-corrected or overridden locally to make these examples pass.
+**Local weather and cultivar checks:** gold-ring markers and sidebar shortcuts open Lalamilo, Pedro Abad and Maiolati. Local evidence takes precedence over a standalone regional orchard verdict. Choose the cultivar to see documented fruiting, non-harvest or relative freeze-damage outcomes. Published DMA chilling requirements (Arbequina 339, Leccino 612, Frantoio 671 CU) are explicitly separated from Lalamilo's reported 141/161 hours below 12.5°C. These exposures are not universal cultivar requirements, and no DMA CU are inferred from quarterly means or incomplete daily data.
+
+Local freeze reports are below −9°C at Pedro Abad in 2005 and −6.4°C at Maiolati on 15 February 2012. Regional estimates −4.9°C and −13.9°C remain visible as conflicts. Nearby NOAA daily archives are supplied with QC, coverage, station distances and elevations. Córdoba airport (36 km away) independently records −8.2°C in 2005; it is not the orchard thermometer. Frontone (31.5 km away) cannot substitute for Maiolati. AMAP ST34 is about 0.63 km away, but only metadata were obtained; the study does not identify its station ID.
+
+**This release resolves misleading interpretations, not the underlying regional numerical biases.** There is insufficient directly obtained hourly/on-site history to calibrate a defensible spatial correction or a reliable-yield model. The regional raster and its original discrepancies are unchanged. The local cases receive categorical assessments, not invented 0–100 scores.
+
+The three sites are now development cases. Excluding them leaves six measured-production climate cells (five studies), all scoring at least 40, and two Texas flowering-failure sites (one study), both flagged below 80. These remaining checks are regression comparisons of the existing screen, not fresh independent validation.
 
 The literature sample is small and geographically uneven. This is an externally checked **climate screening model**, not a calibrated probability of reliable annual yield or commercial profitability. Read [the full agronomic review](AGRONOMIC_REVIEW.md).
 
@@ -47,6 +53,11 @@ Annual TNn cannot resolve freeze duration, deacclimation, bloom heat, spring fro
 - [GLOBAL_FREEZE_VALIDATION.json](GLOBAL_FREEZE_VALIDATION.json): independent scalar source checks and local freeze discrepancies.
 - [ORCHARD_EVIDENCE.json](ORCHARD_EVIDENCE.json): source-derived coordinates, management, cultivars, evidence classes and exclusions.
 - [ORCHARD_VALIDATION.json](ORCHARD_VALIDATION.json): every result, shared-cell grouping, counterexamples and primary citations.
+- [LOCAL_STATIONS.json](LOCAL_STATIONS.json): local source observations, cultivar outcomes and station metadata.
+- [LOCAL_VALIDATION.json](LOCAL_VALIDATION.json): 52,589 independently checked accepted station values, 12 local behavior checks and remaining regional comparisons.
+- [LOCAL_VALIDATION_PROTOCOL.json](LOCAL_VALIDATION_PROTOCOL.json): development split, units, completeness and scope.
+- [LOCAL_ASSESSMENT_MODEL.js](LOCAL_ASSESSMENT_MODEL.js): categorical point-assessment logic. Regional `MODEL.js` is unchanged.
+- [stations/](stations/): accepted 1991–2025 daily Tmin/Tmax with source/measurement flags and annual coverage. GHCN quality-flagged and missing values excluded; no gap filling.
 - [VALIDATION_PROTOCOL.json](VALIDATION_PROTOCOL.json): rules declared before orchard score extraction.
 
 ## Attribution and reuse
