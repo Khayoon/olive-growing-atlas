@@ -820,5 +820,6 @@
     "freeze": "Global ERA5-EX 1991-2020 annual TNn mean caps score; CONUS PRISM refines mean where available. No monthly-mean substitute or spatial gap filling.",
     "freeze_tail": "1991-2025: >=1 year <=-12.2C caps59; >=20% years <=-7C caps79; >=20% years <=-10C caps39. Require>=30 valid years. Conservative policy choices, not crop-death probabilities."
   },
-  "model_core_sha256": "a9360ad68254f0b7bfd982a9499f2e1ee404d10de8d43ba0e0eb7904ceb82a93"
+  "model_core_sha256": "a9360ad68254f0b7bfd982a9499f2e1ee404d10de8d43ba0e0eb7904ceb82a93",
+  "model_core_hash_encoding": "UTF-8 with LF newlines (CRLF normalized)"
 }
