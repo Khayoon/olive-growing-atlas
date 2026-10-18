@@ -1,5 +1,5 @@
 {
-  "version": "5.0",
+  "version": "6.0",
   "source": "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_10m_land.geojson",
   "dataset": "Natural Earth land v5.1.2 at 1:10 million scale",
   "licence": "public domain",
@@ -10,5 +10,5 @@
   "processing": "Lakes excluded from land rendering and inspection. Coordinates rounded to 4 decimal degrees; properties omitted; geometry gzip/base64 embedded. No handmade island polygons added.",
   "compressed_bytes": 3574240,
   "raw_bytes": 11520967,
-  "rendering": "Default categorical production review: Cyprus-specific commercial siting flags use native DEM cells; seasonal constraints flag other risk; gray is unverified annual production. No green raster areas or station-temperature interpolation. Optional seasonal climate view samples native CHELSA windows and the embedded overview with valid-neighbor interpolation. Both views use the same detailed land/lake clipping."
+  "rendering": "Default continuous production-potential surface for three cultivated-olive profiles and rainfed/irrigated scenarios. Climate and native winter temperatures, station-calibrated annual freeze hazard, and Cyprus local siting guidance determine scores; study coverage never enters the score. Valid-neighbor interpolation and detailed land/lake clipping are shared by all views. Regional freeze data are not orchard-scale thermometer measurements."
 }

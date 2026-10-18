@@ -1,0 +1,159 @@
+{
+  "version": "6.0",
+  "grid": {
+    "width": 2160,
+    "height": 1044,
+    "west": -180.00013888885002,
+    "north": 83.99986041515001,
+    "dx": 0.16666666600000002,
+    "dy": 0.166666666
+  },
+  "fields": [
+    {
+      "id": "tnnQ0",
+      "multiplier": 10,
+      "quantile": 0
+    },
+    {
+      "id": "tnnQ1",
+      "multiplier": 10,
+      "quantile": 0.05
+    },
+    {
+      "id": "tnnQ2",
+      "multiplier": 10,
+      "quantile": 0.1
+    },
+    {
+      "id": "tnnQ3",
+      "multiplier": 10,
+      "quantile": 0.2
+    },
+    {
+      "id": "tnnQ4",
+      "multiplier": 10,
+      "quantile": 0.35
+    },
+    {
+      "id": "tnnQ5",
+      "multiplier": 10,
+      "quantile": 0.5
+    },
+    {
+      "id": "tnnQ6",
+      "multiplier": 10,
+      "quantile": 0.7
+    },
+    {
+      "id": "tnnQ7",
+      "multiplier": 10,
+      "quantile": 0.9
+    },
+    {
+      "id": "tnnQ8",
+      "multiplier": 10,
+      "quantile": 1
+    },
+    {
+      "id": "tasminSeason0",
+      "multiplier": 10,
+      "northMonth": 10,
+      "southMonth": 4
+    },
+    {
+      "id": "tasminSeason1",
+      "multiplier": 10,
+      "northMonth": 11,
+      "southMonth": 5
+    },
+    {
+      "id": "tasminSeason2",
+      "multiplier": 10,
+      "northMonth": 12,
+      "southMonth": 6
+    },
+    {
+      "id": "tasminSeason3",
+      "multiplier": 10,
+      "northMonth": 1,
+      "southMonth": 7
+    },
+    {
+      "id": "tasminSeason4",
+      "multiplier": 10,
+      "northMonth": 2,
+      "southMonth": 8
+    },
+    {
+      "id": "tasminSeason5",
+      "multiplier": 10,
+      "northMonth": 3,
+      "southMonth": 9
+    },
+    {
+      "id": "tasminSeason6",
+      "multiplier": 10,
+      "northMonth": 4,
+      "southMonth": 10
+    },
+    {
+      "id": "tasmaxSeason0",
+      "multiplier": 10,
+      "northMonth": 10,
+      "southMonth": 4
+    },
+    {
+      "id": "tasmaxSeason1",
+      "multiplier": 10,
+      "northMonth": 11,
+      "southMonth": 5
+    },
+    {
+      "id": "tasmaxSeason2",
+      "multiplier": 10,
+      "northMonth": 12,
+      "southMonth": 6
+    },
+    {
+      "id": "tasmaxSeason3",
+      "multiplier": 10,
+      "northMonth": 1,
+      "southMonth": 7
+    },
+    {
+      "id": "tasmaxSeason4",
+      "multiplier": 10,
+      "northMonth": 2,
+      "southMonth": 8
+    },
+    {
+      "id": "tasmaxSeason5",
+      "multiplier": 10,
+      "northMonth": 3,
+      "southMonth": 9
+    },
+    {
+      "id": "tasmaxSeason6",
+      "multiplier": 10,
+      "northMonth": 4,
+      "southMonth": 10
+    }
+  ],
+  "nodata": -32768,
+  "rawBytes": 103731840,
+  "gzipBytes": 21872982,
+  "sha256": "e2da8ca21a2761b5a22de8f61a234520027cb2359568b572cb0c26c12e4d1dd1",
+  "freeze": "Original ERA5-EX 0.1 degree annual TNn 1991-2025 sampled to overview; empirical quantiles retain tail structure. A station-trained correction is applied later, separately from source values.",
+  "monthly": "CHELSA monthly normal Tmin/Tmax 1981-2010; reconstructed normal-year chill is a screening estimate, not observed hourly data or year-to-year flowering reliability.",
+  "quantileProbabilities": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.7,
+    0.9,
+    1
+  ]
+}

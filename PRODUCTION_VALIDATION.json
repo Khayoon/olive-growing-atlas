@@ -1,0 +1,2840 @@
+{
+  "version": "6.0",
+  "scope": "Continuous relative production potential with station-calibrated weather-event and modeled-chilling constraints. Not globally validated reliable-yield probability.",
+  "freezeWeatherValidation": {
+    "scope": "Weather-event geographic holdout verification of the nine-quantile runtime approximation, not harvest reliability. Same matched accepted years for raw and calibrated predictions.",
+    "stations": 49,
+    "stationYears": 1235,
+    "rawBrier": 0.08166119532095695,
+    "nineQuantileBrier": 0.06989934230604443,
+    "frequencyMAE": 0.07757797360096702,
+    "meanProbabilityApproximationError": 0.003201335217955542,
+    "maximumProbabilityApproximationError": 0.031444601289767636,
+    "regions": {
+      "east-asia": {
+        "rawBrier": 0.051220414201183444,
+        "nineQuantileBrier": 0.05026162915783695
+      },
+      "europe-fringe": {
+        "rawBrier": 0.12440060748562005,
+        "nineQuantileBrier": 0.11406582617152759
+      },
+      "iberia": {
+        "rawBrier": 0.07604975426809843,
+        "nineQuantileBrier": 0.06340450540454987
+      },
+      "mediterranean-east": {
+        "rawBrier": 0.09635669744088113,
+        "nineQuantileBrier": 0.08183929088533277
+      },
+      "north-america": {
+        "rawBrier": 0.10185667044595617,
+        "nineQuantileBrier": 0.09195782266076831
+      },
+      "oceania": {
+        "rawBrier": 0.039351851851851846,
+        "nineQuantileBrier": 0.02502393189203435
+      },
+      "south-america": {
+        "rawBrier": 0.039971646942800795,
+        "nineQuantileBrier": 0.03659088049928818
+      },
+      "southern-africa": {
+        "rawBrier": 0.11666666666666665,
+        "nineQuantileBrier": 0.08559550718845815
+      }
+    },
+    "cases": [
+      {
+        "id": "SP000008410",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0.0625,
+        "nineQuantileBrier": 0.062405991118674724,
+        "nineQuantileFrequencyError": 0.061743348780858326,
+        "exactPrediction": 0.1213235294117647,
+        "runtimeApproximation": 0.12424334878085833
+      },
+      {
+        "id": "SP000008410",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0.03125,
+        "nineQuantileBrier": 0.03030913055901762,
+        "nineQuantileFrequencyError": 0.005974366829851231,
+        "exactPrediction": 0.027573529411764705,
+        "runtimeApproximation": 0.02527563317014877
+      },
+      {
+        "id": "SP000008410",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SP000008410",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00120170",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0.029384756657483937,
+        "nineQuantileBrier": 0.08558235861099041,
+        "nineQuantileFrequencyError": 0.2370603339943367,
+        "exactPrediction": 0.2727272727272727,
+        "runtimeApproximation": 0.267363364297367
+      },
+      {
+        "id": "SPE00120170",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0.030303030303030304,
+        "nineQuantileBrier": 0.03277944519761477,
+        "nineQuantileFrequencyError": 0.05826395575422971,
+        "exactPrediction": 0.09090909090909091,
+        "runtimeApproximation": 0.08856698605726002
+      },
+      {
+        "id": "SPE00120170",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 9.823358758661968e-7,
+        "nineQuantileFrequencyError": 0.0009911285869483317,
+        "exactPrediction": 0.0017825311942959,
+        "runtimeApproximation": 0.0009911285869483317
+      },
+      {
+        "id": "SPE00120170",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00120089",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0.7428571428571429,
+        "nineQuantileBrier": 0.48902616666710413,
+        "nineQuantileFrequencyError": 0.5458990369141887,
+        "exactPrediction": 0.1949579831932773,
+        "runtimeApproximation": 0.1969581059429541
+      },
+      {
+        "id": "SPE00120089",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0.2857142857142857,
+        "nineQuantileBrier": 0.25738150288926426,
+        "nineQuantileFrequencyError": 0.23086764657743417,
+        "exactPrediction": 0.05714285714285714,
+        "runtimeApproximation": 0.054846639136851526
+      },
+      {
+        "id": "SPE00120089",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0.05714285714285714,
+        "nineQuantileBrier": 0.05714285714285714,
+        "nineQuantileFrequencyError": 0.05714285714285714,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00120089",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00119783",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000027857740446662833,
+        "nineQuantileFrequencyError": 0.00527804324031765,
+        "exactPrediction": 0.0067226890756302525,
+        "runtimeApproximation": 0.00527804324031765
+      },
+      {
+        "id": "SPE00119783",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00119783",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SPE00119783",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SP000003195",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0.10743801652892561,
+        "nineQuantileBrier": 0.1474938631071822,
+        "nineQuantileFrequencyError": 0.20242065167319995,
+        "exactPrediction": 0.32620320855614976,
+        "runtimeApproximation": 0.32363277288532116
+      },
+      {
+        "id": "SP000003195",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0.029384756657483933,
+        "nineQuantileBrier": 0.039566403803732775,
+        "nineQuantileFrequencyError": 0.10090414831040814,
+        "exactPrediction": 0.1319073083778966,
+        "runtimeApproximation": 0.13120717861343845
+      },
+      {
+        "id": "SP000003195",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0.0009182736455463729,
+        "nineQuantileBrier": 0.00030477946407027887,
+        "nineQuantileFrequencyError": 0.017457934129509106,
+        "exactPrediction": 0.026737967914438502,
+        "runtimeApproximation": 0.017457934129509106
+      },
+      {
+        "id": "SP000003195",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00004195517647256943,
+        "nineQuantileFrequencyError": 0.0064772815650216585,
+        "exactPrediction": 0.012477718360071301,
+        "runtimeApproximation": 0.0064772815650216585
+      },
+      {
+        "id": "PO000008535",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "PO000008535",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "PO000008535",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "PO000008535",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "PO000008575",
+        "region": "iberia",
+        "thresholdC": -5,
+        "rawBrier": 0.2925000000000001,
+        "nineQuantileBrier": 0.2216669063144625,
+        "nineQuantileFrequencyError": 0.3628593478394383,
+        "exactPrediction": 0.5441176470588235,
+        "runtimeApproximation": 0.5371406521605617
+      },
+      {
+        "id": "PO000008575",
+        "region": "iberia",
+        "thresholdC": -7,
+        "rawBrier": 0.41000000000000003,
+        "nineQuantileBrier": 0.30314367933193037,
+        "nineQuantileFrequencyError": 0.23052912903130146,
+        "exactPrediction": 0.27647058823529413,
+        "runtimeApproximation": 0.26947087096869854
+      },
+      {
+        "id": "PO000008575",
+        "region": "iberia",
+        "thresholdC": -10,
+        "rawBrier": 0.04749999999999999,
+        "nineQuantileBrier": 0.04766320592479324,
+        "nineQuantileFrequencyError": 0.012775207426622373,
+        "exactPrediction": 0.07647058823529412,
+        "runtimeApproximation": 0.06277520742662238
+      },
+      {
+        "id": "PO000008575",
+        "region": "iberia",
+        "thresholdC": -12,
+        "rawBrier": 0.002500000000000001,
+        "nineQuantileBrier": 0.0007890659429068044,
+        "nineQuantileFrequencyError": 0.028090317600675225,
+        "exactPrediction": 0.05,
+        "runtimeApproximation": 0.028090317600675225
+      },
+      {
+        "id": "IT000162240",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0058173396327785044,
+        "nineQuantileFrequencyError": 0.07627148636796392,
+        "exactPrediction": 0.08627450980392157,
+        "runtimeApproximation": 0.07627148636796392
+      },
+      {
+        "id": "IT000162240",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00007525671154480753,
+        "nineQuantileFrequencyError": 0.008675062624834907,
+        "exactPrediction": 0.00784313725490196,
+        "runtimeApproximation": 0.008675062624834907
+      },
+      {
+        "id": "IT000162240",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "IT000162240",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "IT000016320",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "IT000016320",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "IT000016320",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "IT000016320",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "GR000016716",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0.00510204081632653,
+        "nineQuantileBrier": 0.008583980763780488,
+        "nineQuantileFrequencyError": 0.09264977476378713,
+        "exactPrediction": 0.11764705882352941,
+        "runtimeApproximation": 0.09264977476378713
+      },
+      {
+        "id": "GR000016716",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0011539201367012349,
+        "nineQuantileFrequencyError": 0.03396940000502268,
+        "exactPrediction": 0.05042016806722689,
+        "runtimeApproximation": 0.03396940000502268
+      },
+      {
+        "id": "GR000016716",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00001566149586529279,
+        "nineQuantileFrequencyError": 0.003957460785060642,
+        "exactPrediction": 0.008403361344537815,
+        "runtimeApproximation": 0.003957460785060642
+      },
+      {
+        "id": "GR000016716",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "GR000016648",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0.5102040816326532,
+        "nineQuantileBrier": 0.35337433070395274,
+        "nineQuantileFrequencyError": 0.5944529676130423,
+        "exactPrediction": 0.4117647058823529,
+        "runtimeApproximation": 0.4055470323869576
+      },
+      {
+        "id": "GR000016648",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0.5816326530612246,
+        "nineQuantileBrier": 0.49332664044821267,
+        "nineQuantileFrequencyError": 0.5700520094775889,
+        "exactPrediction": 0.22268907563025211,
+        "runtimeApproximation": 0.21566227623669681
+      },
+      {
+        "id": "GR000016648",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0.1887755102040816,
+        "nineQuantileBrier": 0.18848741138263714,
+        "nineQuantileFrequencyError": 0.1418452129747832,
+        "exactPrediction": 0.09243697478991597,
+        "runtimeApproximation": 0.07244050131093109
+      },
+      {
+        "id": "GR000016648",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0.12755102040816327,
+        "nineQuantileBrier": 0.13391400382045693,
+        "nineQuantileFrequencyError": 0.10707485339060796,
+        "exactPrediction": 0.06722689075630252,
+        "runtimeApproximation": 0.03578228946653488
+      },
+      {
+        "id": "TU000017240",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0005265474570890757,
+        "nineQuantileFrequencyError": 0.022946621910187037,
+        "exactPrediction": 0.9803921568627451,
+        "runtimeApproximation": 0.977053378089813
+      },
+      {
+        "id": "TU000017240",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0017122459042711625,
+        "nineQuantileFrequencyError": 0.04137929318235345,
+        "exactPrediction": 0.9558823529411765,
+        "runtimeApproximation": 0.9586207068176466
+      },
+      {
+        "id": "TU000017240",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0.8402777777777777,
+        "nineQuantileBrier": 0.6872645441531947,
+        "nineQuantileFrequencyError": 0.8290142002120319,
+        "exactPrediction": 0.8137254901960784,
+        "runtimeApproximation": 0.8290142002120319
+      },
+      {
+        "id": "TU000017240",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0.4444444444444445,
+        "nineQuantileBrier": 0.4171938067352831,
+        "nineQuantileFrequencyError": 0.6459054162455081,
+        "exactPrediction": 0.6323529411764706,
+        "runtimeApproximation": 0.6459054162455081
+      },
+      {
+        "id": "GR000167230",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000053797245140298414,
+        "nineQuantileFrequencyError": 0.007334660533405647,
+        "exactPrediction": 0.012605042016806723,
+        "runtimeApproximation": 0.007334660533405647
+      },
+      {
+        "id": "GR000167230",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 6.581984096140112e-7,
+        "nineQuantileFrequencyError": 0.0008112942805258836,
+        "exactPrediction": 0.004201680672268907,
+        "runtimeApproximation": 0.0008112942805258836
+      },
+      {
+        "id": "GR000167230",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "GR000167230",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CY000176090",
+        "region": "mediterranean-east",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CY000176090",
+        "region": "mediterranean-east",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CY000176090",
+        "region": "mediterranean-east",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CY000176090",
+        "region": "mediterranean-east",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00093193",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.05714285714285714,
+        "nineQuantileBrier": 0.056679266768904384,
+        "nineQuantileFrequencyError": 0.05293123603786538,
+        "exactPrediction": 0.11260504201680673,
+        "runtimeApproximation": 0.11007409318072252
+      },
+      {
+        "id": "USW00093193",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0006336030856319375,
+        "nineQuantileFrequencyError": 0.025171473648396857,
+        "exactPrediction": 0.02689075630252101,
+        "runtimeApproximation": 0.025171473648396857
+      },
+      {
+        "id": "USW00093193",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00093193",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00024257",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.29714285714285715,
+        "nineQuantileBrier": 0.22173091645283777,
+        "nineQuantileFrequencyError": 0.07887149276643068,
+        "exactPrediction": 0.23529411764705882,
+        "runtimeApproximation": 0.2354142215192836
+      },
+      {
+        "id": "USW00024257",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.1355102040816326,
+        "nineQuantileBrier": 0.12574436839403613,
+        "nineQuantileFrequencyError": 0.057405477109762126,
+        "exactPrediction": 0.08907563025210084,
+        "runtimeApproximation": 0.08545166574738072
+      },
+      {
+        "id": "USW00024257",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000012015372742851168,
+        "nineQuantileFrequencyError": 0.003466319769272761,
+        "exactPrediction": 0.005042016806722689,
+        "runtimeApproximation": 0.003466319769272761
+      },
+      {
+        "id": "USW00024257",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 3.88093671870397e-8,
+        "nineQuantileFrequencyError": 0.00019700093194459692,
+        "exactPrediction": 0.0016806722689075631,
+        "runtimeApproximation": 0.00019700093194459692
+      },
+      {
+        "id": "USW00023213",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.14814814814814814,
+        "nineQuantileBrier": 0.12871638250685263,
+        "nineQuantileFrequencyError": 0.05016082294410806,
+        "exactPrediction": 0.10021786492374728,
+        "runtimeApproximation": 0.09798732520404008
+      },
+      {
+        "id": "USW00023213",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.037037037037037035,
+        "nineQuantileBrier": 0.03592786561042355,
+        "nineQuantileFrequencyError": 0.01620403301247456,
+        "exactPrediction": 0.02178649237472767,
+        "runtimeApproximation": 0.020833004024562476
+      },
+      {
+        "id": "USW00023213",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00023213",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00023155",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.08571428571428572,
+        "nineQuantileBrier": 0.07871200780454075,
+        "nineQuantileFrequencyError": 0.018565044189692306,
+        "exactPrediction": 0.07394957983193277,
+        "runtimeApproximation": 0.06714924152459341
+      },
+      {
+        "id": "USW00023155",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.02857142857142857,
+        "nineQuantileBrier": 0.028306802070781466,
+        "nineQuantileFrequencyError": 0.023488295595149908,
+        "exactPrediction": 0.005042016806722689,
+        "runtimeApproximation": 0.005083132976278661
+      },
+      {
+        "id": "USW00023155",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00023155",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USW00024232",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.15346938775510205,
+        "nineQuantileBrier": 0.16695270834459044,
+        "nineQuantileFrequencyError": 0.25637515197201166,
+        "exactPrediction": 0.6285714285714286,
+        "runtimeApproximation": 0.629339133742274
+      },
+      {
+        "id": "USW00024232",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.32979591836734695,
+        "nineQuantileBrier": 0.2699260622873922,
+        "nineQuantileFrequencyError": 0.14752219148748352,
+        "exactPrediction": 0.39663865546218485,
+        "runtimeApproximation": 0.3953349513696593
+      },
+      {
+        "id": "USW00024232",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0.12979591836734697,
+        "nineQuantileBrier": 0.12262794647644386,
+        "nineQuantileFrequencyError": 0.013377850522678564,
+        "exactPrediction": 0.13109243697478992,
+        "runtimeApproximation": 0.12947929233446429
+      },
+      {
+        "id": "USW00024232",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0.05714285714285714,
+        "nineQuantileBrier": 0.05413944234781387,
+        "nineQuantileFrequencyError": 0.016183056800422473,
+        "exactPrediction": 0.04873949579831933,
+        "runtimeApproximation": 0.04095980034243467
+      },
+      {
+        "id": "USW00024225",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.05714285714285714,
+        "nineQuantileBrier": 0.08474977346044997,
+        "nineQuantileFrequencyError": 0.17570493003909082,
+        "exactPrediction": 0.7647058823529411,
+        "runtimeApproximation": 0.767152212818052
+      },
+      {
+        "id": "USW00024225",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.26285714285714296,
+        "nineQuantileBrier": 0.23892518665181417,
+        "nineQuantileFrequencyError": 0.07386337994373182,
+        "exactPrediction": 0.5512605042016807,
+        "runtimeApproximation": 0.5547080486276967
+      },
+      {
+        "id": "USW00024225",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0.10448979591836734,
+        "nineQuantileBrier": 0.12094820802278233,
+        "nineQuantileFrequencyError": 0.14044115574454658,
+        "exactPrediction": 0.2504201680672269,
+        "runtimeApproximation": 0.25472687003026084
+      },
+      {
+        "id": "USW00024225",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0.0783673469387755,
+        "nineQuantileBrier": 0.07922653500806578,
+        "nineQuantileFrequencyError": 0.029311910024600277,
+        "exactPrediction": 0.11596638655462185,
+        "runtimeApproximation": 0.11502619573888599
+      },
+      {
+        "id": "USW00013904",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.46428571428571425,
+        "nineQuantileBrier": 0.3439903918872928,
+        "nineQuantileFrequencyError": 0.4983243186732616,
+        "exactPrediction": 0.40756302521008403,
+        "runtimeApproximation": 0.3945328241838813
+      },
+      {
+        "id": "USW00013904",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.45408163265306134,
+        "nineQuantileBrier": 0.39006422776318483,
+        "nineQuantileFrequencyError": 0.3892862951606689,
+        "exactPrediction": 0.226890756302521,
+        "runtimeApproximation": 0.21785656198218814
+      },
+      {
+        "id": "USW00013904",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0.20025510204081629,
+        "nineQuantileBrier": 0.18928380600877692,
+        "nineQuantileFrequencyError": 0.1446252366290246,
+        "exactPrediction": 0.07352941176470588,
+        "runtimeApproximation": 0.06966047765668967
+      },
+      {
+        "id": "USW00013904",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0.06760204081632652,
+        "nineQuantileBrier": 0.0678362143677415,
+        "nineQuantileFrequencyError": 0.03885464908471805,
+        "exactPrediction": 0.04201680672268908,
+        "runtimeApproximation": 0.032573922343853375
+      },
+      {
+        "id": "USW00003927",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.10612244897959183,
+        "nineQuantileBrier": 0.13100061600418927,
+        "nineQuantileFrequencyError": 0.277710397687557,
+        "exactPrediction": 0.653781512605042,
+        "runtimeApproximation": 0.6651467451695858
+      },
+      {
+        "id": "USW00003927",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.33306122448979597,
+        "nineQuantileBrier": 0.27538246359400037,
+        "nineQuantileFrequencyError": 0.24468808616761,
+        "exactPrediction": 0.4403361344537815,
+        "runtimeApproximation": 0.4410261995466757
+      },
+      {
+        "id": "USW00003927",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0.22040816326530607,
+        "nineQuantileBrier": 0.19908877889309537,
+        "nineQuantileFrequencyError": 0.08982410995846299,
+        "exactPrediction": 0.17478991596638654,
+        "runtimeApproximation": 0.16731874718439413
+      },
+      {
+        "id": "USW00003927",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0.05469387755102041,
+        "nineQuantileBrier": 0.05420694263323933,
+        "nineQuantileFrequencyError": 0.018149149093860235,
+        "exactPrediction": 0.07899159663865546,
+        "runtimeApproximation": 0.07529200623671738
+      },
+      {
+        "id": "USW00023160",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0.12979591836734694,
+        "nineQuantileBrier": 0.13504719414525768,
+        "nineQuantileFrequencyError": 0.11224176831029031,
+        "exactPrediction": 0.25882352941176473,
+        "runtimeApproximation": 0.25509891116743316
+      },
+      {
+        "id": "USW00023160",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0.0816326530612245,
+        "nineQuantileBrier": 0.07843451338355023,
+        "nineQuantileFrequencyError": 0.008195513698037865,
+        "exactPrediction": 0.09915966386554621,
+        "runtimeApproximation": 0.09390979941232358
+      },
+      {
+        "id": "USW00023160",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000018460447925877615,
+        "nineQuantileFrequencyError": 0.00429656233818126,
+        "exactPrediction": 0.0067226890756302525,
+        "runtimeApproximation": 0.00429656233818126
+      },
+      {
+        "id": "USW00023160",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 1.678270072899129e-7,
+        "nineQuantileFrequencyError": 0.0004096669467871589,
+        "exactPrediction": 0.0016806722689075631,
+        "runtimeApproximation": 0.0004096669467871589
+      },
+      {
+        "id": "USR0000HPUW",
+        "region": "north-america",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USR0000HPUW",
+        "region": "north-america",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USR0000HPUW",
+        "region": "north-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "USR0000HPUW",
+        "region": "north-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "AR000087418",
+        "region": "south-america",
+        "thresholdC": -5,
+        "rawBrier": 0.2366863905325444,
+        "nineQuantileBrier": 0.21771011701568252,
+        "nineQuantileFrequencyError": 0.06850084332614137,
+        "exactPrediction": 0.3755656108597285,
+        "runtimeApproximation": 0.3761931510184491
+      },
+      {
+        "id": "AR000087418",
+        "region": "south-america",
+        "thresholdC": -7,
+        "rawBrier": 0.005917159763313611,
+        "nineQuantileBrier": 0.03453511853002557,
+        "nineQuantileFrequencyError": 0.18583626806957135,
+        "exactPrediction": 0.19909502262443438,
+        "runtimeApproximation": 0.18583626806957135
+      },
+      {
+        "id": "AR000087418",
+        "region": "south-america",
+        "thresholdC": -10,
+        "rawBrier": 0.005917159763313611,
+        "nineQuantileBrier": 0.0018358536339984255,
+        "nineQuantileFrequencyError": 0.04284686259224152,
+        "exactPrediction": 0.07239819004524888,
+        "runtimeApproximation": 0.04284686259224152
+      },
+      {
+        "id": "AR000087418",
+        "region": "south-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0002791188610738606,
+        "nineQuantileFrequencyError": 0.016706850722798133,
+        "exactPrediction": 0.04072398190045249,
+        "runtimeApproximation": 0.016706850722798133
+      },
+      {
+        "id": "AR000087217",
+        "region": "south-america",
+        "thresholdC": -5,
+        "rawBrier": 0.08333333333333333,
+        "nineQuantileBrier": 0.07651584480179625,
+        "nineQuantileFrequencyError": 0.011267471451367014,
+        "exactPrediction": 0.08333333333333333,
+        "runtimeApproximation": 0.07206586188196631
+      },
+      {
+        "id": "AR000087217",
+        "region": "south-america",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00013182790927948604,
+        "nineQuantileFrequencyError": 0.011481633563195004,
+        "exactPrediction": 0.014705882352941176,
+        "runtimeApproximation": 0.011481633563195004
+      },
+      {
+        "id": "AR000087217",
+        "region": "south-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "AR000087217",
+        "region": "south-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ARM00087416",
+        "region": "south-america",
+        "thresholdC": -5,
+        "rawBrier": 0.23076923076923078,
+        "nineQuantileBrier": 0.18233913539473956,
+        "nineQuantileFrequencyError": 0.06945748696383466,
+        "exactPrediction": 0.16289592760180996,
+        "runtimeApproximation": 0.16131174380539612
+      },
+      {
+        "id": "ARM00087416",
+        "region": "south-america",
+        "thresholdC": -7,
+        "rawBrier": 0.07692307692307693,
+        "nineQuantileBrier": 0.0720751528355163,
+        "nineQuantileFrequencyError": 0.03269916934347039,
+        "exactPrediction": 0.049773755656108594,
+        "runtimeApproximation": 0.044223907579606536
+      },
+      {
+        "id": "ARM00087416",
+        "region": "south-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ARM00087416",
+        "region": "south-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "UY000086565",
+        "region": "south-america",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00003191900649882507,
+        "nineQuantileFrequencyError": 0.00564969083214516,
+        "exactPrediction": 0.007352941176470588,
+        "runtimeApproximation": 0.00564969083214516
+      },
+      {
+        "id": "UY000086565",
+        "region": "south-america",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "UY000086565",
+        "region": "south-america",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "UY000086565",
+        "region": "south-america",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068920",
+        "region": "southern-africa",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068920",
+        "region": "southern-africa",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068920",
+        "region": "southern-africa",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068920",
+        "region": "southern-africa",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068438",
+        "region": "southern-africa",
+        "thresholdC": -5,
+        "rawBrier": 0.9333333333333333,
+        "nineQuantileBrier": 0.5967935660629374,
+        "nineQuantileFrequencyError": 0.7311438598803353,
+        "exactPrediction": 0.2,
+        "runtimeApproximation": 0.20218947345299806
+      },
+      {
+        "id": "SF000068438",
+        "region": "southern-africa",
+        "thresholdC": -7,
+        "rawBrier": 0.4666666666666667,
+        "nineQuantileBrier": 0.4159279445845715,
+        "nineQuantileFrequencyError": 0.4087041175418747,
+        "exactPrediction": 0.054901960784313725,
+        "runtimeApproximation": 0.057962549124791964
+      },
+      {
+        "id": "SF000068438",
+        "region": "southern-africa",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000068438",
+        "region": "southern-africa",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000456110",
+        "region": "southern-africa",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.014159734777389077,
+        "nineQuantileFrequencyError": 0.11899468381986263,
+        "exactPrediction": 0.11764705882352941,
+        "runtimeApproximation": 0.11899468381986263
+      },
+      {
+        "id": "SF000456110",
+        "region": "southern-africa",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00026484083659964966,
+        "nineQuantileFrequencyError": 0.016273931196845146,
+        "exactPrediction": 0.01764705882352941,
+        "runtimeApproximation": 0.016273931196845146
+      },
+      {
+        "id": "SF000456110",
+        "region": "southern-africa",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "SF000456110",
+        "region": "southern-africa",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00009021",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00009021",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00009021",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00009021",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00023034",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00023034",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00023034",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00023034",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00086038",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00022830477008060112,
+        "nineQuantileFrequencyError": 0.015109757446120739,
+        "exactPrediction": 0.01680672268907563,
+        "runtimeApproximation": 0.015109757446120739
+      },
+      {
+        "id": "ASN00086038",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00086038",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00086038",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00070339",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0.9629629629629629,
+        "nineQuantileBrier": 0.5248221415111394,
+        "nineQuantileFrequencyError": 0.6993974882615643,
+        "exactPrediction": 0.2657952069716776,
+        "runtimeApproximation": 0.2635654747013985
+      },
+      {
+        "id": "ASN00070339",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0.2962962962962963,
+        "nineQuantileBrier": 0.2540119347616756,
+        "nineQuantileFrequencyError": 0.2133240109886413,
+        "exactPrediction": 0.08061002178649238,
+        "runtimeApproximation": 0.082972285307655
+      },
+      {
+        "id": "ASN00070339",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00070339",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00066037",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00066037",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00066037",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "ASN00066037",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000933090",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000933090",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000933090",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000933090",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000093417",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000093417",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000093417",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000093417",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000936150",
+        "region": "oceania",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.021337268273502415,
+        "nineQuantileFrequencyError": 0.14607281839378064,
+        "exactPrediction": 0.14901960784313725,
+        "runtimeApproximation": 0.14607281839378064
+      },
+      {
+        "id": "NZ000936150",
+        "region": "oceania",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0003661712287010892,
+        "nineQuantileFrequencyError": 0.01913560108021405,
+        "exactPrediction": 0.0196078431372549,
+        "runtimeApproximation": 0.01913560108021405
+      },
+      {
+        "id": "NZ000936150",
+        "region": "oceania",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "NZ000936150",
+        "region": "oceania",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00056778",
+        "region": "east-asia",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.011379268885104887,
+        "nineQuantileFrequencyError": 0.10667365600327426,
+        "exactPrediction": 0.11229946524064172,
+        "runtimeApproximation": 0.10667365600327426
+      },
+      {
+        "id": "CHM00056778",
+        "region": "east-asia",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0006638937975031905,
+        "nineQuantileFrequencyError": 0.025766136642950382,
+        "exactPrediction": 0.029411764705882353,
+        "runtimeApproximation": 0.025766136642950382
+      },
+      {
+        "id": "CHM00056778",
+        "region": "east-asia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00056778",
+        "region": "east-asia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00056571",
+        "region": "east-asia",
+        "thresholdC": -5,
+        "rawBrier": 0.5917159763313611,
+        "nineQuantileBrier": 0.5003697511953581,
+        "nineQuantileFrequencyError": 0.7073681864456148,
+        "exactPrediction": 0.7104072398190046,
+        "runtimeApproximation": 0.7073681864456148
+      },
+      {
+        "id": "CHM00056571",
+        "region": "east-asia",
+        "thresholdC": -7,
+        "rawBrier": 0.21301775147929,
+        "nineQuantileBrier": 0.23684982011419337,
+        "nineQuantileFrequencyError": 0.4866721895837005,
+        "exactPrediction": 0.49547511312217196,
+        "runtimeApproximation": 0.4866721895837005
+      },
+      {
+        "id": "CHM00056571",
+        "region": "east-asia",
+        "thresholdC": -10,
+        "rawBrier": 0.013313609467455625,
+        "nineQuantileBrier": 0.03300932810856587,
+        "nineQuantileFrequencyError": 0.18168469420555458,
+        "exactPrediction": 0.19230769230769232,
+        "runtimeApproximation": 0.18168469420555458
+      },
+      {
+        "id": "CHM00056571",
+        "region": "east-asia",
+        "thresholdC": -12,
+        "rawBrier": 0.0014792899408284025,
+        "nineQuantileBrier": 0.004567152297995285,
+        "nineQuantileFrequencyError": 0.0675807095108899,
+        "exactPrediction": 0.07918552036199095,
+        "runtimeApproximation": 0.0675807095108899
+      },
+      {
+        "id": "CHM00057411",
+        "region": "east-asia",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.016631782484142137,
+        "nineQuantileFrequencyError": 0.12896426824567392,
+        "exactPrediction": 0.1334841628959276,
+        "runtimeApproximation": 0.12896426824567392
+      },
+      {
+        "id": "CHM00057411",
+        "region": "east-asia",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.0007150696425282799,
+        "nineQuantileFrequencyError": 0.026740786123976984,
+        "exactPrediction": 0.029411764705882353,
+        "runtimeApproximation": 0.026740786123976984
+      },
+      {
+        "id": "CHM00057411",
+        "region": "east-asia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00057411",
+        "region": "east-asia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00059287",
+        "region": "east-asia",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00059287",
+        "region": "east-asia",
+        "thresholdC": -7,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00059287",
+        "region": "east-asia",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "CHM00059287",
+        "region": "east-asia",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0,
+        "nineQuantileFrequencyError": 0,
+        "exactPrediction": 0,
+        "runtimeApproximation": 0
+      },
+      {
+        "id": "UKE00107650",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0.4900000000000001,
+        "nineQuantileBrier": 0.3201861408954746,
+        "nineQuantileFrequencyError": 0.2831715750132322,
+        "exactPrediction": 0.3176470588235294,
+        "runtimeApproximation": 0.3168284249867678
+      },
+      {
+        "id": "UKE00107650",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.09444444444444443,
+        "nineQuantileBrier": 0.09055304841487288,
+        "nineQuantileFrequencyError": 0.02351698141498748,
+        "exactPrediction": 0.12549019607843137,
+        "runtimeApproximation": 0.12351698141498749
+      },
+      {
+        "id": "UKE00107650",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0.0011111111111111111,
+        "nineQuantileBrier": 0.00018976845749557166,
+        "nineQuantileFrequencyError": 0.01377564726230937,
+        "exactPrediction": 0.023529411764705882,
+        "runtimeApproximation": 0.01377564726230937
+      },
+      {
+        "id": "UKE00107650",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000016362664024824767,
+        "nineQuantileFrequencyError": 0.004045078988700315,
+        "exactPrediction": 0.00980392156862745,
+        "runtimeApproximation": 0.004045078988700315
+      },
+      {
+        "id": "UKE00105870",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0.1581632653061224,
+        "nineQuantileBrier": 0.1468654297508467,
+        "nineQuantileFrequencyError": 0.013481701727117545,
+        "exactPrediction": 0.1953781512605042,
+        "runtimeApproximation": 0.19205313029854612
+      },
+      {
+        "id": "UKE00105870",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.06760204081632654,
+        "nineQuantileBrier": 0.06645049700148027,
+        "nineQuantileFrequencyError": 0.011134019455495664,
+        "exactPrediction": 0.06722689075630252,
+        "runtimeApproximation": 0.06029455197307576
+      },
+      {
+        "id": "UKE00105870",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00006547850974288696,
+        "nineQuantileFrequencyError": 0.008091879246682254,
+        "exactPrediction": 0.012605042016806723,
+        "runtimeApproximation": 0.008091879246682254
+      },
+      {
+        "id": "UKE00105870",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000001449002707821752,
+        "nineQuantileFrequencyError": 0.0012037452836135027,
+        "exactPrediction": 0.0021008403361344537,
+        "runtimeApproximation": 0.0012037452836135027
+      },
+      {
+        "id": "SZ000003700",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0.028546712802768163,
+        "nineQuantileBrier": 0.030899498781680804,
+        "nineQuantileFrequencyError": 0.048505525241075764,
+        "exactPrediction": 0.9204152249134948,
+        "runtimeApproximation": 0.9220827100530419
+      },
+      {
+        "id": "SZ000003700",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.08391003460207613,
+        "nineQuantileBrier": 0.09134518961149711,
+        "nineQuantileFrequencyError": 0.10438085371311023,
+        "exactPrediction": 0.8114186851211073,
+        "runtimeApproximation": 0.8073838521692427
+      },
+      {
+        "id": "SZ000003700",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0.2508650519031142,
+        "nineQuantileBrier": 0.2518664655874602,
+        "nineQuantileFrequencyError": 0.043202610887076,
+        "exactPrediction": 0.5467128027681661,
+        "runtimeApproximation": 0.543202610887076
+      },
+      {
+        "id": "SZ000003700",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0.171280276816609,
+        "nineQuantileBrier": 0.18460233484204808,
+        "nineQuantileFrequencyError": 0.14528429080071514,
+        "exactPrediction": 0.3546712802768166,
+        "runtimeApproximation": 0.3511666437418916
+      },
+      {
+        "id": "FR000007510",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0.28979591836734697,
+        "nineQuantileBrier": 0.2619507528288879,
+        "nineQuantileFrequencyError": 0.11024896580712662,
+        "exactPrediction": 0.4,
+        "runtimeApproximation": 0.4040367484785876
+      },
+      {
+        "id": "FR000007510",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.18938775510204078,
+        "nineQuantileBrier": 0.16016907610653075,
+        "nineQuantileFrequencyError": 0.013002926844779716,
+        "exactPrediction": 0.1865546218487395,
+        "runtimeApproximation": 0.1869970731552203
+      },
+      {
+        "id": "FR000007510",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0.0008163265306122448,
+        "nineQuantileBrier": 0.0009598615277716828,
+        "nineQuantileFrequencyError": 0.030981632103097522,
+        "exactPrediction": 0.040336134453781515,
+        "runtimeApproximation": 0.030981632103097522
+      },
+      {
+        "id": "FR000007510",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.000042711726928202445,
+        "nineQuantileFrequencyError": 0.006535420944989117,
+        "exactPrediction": 0.008403361344537815,
+        "runtimeApproximation": 0.006535420944989117
+      },
+      {
+        "id": "AU000016402",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0,
+        "nineQuantileBrier": 0.00006995746187469678,
+        "nineQuantileFrequencyError": 0.008364057739799313,
+        "exactPrediction": 0.9905123339658444,
+        "runtimeApproximation": 0.9916359422602007
+      },
+      {
+        "id": "AU000016402",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.06451612903225806,
+        "nineQuantileBrier": 0.06213776308080782,
+        "nineQuantileFrequencyError": 0.04223700929110308,
+        "exactPrediction": 0.969639468690702,
+        "runtimeApproximation": 0.977720880258845
+      },
+      {
+        "id": "AU000016402",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0.2695109261186264,
+        "nineQuantileBrier": 0.26957131729550987,
+        "nineQuantileFrequencyError": 0.22594013536088242,
+        "exactPrediction": 0.8937381404174574,
+        "runtimeApproximation": 0.903359490199592
+      },
+      {
+        "id": "AU000016402",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0.31009365244536935,
+        "nineQuantileBrier": 0.3055447894970701,
+        "nineQuantileFrequencyError": 0.2490952258406658,
+        "exactPrediction": 0.8216318785578748,
+        "runtimeApproximation": 0.8297403871309884
+      },
+      {
+        "id": "HRE00105217",
+        "region": "europe-fringe",
+        "thresholdC": -5,
+        "rawBrier": 0.3261245674740485,
+        "nineQuantileBrier": 0.31192126661862174,
+        "nineQuantileFrequencyError": 0.36330492808503284,
+        "exactPrediction": 0.596885813148789,
+        "runtimeApproximation": 0.5985990457320917
+      },
+      {
+        "id": "HRE00105217",
+        "region": "europe-fringe",
+        "thresholdC": -7,
+        "rawBrier": 0.17474048442906573,
+        "nineQuantileBrier": 0.15691144376679556,
+        "nineQuantileFrequencyError": 0.35828024082277743,
+        "exactPrediction": 0.3875432525951557,
+        "runtimeApproximation": 0.3876920055286598
+      },
+      {
+        "id": "HRE00105217",
+        "region": "europe-fringe",
+        "thresholdC": -10,
+        "rawBrier": 0.01384083044982699,
+        "nineQuantileBrier": 0.021788100480971833,
+        "nineQuantileFrequencyError": 0.1476079282456462,
+        "exactPrediction": 0.15051903114186851,
+        "runtimeApproximation": 0.1476079282456462
+      },
+      {
+        "id": "HRE00105217",
+        "region": "europe-fringe",
+        "thresholdC": -12,
+        "rawBrier": 0.0008650519031141869,
+        "nineQuantileBrier": 0.003471124205560105,
+        "nineQuantileFrequencyError": 0.05891624738185643,
+        "exactPrediction": 0.0657439446366782,
+        "runtimeApproximation": 0.05891624738185643
+      }
+    ],
+    "limits": [
+      "Calibration model was chosen using these folds; external prospective validation is still needed.",
+      "Worst-freeze severity and exposure duration are not validated by these frequency scores.",
+      "The production index response and recovery multiplier remain explicit screening choices, not fitted yield losses."
+    ]
+  },
+  "chillingModelValidation": {
+    "scope": "Calibration of modeled daily-weather DMA requirement attainment from modeled CHELSA normal-year CU. Not observed flower/fruit or yield probability.",
+    "stations": 45,
+    "completeStationSeasons": 919,
+    "cultivars": 3,
+    "crossValidation": "Leave complete geographic regions out; all cultivar outcomes of a station stay together. Station/cultivar equal weighting. Selection using these folds is not an independent final test.",
+    "coefficients": {
+      "intercept": -4.524002702022282,
+      "slope": 6.1948447502388895
+    },
+    "rawBrier": 0.0558243769463813,
+    "calibratedBrier": 0.039320039262867965,
+    "rawFractionMAE": 0.0558243769463813,
+    "calibratedFractionMAE": 0.04721971991751493,
+    "folds": [
+      {
+        "region": "east-asia",
+        "stationCultivarCases": 15,
+        "rawBrier": 0.022222222222222223,
+        "calibratedBrier": 0.02284846463138878
+      },
+      {
+        "region": "europe-fringe",
+        "stationCultivarCases": 12,
+        "rawBrier": 0,
+        "calibratedBrier": 0.0001130447320292401
+      },
+      {
+        "region": "iberia",
+        "stationCultivarCases": 21,
+        "rawBrier": 0.03880070546737213,
+        "calibratedBrier": 0.030005267847797185
+      },
+      {
+        "region": "mediterranean-east",
+        "stationCultivarCases": 24,
+        "rawBrier": 0.02083333333333333,
+        "calibratedBrier": 0.024952498976623192
+      },
+      {
+        "region": "north-america",
+        "stationCultivarCases": 30,
+        "rawBrier": 0.07988253576488871,
+        "calibratedBrier": 0.04988517399835214
+      },
+      {
+        "region": "oceania",
+        "stationCultivarCases": 24,
+        "rawBrier": 0.08298611111111111,
+        "calibratedBrier": 0.051336962472995774
+      },
+      {
+        "region": "south-america",
+        "stationCultivarCases": 6,
+        "rawBrier": 0.08333333333333333,
+        "calibratedBrier": 0.07542772133086846
+      },
+      {
+        "region": "southern-africa",
+        "stationCultivarCases": 3,
+        "rawBrier": 0.3333333333333333,
+        "calibratedBrier": 0.18464751556720724
+      }
+    ],
+    "selected": true
+  },
+  "orchardSummary": "9 eligible held-out outcome records in 6 study clusters; 1 compatibility contradictions.",
+  "orchardHoldouts": {
+    "records": 9,
+    "studies": 6,
+    "contradictions": [
+      {
+        "id": "cl-huasco-inia",
+        "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+        "split": "study_and_geographic_holdout",
+        "studyCluster": "tapia-2009",
+        "outcomeClass": "repeated_measured_production",
+        "waterScenario": "irrigated",
+        "profiles": {
+          "Arbequina": {
+            "rainfed": 4,
+            "irrigated": 34
+          },
+          "Leccino": {
+            "rainfed": 4,
+            "irrigated": 25
+          },
+          "Frantoio": {
+            "rainfed": 4,
+            "irrigated": 24
+          }
+        },
+        "compatible": false,
+        "normalChillCU": 205,
+        "freeze": 98.11723827495075,
+        "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+      }
+    ]
+  },
+  "orchardCases": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "split": "development_already_discussed",
+      "studyCluster": "pedro_abad_2016",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 82,
+          "irrigated": 82
+        },
+        "Leccino": {
+          "rainfed": 82,
+          "irrigated": 82
+        },
+        "Frantoio": {
+          "rainfed": 82,
+          "irrigated": 82
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1591,
+      "freeze": 82.23975961281533,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "name": "Commercial Arbequina orchard, Cordoba, Spain",
+      "split": "development_already_discussed",
+      "studyCluster": "cordoba_commercial_2015",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 85,
+          "irrigated": 85
+        },
+        "Leccino": {
+          "rainfed": 85,
+          "irrigated": 85
+        },
+        "Frantoio": {
+          "rainfed": 85,
+          "irrigated": 85
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 1954,
+      "freeze": 84.95042815550966,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "name": "Lombo rainfed Cobrancosa orchard, Portugal",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "lombo_2019",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "rainfed",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 74,
+          "irrigated": 74
+        },
+        "Leccino": {
+          "rainfed": 74,
+          "irrigated": 74
+        },
+        "Frantoio": {
+          "rainfed": 74,
+          "irrigated": 74
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 2660,
+      "freeze": 73.93377999847198,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "pt_lombo_madural",
+      "name": "Lombo rainfed Madural orchard, Portugal",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "lombo_2019",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "rainfed",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 74,
+          "irrigated": 74
+        },
+        "Leccino": {
+          "rainfed": 74,
+          "irrigated": 74
+        },
+        "Frantoio": {
+          "rainfed": 74,
+          "irrigated": 74
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 2797,
+      "freeze": 74.28491838687091,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "gr_messinia_ac",
+      "name": "Messinia non-calcareous rainfed orchard, Greece",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "messinia_2024",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "rainfed",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 96,
+          "irrigated": 96
+        },
+        "Leccino": {
+          "rainfed": 96,
+          "irrigated": 96
+        },
+        "Frantoio": {
+          "rainfed": 96,
+          "irrigated": 96
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1944,
+      "freeze": 95.55428592132864,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "gr_messinia_al",
+      "name": "Messinia calcareous rainfed orchard, Greece",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "messinia_2024",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "rainfed",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 96,
+          "irrigated": 96
+        },
+        "Leccino": {
+          "rainfed": 96,
+          "irrigated": 96
+        },
+        "Frantoio": {
+          "rainfed": 96,
+          "irrigated": 96
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1944,
+      "freeze": 95.5552148996151,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "name": "Sicily Arbequina high-density trial, Italy",
+      "split": "development_already_discussed",
+      "studyCluster": "italy_2014",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 97,
+          "irrigated": 98
+        },
+        "Leccino": {
+          "rainfed": 93,
+          "irrigated": 93
+        },
+        "Frantoio": {
+          "rainfed": 90,
+          "irrigated": 90
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 1236,
+      "freeze": 99.9997299295627,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "name": "Apulia Arbequina high-density trial, Italy",
+      "split": "development_already_discussed",
+      "studyCluster": "italy_2014",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 98,
+          "irrigated": 98
+        },
+        "Leccino": {
+          "rainfed": 98,
+          "irrigated": 98
+        },
+        "Frantoio": {
+          "rainfed": 98,
+          "irrigated": 98
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 2470,
+      "freeze": 98.8521208390473,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "name": "Umbria Arbequina high-density trial, Italy",
+      "split": "development_already_discussed",
+      "studyCluster": "italy_2014",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 40,
+          "irrigated": 40
+        },
+        "Leccino": {
+          "rainfed": 40,
+          "irrigated": 40
+        },
+        "Frantoio": {
+          "rainfed": 40,
+          "irrigated": 40
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 2672,
+      "freeze": 40,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "split": "development_already_discussed",
+      "studyCluster": "maiolati_2016",
+      "outcomeClass": "freeze_damage_challenge",
+      "waterScenario": "rainfed",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 0,
+          "irrigated": 0
+        },
+        "Leccino": {
+          "rainfed": 0,
+          "irrigated": 0
+        },
+        "Frantoio": {
+          "rainfed": 0,
+          "irrigated": 0
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 2781,
+      "freeze": 0,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "name": "Taous comparative cultivated-olive trial, Tunisia",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "taous_2019",
+      "outcomeClass": "repeated_categorical_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 50,
+          "irrigated": 99
+        },
+        "Leccino": {
+          "rainfed": 50,
+          "irrigated": 90
+        },
+        "Frantoio": {
+          "rainfed": 50,
+          "irrigated": 86
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1118,
+      "freeze": 99.81949005126955,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "name": "Roseworthy NOVA cultivated variety collection, South Australia",
+      "split": "development_already_discussed",
+      "studyCluster": "nova_2005",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 93,
+          "irrigated": 96
+        },
+        "Leccino": {
+          "rainfed": 93,
+          "irrigated": 96
+        },
+        "Frantoio": {
+          "rainfed": 93,
+          "irrigated": 96
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1620,
+      "freeze": 98.17771806304955,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "uy-las-brujas",
+      "name": "INIA Las Brujas, Uruguay",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "conde-innamorato-2019",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 79,
+          "irrigated": 79
+        },
+        "Leccino": {
+          "rainfed": 79,
+          "irrigated": 79
+        },
+        "Frantoio": {
+          "rainfed": 79,
+          "irrigated": 79
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1490,
+      "freeze": 86.06308970995408,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "uy-salto-grande",
+      "name": "INIA Salto Grande, Uruguay",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "conde-innamorato-2019",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 75,
+          "irrigated": 75
+        },
+        "Leccino": {
+          "rainfed": 57,
+          "irrigated": 57
+        },
+        "Frantoio": {
+          "rainfed": 52,
+          "irrigated": 52
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 629,
+      "freeze": 95.30172415971393,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "cl-huasco-inia",
+      "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "tapia-2009",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 4,
+          "irrigated": 34
+        },
+        "Leccino": {
+          "rainfed": 4,
+          "irrigated": 25
+        },
+        "Frantoio": {
+          "rainfed": 4,
+          "irrigated": 24
+        }
+      },
+      "compatible": false,
+      "normalChillCU": 205,
+      "freeze": 98.11723827495075,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "name": "Tierras Blancas, San Felipe, Chile",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "selles-2006",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 44,
+          "irrigated": 44
+        },
+        "Leccino": {
+          "rainfed": 44,
+          "irrigated": 44
+        },
+        "Frantoio": {
+          "rainfed": 44,
+          "irrigated": 44
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1146,
+      "freeze": 44.15038719435074,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "name": "Commercial orchard 15 km east of Aimogasta, Argentina",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "correa-tedesco-2010",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 42,
+          "irrigated": 65
+        },
+        "Leccino": {
+          "rainfed": 35,
+          "irrigated": 35
+        },
+        "Frantoio": {
+          "rainfed": 33,
+          "irrigated": 33
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 394,
+      "freeze": 94.54260382284642,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "ar-junin-inta",
+      "name": "INTA Junín Olive Germplasm Collection, Mendoza, Argentina",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "junin-multiple-studies",
+      "outcomeClass": "repeated_quality_sampling",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 41,
+          "irrigated": 82
+        },
+        "Leccino": {
+          "rainfed": 41,
+          "irrigated": 82
+        },
+        "Frantoio": {
+          "rainfed": 41,
+          "irrigated": 82
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 1486,
+      "freeze": 81.66828674079204,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "name": "Beihe Olive Commercial Orchard, Xixi village, Xichang, China",
+      "split": "development_already_discussed",
+      "studyCluster": "liu-2019-xichang",
+      "outcomeClass": "short_measured_production",
+      "waterScenario": "both",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 43,
+          "irrigated": 43
+        },
+        "Leccino": {
+          "rainfed": 43,
+          "irrigated": 43
+        },
+        "Frantoio": {
+          "rainfed": 43,
+          "irrigated": 43
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 1517,
+      "freeze": 84.65435388736302,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "us-tx-weslaco",
+      "name": "Established Arbequina grove near Weslaco, Texas, USA",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "malik-2011-texas",
+      "outcomeClass": "repeated_flowering_constraint",
+      "waterScenario": "unknown",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 21,
+          "irrigated": 21
+        },
+        "Leccino": {
+          "rainfed": 21,
+          "irrigated": 21
+        },
+        "Frantoio": {
+          "rainfed": 21,
+          "irrigated": 21
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 2,
+      "freeze": 96.86086430338162,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "name": "Texas Olive Ranch, Carrizo Springs, Texas, USA",
+      "split": "study_and_geographic_holdout",
+      "studyCluster": "malik-2011-texas",
+      "outcomeClass": "repeated_flowering_constraint",
+      "waterScenario": "unknown",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 33,
+          "irrigated": 33
+        },
+        "Leccino": {
+          "rainfed": 25,
+          "irrigated": 25
+        },
+        "Frantoio": {
+          "rainfed": 24,
+          "irrigated": 24
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 202,
+      "freeze": 56.94509337673512,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "split": "development_already_discussed",
+      "studyCluster": "miyasaka-2016-hawaii",
+      "outcomeClass": "cultivar_dependent_production_challenge",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 21,
+          "irrigated": 21
+        },
+        "Leccino": {
+          "rainfed": 21,
+          "irrigated": 21
+        },
+        "Frantoio": {
+          "rainfed": 21,
+          "irrigated": 21
+        }
+      },
+      "compatible": null,
+      "normalChillCU": 1,
+      "freeze": 100,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "name": "Guzelyurt · five crop-year Koroneiki trial",
+      "split": "development_already_discussed",
+      "studyCluster": "usanmaz2019_guzelyurt",
+      "outcomeClass": "repeated_measured_production",
+      "waterScenario": "irrigated",
+      "profiles": {
+        "Arbequina": {
+          "rainfed": 93,
+          "irrigated": 98
+        },
+        "Leccino": {
+          "rainfed": 90,
+          "irrigated": 90
+        },
+        "Frantoio": {
+          "rainfed": 86,
+          "irrigated": 86
+        }
+      },
+      "compatible": true,
+      "normalChillCU": 1121,
+      "freeze": 99.96578673526045,
+      "scope": "Compatibility screen under documented management; unmapped cultivars are not assigned invented chill requirements."
+    }
+  ],
+  "terrainControls": [
+    {
+      "name": "Mount Olympus",
+      "elevationM": 1887,
+      "irrigated": 38,
+      "rainfed": 38,
+      "factor": "Outside Cyprus commercial siting guidance · above 1,000 m",
+      "normalCU": 1911,
+      "freeze": {
+        "score": 59,
+        "terrainConflict": true,
+        "correctionC": -0.17748415387602523,
+        "adjustedMeanC": -1.7774841538760253,
+        "adjustedWorstC": -7.577484153876026,
+        "adjustedDecileC": -3.3774841538760256,
+        "rawMeanC": -1.6,
+        "quantiles": [
+          -7.577484153876026,
+          -3.6774841538760255,
+          -3.3774841538760256,
+          -2.8774841538760256,
+          -2.4774841538760253,
+          -1.8774841538760252,
+          -0.4774841538760252,
+          0.42251584612397475,
+          1.5225158461239747
+        ],
+        "support": 1.0878741010502362,
+        "nearestStationKm": 3.415265725616965
+      }
+    },
+    {
+      "name": "Troodos village",
+      "elevationM": 1724,
+      "irrigated": 39,
+      "rainfed": 39,
+      "factor": "Outside Cyprus commercial siting guidance · above 1,000 m",
+      "normalCU": 2107,
+      "freeze": {
+        "score": 59,
+        "terrainConflict": true,
+        "correctionC": -0.7033382468563906,
+        "adjustedMeanC": -2.3033382468563905,
+        "adjustedWorstC": -8.10333824685639,
+        "adjustedDecileC": -3.9033382468563906,
+        "rawMeanC": -1.6,
+        "quantiles": [
+          -8.10333824685639,
+          -4.203338246856391,
+          -3.9033382468563906,
+          -3.4033382468563906,
+          -3.0033382468563903,
+          -2.4033382468563906,
+          -1.0033382468563905,
+          -0.10333824685639059,
+          0.9966617531436094
+        ],
+        "support": 1.4451860156940621,
+        "nearestStationKm": 5.598714801229278
+      }
+    },
+    {
+      "name": "Paphos",
+      "elevationM": 46,
+      "irrigated": 89,
+      "rainfed": 89,
+      "factor": "Favorable modeled production conditions",
+      "normalCU": 609,
+      "freeze": null
+    },
+    {
+      "name": "Limassol",
+      "elevationM": 33,
+      "irrigated": 94,
+      "rainfed": 93,
+      "factor": "Favorable modeled production conditions",
+      "normalCU": 718,
+      "freeze": null
+    },
+    {
+      "name": "Nicosia",
+      "elevationM": 151,
+      "irrigated": 95,
+      "rainfed": 86,
+      "factor": "Favorable modeled production conditions",
+      "normalCU": 1301,
+      "freeze": {
+        "score": 99.61170574127209,
+        "terrainConflict": false,
+        "correctionC": -1.220887868008419,
+        "adjustedMeanC": 1.779112131991581,
+        "adjustedWorstC": -0.32088786800841895,
+        "adjustedDecileC": 0.479112131991581,
+        "rawMeanC": 3,
+        "quantiles": [
+          -0.32088786800841895,
+          0.17911213199158094,
+          0.479112131991581,
+          0.779112131991581,
+          1.4791121319915812,
+          1.779112131991581,
+          2.679112131991581,
+          3.3791121319915804,
+          4.579112131991581
+        ],
+        "support": 0.4025277956295253,
+        "nearestStationKm": 40.44885557177162
+      }
+    }
+  ],
+  "softwareChecks": {
+    "overviewCells": 226,
+    "highlandNativeCellsAbove1000": 436,
+    "highlandScreen": "All <=39 using documented Cyprus commercial-siting envelope",
+    "originalClimateHashPreserved": true,
+    "studyLocationFeature": false,
+    "scoreRangeAndIrrigationMonotonic": true
+  },
+  "limitations": [
+    "Orchard studies are sparse and previously visible to developers; geographic/study holdouts are compatibility checks, not representative global predictive validation.",
+    "No reliable annual harvest probability, tonnage, profitability, water-supply feasibility, soil drainage, pollination or disease-control outcome is inferred.",
+    "Monthly normals and estimated hourly temperatures cannot replace observed interannual flower induction. Warm/rare cultivars may fruit outside this screening model.",
+    "Freeze error distribution is calibrated at 49 stations in eight regions. Prodromos is an additional development station excluded from those metrics.",
+    "Native chilling uses a winter-temperature anomaly applied to overview monthly normals; source annual freezes remain regional.",
+    "Freeze injury response and recovery weighting are explicit agronomic screen choices, not a fit to observed crop-loss fractions."
+  ]
+}

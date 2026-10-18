@@ -1,0 +1,5647 @@
+{
+  "version": "global-orchard-native-monthlies1",
+  "sampledUtc": "2026-10-18T18:11:24.173478+00:00",
+  "dataset": "CHELSA V2.1 monthly mean daily Tmin/Tmax1981-2010 normals",
+  "license": "CC0 1.0",
+  "input": {
+    "file": "global-orchard-audit.json",
+    "sha256": "00dbef6516214ab7d2a574e51cbbece49a913671e358c32980ea7d8b9c98d6d6",
+    "pointCoordinatesSha256": "47a50a9fa01995877c541c2cc5b091810a8c6448666ade88ffc0ab98773c414f",
+    "eligibleSites": 23
+  },
+  "method": "Single containing native30-arcsecond pixel at reported orchard coordinates; no overviews, interpolation, coastal replacement, monthly anomaly correction or suitability score sampling",
+  "interpretation": "Monthly mean daily minimum/maximum temperature normals in Celsius; not observed hourly temperatures, annual extreme minima or an annual reliability series",
+  "nominalResolutionDegrees": 0.008333333333333333,
+  "nominalArcseconds": 30,
+  "crs": "EPSG:4326",
+  "winterSelection": {
+    "north": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "south": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "sources": {
+    "tasmin-04": {
+      "variable": "tasmin",
+      "month": 4,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_04_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:06.421396+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-04": {
+      "variable": "tasmax",
+      "month": 4,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_04_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:06.415795+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-05": {
+      "variable": "tasmin",
+      "month": 5,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_05_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:06.418729+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-05": {
+      "variable": "tasmax",
+      "month": 5,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_05_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:07.870214+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-06": {
+      "variable": "tasmin",
+      "month": 6,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_06_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:09.063926+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-06": {
+      "variable": "tasmax",
+      "month": 6,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_06_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:09.744441+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-07": {
+      "variable": "tasmin",
+      "month": 7,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_07_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:09.885338+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-07": {
+      "variable": "tasmax",
+      "month": 7,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_07_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:10.246739+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-08": {
+      "variable": "tasmin",
+      "month": 8,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_08_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:10.999928+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-08": {
+      "variable": "tasmax",
+      "month": 8,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_08_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:11.114012+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-09": {
+      "variable": "tasmin",
+      "month": 9,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_09_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:11.431443+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-09": {
+      "variable": "tasmax",
+      "month": 9,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_09_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:12.227505+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-10": {
+      "variable": "tasmin",
+      "month": 10,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_10_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:12.400732+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-10": {
+      "variable": "tasmax",
+      "month": 10,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_10_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:12.592770+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-11": {
+      "variable": "tasmin",
+      "month": 11,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_11_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:15.746488+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-11": {
+      "variable": "tasmax",
+      "month": 11,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_11_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:15.685552+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-12": {
+      "variable": "tasmin",
+      "month": 12,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_12_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:15.666629+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-12": {
+      "variable": "tasmax",
+      "month": 12,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_12_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:17.781885+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-01": {
+      "variable": "tasmin",
+      "month": 1,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_01_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:17.849633+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-01": {
+      "variable": "tasmax",
+      "month": 1,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_01_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:18.157903+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-02": {
+      "variable": "tasmin",
+      "month": 2,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_02_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:19.864074+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-02": {
+      "variable": "tasmax",
+      "month": 2,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_02_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:20.233403+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmin-03": {
+      "variable": "tasmin",
+      "month": 3,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmin/1981-2010/CHELSA_tasmin_03_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:20.252244+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    },
+    "tasmax-03": {
+      "variable": "tasmax",
+      "month": 3,
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/climatologies/tasmax/1981-2010/CHELSA_tasmax_03_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:11:22.349871+00:00",
+      "sourceScale": 0.1,
+      "sourceOffset": 0.0,
+      "sourceUnit": "K",
+      "celsiusConversion": "raw * sourceScale + sourceOffset -273.15",
+      "nodata": 65535.0,
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      }
+    }
+  },
+  "sites": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "studyCluster": "pedro_abad_2016",
+      "geographicCluster": "southern_iberia",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2775,
+            "celsius": 4.35,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2788,
+            "celsius": 5.65,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2814,
+            "celsius": 8.25,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2835,
+            "celsius": 10.35,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2872,
+            "celsius": 14.05,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2821,
+            "celsius": 8.95,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2791,
+            "celsius": 5.95,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2871,
+            "celsius": 13.95,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2892,
+            "celsius": 16.05,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2930,
+            "celsius": 19.85,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2949,
+            "celsius": 21.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2975,
+            "celsius": 24.35,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2913,
+            "celsius": 18.15,
+            "missingReason": null
+          },
+          {
+            "row": 5524,
+            "column": 21064,
+            "pixelCenter": {
+              "lat": 37.96236059929999,
+              "lng": -4.4626395909999985
+            },
+            "rawValue": 2877,
+            "celsius": 14.55,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        4.35,
+        5.65,
+        8.25,
+        10.35,
+        null,
+        null,
+        null,
+        null,
+        null,
+        14.05,
+        8.95,
+        5.95
+      ],
+      "tasmaxC": [
+        13.95,
+        16.05,
+        19.85,
+        21.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        24.35,
+        18.15,
+        14.55
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "name": "Commercial Arbequina orchard, Cordoba, Spain",
+      "lat": 37.64889,
+      "lng": -4.731579,
+      "studyCluster": "cordoba_commercial_2015",
+      "geographicCluster": "southern_iberia",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2764,
+            "celsius": 3.25,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2775,
+            "celsius": 4.35,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2797,
+            "celsius": 6.55,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2816,
+            "celsius": 8.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2857,
+            "celsius": 12.55,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2810,
+            "celsius": 7.85,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2782,
+            "celsius": 5.05,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2864,
+            "celsius": 13.25,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2882,
+            "celsius": 15.05,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2916,
+            "celsius": 18.45,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2933,
+            "celsius": 20.15,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2963,
+            "celsius": 23.15,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2905,
+            "celsius": 17.35,
+            "missingReason": null
+          },
+          {
+            "row": 5562,
+            "column": 21032,
+            "pixelCenter": {
+              "lat": 37.64569393389999,
+              "lng": -4.729306256600012
+            },
+            "rawValue": 2872,
+            "celsius": 14.05,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        3.25,
+        4.35,
+        6.55,
+        8.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        12.55,
+        7.85,
+        5.05
+      ],
+      "tasmaxC": [
+        13.25,
+        15.05,
+        18.45,
+        20.15,
+        null,
+        null,
+        null,
+        null,
+        null,
+        23.15,
+        17.35,
+        14.05
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "name": "Lombo rainfed Cobrancosa orchard, Portugal",
+      "lat": 41.446556,
+      "lng": -6.822067,
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2750,
+            "celsius": 1.85,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2757,
+            "celsius": 2.55,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2778,
+            "celsius": 4.65,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2795,
+            "celsius": 6.35,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2830,
+            "celsius": 9.85,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2785,
+            "celsius": 5.35,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2761,
+            "celsius": 2.95,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2831,
+            "celsius": 9.95,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2853,
+            "celsius": 12.15,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2890,
+            "celsius": 15.85,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2905,
+            "celsius": 17.35,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2925,
+            "celsius": 19.35,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2868,
+            "celsius": 13.65,
+            "missingReason": null
+          },
+          {
+            "row": 5106,
+            "column": 20781,
+            "pixelCenter": {
+              "lat": 41.445693918699995,
+              "lng": -6.820972914900011
+            },
+            "rawValue": 2836,
+            "celsius": 10.45,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        1.85,
+        2.55,
+        4.65,
+        6.35,
+        null,
+        null,
+        null,
+        null,
+        null,
+        9.85,
+        5.35,
+        2.95
+      ],
+      "tasmaxC": [
+        9.95,
+        12.15,
+        15.85,
+        17.35,
+        null,
+        null,
+        null,
+        null,
+        null,
+        19.35,
+        13.65,
+        10.45
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "pt_lombo_madural",
+      "name": "Lombo rainfed Madural orchard, Portugal",
+      "lat": 41.457075,
+      "lng": -6.832459,
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2744,
+            "celsius": 1.25,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2750,
+            "celsius": 1.85,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2769,
+            "celsius": 3.75,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2786,
+            "celsius": 5.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2821,
+            "celsius": 8.95,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2779,
+            "celsius": 4.75,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2756,
+            "celsius": 2.45,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2846,
+            "celsius": 11.45,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2881,
+            "celsius": 14.95,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2896,
+            "celsius": 16.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2917,
+            "celsius": 18.55,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2862,
+            "celsius": 13.05,
+            "missingReason": null
+          },
+          {
+            "row": 5105,
+            "column": 20780,
+            "pixelCenter": {
+              "lat": 41.454027251999996,
+              "lng": -6.829306248199998
+            },
+            "rawValue": 2830,
+            "celsius": 9.85,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        1.25,
+        1.85,
+        3.75,
+        5.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8.95,
+        4.75,
+        2.45
+      ],
+      "tasmaxC": [
+        9.45,
+        11.45,
+        14.95,
+        16.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18.55,
+        13.05,
+        9.85
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "gr_messinia_ac",
+      "name": "Messinia non-calcareous rainfed orchard, Greece",
+      "lat": 37.0389675,
+      "lng": 21.9130617,
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2808,
+            "celsius": 7.65,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2805,
+            "celsius": 7.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2818,
+            "celsius": 8.65,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2843,
+            "celsius": 11.15,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2894,
+            "celsius": 16.25,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2855,
+            "celsius": 12.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2824,
+            "celsius": 9.25,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2855,
+            "celsius": 12.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2856,
+            "celsius": 12.45,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2877,
+            "celsius": 14.55,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2909,
+            "celsius": 17.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2953,
+            "celsius": 22.15,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2903,
+            "celsius": 17.15,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24229,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.91236030350001
+            },
+            "rawValue": 2868,
+            "celsius": 13.65,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        7.65,
+        7.35,
+        8.65,
+        11.15,
+        null,
+        null,
+        null,
+        null,
+        null,
+        16.25,
+        12.35,
+        9.25
+      ],
+      "tasmaxC": [
+        12.35,
+        12.45,
+        14.55,
+        17.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        22.15,
+        17.15,
+        13.65
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "gr_messinia_al",
+      "name": "Messinia calcareous rainfed orchard, Greece",
+      "lat": 37.0363786,
+      "lng": 21.9075306,
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2808,
+            "celsius": 7.65,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2805,
+            "celsius": 7.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2818,
+            "celsius": 8.65,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2843,
+            "celsius": 11.15,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2894,
+            "celsius": 16.25,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2855,
+            "celsius": 12.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2824,
+            "celsius": 9.25,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2855,
+            "celsius": 12.35,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2857,
+            "celsius": 12.55,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2878,
+            "celsius": 14.65,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2910,
+            "celsius": 17.85,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2953,
+            "celsius": 22.15,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2903,
+            "celsius": 17.15,
+            "missingReason": null
+          },
+          {
+            "row": 5635,
+            "column": 24228,
+            "pixelCenter": {
+              "lat": 37.037360602999996,
+              "lng": 21.904026970199993
+            },
+            "rawValue": 2868,
+            "celsius": 13.65,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        7.65,
+        7.35,
+        8.65,
+        11.15,
+        null,
+        null,
+        null,
+        null,
+        null,
+        16.25,
+        12.35,
+        9.25
+      ],
+      "tasmaxC": [
+        12.35,
+        12.55,
+        14.65,
+        17.85,
+        null,
+        null,
+        null,
+        null,
+        null,
+        22.15,
+        17.15,
+        13.65
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "name": "Sicily Arbequina high-density trial, Italy",
+      "lat": 37.7666667,
+      "lng": 12.5,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2830,
+            "celsius": 9.85,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2836,
+            "celsius": 10.45,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2853,
+            "celsius": 12.15,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2909,
+            "celsius": 17.75,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2874,
+            "celsius": 14.25,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2845,
+            "celsius": 11.35,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2869,
+            "celsius": 13.75,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2869,
+            "celsius": 13.75,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2884,
+            "celsius": 15.25,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2906,
+            "celsius": 17.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2956,
+            "celsius": 22.45,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2913,
+            "celsius": 18.15,
+            "missingReason": null
+          },
+          {
+            "row": 5547,
+            "column": 23100,
+            "pixelCenter": {
+              "lat": 37.77069393339999,
+              "lng": 12.504027007800005
+            },
+            "rawValue": 2881,
+            "celsius": 14.95,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        9.85,
+        9.45,
+        10.45,
+        12.15,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17.75,
+        14.25,
+        11.35
+      ],
+      "tasmaxC": [
+        13.75,
+        13.75,
+        15.25,
+        17.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        22.45,
+        18.15,
+        14.95
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "name": "Apulia Arbequina high-density trial, Italy",
+      "lat": 41.0166667,
+      "lng": 16.75,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2782,
+            "celsius": 5.05,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2778,
+            "celsius": 4.65,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2797,
+            "celsius": 6.55,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2824,
+            "celsius": 9.25,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2869,
+            "celsius": 13.75,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2795,
+            "celsius": 6.35,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2844,
+            "celsius": 11.25,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2848,
+            "celsius": 11.65,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2877,
+            "celsius": 14.55,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2910,
+            "celsius": 17.85,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2941,
+            "celsius": 20.95,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2889,
+            "celsius": 15.75,
+            "missingReason": null
+          },
+          {
+            "row": 5157,
+            "column": 23610,
+            "pixelCenter": {
+              "lat": 41.02069392039999,
+              "lng": 16.754026990799986
+            },
+            "rawValue": 2852,
+            "celsius": 12.05,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        5.05,
+        4.65,
+        6.55,
+        9.25,
+        null,
+        null,
+        null,
+        null,
+        null,
+        13.75,
+        9.45,
+        6.35
+      ],
+      "tasmaxC": [
+        11.25,
+        11.65,
+        14.55,
+        17.85,
+        null,
+        null,
+        null,
+        null,
+        null,
+        20.95,
+        15.75,
+        12.05
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "name": "Umbria Arbequina high-density trial, Italy",
+      "lat": 42.95,
+      "lng": 12.4166667,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2741,
+            "celsius": 0.95,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2741,
+            "celsius": 0.95,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2766,
+            "celsius": 3.45,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2796,
+            "celsius": 6.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2836,
+            "celsius": 10.45,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2788,
+            "celsius": 5.65,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2755,
+            "celsius": 2.35,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2818,
+            "celsius": 8.65,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2830,
+            "celsius": 9.85,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2866,
+            "celsius": 13.45,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2899,
+            "celsius": 16.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2925,
+            "celsius": 19.35,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2865,
+            "celsius": 13.35,
+            "missingReason": null
+          },
+          {
+            "row": 4925,
+            "column": 23090,
+            "pixelCenter": {
+              "lat": 42.954027245999995,
+              "lng": 12.420693674799992
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        0.95,
+        0.95,
+        3.45,
+        6.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10.45,
+        5.65,
+        2.35
+      ],
+      "tasmaxC": [
+        8.65,
+        9.85,
+        13.45,
+        16.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        19.35,
+        13.35,
+        9.45
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "studyCluster": "maiolati_2016",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2737,
+            "celsius": 0.55,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2733,
+            "celsius": 0.15,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2761,
+            "celsius": 2.95,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2792,
+            "celsius": 6.05,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2833,
+            "celsius": 10.15,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2786,
+            "celsius": 5.45,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2752,
+            "celsius": 2.05,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2811,
+            "celsius": 7.95,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2818,
+            "celsius": 8.65,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2853,
+            "celsius": 12.15,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2886,
+            "celsius": 15.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2916,
+            "celsius": 18.45,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2858,
+            "celsius": 12.65,
+            "missingReason": null
+          },
+          {
+            "row": 4862,
+            "column": 23174,
+            "pixelCenter": {
+              "lat": 43.47902724389999,
+              "lng": 13.120693671999987
+            },
+            "rawValue": 2819,
+            "celsius": 8.75,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        0.55,
+        0.15,
+        2.95,
+        6.05,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10.15,
+        5.45,
+        2.05
+      ],
+      "tasmaxC": [
+        7.95,
+        8.65,
+        12.15,
+        15.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18.45,
+        12.65,
+        8.75
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "name": "Taous comparative cultivated-olive trial, Tunisia",
+      "lat": 34.9333333,
+      "lng": 10.6,
+      "studyCluster": "taous_2019",
+      "geographicCluster": "sfax_tunisia",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2802,
+            "celsius": 7.05,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2806,
+            "celsius": 7.45,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2825,
+            "celsius": 9.35,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2850,
+            "celsius": 11.85,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2905,
+            "celsius": 17.35,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2853,
+            "celsius": 12.15,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2815,
+            "celsius": 8.35,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2885,
+            "celsius": 15.35,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2898,
+            "celsius": 16.65,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2925,
+            "celsius": 19.35,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2952,
+            "celsius": 22.05,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2988,
+            "celsius": 25.65,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2935,
+            "celsius": 20.35,
+            "missingReason": null
+          },
+          {
+            "row": 5887,
+            "column": 22872,
+            "pixelCenter": {
+              "lat": 34.937360611399995,
+              "lng": 10.604027015399993
+            },
+            "rawValue": 2896,
+            "celsius": 16.45,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        7.05,
+        7.45,
+        9.35,
+        11.85,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17.35,
+        12.15,
+        8.35
+      ],
+      "tasmaxC": [
+        15.35,
+        16.65,
+        19.35,
+        22.05,
+        null,
+        null,
+        null,
+        null,
+        null,
+        25.65,
+        20.35,
+        16.45
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "name": "Roseworthy NOVA cultivated variety collection, South Australia",
+      "lat": -34.52,
+      "lng": 138.68,
+      "studyCluster": "nova_2005",
+      "geographicCluster": "south_australia",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2856,
+            "celsius": 12.45,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2832,
+            "celsius": 10.05,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2810,
+            "celsius": 7.85,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2801,
+            "celsius": 6.95,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2806,
+            "celsius": 7.45,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2822,
+            "celsius": 9.05,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2839,
+            "celsius": 10.75,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2952,
+            "celsius": 22.05,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2913,
+            "celsius": 18.15,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2881,
+            "celsius": 14.95,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2872,
+            "celsius": 14.05,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2882,
+            "celsius": 15.05,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2907,
+            "celsius": 17.55,
+            "missingReason": null
+          },
+          {
+            "row": 14222,
+            "column": 38241,
+            "pixelCenter": {
+              "lat": -34.52097244410001,
+              "lng": 138.67902650310003
+            },
+            "rawValue": 2940,
+            "celsius": 20.85,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        12.45,
+        10.05,
+        7.85,
+        6.95,
+        7.45,
+        9.05,
+        10.75,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        22.05,
+        18.15,
+        14.95,
+        14.05,
+        15.05,
+        17.55,
+        20.85,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "uy-las-brujas",
+      "name": "INIA Las Brujas, Uruguay",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "uruguay_humid_temperate",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2867,
+            "celsius": 13.55,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2837,
+            "celsius": 10.55,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2810,
+            "celsius": 7.85,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2802,
+            "celsius": 7.05,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2811,
+            "celsius": 7.95,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2822,
+            "celsius": 9.05,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2848,
+            "celsius": 11.65,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2944,
+            "celsius": 21.25,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2909,
+            "celsius": 17.75,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2879,
+            "celsius": 14.75,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2874,
+            "celsius": 14.25,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2895,
+            "celsius": 16.35,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2906,
+            "celsius": 17.45,
+            "missingReason": null
+          },
+          {
+            "row": 14239,
+            "column": 14840,
+            "pixelCenter": {
+              "lat": -34.66263911020002,
+              "lng": -56.3293060502
+            },
+            "rawValue": 2939,
+            "celsius": 20.75,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        13.55,
+        10.55,
+        7.85,
+        7.05,
+        7.95,
+        9.05,
+        11.65,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        21.25,
+        17.75,
+        14.75,
+        14.25,
+        16.35,
+        17.45,
+        20.75,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "uy-salto-grande",
+      "name": "INIA Salto Grande, Uruguay",
+      "lat": -31.266667,
+      "lng": -57.883333,
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "uruguay_humid_temperate",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2884,
+            "celsius": 15.25,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2850,
+            "celsius": 11.85,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2817,
+            "celsius": 8.55,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2829,
+            "celsius": 9.75,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2843,
+            "celsius": 11.15,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2872,
+            "celsius": 14.05,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2965,
+            "celsius": 23.35,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2929,
+            "celsius": 19.75,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2902,
+            "celsius": 17.05,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2899,
+            "celsius": 16.75,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2923,
+            "celsius": 19.15,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2937,
+            "celsius": 20.55,
+            "missingReason": null
+          },
+          {
+            "row": 13831,
+            "column": 14654,
+            "pixelCenter": {
+              "lat": -31.262639123800014,
+              "lng": -57.879306044
+            },
+            "rawValue": 2972,
+            "celsius": 24.05,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        15.25,
+        11.85,
+        9.45,
+        8.55,
+        9.75,
+        11.15,
+        14.05,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        23.35,
+        19.75,
+        17.05,
+        16.75,
+        19.15,
+        20.55,
+        24.05,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "cl-huasco-inia",
+      "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "studyCluster": "tapia-2009",
+      "geographicCluster": "northern_chile",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2870,
+            "celsius": 13.85,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2841,
+            "celsius": 10.95,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2819,
+            "celsius": 8.75,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2808,
+            "celsius": 7.65,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2820,
+            "celsius": 8.85,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2836,
+            "celsius": 10.45,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2857,
+            "celsius": 12.55,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2991,
+            "celsius": 25.95,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2967,
+            "celsius": 23.55,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2953,
+            "celsius": 22.15,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2947,
+            "celsius": 21.55,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2959,
+            "celsius": 22.75,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2972,
+            "celsius": 24.05,
+            "missingReason": null
+          },
+          {
+            "row": 13507,
+            "column": 13106,
+            "pixelCenter": {
+              "lat": -28.56263913460002,
+              "lng": -70.77930599240001
+            },
+            "rawValue": 2989,
+            "celsius": 25.75,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        13.85,
+        10.95,
+        8.75,
+        7.65,
+        8.85,
+        10.45,
+        12.55,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        25.95,
+        23.55,
+        22.15,
+        21.55,
+        22.75,
+        24.05,
+        25.75,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "name": "Tierras Blancas, San Felipe, Chile",
+      "lat": -32.783333,
+      "lng": -70.7,
+      "studyCluster": "selles-2006",
+      "geographicCluster": "central_chile",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2858,
+            "celsius": 12.65,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2820,
+            "celsius": 8.85,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2795,
+            "celsius": 6.35,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2781,
+            "celsius": 4.95,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2794,
+            "celsius": 6.25,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2813,
+            "celsius": 8.15,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2839,
+            "celsius": 10.75,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2978,
+            "celsius": 24.65,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2939,
+            "celsius": 20.75,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2912,
+            "celsius": 18.05,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2901,
+            "celsius": 16.95,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2915,
+            "celsius": 18.35,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2931,
+            "celsius": 19.95,
+            "missingReason": null
+          },
+          {
+            "row": 14013,
+            "column": 13116,
+            "pixelCenter": {
+              "lat": -32.77930578440001,
+              "lng": -70.69597265940001
+            },
+            "rawValue": 2961,
+            "celsius": 22.95,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        12.65,
+        8.85,
+        6.35,
+        4.95,
+        6.25,
+        8.15,
+        10.75,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        24.65,
+        20.75,
+        18.05,
+        16.95,
+        18.35,
+        19.95,
+        22.95,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "name": "Commercial orchard 15 km east of Aimogasta, Argentina",
+      "lat": -28.55,
+      "lng": -66.816667,
+      "studyCluster": "correa-tedesco-2010",
+      "geographicCluster": "argentina",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2882,
+            "celsius": 15.05,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2844,
+            "celsius": 11.25,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2814,
+            "celsius": 8.25,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2803,
+            "celsius": 7.15,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2825,
+            "celsius": 9.35,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2849,
+            "celsius": 11.75,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2889,
+            "celsius": 15.75,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2972,
+            "celsius": 24.05,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2944,
+            "celsius": 21.25,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2929,
+            "celsius": 19.75,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2925,
+            "celsius": 19.35,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2953,
+            "celsius": 22.15,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 2968,
+            "celsius": 23.65,
+            "missingReason": null
+          },
+          {
+            "row": 13505,
+            "column": 13582,
+            "pixelCenter": {
+              "lat": -28.545972468000016,
+              "lng": -66.8126393416
+            },
+            "rawValue": 3000,
+            "celsius": 26.85,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        15.05,
+        11.25,
+        8.25,
+        7.15,
+        9.35,
+        11.75,
+        15.75,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        24.05,
+        21.25,
+        19.75,
+        19.35,
+        22.15,
+        23.65,
+        26.85,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "ar-junin-inta",
+      "name": "INTA Junín Olive Germplasm Collection, Mendoza, Argentina",
+      "lat": -33.1,
+      "lng": -68.483333,
+      "studyCluster": "junin-multiple-studies",
+      "geographicCluster": "argentina",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          null,
+          null,
+          null,
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2850,
+            "celsius": 11.85,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2810,
+            "celsius": 7.85,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2775,
+            "celsius": 4.35,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2764,
+            "celsius": 3.25,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2784,
+            "celsius": 5.25,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2812,
+            "celsius": 8.05,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2858,
+            "celsius": 12.65,
+            "missingReason": null
+          },
+          null,
+          null
+        ],
+        "tasmax": [
+          null,
+          null,
+          null,
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2954,
+            "celsius": 22.25,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2912,
+            "celsius": 18.05,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2879,
+            "celsius": 14.75,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2876,
+            "celsius": 14.45,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2909,
+            "celsius": 17.75,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2939,
+            "celsius": 20.75,
+            "missingReason": null
+          },
+          {
+            "row": 14051,
+            "column": 13382,
+            "pixelCenter": {
+              "lat": -33.095972449800016,
+              "lng": -68.47930600160001
+            },
+            "rawValue": 2988,
+            "celsius": 25.65,
+            "missingReason": null
+          },
+          null,
+          null
+        ]
+      },
+      "tasminC": [
+        null,
+        null,
+        null,
+        11.85,
+        7.85,
+        4.35,
+        3.25,
+        5.25,
+        8.05,
+        12.65,
+        null,
+        null
+      ],
+      "tasmaxC": [
+        null,
+        null,
+        null,
+        22.25,
+        18.05,
+        14.75,
+        14.45,
+        17.75,
+        20.75,
+        25.65,
+        null,
+        null
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "name": "Beihe Olive Commercial Orchard, Xixi village, Xichang, China",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "studyCluster": "liu-2019-xichang",
+      "geographicCluster": "xichang",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2762,
+            "celsius": 3.05,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2779,
+            "celsius": 4.75,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2813,
+            "celsius": 8.15,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2849,
+            "celsius": 11.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2864,
+            "celsius": 13.25,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2815,
+            "celsius": 8.35,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2773,
+            "celsius": 4.15,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2876,
+            "celsius": 14.45,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2902,
+            "celsius": 17.05,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2943,
+            "celsius": 21.15,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2974,
+            "celsius": 24.25,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2932,
+            "celsius": 20.05,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2903,
+            "celsius": 17.15,
+            "missingReason": null
+          },
+          {
+            "row": 6751,
+            "column": 33868,
+            "pixelCenter": {
+              "lat": 27.737360640199995,
+              "lng": 102.23735998220002
+            },
+            "rawValue": 2876,
+            "celsius": 14.45,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        3.05,
+        4.75,
+        8.15,
+        11.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        13.25,
+        8.35,
+        4.15
+      ],
+      "tasmaxC": [
+        14.45,
+        17.05,
+        21.15,
+        24.25,
+        null,
+        null,
+        null,
+        null,
+        null,
+        20.05,
+        17.15,
+        14.45
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "us-tx-weslaco",
+      "name": "Established Arbequina grove near Weslaco, Texas, USA",
+      "lat": 26.16,
+      "lng": -97.93,
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "texas_malik2011",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2859,
+            "celsius": 12.75,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2873,
+            "celsius": 14.15,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2899,
+            "celsius": 16.75,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2930,
+            "celsius": 19.85,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2938,
+            "celsius": 20.65,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2902,
+            "celsius": 17.05,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2867,
+            "celsius": 13.55,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2956,
+            "celsius": 22.45,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2975,
+            "celsius": 24.35,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 3004,
+            "celsius": 27.25,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 3034,
+            "celsius": 30.25,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 3030,
+            "celsius": 29.85,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2996,
+            "celsius": 26.45,
+            "missingReason": null
+          },
+          {
+            "row": 6940,
+            "column": 9848,
+            "pixelCenter": {
+              "lat": 26.16236064649999,
+              "lng": -97.92930588380001
+            },
+            "rawValue": 2962,
+            "celsius": 23.05,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        12.75,
+        14.15,
+        16.75,
+        19.85,
+        null,
+        null,
+        null,
+        null,
+        null,
+        20.65,
+        17.05,
+        13.55
+      ],
+      "tasmaxC": [
+        22.45,
+        24.35,
+        27.25,
+        30.25,
+        null,
+        null,
+        null,
+        null,
+        null,
+        29.85,
+        26.45,
+        23.05
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "name": "Texas Olive Ranch, Carrizo Springs, Texas, USA",
+      "lat": 28.41,
+      "lng": -99.73,
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "texas_malik2011",
+      "split": "study_and_geographic_holdout",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2818,
+            "celsius": 8.65,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2838,
+            "celsius": 10.65,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2871,
+            "celsius": 13.95,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2909,
+            "celsius": 17.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2920,
+            "celsius": 18.85,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2870,
+            "celsius": 13.85,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2826,
+            "celsius": 9.45,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2934,
+            "celsius": 20.25,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2961,
+            "celsius": 22.95,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2999,
+            "celsius": 26.75,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 3039,
+            "celsius": 30.75,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 3027,
+            "celsius": 29.55,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2979,
+            "celsius": 24.75,
+            "missingReason": null
+          },
+          {
+            "row": 6670,
+            "column": 9632,
+            "pixelCenter": {
+              "lat": 28.412360637499994,
+              "lng": -99.72930587660001
+            },
+            "rawValue": 2935,
+            "celsius": 20.35,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        8.65,
+        10.65,
+        13.95,
+        17.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        18.85,
+        13.85,
+        9.45
+      ],
+      "tasmaxC": [
+        20.25,
+        22.95,
+        26.75,
+        30.75,
+        null,
+        null,
+        null,
+        null,
+        null,
+        29.55,
+        24.75,
+        20.35
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "studyCluster": "miyasaka-2016-hawaii",
+      "geographicCluster": "miyasaka-2016-hawaii",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2882,
+            "celsius": 15.05,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2878,
+            "celsius": 14.65,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2881,
+            "celsius": 14.95,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2886,
+            "celsius": 15.45,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2907,
+            "celsius": 17.55,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2900,
+            "celsius": 16.85,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2888,
+            "celsius": 15.65,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2941,
+            "celsius": 20.95,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2939,
+            "celsius": 20.75,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2943,
+            "celsius": 21.15,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2947,
+            "celsius": 21.55,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2969,
+            "celsius": 23.75,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2960,
+            "celsius": 22.85,
+            "missingReason": null
+          },
+          {
+            "row": 7677,
+            "column": 2918,
+            "pixelCenter": {
+              "lat": 20.020694004399992,
+              "lng": -155.67930565280002
+            },
+            "rawValue": 2946,
+            "celsius": 21.45,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        15.05,
+        14.65,
+        14.95,
+        15.45,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17.55,
+        16.85,
+        15.65
+      ],
+      "tasmaxC": [
+        20.95,
+        20.75,
+        21.15,
+        21.55,
+        null,
+        null,
+        null,
+        null,
+        null,
+        23.75,
+        22.85,
+        21.45
+      ],
+      "missingWinterFields": []
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "name": "Guzelyurt · five crop-year Koroneiki trial",
+      "lat": 35.1862611111,
+      "lng": 32.9724555556,
+      "studyCluster": "usanmaz2019_guzelyurt",
+      "geographicCluster": "cyprus_lowland",
+      "split": "development_already_discussed",
+      "winterMonthNumbers": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "arrayIndexing": "January=0 through December=11; unrequested summer months are null",
+      "pixels": {
+        "tasmin": [
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2813,
+            "celsius": 8.15,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2812,
+            "celsius": 8.05,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2828,
+            "celsius": 9.65,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2858,
+            "celsius": 12.65,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2910,
+            "celsius": 17.85,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2864,
+            "celsius": 13.25,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2831,
+            "celsius": 9.95,
+            "missingReason": null
+          }
+        ],
+        "tasmax": [
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2880,
+            "celsius": 14.85,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2884,
+            "celsius": 15.25,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2911,
+            "celsius": 17.95,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2953,
+            "celsius": 22.15,
+            "missingReason": null
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2997,
+            "celsius": 26.55,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2938,
+            "celsius": 20.65,
+            "missingReason": null
+          },
+          {
+            "row": 5857,
+            "column": 25556,
+            "pixelCenter": {
+              "lat": 35.18736061039999,
+              "lng": 32.970693592599986
+            },
+            "rawValue": 2897,
+            "celsius": 16.55,
+            "missingReason": null
+          }
+        ]
+      },
+      "tasminC": [
+        8.15,
+        8.05,
+        9.65,
+        12.65,
+        null,
+        null,
+        null,
+        null,
+        null,
+        17.85,
+        13.25,
+        9.95
+      ],
+      "tasmaxC": [
+        14.85,
+        15.25,
+        17.95,
+        22.15,
+        null,
+        null,
+        null,
+        null,
+        null,
+        26.55,
+        20.65,
+        16.55
+      ],
+      "missingWinterFields": []
+    }
+  ],
+  "summary": {
+    "sites": 23,
+    "distinctSourceCOGs": 24,
+    "expectedWinterValues": 322,
+    "missingWinterValues": 0,
+    "completeSites": 23
+  },
+  "huascoPaperWeatherContext": {
+    "url": "https://www.scielo.cl/pdf/chiljar/v69n3/at04.pdf",
+    "locator": "Methods, journalp326, PDF2",
+    "annualMeanC": 18,
+    "februaryMeanMaximumC": 30.1,
+    "julyMeanMinimumC": 6.5,
+    "provenance": "Agroclimate description attributed by the orchard paper to Novoa et al.1989; no local station monthly table or orchard observed series in this source",
+    "use": "Contextual comparison only, not substituted into native gridded values"
+  }
+}

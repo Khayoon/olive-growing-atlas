@@ -1,0 +1,878 @@
+{
+  "scope": "Calibration of modeled daily-weather DMA requirement attainment from modeled CHELSA normal-year CU. Not observed flower/fruit or yield probability.",
+  "stations": 45,
+  "completeStationSeasons": 919,
+  "cultivars": 3,
+  "crossValidation": "Leave complete geographic regions out; all cultivar outcomes of a station stay together. Station/cultivar equal weighting. Selection using these folds is not an independent final test.",
+  "coefficients": {
+    "intercept": -4.524002702022282,
+    "slope": 6.1948447502388895
+  },
+  "rawBrier": 0.0558243769463813,
+  "calibratedBrier": 0.039320039262867965,
+  "rawFractionMAE": 0.0558243769463813,
+  "calibratedFractionMAE": 0.04721971991751493,
+  "folds": [
+    {
+      "region": "east-asia",
+      "stationCultivarCases": 15,
+      "rawBrier": 0.022222222222222223,
+      "calibratedBrier": 0.02284846463138878
+    },
+    {
+      "region": "europe-fringe",
+      "stationCultivarCases": 12,
+      "rawBrier": 0.0,
+      "calibratedBrier": 0.0001130447320292401
+    },
+    {
+      "region": "iberia",
+      "stationCultivarCases": 21,
+      "rawBrier": 0.03880070546737213,
+      "calibratedBrier": 0.030005267847797185
+    },
+    {
+      "region": "mediterranean-east",
+      "stationCultivarCases": 24,
+      "rawBrier": 0.02083333333333333,
+      "calibratedBrier": 0.024952498976623192
+    },
+    {
+      "region": "north-america",
+      "stationCultivarCases": 30,
+      "rawBrier": 0.07988253576488871,
+      "calibratedBrier": 0.04988517399835214
+    },
+    {
+      "region": "oceania",
+      "stationCultivarCases": 24,
+      "rawBrier": 0.08298611111111111,
+      "calibratedBrier": 0.051336962472995774
+    },
+    {
+      "region": "south-america",
+      "stationCultivarCases": 6,
+      "rawBrier": 0.08333333333333333,
+      "calibratedBrier": 0.07542772133086846
+    },
+    {
+      "region": "southern-africa",
+      "stationCultivarCases": 3,
+      "rawBrier": 0.3333333333333333,
+      "calibratedBrier": 0.18464751556720724
+    }
+  ],
+  "cases": [
+    {
+      "id": "SP000008410:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9994200417146997,
+      "normalToRequirementRatio": 5.911504424778762
+    },
+    {
+      "id": "SP000008410:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9890081582982783,
+      "normalToRequirementRatio": 3.2745098039215685
+    },
+    {
+      "id": "SP000008410:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9832272753393637,
+      "normalToRequirementRatio": 2.986587183308495
+    },
+    {
+      "id": "AR000087217:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.8527310622088229,
+      "normalToRequirementRatio": 1.7610619469026547
+    },
+    {
+      "id": "AR000087217:Leccino",
+      "observedModeledAttainmentFraction": 0.25,
+      "geographicHeldoutPrediction": 0.43888208968364495,
+      "normalToRequirementRatio": 0.9754901960784312
+    },
+    {
+      "id": "AR000087217:Frantoio",
+      "observedModeledAttainmentFraction": 0.25,
+      "geographicHeldoutPrediction": 0.37493061138193096,
+      "normalToRequirementRatio": 0.8897168405365126
+    },
+    {
+      "id": "AR000087418:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9973804853601869,
+      "normalToRequirementRatio": 4.560471976401181
+    },
+    {
+      "id": "AR000087418:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9615309793724433,
+      "normalToRequirementRatio": 2.526143790849673
+    },
+    {
+      "id": "AR000087418:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9442563090695096,
+      "normalToRequirementRatio": 2.3040238450074515
+    },
+    {
+      "id": "ASN00009021:Arbequina",
+      "observedModeledAttainmentFraction": 0.96875,
+      "geographicHeldoutPrediction": 0.9341086246665966,
+      "normalToRequirementRatio": 2.2359882005899707
+    },
+    {
+      "id": "ASN00009021:Leccino",
+      "observedModeledAttainmentFraction": 0.53125,
+      "geographicHeldoutPrediction": 0.579495239276202,
+      "normalToRequirementRatio": 1.238562091503268
+    },
+    {
+      "id": "ASN00009021:Frantoio",
+      "observedModeledAttainmentFraction": 0.375,
+      "geographicHeldoutPrediction": 0.5013102461260736,
+      "normalToRequirementRatio": 1.1296572280178836
+    },
+    {
+      "id": "ASN00023034:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9969754703550607,
+      "normalToRequirementRatio": 4.321533923303834
+    },
+    {
+      "id": "ASN00023034:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9503934759148212,
+      "normalToRequirementRatio": 2.393790849673202
+    },
+    {
+      "id": "ASN00023034:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9274232823159778,
+      "normalToRequirementRatio": 2.183308494783905
+    },
+    {
+      "id": "ASN00066037:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.6685870462082383,
+      "normalToRequirementRatio": 1.3775811209439528
+    },
+    {
+      "id": "ASN00066037:Leccino",
+      "observedModeledAttainmentFraction": 0.5333333333333333,
+      "geographicHeldoutPrediction": 0.2333246179650932,
+      "normalToRequirementRatio": 0.7630718954248366
+    },
+    {
+      "id": "ASN00066037:Frantoio",
+      "observedModeledAttainmentFraction": 0.3333333333333333,
+      "geographicHeldoutPrediction": 0.19231304087447748,
+      "normalToRequirementRatio": 0.6959761549925483
+    },
+    {
+      "id": "ASN00070339:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9998968760408229,
+      "normalToRequirementRatio": 8.082595870206488
+    },
+    {
+      "id": "ASN00070339:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9974781998236748,
+      "normalToRequirementRatio": 4.477124183006536
+    },
+    {
+      "id": "ASN00070339:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9959640164746858,
+      "normalToRequirementRatio": 4.083457526080478
+    },
+    {
+      "id": "ASN00086038:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9996283348522151,
+      "normalToRequirementRatio": 6.4159292035398225
+    },
+    {
+      "id": "ASN00086038:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9919392702877387,
+      "normalToRequirementRatio": 3.553921568627451
+    },
+    {
+      "id": "ASN00086038:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9874201952724148,
+      "normalToRequirementRatio": 3.2414307004470935
+    },
+    {
+      "id": "AU000016402:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9988976385121483,
+      "normalToRequirementRatio": 5.3097345132743365
+    },
+    {
+      "id": "AU000016402:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9806768379032907,
+      "normalToRequirementRatio": 2.9411764705882355
+    },
+    {
+      "id": "AU000016402:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9710067411794981,
+      "normalToRequirementRatio": 2.6825633383010428
+    },
+    {
+      "id": "CHM00056187:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9994056081144367,
+      "normalToRequirementRatio": 6.368731563421828
+    },
+    {
+      "id": "CHM00056187:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9903163211682992,
+      "normalToRequirementRatio": 3.5277777777777786
+    },
+    {
+      "id": "CHM00056187:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9855084580549961,
+      "normalToRequirementRatio": 3.217585692995529
+    },
+    {
+      "id": "CHM00056571:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9977880342634028,
+      "normalToRequirementRatio": 4.861356932153392
+    },
+    {
+      "id": "CHM00056571:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.969400902944231,
+      "normalToRequirementRatio": 2.69281045751634
+    },
+    {
+      "id": "CHM00056571:Frantoio",
+      "observedModeledAttainmentFraction": 0.9523809523809523,
+      "geographicHeldoutPrediction": 0.9558392627312267,
+      "normalToRequirementRatio": 2.4560357675111772
+    },
+    {
+      "id": "CHM00056778:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9987766173091646,
+      "normalToRequirementRatio": 5.498525073746313
+    },
+    {
+      "id": "CHM00056778:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9816654684052295,
+      "normalToRequirementRatio": 3.045751633986928
+    },
+    {
+      "id": "CHM00056778:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9730574528546029,
+      "normalToRequirementRatio": 2.7779433681073025
+    },
+    {
+      "id": "CHM00057411:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9992850834727418,
+      "normalToRequirementRatio": 6.135693215339233
+    },
+    {
+      "id": "CHM00057411:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9885845030326086,
+      "normalToRequirementRatio": 3.3986928104575167
+    },
+    {
+      "id": "CHM00057411:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9829905173808704,
+      "normalToRequirementRatio": 3.0998509687034277
+    },
+    {
+      "id": "CHM00059287:Arbequina",
+      "observedModeledAttainmentFraction": 0.2857142857142857,
+      "geographicHeldoutPrediction": 0.47620728400324847,
+      "normalToRequirementRatio": 0.9911504424778761
+    },
+    {
+      "id": "CHM00059287:Leccino",
+      "observedModeledAttainmentFraction": 0.0,
+      "geographicHeldoutPrediction": 0.17671922225163292,
+      "normalToRequirementRatio": 0.5490196078431373
+    },
+    {
+      "id": "CHM00059287:Frantoio",
+      "observedModeledAttainmentFraction": 0.0,
+      "geographicHeldoutPrediction": 0.1517748598395445,
+      "normalToRequirementRatio": 0.5007451564828616
+    },
+    {
+      "id": "CY000176090:Arbequina",
+      "observedModeledAttainmentFraction": 0.9545454545454546,
+      "geographicHeldoutPrediction": 0.9260119417770318,
+      "normalToRequirementRatio": 2.2389380530973453
+    },
+    {
+      "id": "CY000176090:Leccino",
+      "observedModeledAttainmentFraction": 0.8181818181818182,
+      "geographicHeldoutPrediction": 0.5740656529421765,
+      "normalToRequirementRatio": 1.2401960784313726
+    },
+    {
+      "id": "CY000176090:Frantoio",
+      "observedModeledAttainmentFraction": 0.7272727272727273,
+      "geographicHeldoutPrediction": 0.49920437917509236,
+      "normalToRequirementRatio": 1.1311475409836067
+    },
+    {
+      "id": "FR000007510:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.999925169493171,
+      "normalToRequirementRatio": 8.646017699115045
+    },
+    {
+      "id": "FR000007510:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9982792458735508,
+      "normalToRequirementRatio": 4.78921568627451
+    },
+    {
+      "id": "FR000007510:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9972659879567288,
+      "normalToRequirementRatio": 4.368107302533533
+    },
+    {
+      "id": "GR000016648:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9995301720368927,
+      "normalToRequirementRatio": 6.575221238938053
+    },
+    {
+      "id": "GR000016648:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9910101372588492,
+      "normalToRequirementRatio": 3.6421568627450984
+    },
+    {
+      "id": "GR000016648:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9862184602754986,
+      "normalToRequirementRatio": 3.321907600596125
+    },
+    {
+      "id": "GR000016716:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9996695441144959,
+      "normalToRequirementRatio": 7.029498525073745
+    },
+    {
+      "id": "GR000016716:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9934499351870358,
+      "normalToRequirementRatio": 3.893790849673202
+    },
+    {
+      "id": "GR000016716:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.989882331571536,
+      "normalToRequirementRatio": 3.5514157973174365
+    },
+    {
+      "id": "GR000016734:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9823905706737324,
+      "normalToRequirementRatio": 3.1474926253687316
+    },
+    {
+      "id": "GR000016734:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.8210443157728451,
+      "normalToRequirementRatio": 1.7434640522875817
+    },
+    {
+      "id": "GR000016734:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.7642052829930223,
+      "normalToRequirementRatio": 1.5901639344262293
+    },
+    {
+      "id": "GR000167230:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9986415258211481,
+      "normalToRequirementRatio": 5.353982300884955
+    },
+    {
+      "id": "GR000167230:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9770362381152083,
+      "normalToRequirementRatio": 2.9656862745098045
+    },
+    {
+      "id": "GR000167230:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9657582556797594,
+      "normalToRequirementRatio": 2.7049180327868854
+    },
+    {
+      "id": "HRE00105217:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9999189174658847,
+      "normalToRequirementRatio": 8.663716814159292
+    },
+    {
+      "id": "HRE00105217:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9981528529871297,
+      "normalToRequirementRatio": 4.799019607843137
+    },
+    {
+      "id": "HRE00105217:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.997069263401671,
+      "normalToRequirementRatio": 4.377049180327868
+    },
+    {
+      "id": "IT000016320:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9992113713934049,
+      "normalToRequirementRatio": 5.952802359882006
+    },
+    {
+      "id": "IT000016320:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9857430901711383,
+      "normalToRequirementRatio": 3.2973856209150325
+    },
+    {
+      "id": "IT000016320:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9784149487152698,
+      "normalToRequirementRatio": 3.0074515648286138
+    },
+    {
+      "id": "IT000162240:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9998768794070307,
+      "normalToRequirementRatio": 8.026548672566372
+    },
+    {
+      "id": "IT000162240:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9972889117610652,
+      "normalToRequirementRatio": 4.446078431372549
+    },
+    {
+      "id": "IT000162240:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9957283728315354,
+      "normalToRequirementRatio": 4.055141579731743
+    },
+    {
+      "id": "ITW00033126:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9974220612118491,
+      "normalToRequirementRatio": 4.713864306784661
+    },
+    {
+      "id": "ITW00033126:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.960244940847928,
+      "normalToRequirementRatio": 2.6111111111111116
+    },
+    {
+      "id": "ITW00033126:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9419901772962763,
+      "normalToRequirementRatio": 2.381520119225037
+    },
+    {
+      "id": "NZ000093417:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9997698791559232,
+      "normalToRequirementRatio": 6.999999999999998
+    },
+    {
+      "id": "NZ000093417:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.994763176865987,
+      "normalToRequirementRatio": 3.8774509803921564
+    },
+    {
+      "id": "NZ000093417:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9917432303046837,
+      "normalToRequirementRatio": 3.536512667660208
+    },
+    {
+      "id": "NZ000933090:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9999273031738876,
+      "normalToRequirementRatio": 8.59882005899705
+    },
+    {
+      "id": "NZ000933090:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9981710008146518,
+      "normalToRequirementRatio": 4.7630718954248366
+    },
+    {
+      "id": "NZ000933090:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9970556796312658,
+      "normalToRequirementRatio": 4.344262295081967
+    },
+    {
+      "id": "NZ000936150:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9999566384452983,
+      "normalToRequirementRatio": 9.415929203539822
+    },
+    {
+      "id": "NZ000936150:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9988654505324814,
+      "normalToRequirementRatio": 5.215686274509804
+    },
+    {
+      "id": "NZ000936150:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9981589467105331,
+      "normalToRequirementRatio": 4.757078986587183
+    },
+    {
+      "id": "PO000008535:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.996350933058328,
+      "normalToRequirementRatio": 4.12094395280236
+    },
+    {
+      "id": "PO000008535:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.946718278398312,
+      "normalToRequirementRatio": 2.2826797385620914
+    },
+    {
+      "id": "PO000008535:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9234204737381434,
+      "normalToRequirementRatio": 2.081967213114754
+    },
+    {
+      "id": "SF000068438:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9631823981945595,
+      "normalToRequirementRatio": 2.498525073746312
+    },
+    {
+      "id": "SF000068438:Leccino",
+      "observedModeledAttainmentFraction": 0.6,
+      "geographicHeldoutPrediction": 0.7139063432734085,
+      "normalToRequirementRatio": 1.3839869281045751
+    },
+    {
+      "id": "SF000068438:Frantoio",
+      "observedModeledAttainmentFraction": 0.4,
+      "geographicHeldoutPrediction": 0.6441564167925925,
+      "normalToRequirementRatio": 1.2622950819672134
+    },
+    {
+      "id": "SP000003195:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9998415141925395,
+      "normalToRequirementRatio": 7.536873156342184
+    },
+    {
+      "id": "SP000003195:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9965774879761218,
+      "normalToRequirementRatio": 4.17483660130719
+    },
+    {
+      "id": "SP000003195:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9946317259309041,
+      "normalToRequirementRatio": 3.8077496274217584
+    },
+    {
+      "id": "SPE00119783:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9896726446219394,
+      "normalToRequirementRatio": 3.31858407079646
+    },
+    {
+      "id": "SPE00119783:Leccino",
+      "observedModeledAttainmentFraction": 0.6296296296296297,
+      "geographicHeldoutPrediction": 0.8790597886272593,
+      "normalToRequirementRatio": 1.8382352941176463
+    },
+    {
+      "id": "SPE00119783:Frantoio",
+      "observedModeledAttainmentFraction": 0.5555555555555556,
+      "geographicHeldoutPrediction": 0.8352486392981902,
+      "normalToRequirementRatio": 1.6766020864381521
+    },
+    {
+      "id": "SPE00120089:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.999679849396079,
+      "normalToRequirementRatio": 6.613569321533922
+    },
+    {
+      "id": "SPE00120089:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9935330379697942,
+      "normalToRequirementRatio": 3.663398692810457
+    },
+    {
+      "id": "SPE00120089:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9899966981230848,
+      "normalToRequirementRatio": 3.341281669150522
+    },
+    {
+      "id": "SPE00120170:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9996843830790524,
+      "normalToRequirementRatio": 6.631268436578172
+    },
+    {
+      "id": "SPE00120170:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9936154195544024,
+      "normalToRequirementRatio": 3.6732026143790835
+    },
+    {
+      "id": "SPE00120170:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9901211273770073,
+      "normalToRequirementRatio": 3.350223546944859
+    },
+    {
+      "id": "SZ000003700:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9997314060769426,
+      "normalToRequirementRatio": 6.946902654867257
+    },
+    {
+      "id": "SZ000003700:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9944879103767916,
+      "normalToRequirementRatio": 3.848039215686275
+    },
+    {
+      "id": "SZ000003700:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9914412058043568,
+      "normalToRequirementRatio": 3.5096870342771984
+    },
+    {
+      "id": "TU000017240:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9995334745361587,
+      "normalToRequirementRatio": 6.584070796460177
+    },
+    {
+      "id": "TU000017240:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.991066794792881,
+      "normalToRequirementRatio": 3.6470588235294112
+    },
+    {
+      "id": "TU000017240:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9863031471057839,
+      "normalToRequirementRatio": 3.3263785394932937
+    },
+    {
+      "id": "USR0000HPUW:Arbequina",
+      "observedModeledAttainmentFraction": 0.0,
+      "geographicHeldoutPrediction": 0.01708819447096194,
+      "normalToRequirementRatio": 0.0
+    },
+    {
+      "id": "USR0000HPUW:Leccino",
+      "observedModeledAttainmentFraction": 0.0,
+      "geographicHeldoutPrediction": 0.01708819447096194,
+      "normalToRequirementRatio": 0.0
+    },
+    {
+      "id": "USR0000HPUW:Frantoio",
+      "observedModeledAttainmentFraction": 0.0,
+      "geographicHeldoutPrediction": 0.01708819447096194,
+      "normalToRequirementRatio": 0.0
+    },
+    {
+      "id": "USW00003927:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9957503475549766,
+      "normalToRequirementRatio": 4.0825958702064895
+    },
+    {
+      "id": "USW00003927:Leccino",
+      "observedModeledAttainmentFraction": 0.9411764705882353,
+      "geographicHeldoutPrediction": 0.9459307008702521,
+      "normalToRequirementRatio": 2.2614379084967324
+    },
+    {
+      "id": "USW00003927:Frantoio",
+      "observedModeledAttainmentFraction": 0.9117647058823529,
+      "geographicHeldoutPrediction": 0.9237193764799108,
+      "normalToRequirementRatio": 2.0625931445603576
+    },
+    {
+      "id": "USW00013904:Arbequina",
+      "observedModeledAttainmentFraction": 0.9615384615384616,
+      "geographicHeldoutPrediction": 0.9667576661935265,
+      "normalToRequirementRatio": 2.5575221238938055
+    },
+    {
+      "id": "USW00013904:Leccino",
+      "observedModeledAttainmentFraction": 0.3076923076923077,
+      "geographicHeldoutPrediction": 0.7518706168258746,
+      "normalToRequirementRatio": 1.4166666666666665
+    },
+    {
+      "id": "USW00013904:Frantoio",
+      "observedModeledAttainmentFraction": 0.2692307692307692,
+      "geographicHeldoutPrediction": 0.6897829573143069,
+      "normalToRequirementRatio": 1.2921013412816689
+    },
+    {
+      "id": "USW00023155:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9955130932503513,
+      "normalToRequirementRatio": 4.035398230088495
+    },
+    {
+      "id": "USW00023155:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9434720348934285,
+      "normalToRequirementRatio": 2.2352941176470584
+    },
+    {
+      "id": "USW00023155:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9204351831212019,
+      "normalToRequirementRatio": 2.0387481371087928
+    },
+    {
+      "id": "USW00023160:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9761967682187146,
+      "normalToRequirementRatio": 2.772861356932153
+    },
+    {
+      "id": "USW00023160:Leccino",
+      "observedModeledAttainmentFraction": 0.696969696969697,
+      "geographicHeldoutPrediction": 0.800654402847377,
+      "normalToRequirementRatio": 1.5359477124183005
+    },
+    {
+      "id": "USW00023160:Frantoio",
+      "observedModeledAttainmentFraction": 0.5151515151515151,
+      "geographicHeldoutPrediction": 0.7446573218808716,
+      "normalToRequirementRatio": 1.4008941877794339
+    },
+    {
+      "id": "USW00023213:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9993342438116471,
+      "normalToRequirementRatio": 5.982300884955753
+    },
+    {
+      "id": "USW00023213:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9889844420528947,
+      "normalToRequirementRatio": 3.313725490196079
+    },
+    {
+      "id": "USW00023213:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9835096337894395,
+      "normalToRequirementRatio": 3.022354694485842
+    },
+    {
+      "id": "USW00024225:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9997770153028943,
+      "normalToRequirementRatio": 7.4188790560471976
+    },
+    {
+      "id": "USW00024225:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.995878920093827,
+      "normalToRequirementRatio": 4.109477124183006
+    },
+    {
+      "id": "USW00024225:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9936853367211258,
+      "normalToRequirementRatio": 3.7481371087928466
+    },
+    {
+      "id": "USW00024232:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9999142964727702,
+      "normalToRequirementRatio": 8.914454277286136
+    },
+    {
+      "id": "USW00024232:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9982844784641276,
+      "normalToRequirementRatio": 4.937908496732026
+    },
+    {
+      "id": "USW00024232:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9973279314340409,
+      "normalToRequirementRatio": 4.503725782414307
+    },
+    {
+      "id": "USW00024257:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9993440223600459,
+      "normalToRequirementRatio": 5.999999999999999
+    },
+    {
+      "id": "USW00024257:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9891281516215548,
+      "normalToRequirementRatio": 3.3235294117647065
+    },
+    {
+      "id": "USW00024257:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.983718949867625,
+      "normalToRequirementRatio": 3.031296572280178
+    },
+    {
+      "id": "USW00093193:Arbequina",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9976334372065138,
+      "normalToRequirementRatio": 4.619469026548673
+    },
+    {
+      "id": "USW00093193:Leccino",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.966826343528686,
+      "normalToRequirementRatio": 2.558823529411764
+    },
+    {
+      "id": "USW00093193:Frantoio",
+      "observedModeledAttainmentFraction": 1.0,
+      "geographicHeldoutPrediction": 0.9521340296559894,
+      "normalToRequirementRatio": 2.3338301043219074
+    }
+  ],
+  "selected": true
+}

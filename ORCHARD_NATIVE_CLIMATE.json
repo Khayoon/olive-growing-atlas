@@ -1,0 +1,3062 @@
+{
+  "version": "global-orchard-native-climate1",
+  "sampledUtc": "2026-10-18T18:03:24.431027+00:00",
+  "dataset": "CHELSA V2.1 / CHELSA-BIOCLIM+ 1981-2010",
+  "license": "CC0 1.0",
+  "datasetUrl": "https://www.chelsa-climate.org/datasets/chelsa_bioclim",
+  "citation": "Brun et al. (2022), ESSD 14, 5573–5603, doi:10.5194/essd-14-5573-2022; Karger et al. (2017), Scientific Data 4, 170122, doi:10.1038/sdata.2017.122",
+  "input": {
+    "file": "global-orchard-audit.json",
+    "sha256": "00dbef6516214ab7d2a574e51cbbece49a913671e358c32980ea7d8b9c98d6d6",
+    "pointCoordinatesSha256": "47a50a9fa01995877c541c2cc5b091810a8c6448666ade88ffc0ab98773c414f",
+    "eligibleSites": 23
+  },
+  "extraction": {
+    "method": "Single native containing 30-arcsecond pixel at the reported orchard coordinate; no overview, interpolation, nearest-coast fill or score sampling",
+    "nominalResolutionDegrees": 0.008333333333333333,
+    "nominalArcseconds": 30,
+    "crs": "EPSG:4326",
+    "missing": "Explicit null with source_nodata/outside_source_extent reason, without spatial substitution",
+    "precisionCaveat": "Published minute-rounded orchard coordinates are approximate; native raster sampling does not improve orchard coordinate precision."
+  },
+  "fieldInterpretation": {
+    "bio18": "Three-month precipitation total, mm. Verified against independent sums of monthly CHELSA pr and tas at 16 controls; source long_name says monthly mean, but numeric values match quarter totals.",
+    "bio19": "Three-month precipitation total, mm; source long_name says monthly mean. Raw data retained without multiplying by three.",
+    "bio06": "Mean daily minimum of the coldest month; NOT an absolute winter minimum.",
+    "hursmean": "Mean annual near-surface relative humidity; NOT summer-specific humidity.",
+    "fcf": "Annual freeze–thaw transition count; NOT number of frost days."
+  },
+  "sources": {
+    "bio05": {
+      "id": "bio05",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio05/1981-2010/CHELSA_bio05_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:14.888617+00:00",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"623e41da0fc5aaa8dc1c602902c71d1d-15\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "sourceTagUnit": "°C"
+    },
+    "bio06": {
+      "id": "bio06",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio06/1981-2010/CHELSA_bio06_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:14.886423+00:00",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"0003ccc8b449c047975f8ba4916d7013-14\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "sourceTagUnit": "°C"
+    },
+    "bio10": {
+      "id": "bio10",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio10/1981-2010/CHELSA_bio10_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:14.874563+00:00",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"c04fb7b2efa50d6b554b3d39cdec1040-15\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "sourceTagUnit": "°C"
+    },
+    "bio11": {
+      "id": "bio11",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio11/1981-2010/CHELSA_bio11_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:18.177536+00:00",
+      "scale": 0.1,
+      "offset": -273.15,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"c5d9ac8cf89d56c05c860fbfb2468300-14\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "sourceTagUnit": "°C"
+    },
+    "bio12": {
+      "id": "bio12",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio12/1981-2010/CHELSA_bio12_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:18.250272+00:00",
+      "scale": 1.0,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"767eceef94e3bcc39d5ad154a29e2425-33\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "sourceTagUnit": "kg m-2 year-1"
+    },
+    "bio18": {
+      "id": "bio18",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio18/1981-2010/CHELSA_bio18_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:18.243209+00:00",
+      "scale": 0.1,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"22741bb9bad5f938c00364ad5b725f8f-52\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "sourceTagUnit": "kg m-2 month-1"
+    },
+    "bio19": {
+      "id": "bio19",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio19/1981-2010/CHELSA_bio19_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:21.276044+00:00",
+      "scale": 0.1,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"a3c397c58e35867fb12fcba52a7853fb-47\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "sourceTagUnit": "kg m-2 month-1"
+    },
+    "hursmean": {
+      "id": "hursmean",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/hursmean/1981-2010/CHELSA_hursmean_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:21.516081+00:00",
+      "scale": 0.01,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"7325da7fc4fe307b75e158d394711291-42\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888884999,
+        179.99985967115003,
+        83.99986041515001
+      ],
+      "sourceTagUnit": "percent"
+    },
+    "fcf": {
+      "id": "fcf",
+      "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/fcf/1981-2010/CHELSA_fcf_1981-2010_V.2.1.tif",
+      "sampledUtc": "2026-10-18T18:03:21.635308+00:00",
+      "scale": 1.0,
+      "offset": 0.0,
+      "nodata": 65535.0,
+      "sourceEtagFromManifest": "\"a43ef6f35191f45c94c6d9643ecc0c27-8\"",
+      "width": 43200,
+      "height": 20880,
+      "crs": "EPSG:4326",
+      "resolutionDegrees": {
+        "dx": 0.0083333333,
+        "dy": 0.0083333333
+      },
+      "bounds": [
+        -180.00013888885002,
+        -90.00013888885,
+        179.99985967115003,
+        83.99986041515
+      ],
+      "sourceTagUnit": "count"
+    }
+  },
+  "sites": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "studyCluster": "pedro_abad_2016",
+      "geographicCluster": "southern_iberia",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 35.95,
+        "bio06": 4.35,
+        "bio10": 28.35,
+        "bio11": 10.55,
+        "bio12": 553.0,
+        "bio18": 21.4,
+        "bio19": 211.6,
+        "hursmean": 53.54,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.962360599300006,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 3091,
+          "value": 35.95,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.962360599300006,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 2775,
+          "value": 4.35,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.96236059929999,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 3015,
+          "value": 28.35,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.96236059929999,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 2837,
+          "value": 10.55,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.962360599300006,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 553,
+          "value": 553.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.96236059929999,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 214,
+          "value": 21.4,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.96236059929999,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 2116,
+          "value": 211.6,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.962360599300006,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 5354,
+          "value": 53.54,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5524,
+          "column": 21064,
+          "pixelCenter": {
+            "lat": 37.96236059929999,
+            "lng": -4.4626395909999985
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "name": "Commercial Arbequina orchard, Cordoba, Spain",
+      "lat": 37.64889,
+      "lng": -4.731579,
+      "studyCluster": "cordoba_commercial_2015",
+      "geographicCluster": "southern_iberia",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 34.05,
+        "bio06": 3.25,
+        "bio10": 26.15,
+        "bio11": 9.65,
+        "bio12": 672.0,
+        "bio18": 24.4,
+        "bio19": 257.7,
+        "hursmean": 53.83,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.645693933900006,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 3072,
+          "value": 34.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.645693933900006,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 2764,
+          "value": 3.25,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.64569393389999,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 2993,
+          "value": 26.15,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.64569393389999,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 2828,
+          "value": 9.65,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.645693933900006,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 672,
+          "value": 672.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.64569393389999,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 244,
+          "value": 24.4,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.64569393389999,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 2577,
+          "value": 257.7,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.645693933900006,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 5383,
+          "value": 53.83,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5562,
+          "column": 21032,
+          "pixelCenter": {
+            "lat": 37.64569393389999,
+            "lng": -4.729306256600012
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "name": "Lombo rainfed Cobrancosa orchard, Portugal",
+      "lat": 41.446556,
+      "lng": -6.822067,
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 29.75,
+        "bio06": 1.85,
+        "bio10": 22.35,
+        "bio11": 7.05,
+        "bio12": 708.0,
+        "bio18": 61.0,
+        "bio19": 244.8,
+        "hursmean": 57.62,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.44569391870001,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 3029,
+          "value": 29.75,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.44569391870001,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 2750,
+          "value": 1.85,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.445693918699995,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 2955,
+          "value": 22.35,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.445693918699995,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 2802,
+          "value": 7.05,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.44569391870001,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 708,
+          "value": 708.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.445693918699995,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 610,
+          "value": 61.0,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.445693918699995,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 2448,
+          "value": 244.8,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.44569391870001,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 5762,
+          "value": 57.62,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5106,
+          "column": 20781,
+          "pixelCenter": {
+            "lat": 41.445693918699995,
+            "lng": -6.820972914900011
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "pt_lombo_madural",
+      "name": "Lombo rainfed Madural orchard, Portugal",
+      "lat": 41.457075,
+      "lng": -6.832459,
+      "studyCluster": "lombo_2019",
+      "geographicCluster": "northeastern_portugal",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 28.85,
+        "bio06": 1.25,
+        "bio10": 21.45,
+        "bio11": 6.45,
+        "bio12": 723.0,
+        "bio18": 62.4,
+        "bio19": 250.1,
+        "hursmean": 57.31,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.45402725200001,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 3020,
+          "value": 28.85,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.45402725200001,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 2744,
+          "value": 1.25,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.454027251999996,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 2946,
+          "value": 21.45,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.454027251999996,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 2796,
+          "value": 6.45,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.45402725200001,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 723,
+          "value": 723.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.454027251999996,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 624,
+          "value": 62.4,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.454027251999996,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 2501,
+          "value": 250.1,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.45402725200001,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 5731,
+          "value": 57.31,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5105,
+          "column": 20780,
+          "pixelCenter": {
+            "lat": 41.454027251999996,
+            "lng": -6.829306248199998
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "gr_messinia_ac",
+      "name": "Messinia non-calcareous rainfed orchard, Greece",
+      "lat": 37.0389675,
+      "lng": 21.9130617,
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 29.95,
+        "bio06": 7.35,
+        "bio10": 24.65,
+        "bio11": 10.75,
+        "bio12": 750.0,
+        "bio18": 19.8,
+        "bio19": 347.9,
+        "hursmean": 58.22,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 3031,
+          "value": 29.95,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 2805,
+          "value": 7.35,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 2978,
+          "value": 24.65,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 2839,
+          "value": 10.75,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 750,
+          "value": 750.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 198,
+          "value": 19.8,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 3479,
+          "value": 347.9,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 5822,
+          "value": 58.22,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5635,
+          "column": 24229,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.91236030350001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "gr_messinia_al",
+      "name": "Messinia calcareous rainfed orchard, Greece",
+      "lat": 37.0363786,
+      "lng": 21.9075306,
+      "studyCluster": "messinia_2024",
+      "geographicCluster": "messinia",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 30.05,
+        "bio06": 7.35,
+        "bio10": 24.75,
+        "bio11": 10.75,
+        "bio12": 764.0,
+        "bio18": 20.1,
+        "bio19": 354.2,
+        "hursmean": 58.34,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 3032,
+          "value": 30.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 2805,
+          "value": 7.35,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 2979,
+          "value": 24.75,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 2839,
+          "value": 10.75,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 764,
+          "value": 764.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 201,
+          "value": 20.1,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 3542,
+          "value": 354.2,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.03736060300001,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 5834,
+          "value": 58.34,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5635,
+          "column": 24228,
+          "pixelCenter": {
+            "lat": 37.037360602999996,
+            "lng": 21.904026970199993
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "name": "Sicily Arbequina high-density trial, Italy",
+      "lat": 37.7666667,
+      "lng": 12.5,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 29.05,
+        "bio06": 9.45,
+        "bio10": 24.95,
+        "bio11": 12.55,
+        "bio12": 564.0,
+        "bio18": 63.9,
+        "bio19": 177.5,
+        "hursmean": 59.96,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.770693933400004,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 3022,
+          "value": 29.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.770693933400004,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 2826,
+          "value": 9.45,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.77069393339999,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 2981,
+          "value": 24.95,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.77069393339999,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 2857,
+          "value": 12.55,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.770693933400004,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 564,
+          "value": 564.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.77069393339999,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 639,
+          "value": 63.9,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.77069393339999,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 1775,
+          "value": 177.5,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.770693933400004,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 5996,
+          "value": 59.96,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5547,
+          "column": 23100,
+          "pixelCenter": {
+            "lat": 37.77069393339999,
+            "lng": 12.504027007800005
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "name": "Apulia Arbequina high-density trial, Italy",
+      "lat": 41.0166667,
+      "lng": 16.75,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 30.05,
+        "bio06": 4.65,
+        "bio10": 24.65,
+        "bio11": 9.05,
+        "bio12": 592.0,
+        "bio18": 84.2,
+        "bio19": 182.4,
+        "hursmean": 58.59,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392040001,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 3032,
+          "value": 30.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392040001,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 2778,
+          "value": 4.65,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392039999,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 2978,
+          "value": 24.65,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392039999,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 2822,
+          "value": 9.05,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392040001,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 592,
+          "value": 592.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392039999,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 842,
+          "value": 84.2,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392039999,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 1824,
+          "value": 182.4,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392040001,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 5859,
+          "value": 58.59,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5157,
+          "column": 23610,
+          "pixelCenter": {
+            "lat": 41.02069392039999,
+            "lng": 16.754026990799986
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "name": "Umbria Arbequina high-density trial, Italy",
+      "lat": 42.95,
+      "lng": 12.4166667,
+      "studyCluster": "italy_2014",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 29.85,
+        "bio06": 0.95,
+        "bio10": 23.05,
+        "bio11": 5.55,
+        "bio12": 715.0,
+        "bio18": 118.4,
+        "bio19": 169.8,
+        "hursmean": 57.48,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.95402724600001,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 3030,
+          "value": 29.85,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.95402724600001,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 2741,
+          "value": 0.95,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.954027245999995,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 2962,
+          "value": 23.05,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.954027245999995,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 2787,
+          "value": 5.55,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.95402724600001,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 715,
+          "value": 715.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.954027245999995,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 1184,
+          "value": 118.4,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.954027245999995,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 1698,
+          "value": 169.8,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.95402724600001,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 5748,
+          "value": 57.48,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 4925,
+          "column": 23090,
+          "pixelCenter": {
+            "lat": 42.954027245999995,
+            "lng": 12.420693674799992
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "studyCluster": "maiolati_2016",
+      "geographicCluster": "italian_trials",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 28.25,
+        "bio06": 0.15,
+        "bio10": 22.35,
+        "bio11": 4.95,
+        "bio12": 808.0,
+        "bio18": 189.8,
+        "bio19": 177.3,
+        "hursmean": 58.65,
+        "fcf": 9.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.479027243900006,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 3014,
+          "value": 28.25,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.479027243900006,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 2733,
+          "value": 0.15,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.47902724389999,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 2955,
+          "value": 22.35,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.47902724389999,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 2781,
+          "value": 4.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.479027243900006,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 808,
+          "value": 808.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.47902724389999,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 1898,
+          "value": 189.8,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.47902724389999,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 1773,
+          "value": 177.3,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.479027243900006,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 5865,
+          "value": 58.65,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 4862,
+          "column": 23174,
+          "pixelCenter": {
+            "lat": 43.47902724389999,
+            "lng": 13.120693671999987
+          },
+          "rawValue": 9,
+          "value": 9.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "name": "Taous comparative cultivated-olive trial, Tunisia",
+      "lat": 34.9333333,
+      "lng": 10.6,
+      "studyCluster": "taous_2019",
+      "geographicCluster": "sfax_tunisia",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 33.55,
+        "bio06": 7.05,
+        "bio10": 27.15,
+        "bio11": 12.35,
+        "bio12": 257.0,
+        "bio18": 38.2,
+        "bio19": 81.0,
+        "hursmean": 56.26,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.93736061140001,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 3067,
+          "value": 33.55,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.93736061140001,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 2802,
+          "value": 7.05,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.937360611399995,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 3003,
+          "value": 27.15,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.937360611399995,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 2855,
+          "value": 12.35,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.93736061140001,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 257,
+          "value": 257.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.937360611399995,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 382,
+          "value": 38.2,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.937360611399995,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 810,
+          "value": 81.0,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.93736061140001,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 5626,
+          "value": 56.26,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5887,
+          "column": 22872,
+          "pixelCenter": {
+            "lat": 34.937360611399995,
+            "lng": 10.604027015399993
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "name": "Roseworthy NOVA cultivated variety collection, South Australia",
+      "lat": -34.52,
+      "lng": 138.68,
+      "studyCluster": "nova_2005",
+      "geographicCluster": "south_australia",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 29.05,
+        "bio06": 6.95,
+        "bio10": 22.15,
+        "bio11": 10.95,
+        "bio12": 455.0,
+        "bio18": 61.2,
+        "bio19": 175.2,
+        "hursmean": 54.69,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.520972444099996,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 3022,
+          "value": 29.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.520972444099996,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 2801,
+          "value": 6.95,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.52097244410001,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 2953,
+          "value": 22.15,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.52097244410001,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 2841,
+          "value": 10.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.520972444099996,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 455,
+          "value": 455.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.52097244410001,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 612,
+          "value": 61.2,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.52097244410001,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 1752,
+          "value": 175.2,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.520972444099996,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 5469,
+          "value": 54.69,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 14222,
+          "column": 38241,
+          "pixelCenter": {
+            "lat": -34.52097244410001,
+            "lng": 138.67902650310003
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "uy-las-brujas",
+      "name": "INIA Las Brujas, Uruguay",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "uruguay_humid_temperate",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 28.35,
+        "bio06": 7.05,
+        "bio10": 22.35,
+        "bio11": 10.95,
+        "bio12": 1149.0,
+        "bio18": 280.0,
+        "bio19": 249.2,
+        "hursmean": 59.88,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.662639110200004,
+            "lng": -56.3293060502
+          },
+          "rawValue": 3015,
+          "value": 28.35,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.662639110200004,
+            "lng": -56.3293060502
+          },
+          "rawValue": 2802,
+          "value": 7.05,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.66263911020002,
+            "lng": -56.3293060502
+          },
+          "rawValue": 2955,
+          "value": 22.35,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.66263911020002,
+            "lng": -56.3293060502
+          },
+          "rawValue": 2841,
+          "value": 10.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.662639110200004,
+            "lng": -56.3293060502
+          },
+          "rawValue": 1149,
+          "value": 1149.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.66263911020002,
+            "lng": -56.3293060502
+          },
+          "rawValue": 2800,
+          "value": 280.0,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.66263911020002,
+            "lng": -56.3293060502
+          },
+          "rawValue": 2492,
+          "value": 249.2,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.662639110200004,
+            "lng": -56.3293060502
+          },
+          "rawValue": 5988,
+          "value": 59.88,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 14239,
+          "column": 14840,
+          "pixelCenter": {
+            "lat": -34.66263911020002,
+            "lng": -56.3293060502
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "uy-salto-grande",
+      "name": "INIA Salto Grande, Uruguay",
+      "lat": -31.266667,
+      "lng": -57.883333,
+      "studyCluster": "conde-innamorato-2019",
+      "geographicCluster": "uruguay_humid_temperate",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 30.85,
+        "bio06": 8.55,
+        "bio10": 24.95,
+        "bio11": 12.95,
+        "bio12": 1307.0,
+        "bio18": 386.5,
+        "bio19": 181.0,
+        "hursmean": 58.44,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.2626391238,
+            "lng": -57.879306044
+          },
+          "rawValue": 3040,
+          "value": 30.85,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.2626391238,
+            "lng": -57.879306044
+          },
+          "rawValue": 2817,
+          "value": 8.55,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.262639123800014,
+            "lng": -57.879306044
+          },
+          "rawValue": 2981,
+          "value": 24.95,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.262639123800014,
+            "lng": -57.879306044
+          },
+          "rawValue": 2861,
+          "value": 12.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.2626391238,
+            "lng": -57.879306044
+          },
+          "rawValue": 1307,
+          "value": 1307.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.262639123800014,
+            "lng": -57.879306044
+          },
+          "rawValue": 3865,
+          "value": 386.5,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.262639123800014,
+            "lng": -57.879306044
+          },
+          "rawValue": 1810,
+          "value": 181.0,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.2626391238,
+            "lng": -57.879306044
+          },
+          "rawValue": 5844,
+          "value": 58.44,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 13831,
+          "column": 14654,
+          "pixelCenter": {
+            "lat": -31.262639123800014,
+            "lng": -57.879306044
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "cl-huasco-inia",
+      "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "studyCluster": "tapia-2009",
+      "geographicCluster": "northern_chile",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 29.35,
+        "bio06": 7.65,
+        "bio10": 22.15,
+        "bio11": 13.75,
+        "bio12": 49.0,
+        "bio18": 1.6,
+        "bio19": 37.9,
+        "hursmean": 51.01,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.562639134600005,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 3025,
+          "value": 29.35,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.562639134600005,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 2808,
+          "value": 7.65,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.56263913460002,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 2953,
+          "value": 22.15,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.56263913460002,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 2869,
+          "value": 13.75,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.562639134600005,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 49,
+          "value": 49.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.56263913460002,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 16,
+          "value": 1.6,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.56263913460002,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 379,
+          "value": 37.9,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.562639134600005,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 5101,
+          "value": 51.01,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 13507,
+          "column": 13106,
+          "pixelCenter": {
+            "lat": -28.56263913460002,
+            "lng": -70.77930599240001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "name": "Tierras Blancas, San Felipe, Chile",
+      "lat": -32.783333,
+      "lng": -70.7,
+      "studyCluster": "selles-2006",
+      "geographicCluster": "central_chile",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 30.15,
+        "bio06": 4.95,
+        "bio10": 23.25,
+        "bio11": 10.95,
+        "bio12": 390.0,
+        "bio18": 6.9,
+        "bio19": 253.2,
+        "hursmean": 50.46,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.779305784399995,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 3033,
+          "value": 30.15,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.779305784399995,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 2781,
+          "value": 4.95,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.77930578440001,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 2964,
+          "value": 23.25,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.77930578440001,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 2841,
+          "value": 10.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.779305784399995,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 390,
+          "value": 390.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.77930578440001,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 69,
+          "value": 6.9,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.77930578440001,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 2532,
+          "value": 253.2,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.779305784399995,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 5046,
+          "value": 50.46,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 14013,
+          "column": 13116,
+          "pixelCenter": {
+            "lat": -32.77930578440001,
+            "lng": -70.69597265940001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "name": "Commercial orchard 15 km east of Aimogasta, Argentina",
+      "lat": -28.55,
+      "lng": -66.816667,
+      "studyCluster": "correa-tedesco-2010",
+      "geographicCluster": "argentina",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 29.65,
+        "bio06": 7.15,
+        "bio10": 24.85,
+        "bio11": 13.65,
+        "bio12": 234.0,
+        "bio18": 145.3,
+        "bio19": 6.4,
+        "hursmean": 52.69,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000002,
+            "lng": -66.8126393416
+          },
+          "rawValue": 3028,
+          "value": 29.65,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000002,
+            "lng": -66.8126393416
+          },
+          "rawValue": 2803,
+          "value": 7.15,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000016,
+            "lng": -66.8126393416
+          },
+          "rawValue": 2980,
+          "value": 24.85,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000016,
+            "lng": -66.8126393416
+          },
+          "rawValue": 2868,
+          "value": 13.65,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000002,
+            "lng": -66.8126393416
+          },
+          "rawValue": 234,
+          "value": 234.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000016,
+            "lng": -66.8126393416
+          },
+          "rawValue": 1453,
+          "value": 145.3,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000016,
+            "lng": -66.8126393416
+          },
+          "rawValue": 64,
+          "value": 6.4,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000002,
+            "lng": -66.8126393416
+          },
+          "rawValue": 5269,
+          "value": 52.69,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 13505,
+          "column": 13582,
+          "pixelCenter": {
+            "lat": -28.545972468000016,
+            "lng": -66.8126393416
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "ar-junin-inta",
+      "name": "INTA Junín Olive Germplasm Collection, Mendoza, Argentina",
+      "lat": -33.1,
+      "lng": -68.483333,
+      "studyCluster": "junin-multiple-studies",
+      "geographicCluster": "argentina",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 31.35,
+        "bio06": 3.25,
+        "bio10": 24.75,
+        "bio11": 9.15,
+        "bio12": 231.0,
+        "bio18": 98.5,
+        "bio19": 22.1,
+        "hursmean": 51.3,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.0959724498,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 3045,
+          "value": 31.35,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.0959724498,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 2764,
+          "value": 3.25,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.095972449800016,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 2979,
+          "value": 24.75,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.095972449800016,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 2823,
+          "value": 9.15,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.0959724498,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 231,
+          "value": 231.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.095972449800016,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 985,
+          "value": 98.5,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.095972449800016,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 221,
+          "value": 22.1,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.0959724498,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 5130,
+          "value": 51.3,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 14051,
+          "column": 13382,
+          "pixelCenter": {
+            "lat": -33.095972449800016,
+            "lng": -68.47930600160001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "name": "Beihe Olive Commercial Orchard, Xixi village, Xichang, China",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "studyCluster": "liu-2019-xichang",
+      "geographicCluster": "xichang",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 25.75,
+        "bio06": 3.05,
+        "bio10": 22.55,
+        "bio11": 10.55,
+        "bio12": 1137.0,
+        "bio18": 674.0,
+        "bio19": 24.8,
+        "hursmean": 56.46,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.73736064020001,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 2989,
+          "value": 25.75,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.73736064020001,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 2762,
+          "value": 3.05,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.737360640199995,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 2957,
+          "value": 22.55,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.737360640199995,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 2837,
+          "value": 10.55,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.73736064020001,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 1137,
+          "value": 1137.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.737360640199995,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 6740,
+          "value": 674.0,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.737360640199995,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 248,
+          "value": 24.8,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.73736064020001,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 5646,
+          "value": 56.46,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 6751,
+          "column": 33868,
+          "pixelCenter": {
+            "lat": 27.737360640199995,
+            "lng": 102.23735998220002
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "us-tx-weslaco",
+      "name": "Established Arbequina grove near Weslaco, Texas, USA",
+      "lat": 26.16,
+      "lng": -97.93,
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "texas_malik2011",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 35.25,
+        "bio06": 12.75,
+        "bio10": 29.45,
+        "bio11": 16.95,
+        "bio12": 642.0,
+        "bio18": 173.9,
+        "bio19": 97.0,
+        "hursmean": 59.16,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.162360646500005,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 3084,
+          "value": 35.25,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.162360646500005,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 2859,
+          "value": 12.75,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.16236064649999,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 3026,
+          "value": 29.45,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.16236064649999,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 2901,
+          "value": 16.95,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.162360646500005,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 642,
+          "value": 642.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.16236064649999,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 1739,
+          "value": 173.9,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.16236064649999,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 970,
+          "value": 97.0,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.162360646500005,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 5916,
+          "value": 59.16,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 6940,
+          "column": 9848,
+          "pixelCenter": {
+            "lat": 26.16236064649999,
+            "lng": -97.92930588380001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "name": "Texas Olive Ranch, Carrizo Springs, Texas, USA",
+      "lat": 28.41,
+      "lng": -99.73,
+      "studyCluster": "malik-2011-texas",
+      "geographicCluster": "texas_malik2011",
+      "split": "study_and_geographic_holdout",
+      "climate": {
+        "bio05": 37.05,
+        "bio06": 8.65,
+        "bio10": 30.75,
+        "bio11": 14.05,
+        "bio12": 542.0,
+        "bio18": 166.1,
+        "bio19": 79.1,
+        "hursmean": 54.39,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637500008,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 3102,
+          "value": 37.05,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637500008,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 2818,
+          "value": 8.65,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637499994,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 3039,
+          "value": 30.75,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637499994,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 2872,
+          "value": 14.05,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637500008,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 542,
+          "value": 542.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637499994,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 1661,
+          "value": 166.1,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637499994,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 791,
+          "value": 79.1,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637500008,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 5439,
+          "value": 54.39,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 6670,
+          "column": 9632,
+          "pixelCenter": {
+            "lat": 28.412360637499994,
+            "lng": -99.72930587660001
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "studyCluster": "miyasaka-2016-hawaii",
+      "geographicCluster": "miyasaka-2016-hawaii",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 24.55,
+        "bio06": 14.65,
+        "bio10": 21.05,
+        "bio11": 17.75,
+        "bio12": 1476.0,
+        "bio18": 288.1,
+        "bio19": 452.9,
+        "hursmean": 66.93,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004400006,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 2977,
+          "value": 24.55,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004400006,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 2878,
+          "value": 14.65,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004399992,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 2942,
+          "value": 21.05,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004399992,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 2909,
+          "value": 17.75,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004400006,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 1476,
+          "value": 1476.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004399992,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 2881,
+          "value": 288.1,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004399992,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 4529,
+          "value": 452.9,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004400006,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 6693,
+          "value": 66.93,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 7677,
+          "column": 2918,
+          "pixelCenter": {
+            "lat": 20.020694004399992,
+            "lng": -155.67930565280002
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "name": "Guzelyurt · five crop-year Koroneiki trial",
+      "lat": 35.1862611111,
+      "lng": 32.9724555556,
+      "studyCluster": "usanmaz2019_guzelyurt",
+      "geographicCluster": "cyprus_lowland",
+      "split": "development_already_discussed",
+      "climate": {
+        "bio05": 34.25,
+        "bio06": 8.05,
+        "bio10": 28.35,
+        "bio11": 12.45,
+        "bio12": 454.0,
+        "bio18": 15.5,
+        "bio19": 255.5,
+        "hursmean": 56.85,
+        "fcf": 0.0
+      },
+      "pixels": {
+        "bio05": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.187360610400006,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 3074,
+          "value": 34.25,
+          "missingReason": null
+        },
+        "bio06": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.187360610400006,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 2812,
+          "value": 8.05,
+          "missingReason": null
+        },
+        "bio10": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.18736061039999,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 3015,
+          "value": 28.35,
+          "missingReason": null
+        },
+        "bio11": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.18736061039999,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 2856,
+          "value": 12.45,
+          "missingReason": null
+        },
+        "bio12": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.187360610400006,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 454,
+          "value": 454.0,
+          "missingReason": null
+        },
+        "bio18": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.18736061039999,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 155,
+          "value": 15.5,
+          "missingReason": null
+        },
+        "bio19": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.18736061039999,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 2555,
+          "value": 255.5,
+          "missingReason": null
+        },
+        "hursmean": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.187360610400006,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 5685,
+          "value": 56.85,
+          "missingReason": null
+        },
+        "fcf": {
+          "row": 5857,
+          "column": 25556,
+          "pixelCenter": {
+            "lat": 35.18736061039999,
+            "lng": 32.970693592599986
+          },
+          "rawValue": 0,
+          "value": 0.0,
+          "missingReason": null
+        }
+      },
+      "missingFields": []
+    }
+  ],
+  "summary": {
+    "sites": 23,
+    "fields": 9,
+    "completeSites": 23,
+    "missingByField": {
+      "bio05": 0,
+      "bio06": 0,
+      "bio10": 0,
+      "bio11": 0,
+      "bio12": 0,
+      "bio18": 0,
+      "bio19": 0,
+      "hursmean": 0,
+      "fcf": 0
+    }
+  }
+}

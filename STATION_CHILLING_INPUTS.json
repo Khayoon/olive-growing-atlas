@@ -1,0 +1,4374 @@
+{
+  "scope": "CHELSA1981-2010 normal-climate modeled-CU vs modeled complete station seasons1991-2024startyear. Cross-period/grid/station mismatch and climatological smoothing are combined. No observed flowering validation, no fitted correction, no yield probability.",
+  "sample": "Diagnostic>=5fullycomplete daily-station seasons and valid grid monthlies. Station selection predates this chilling comparison. All available qualifying stations retained.",
+  "stations": 45,
+  "normalMinusAnnualMeanBiasCU": 337.95111111111106,
+  "normalMinusAnnualMeanMAECU": 367.4666666666666,
+  "comparisons": [
+    {
+      "id": "SP000008410",
+      "name": "CORDOBA AEROPUERTO",
+      "lat": 37.8442,
+      "lng": -4.8458,
+      "elevationM": 90,
+      "completeSeasons": 23,
+      "normalMaximumCU": 1405.3,
+      "interpolatedNormalMaximumCU": 1365.8,
+      "meanAnnualMaximumCU": 1231,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 23,
+          "annualTotal": 23
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 23,
+          "annualTotal": 23
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 23,
+          "annualTotal": 23
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 23,
+          "annualTotal": 23
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.650000000000034,
+        4.650000000000034,
+        7.050000000000011,
+        8.850000000000023,
+        12.350000000000023,
+        17.05000000000001,
+        20.05000000000001,
+        20.150000000000034,
+        17.250000000000057,
+        12.850000000000023,
+        8.050000000000011,
+        5.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        12.850000000000023,
+        14.650000000000034,
+        18.250000000000057,
+        19.950000000000045,
+        24.05000000000001,
+        30.150000000000034,
+        34.05000000000007,
+        33.55000000000001,
+        29.05000000000001,
+        22.750000000000057,
+        16.950000000000045,
+        13.550000000000011
+      ],
+      "chelsaNormalMaximumCU": 2023.7,
+      "chelsaInterpolatedNormalMaximumCU": 1972.6,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2020.4,
+          "maximumCU": 2023.7,
+          "reachedDate": "2001-12-04",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2020.4,
+          "maximumCU": 2023.7,
+          "reachedDate": "2001-12-22",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2020.4,
+          "maximumCU": 2023.7,
+          "reachedDate": "2001-12-25",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2243.6,
+          "maximumCU": 2245.1,
+          "reachedDate": "2001-12-01",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "AR000087217",
+      "name": "LA RIOJA AERO.",
+      "lat": -29.383,
+      "lng": -66.817,
+      "elevationM": 438,
+      "completeSeasons": 8,
+      "normalMaximumCU": 510.9,
+      "interpolatedNormalMaximumCU": 487.3,
+      "meanAnnualMaximumCU": 547,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Leccino": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 2,
+          "annualTotal": 8
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 2,
+          "annualTotal": 8
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        }
+      },
+      "chelsaMonthlyTminC": [
+        22.150000000000034,
+        21.250000000000057,
+        19.750000000000057,
+        16.05000000000001,
+        11.950000000000045,
+        8.350000000000023,
+        7.250000000000057,
+        9.750000000000057,
+        12.550000000000011,
+        16.850000000000023,
+        19.450000000000045,
+        21.650000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        31.55000000000001,
+        30.55000000000001,
+        27.950000000000045,
+        23.950000000000045,
+        20.05000000000001,
+        17.05000000000001,
+        17.250000000000057,
+        21.150000000000034,
+        24.150000000000034,
+        28.350000000000023,
+        30.250000000000057,
+        31.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 628.6,
+      "chelsaInterpolatedNormalMaximumCU": 606.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 155.2,
+          "maximumCU": 628.6,
+          "reachedDate": "2001-07-07",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 155.2,
+          "maximumCU": 628.6,
+          "reachedDate": "2001-08-19",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 155.2,
+          "maximumCU": 628.6,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 520.4,
+          "maximumCU": 860,
+          "reachedDate": "2001-06-26",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "AR000087418",
+      "name": "MENDOZA AERO",
+      "lat": -32.833,
+      "lng": -68.783,
+      "elevationM": 704,
+      "completeSeasons": 12,
+      "normalMaximumCU": 1228.2,
+      "interpolatedNormalMaximumCU": 1199.5,
+      "meanAnnualMaximumCU": 1225,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        }
+      },
+      "chelsaMonthlyTminC": [
+        19.450000000000045,
+        18.350000000000023,
+        16.55000000000001,
+        12.050000000000011,
+        8.150000000000034,
+        4.650000000000034,
+        3.650000000000034,
+        5.250000000000057,
+        7.750000000000057,
+        12.050000000000011,
+        15.350000000000023,
+        18.350000000000023
+      ],
+      "chelsaMonthlyTmaxC": [
+        30.650000000000034,
+        29.650000000000034,
+        26.350000000000023,
+        21.950000000000045,
+        18.05000000000001,
+        15.150000000000034,
+        14.550000000000011,
+        17.450000000000045,
+        20.150000000000034,
+        24.450000000000045,
+        27.55000000000001,
+        30.05000000000001
+      ],
+      "chelsaNormalMaximumCU": 1541.7,
+      "chelsaInterpolatedNormalMaximumCU": 1505.5,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1412.1,
+          "maximumCU": 1541.7,
+          "reachedDate": "2001-06-08",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1412.1,
+          "maximumCU": 1541.7,
+          "reachedDate": "2001-06-28",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1412.1,
+          "maximumCU": 1541.7,
+          "reachedDate": "2001-07-03",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1682,
+          "maximumCU": 1747,
+          "reachedDate": "2001-06-04",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ASN00009021",
+      "name": "PERTH AIRPORT",
+      "lat": -31.9275,
+      "lng": 115.9764,
+      "elevationM": 15.4,
+      "completeSeasons": 32,
+      "normalMaximumCU": 619,
+      "interpolatedNormalMaximumCU": 580.6,
+      "meanAnnualMaximumCU": 618,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 31,
+          "annualTotal": 32
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": false,
+          "annualMet": 17,
+          "annualTotal": 32
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 12,
+          "annualTotal": 32
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        }
+      },
+      "chelsaMonthlyTminC": [
+        18.450000000000045,
+        18.650000000000034,
+        17.250000000000057,
+        14.750000000000057,
+        12.250000000000057,
+        10.250000000000057,
+        9.150000000000034,
+        9.150000000000034,
+        10.350000000000023,
+        12.050000000000011,
+        14.850000000000023,
+        16.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        31.350000000000023,
+        31.250000000000057,
+        29.150000000000034,
+        25.05000000000001,
+        20.950000000000045,
+        17.750000000000057,
+        16.650000000000034,
+        17.150000000000034,
+        18.750000000000057,
+        21.750000000000057,
+        25.55000000000001,
+        28.55000000000001
+      ],
+      "chelsaNormalMaximumCU": 769.7,
+      "chelsaInterpolatedNormalMaximumCU": 725,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 691.5,
+          "maximumCU": 769.7,
+          "reachedDate": "2001-07-22",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 691.5,
+          "maximumCU": 769.7,
+          "reachedDate": "2001-08-26",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 691.5,
+          "maximumCU": 769.7,
+          "reachedDate": "2001-09-04",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1016.8,
+          "maximumCU": 1021.2,
+          "reachedDate": "2001-07-10",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ASN00023034",
+      "name": "ADELAIDE AIRPORT",
+      "lat": -34.9524,
+      "lng": 138.5204,
+      "elevationM": 2,
+      "completeSeasons": 32,
+      "normalMaximumCU": 1344.4,
+      "interpolatedNormalMaximumCU": 1297.6,
+      "meanAnnualMaximumCU": 1303,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        }
+      },
+      "chelsaMonthlyTminC": [
+        17.150000000000034,
+        17.55000000000001,
+        15.950000000000045,
+        13.850000000000023,
+        11.650000000000034,
+        9.450000000000045,
+        8.550000000000011,
+        9.050000000000011,
+        10.350000000000023,
+        11.850000000000023,
+        14.250000000000057,
+        15.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        26.250000000000057,
+        26.55000000000001,
+        24.150000000000034,
+        20.650000000000034,
+        17.350000000000023,
+        14.550000000000011,
+        13.650000000000034,
+        14.450000000000045,
+        16.55000000000001,
+        19.150000000000034,
+        22.250000000000057,
+        24.250000000000057
+      ],
+      "chelsaNormalMaximumCU": 1460.4,
+      "chelsaInterpolatedNormalMaximumCU": 1417.8,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1457.3,
+          "maximumCU": 1460.4,
+          "reachedDate": "2001-06-21",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1457.3,
+          "maximumCU": 1460.4,
+          "reachedDate": "2001-07-13",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1457.3,
+          "maximumCU": 1460.4,
+          "reachedDate": "2001-07-17",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1768.8,
+          "maximumCU": 1770.2,
+          "reachedDate": "2001-06-13",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ASN00066037",
+      "name": "SYDNEY AIRPORT AMO",
+      "lat": -33.9465,
+      "lng": 151.1731,
+      "elevationM": 6,
+      "completeSeasons": 30,
+      "normalMaximumCU": 532.7,
+      "interpolatedNormalMaximumCU": 492.5,
+      "meanAnnualMaximumCU": 617,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        },
+        "Leccino": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 16,
+          "annualTotal": 30
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 10,
+          "annualTotal": 30
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        }
+      },
+      "chelsaMonthlyTminC": [
+        20.450000000000045,
+        20.750000000000057,
+        19.650000000000034,
+        17.450000000000045,
+        15.050000000000011,
+        12.650000000000034,
+        11.550000000000011,
+        12.050000000000011,
+        13.750000000000057,
+        15.550000000000011,
+        17.150000000000034,
+        19.05000000000001
+      ],
+      "chelsaMonthlyTmaxC": [
+        23.150000000000034,
+        23.150000000000034,
+        22.250000000000057,
+        20.650000000000034,
+        18.55000000000001,
+        16.350000000000023,
+        15.650000000000034,
+        16.350000000000023,
+        17.850000000000023,
+        19.250000000000057,
+        20.350000000000023,
+        22.150000000000034
+      ],
+      "chelsaNormalMaximumCU": 470.1,
+      "chelsaInterpolatedNormalMaximumCU": 442.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 336.8,
+          "maximumCU": 470.1,
+          "reachedDate": "2001-08-06",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 336.8,
+          "maximumCU": 470.1,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 336.8,
+          "maximumCU": 470.1,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 695.8,
+          "maximumCU": 735.8,
+          "reachedDate": "2001-07-19",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ASN00070339",
+      "name": "TUGGERANONG (ISABELLA PLAINS)",
+      "lat": -35.4184,
+      "lng": 149.0937,
+      "elevationM": 586.7,
+      "completeSeasons": 16,
+      "normalMaximumCU": 2037.3,
+      "interpolatedNormalMaximumCU": 2011.8,
+      "meanAnnualMaximumCU": 1847,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 16,
+          "annualTotal": 16
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 16,
+          "annualTotal": 16
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 16,
+          "annualTotal": 16
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 16,
+          "annualTotal": 16
+        }
+      },
+      "chelsaMonthlyTminC": [
+        13.550000000000011,
+        13.650000000000034,
+        11.350000000000023,
+        8.050000000000011,
+        4.850000000000023,
+        2.5500000000000114,
+        1.4500000000000455,
+        2.150000000000034,
+        4.150000000000034,
+        6.650000000000034,
+        9.650000000000034,
+        11.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        26.150000000000034,
+        25.250000000000057,
+        22.450000000000045,
+        18.250000000000057,
+        14.250000000000057,
+        10.650000000000034,
+        9.850000000000023,
+        11.450000000000045,
+        14.850000000000023,
+        18.150000000000034,
+        21.150000000000034,
+        23.950000000000045
+      ],
+      "chelsaNormalMaximumCU": 2760,
+      "chelsaInterpolatedNormalMaximumCU": 2739.5,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2759.7,
+          "maximumCU": 2760,
+          "reachedDate": "2001-05-08",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2759.7,
+          "maximumCU": 2760,
+          "reachedDate": "2001-05-27",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2759.7,
+          "maximumCU": 2760,
+          "reachedDate": "2001-05-31",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2935.3,
+          "maximumCU": 2935.3,
+          "reachedDate": "2001-05-04",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ASN00086038",
+      "name": "ESSENDON AIRPORT",
+      "lat": -37.7276,
+      "lng": 144.9066,
+      "elevationM": 78.4,
+      "completeSeasons": 18,
+      "normalMaximumCU": 1943.9,
+      "interpolatedNormalMaximumCU": 1926.8,
+      "meanAnnualMaximumCU": 1800,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 18,
+          "annualTotal": 18
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 18,
+          "annualTotal": 18
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 18,
+          "annualTotal": 18
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 18,
+          "annualTotal": 18
+        }
+      },
+      "chelsaMonthlyTminC": [
+        14.850000000000023,
+        15.250000000000057,
+        13.950000000000045,
+        11.550000000000011,
+        9.550000000000011,
+        7.650000000000034,
+        6.850000000000023,
+        7.350000000000023,
+        8.450000000000045,
+        9.850000000000023,
+        11.750000000000057,
+        13.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        24.350000000000023,
+        24.650000000000034,
+        22.55000000000001,
+        19.350000000000023,
+        16.150000000000034,
+        13.450000000000045,
+        12.750000000000057,
+        13.950000000000045,
+        15.850000000000023,
+        18.05000000000001,
+        20.55000000000001,
+        22.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2201,
+      "chelsaInterpolatedNormalMaximumCU": 2165.2,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2200.1,
+          "maximumCU": 2201,
+          "reachedDate": "2001-06-03",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2200.1,
+          "maximumCU": 2201,
+          "reachedDate": "2001-06-21",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2200.1,
+          "maximumCU": 2201,
+          "reachedDate": "2001-06-25",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2508.5,
+          "maximumCU": 2508.5,
+          "reachedDate": "2001-05-23",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "AU000016402",
+      "name": "GRAZ",
+      "lat": 47.0831,
+      "lng": 15.45,
+      "elevationM": 366,
+      "completeSeasons": 30,
+      "normalMaximumCU": 2249.1,
+      "interpolatedNormalMaximumCU": 2253.4,
+      "meanAnnualMaximumCU": 1861,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 30,
+          "annualTotal": 30
+        }
+      },
+      "chelsaMonthlyTminC": [
+        -6.849999999999966,
+        -5.449999999999989,
+        -1.349999999999966,
+        2.750000000000057,
+        7.650000000000034,
+        10.850000000000023,
+        12.850000000000023,
+        12.850000000000023,
+        9.050000000000011,
+        4.750000000000057,
+        -0.24999999999994316,
+        -4.849999999999966
+      ],
+      "chelsaMonthlyTmaxC": [
+        2.0500000000000114,
+        4.150000000000034,
+        8.550000000000011,
+        13.350000000000023,
+        18.150000000000034,
+        21.05000000000001,
+        23.150000000000034,
+        22.650000000000034,
+        18.350000000000023,
+        13.350000000000023,
+        7.150000000000034,
+        2.4500000000000455
+      ],
+      "chelsaNormalMaximumCU": 1807.3,
+      "chelsaInterpolatedNormalMaximumCU": 1821.2,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1807.3,
+          "maximumCU": 1807.3,
+          "reachedDate": "2001-10-22",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1807.3,
+          "maximumCU": 1807.3,
+          "reachedDate": "2001-11-12",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1807.3,
+          "maximumCU": 1807.3,
+          "reachedDate": "2001-11-17",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1849,
+          "maximumCU": 1849,
+          "reachedDate": "2001-10-22",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CHM00056187",
+      "name": "WENJIANG",
+      "lat": 30.75,
+      "lng": 103.867,
+      "elevationM": 541,
+      "completeSeasons": 8,
+      "normalMaximumCU": 1942.4,
+      "interpolatedNormalMaximumCU": 1938,
+      "meanAnnualMaximumCU": 1893,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        }
+      },
+      "chelsaMonthlyTminC": [
+        2.0500000000000114,
+        4.150000000000034,
+        7.350000000000023,
+        12.250000000000057,
+        17.05000000000001,
+        20.250000000000057,
+        21.950000000000045,
+        21.350000000000023,
+        18.350000000000023,
+        13.850000000000023,
+        8.850000000000023,
+        3.650000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        9.150000000000034,
+        11.350000000000023,
+        15.850000000000023,
+        21.750000000000057,
+        26.450000000000045,
+        28.350000000000023,
+        29.450000000000045,
+        28.650000000000034,
+        24.850000000000023,
+        19.950000000000045,
+        15.450000000000045,
+        10.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2199.8,
+      "chelsaInterpolatedNormalMaximumCU": 2210.7,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2115.3,
+          "maximumCU": 2199.8,
+          "reachedDate": "2001-12-02",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2115.3,
+          "maximumCU": 2199.8,
+          "reachedDate": "2001-12-18",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2115.3,
+          "maximumCU": 2199.8,
+          "reachedDate": "2001-12-21",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2294.7,
+          "maximumCU": 2306.8,
+          "reachedDate": "2001-11-29",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CHM00056571",
+      "name": "XICHANG",
+      "lat": 27.9,
+      "lng": 102.267,
+      "elevationM": 1599,
+      "completeSeasons": 21,
+      "normalMaximumCU": 910.8,
+      "interpolatedNormalMaximumCU": 886.8,
+      "meanAnnualMaximumCU": 934,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 20,
+          "annualTotal": 21
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        }
+      },
+      "chelsaMonthlyTminC": [
+        1.9500000000000455,
+        3.650000000000034,
+        6.9500000000000455,
+        10.750000000000057,
+        14.450000000000045,
+        17.250000000000057,
+        17.55000000000001,
+        16.950000000000045,
+        15.550000000000011,
+        12.650000000000034,
+        7.550000000000011,
+        3.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        13.550000000000011,
+        16.250000000000057,
+        20.55000000000001,
+        23.55000000000001,
+        24.750000000000057,
+        24.55000000000001,
+        25.250000000000057,
+        25.150000000000034,
+        22.650000000000034,
+        19.350000000000023,
+        16.55000000000001,
+        13.750000000000057
+      ],
+      "chelsaNormalMaximumCU": 1652.7,
+      "chelsaInterpolatedNormalMaximumCU": 1671.4,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1591.1,
+          "maximumCU": 1652.7,
+          "reachedDate": "2001-12-02",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1591.1,
+          "maximumCU": 1652.7,
+          "reachedDate": "2001-12-21",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1591.1,
+          "maximumCU": 1652.7,
+          "reachedDate": "2001-12-26",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1891.6,
+          "maximumCU": 1897,
+          "reachedDate": "2001-11-23",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CHM00056778",
+      "name": "KUNMING",
+      "lat": 25.017,
+      "lng": 102.683,
+      "elevationM": 1892,
+      "completeSeasons": 19,
+      "normalMaximumCU": 1261.7,
+      "interpolatedNormalMaximumCU": 1245.1,
+      "meanAnnualMaximumCU": 1220,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 19,
+          "annualTotal": 19
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 19,
+          "annualTotal": 19
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 19,
+          "annualTotal": 19
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 19,
+          "annualTotal": 19
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.5500000000000114,
+        5.350000000000023,
+        8.350000000000023,
+        11.250000000000057,
+        13.550000000000011,
+        15.450000000000045,
+        15.750000000000057,
+        15.250000000000057,
+        13.550000000000011,
+        11.050000000000011,
+        6.850000000000023,
+        3.5500000000000114
+      ],
+      "chelsaMonthlyTmaxC": [
+        13.650000000000034,
+        16.350000000000023,
+        20.150000000000034,
+        22.750000000000057,
+        23.05000000000001,
+        22.55000000000001,
+        22.450000000000045,
+        22.450000000000045,
+        20.650000000000034,
+        18.250000000000057,
+        15.350000000000023,
+        12.850000000000023
+      ],
+      "chelsaNormalMaximumCU": 1887.9,
+      "chelsaInterpolatedNormalMaximumCU": 1881.5,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1822,
+          "maximumCU": 1887.9,
+          "reachedDate": "2001-11-18",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1822,
+          "maximumCU": 1887.9,
+          "reachedDate": "2001-12-08",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1822,
+          "maximumCU": 1887.9,
+          "reachedDate": "2001-12-12",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2121.8,
+          "maximumCU": 2126.5,
+          "reachedDate": "2001-11-12",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CHM00057411",
+      "name": "NANCHONG",
+      "lat": 30.8,
+      "lng": 106.083,
+      "elevationM": 310,
+      "completeSeasons": 21,
+      "normalMaximumCU": 1996.5,
+      "interpolatedNormalMaximumCU": 1955.9,
+      "meanAnnualMaximumCU": 1927,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.4500000000000455,
+        5.150000000000034,
+        8.150000000000034,
+        12.950000000000045,
+        17.55000000000001,
+        20.950000000000045,
+        23.750000000000057,
+        23.450000000000045,
+        19.650000000000034,
+        14.550000000000011,
+        9.850000000000023,
+        5.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        10.250000000000057,
+        12.350000000000023,
+        16.450000000000045,
+        21.650000000000034,
+        25.850000000000023,
+        28.150000000000034,
+        30.750000000000057,
+        30.650000000000034,
+        26.350000000000023,
+        20.650000000000034,
+        16.250000000000057,
+        11.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2110.4,
+      "chelsaInterpolatedNormalMaximumCU": 2089.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2000.1,
+          "maximumCU": 2110.4,
+          "reachedDate": "2001-12-06",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2000.1,
+          "maximumCU": 2110.4,
+          "reachedDate": "2001-12-21",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2000.1,
+          "maximumCU": 2110.4,
+          "reachedDate": "2001-12-25",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2211.4,
+          "maximumCU": 2245.5,
+          "reachedDate": "2001-12-03",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CHM00059287",
+      "name": "GUANGZHOU",
+      "lat": 23.217,
+      "lng": 113.483,
+      "elevationM": 71,
+      "completeSeasons": 21,
+      "normalMaximumCU": 121.3,
+      "interpolatedNormalMaximumCU": 96.7,
+      "meanAnnualMaximumCU": 304,
+      "cv": {
+        "Arbequina": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 6,
+          "annualTotal": 21
+        },
+        "Leccino": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 21
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 21
+        },
+        "ArbequinaWarm": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 14,
+          "annualTotal": 21
+        }
+      },
+      "chelsaMonthlyTminC": [
+        9.450000000000045,
+        11.450000000000045,
+        14.650000000000034,
+        19.150000000000034,
+        22.05000000000001,
+        24.250000000000057,
+        24.950000000000045,
+        24.850000000000023,
+        23.150000000000034,
+        19.650000000000034,
+        14.750000000000057,
+        10.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        18.05000000000001,
+        19.05000000000001,
+        22.250000000000057,
+        25.850000000000023,
+        28.350000000000023,
+        30.05000000000001,
+        31.150000000000034,
+        31.150000000000034,
+        29.850000000000023,
+        27.750000000000057,
+        23.750000000000057,
+        19.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 326.9,
+      "chelsaInterpolatedNormalMaximumCU": 276.4,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 0,
+          "maximumCU": 326.9,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 0,
+          "maximumCU": 326.9,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 0,
+          "maximumCU": 326.9,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 93.5,
+          "maximumCU": 518.7,
+          "reachedDate": "2002-01-23",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "CY000176090",
+      "name": "LARNACA",
+      "lat": 34.8831,
+      "lng": 33.6331,
+      "elevationM": 1,
+      "completeSeasons": 22,
+      "normalMaximumCU": 853.8,
+      "interpolatedNormalMaximumCU": 787.8,
+      "meanAnnualMaximumCU": 844,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 22
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 18,
+          "annualTotal": 22
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 16,
+          "annualTotal": 22
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 22,
+          "annualTotal": 22
+        }
+      },
+      "chelsaMonthlyTminC": [
+        10.550000000000011,
+        10.250000000000057,
+        11.750000000000057,
+        14.450000000000045,
+        18.150000000000034,
+        22.250000000000057,
+        24.850000000000023,
+        25.250000000000057,
+        23.150000000000034,
+        20.05000000000001,
+        15.650000000000034,
+        12.350000000000023
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.750000000000057,
+        14.850000000000023,
+        16.950000000000045,
+        20.450000000000045,
+        24.350000000000023,
+        28.450000000000045,
+        30.850000000000023,
+        31.150000000000034,
+        29.05000000000001,
+        25.450000000000045,
+        20.250000000000057,
+        16.450000000000045
+      ],
+      "chelsaNormalMaximumCU": 804.5,
+      "chelsaInterpolatedNormalMaximumCU": 742.6,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 671.7,
+          "maximumCU": 804.5,
+          "reachedDate": "2002-01-24",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 671.7,
+          "maximumCU": 804.5,
+          "reachedDate": "2002-02-22",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 671.7,
+          "maximumCU": 804.5,
+          "reachedDate": "2002-03-01",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 982.6,
+          "maximumCU": 1026.5,
+          "reachedDate": "2002-01-14",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "FR000007510",
+      "name": "BORDEAUX-MERIGNAC",
+      "lat": 44.8306,
+      "lng": 0.6914,
+      "elevationM": 47,
+      "completeSeasons": 8,
+      "normalMaximumCU": 2648.5,
+      "interpolatedNormalMaximumCU": 2634.5,
+      "meanAnnualMaximumCU": 2060,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        }
+      },
+      "chelsaMonthlyTminC": [
+        2.250000000000057,
+        2.650000000000034,
+        4.650000000000034,
+        6.9500000000000455,
+        10.650000000000034,
+        13.950000000000045,
+        16.150000000000034,
+        16.150000000000034,
+        13.450000000000045,
+        10.550000000000011,
+        5.850000000000023,
+        3.150000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        8.850000000000023,
+        10.450000000000045,
+        13.650000000000034,
+        16.250000000000057,
+        20.05000000000001,
+        23.650000000000034,
+        26.250000000000057,
+        26.150000000000034,
+        22.950000000000045,
+        18.55000000000001,
+        12.550000000000011,
+        9.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2937,
+      "chelsaInterpolatedNormalMaximumCU": 2919.2,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2937,
+          "maximumCU": 2937,
+          "reachedDate": "2001-11-14",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2937,
+          "maximumCU": 2937,
+          "reachedDate": "2001-11-30",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2937,
+          "maximumCU": 2937,
+          "reachedDate": "2001-12-03",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 3098.3,
+          "maximumCU": 3098.3,
+          "reachedDate": "2001-11-09",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "GR000016648",
+      "name": "LARISSA",
+      "lat": 39.65,
+      "lng": 22.45,
+      "elevationM": 73,
+      "completeSeasons": 13,
+      "normalMaximumCU": 2131,
+      "interpolatedNormalMaximumCU": 2115.5,
+      "meanAnnualMaximumCU": 1904,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        }
+      },
+      "chelsaMonthlyTminC": [
+        0.5500000000000114,
+        0.8500000000000227,
+        3.3500000000000227,
+        7.250000000000057,
+        12.450000000000045,
+        17.55000000000001,
+        20.150000000000034,
+        19.750000000000057,
+        15.650000000000034,
+        11.350000000000023,
+        5.9500000000000455,
+        2.150000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        9.850000000000023,
+        10.950000000000045,
+        14.750000000000057,
+        19.750000000000057,
+        25.650000000000034,
+        31.350000000000023,
+        33.35000000000002,
+        32.650000000000034,
+        27.950000000000045,
+        21.750000000000057,
+        15.250000000000057,
+        10.750000000000057
+      ],
+      "chelsaNormalMaximumCU": 2275.6,
+      "chelsaInterpolatedNormalMaximumCU": 2270.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2272.6,
+          "maximumCU": 2275.6,
+          "reachedDate": "2001-11-26",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2272.6,
+          "maximumCU": 2275.6,
+          "reachedDate": "2001-12-14",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2272.6,
+          "maximumCU": 2275.6,
+          "reachedDate": "2001-12-18",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2433.2,
+          "maximumCU": 2434.6,
+          "reachedDate": "2001-11-22",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "GR000016716",
+      "name": "HELLINIKON",
+      "lat": 37.9,
+      "lng": 23.75,
+      "elevationM": 10,
+      "completeSeasons": 9,
+      "normalMaximumCU": 1522.6,
+      "interpolatedNormalMaximumCU": 1503.6,
+      "meanAnnualMaximumCU": 1608,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        }
+      },
+      "chelsaMonthlyTminC": [
+        4.750000000000057,
+        4.550000000000011,
+        6.350000000000023,
+        9.550000000000011,
+        13.850000000000023,
+        18.250000000000057,
+        20.850000000000023,
+        20.750000000000057,
+        17.450000000000045,
+        13.850000000000023,
+        9.850000000000023,
+        6.650000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        11.150000000000034,
+        11.550000000000011,
+        14.550000000000011,
+        19.05000000000001,
+        24.350000000000023,
+        29.350000000000023,
+        31.55000000000001,
+        31.250000000000057,
+        27.350000000000023,
+        22.05000000000001,
+        16.450000000000045,
+        12.450000000000045
+      ],
+      "chelsaNormalMaximumCU": 2376.4,
+      "chelsaInterpolatedNormalMaximumCU": 2314.8,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2373.7,
+          "maximumCU": 2376.4,
+          "reachedDate": "2001-12-07",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2373.7,
+          "maximumCU": 2376.4,
+          "reachedDate": "2001-12-23",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2373.7,
+          "maximumCU": 2376.4,
+          "reachedDate": "2001-12-26",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2563.7,
+          "maximumCU": 2564.8,
+          "reachedDate": "2001-12-04",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "GR000016734",
+      "name": "METHONI",
+      "lat": 36.8331,
+      "lng": 21.7,
+      "elevationM": 52,
+      "completeSeasons": 8,
+      "normalMaximumCU": 1419,
+      "interpolatedNormalMaximumCU": 1386.8,
+      "meanAnnualMaximumCU": 1492,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 8
+        }
+      },
+      "chelsaMonthlyTminC": [
+        11.150000000000034,
+        10.650000000000034,
+        11.750000000000057,
+        13.850000000000023,
+        17.150000000000034,
+        20.750000000000057,
+        23.350000000000023,
+        24.250000000000057,
+        22.250000000000057,
+        19.250000000000057,
+        15.650000000000034,
+        12.650000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        13.550000000000011,
+        13.250000000000057,
+        14.550000000000011,
+        16.850000000000023,
+        20.450000000000045,
+        24.350000000000023,
+        26.850000000000023,
+        27.55000000000001,
+        25.150000000000034,
+        21.950000000000045,
+        18.150000000000034,
+        15.050000000000011
+      ],
+      "chelsaNormalMaximumCU": 1074,
+      "chelsaInterpolatedNormalMaximumCU": 1030.8,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1072.6,
+          "maximumCU": 1074,
+          "reachedDate": "2002-01-17",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1072.6,
+          "maximumCU": 1074,
+          "reachedDate": "2002-02-12",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1072.6,
+          "maximumCU": 1074,
+          "reachedDate": "2002-02-18",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1341.7,
+          "maximumCU": 1341.7,
+          "reachedDate": "2002-01-09",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "GR000167230",
+      "name": "SAMOS AIRPORT",
+      "lat": 37.7,
+      "lng": 26.9167,
+      "elevationM": 2,
+      "completeSeasons": 12,
+      "normalMaximumCU": 1604,
+      "interpolatedNormalMaximumCU": 1577.9,
+      "meanAnnualMaximumCU": 1522,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 12,
+          "annualTotal": 12
+        }
+      },
+      "chelsaMonthlyTminC": [
+        9.250000000000057,
+        8.650000000000034,
+        10.150000000000034,
+        12.950000000000045,
+        16.450000000000045,
+        20.150000000000034,
+        22.150000000000034,
+        22.55000000000001,
+        20.450000000000045,
+        17.350000000000023,
+        13.550000000000011,
+        10.850000000000023
+      ],
+      "chelsaMonthlyTmaxC": [
+        11.950000000000045,
+        11.750000000000057,
+        13.050000000000011,
+        15.450000000000045,
+        18.850000000000023,
+        22.650000000000034,
+        24.950000000000045,
+        25.250000000000057,
+        22.850000000000023,
+        19.850000000000023,
+        16.150000000000034,
+        13.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 1830.4,
+      "chelsaInterpolatedNormalMaximumCU": 1768.3,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1830.3,
+          "maximumCU": 1830.4,
+          "reachedDate": "2001-12-24",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1830.3,
+          "maximumCU": 1830.4,
+          "reachedDate": "2002-01-14",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1830.3,
+          "maximumCU": 1830.4,
+          "reachedDate": "2002-01-18",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2095,
+          "maximumCU": 2095,
+          "reachedDate": "2001-12-16",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "HRE00105217",
+      "name": "SPLIT MARJAN",
+      "lat": 43.5167,
+      "lng": 16.4331,
+      "elevationM": 122,
+      "completeSeasons": 32,
+      "normalMaximumCU": 2323.7,
+      "interpolatedNormalMaximumCU": 2271.2,
+      "meanAnnualMaximumCU": 1983,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        }
+      },
+      "chelsaMonthlyTminC": [
+        4.550000000000011,
+        4.350000000000023,
+        6.750000000000057,
+        9.950000000000045,
+        14.350000000000023,
+        17.950000000000045,
+        20.55000000000001,
+        20.750000000000057,
+        17.250000000000057,
+        13.650000000000034,
+        9.250000000000057,
+        5.9500000000000455
+      ],
+      "chelsaMonthlyTmaxC": [
+        9.150000000000034,
+        9.450000000000045,
+        11.950000000000045,
+        14.950000000000045,
+        19.450000000000045,
+        23.05000000000001,
+        26.05000000000001,
+        26.05000000000001,
+        22.350000000000023,
+        18.450000000000045,
+        13.550000000000011,
+        10.250000000000057
+      ],
+      "chelsaNormalMaximumCU": 2956.5,
+      "chelsaInterpolatedNormalMaximumCU": 2946.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2956.5,
+          "maximumCU": 2956.5,
+          "reachedDate": "2001-11-28",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2956.5,
+          "maximumCU": 2956.5,
+          "reachedDate": "2001-12-12",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2956.5,
+          "maximumCU": 2956.5,
+          "reachedDate": "2001-12-15",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 3143.7,
+          "maximumCU": 3143.7,
+          "reachedDate": "2001-11-20",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "IT000016320",
+      "name": "BRINDISI",
+      "lat": 40.6331,
+      "lng": 17.9331,
+      "elevationM": 10,
+      "completeSeasons": 6,
+      "normalMaximumCU": 1903.4,
+      "interpolatedNormalMaximumCU": 1843.8,
+      "meanAnnualMaximumCU": 1840,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 6,
+          "annualTotal": 6
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 6,
+          "annualTotal": 6
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 6,
+          "annualTotal": 6
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 6,
+          "annualTotal": 6
+        }
+      },
+      "chelsaMonthlyTminC": [
+        7.050000000000011,
+        6.750000000000057,
+        8.350000000000023,
+        10.750000000000057,
+        14.950000000000045,
+        18.850000000000023,
+        21.650000000000034,
+        21.950000000000045,
+        18.850000000000023,
+        15.550000000000011,
+        11.450000000000045,
+        8.350000000000023
+      ],
+      "chelsaMonthlyTmaxC": [
+        12.450000000000045,
+        12.650000000000034,
+        15.150000000000034,
+        18.350000000000023,
+        23.450000000000045,
+        27.650000000000034,
+        30.350000000000023,
+        30.450000000000045,
+        26.150000000000034,
+        21.650000000000034,
+        16.850000000000023,
+        13.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2053.5,
+      "chelsaInterpolatedNormalMaximumCU": 1982,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2051.1,
+          "maximumCU": 2053.5,
+          "reachedDate": "2001-12-14",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2051.1,
+          "maximumCU": 2053.5,
+          "reachedDate": "2002-01-02",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2051.1,
+          "maximumCU": 2053.5,
+          "reachedDate": "2002-01-06",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2291.6,
+          "maximumCU": 2292.4,
+          "reachedDate": "2001-12-09",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "IT000162240",
+      "name": "VIGNA DI VALLE",
+      "lat": 42.0828,
+      "lng": 12.2167,
+      "elevationM": 266,
+      "completeSeasons": 9,
+      "normalMaximumCU": 2631.4,
+      "interpolatedNormalMaximumCU": 2587.9,
+      "meanAnnualMaximumCU": 2408,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 9,
+          "annualTotal": 9
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.4500000000000455,
+        3.3500000000000227,
+        5.250000000000057,
+        7.9500000000000455,
+        12.050000000000011,
+        15.750000000000057,
+        18.55000000000001,
+        19.05000000000001,
+        16.05000000000001,
+        12.750000000000057,
+        8.250000000000057,
+        4.9500000000000455
+      ],
+      "chelsaMonthlyTmaxC": [
+        10.350000000000023,
+        11.050000000000011,
+        13.650000000000034,
+        16.250000000000057,
+        20.950000000000045,
+        24.850000000000023,
+        28.450000000000045,
+        28.350000000000023,
+        23.950000000000045,
+        19.650000000000034,
+        14.650000000000034,
+        11.150000000000034
+      ],
+      "chelsaNormalMaximumCU": 2716.7,
+      "chelsaInterpolatedNormalMaximumCU": 2711.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2716.7,
+          "maximumCU": 2716.7,
+          "reachedDate": "2001-11-28",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2716.7,
+          "maximumCU": 2716.7,
+          "reachedDate": "2001-12-14",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2716.7,
+          "maximumCU": 2716.7,
+          "reachedDate": "2001-12-17",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2904.3,
+          "maximumCU": 2904.3,
+          "reachedDate": "2001-11-21",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "ITW00033126",
+      "name": "SIGONELLA",
+      "lat": 37.4,
+      "lng": 14.9167,
+      "elevationM": 31.1,
+      "completeSeasons": 7,
+      "normalMaximumCU": 1408.1,
+      "interpolatedNormalMaximumCU": 1383.6,
+      "meanAnnualMaximumCU": 1285,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 7,
+          "annualTotal": 7
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 7,
+          "annualTotal": 7
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 7,
+          "annualTotal": 7
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 7,
+          "annualTotal": 7
+        }
+      },
+      "chelsaMonthlyTminC": [
+        6.050000000000011,
+        5.850000000000023,
+        7.350000000000023,
+        9.950000000000045,
+        14.050000000000011,
+        18.350000000000023,
+        21.250000000000057,
+        21.55000000000001,
+        18.650000000000034,
+        15.150000000000034,
+        10.750000000000057,
+        7.550000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.350000000000023,
+        15.150000000000034,
+        17.750000000000057,
+        20.950000000000045,
+        26.150000000000034,
+        31.350000000000023,
+        34.55000000000007,
+        34.25000000000006,
+        29.150000000000034,
+        24.350000000000023,
+        19.150000000000034,
+        15.450000000000045
+      ],
+      "chelsaNormalMaximumCU": 1623.4,
+      "chelsaInterpolatedNormalMaximumCU": 1588.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1618.3,
+          "maximumCU": 1623.4,
+          "reachedDate": "2001-12-22",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1618.3,
+          "maximumCU": 1623.4,
+          "reachedDate": "2002-01-11",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1618.3,
+          "maximumCU": 1623.4,
+          "reachedDate": "2002-01-15",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1899.3,
+          "maximumCU": 1902.5,
+          "reachedDate": "2001-12-15",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "NZ000093417",
+      "name": "PARAPARAUMU AWS",
+      "lat": -40.9,
+      "lng": 174.983,
+      "elevationM": 7,
+      "completeSeasons": 13,
+      "normalMaximumCU": 2706.7,
+      "interpolatedNormalMaximumCU": 2686.1,
+      "meanAnnualMaximumCU": 2206,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 13,
+          "annualTotal": 13
+        }
+      },
+      "chelsaMonthlyTminC": [
+        15.250000000000057,
+        15.750000000000057,
+        14.850000000000023,
+        13.350000000000023,
+        11.850000000000023,
+        10.350000000000023,
+        9.550000000000011,
+        9.550000000000011,
+        10.250000000000057,
+        11.150000000000034,
+        12.350000000000023,
+        14.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        17.250000000000057,
+        17.850000000000023,
+        16.950000000000045,
+        15.450000000000045,
+        13.950000000000045,
+        12.450000000000045,
+        11.450000000000045,
+        11.550000000000011,
+        12.250000000000057,
+        13.150000000000034,
+        14.350000000000023,
+        15.850000000000023
+      ],
+      "chelsaNormalMaximumCU": 2402.1,
+      "chelsaInterpolatedNormalMaximumCU": 2371.3,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2402.1,
+          "maximumCU": 2402.1,
+          "reachedDate": "2001-05-26",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2402.1,
+          "maximumCU": 2402.1,
+          "reachedDate": "2001-06-19",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2402.1,
+          "maximumCU": 2402.1,
+          "reachedDate": "2001-06-23",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2689.8,
+          "maximumCU": 2689.8,
+          "reachedDate": "2001-05-16",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "NZ000933090",
+      "name": "NEW PLYMOUTH AWS",
+      "lat": -39.017,
+      "lng": 174.183,
+      "elevationM": 32,
+      "completeSeasons": 10,
+      "normalMaximumCU": 2453.2,
+      "interpolatedNormalMaximumCU": 2426.4,
+      "meanAnnualMaximumCU": 2063,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        }
+      },
+      "chelsaMonthlyTminC": [
+        13.950000000000045,
+        14.450000000000045,
+        13.150000000000034,
+        11.150000000000034,
+        9.550000000000011,
+        7.850000000000023,
+        6.750000000000057,
+        7.050000000000011,
+        8.050000000000011,
+        9.250000000000057,
+        10.550000000000011,
+        12.650000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        19.450000000000045,
+        19.950000000000045,
+        18.55000000000001,
+        16.350000000000023,
+        14.150000000000034,
+        12.250000000000057,
+        11.350000000000023,
+        11.850000000000023,
+        13.050000000000011,
+        14.250000000000057,
+        15.950000000000045,
+        17.850000000000023
+      ],
+      "chelsaNormalMaximumCU": 2954.8,
+      "chelsaInterpolatedNormalMaximumCU": 2921.2,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2954.8,
+          "maximumCU": 2954.8,
+          "reachedDate": "2001-05-15",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2954.8,
+          "maximumCU": 2954.8,
+          "reachedDate": "2001-06-06",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2954.8,
+          "maximumCU": 2954.8,
+          "reachedDate": "2001-06-09",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 3183.2,
+          "maximumCU": 3183.2,
+          "reachedDate": "2001-05-09",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "NZ000936150",
+      "name": "HOKITIKA AERODROME",
+      "lat": -42.717,
+      "lng": 170.983,
+      "elevationM": 40,
+      "completeSeasons": 10,
+      "normalMaximumCU": 2870.1,
+      "interpolatedNormalMaximumCU": 2858,
+      "meanAnnualMaximumCU": 2671,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 10,
+          "annualTotal": 10
+        }
+      },
+      "chelsaMonthlyTminC": [
+        14.150000000000034,
+        14.450000000000045,
+        13.050000000000011,
+        11.250000000000057,
+        9.250000000000057,
+        7.250000000000057,
+        6.250000000000057,
+        6.850000000000023,
+        8.050000000000011,
+        9.250000000000057,
+        10.950000000000045,
+        12.850000000000023
+      ],
+      "chelsaMonthlyTmaxC": [
+        18.05000000000001,
+        18.55000000000001,
+        17.150000000000034,
+        15.150000000000034,
+        13.150000000000034,
+        11.250000000000057,
+        10.650000000000034,
+        11.250000000000057,
+        12.450000000000045,
+        13.550000000000011,
+        14.950000000000045,
+        16.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 3232.6,
+      "chelsaInterpolatedNormalMaximumCU": 3202.6,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 3232.6,
+          "maximumCU": 3232.6,
+          "reachedDate": "2001-05-09",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 3232.6,
+          "maximumCU": 3232.6,
+          "reachedDate": "2001-05-30",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 3232.6,
+          "maximumCU": 3232.6,
+          "reachedDate": "2001-06-03",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 3429.8,
+          "maximumCU": 3429.8,
+          "reachedDate": "2001-05-05",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "PO000008535",
+      "name": "LISBOA GEOFISICA",
+      "lat": 38.7167,
+      "lng": -9.15,
+      "elevationM": 77,
+      "completeSeasons": 15,
+      "normalMaximumCU": 1077.7,
+      "interpolatedNormalMaximumCU": 1041.7,
+      "meanAnnualMaximumCU": 1208,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 15,
+          "annualTotal": 15
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 15,
+          "annualTotal": 15
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 15,
+          "annualTotal": 15
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 15,
+          "annualTotal": 15
+        }
+      },
+      "chelsaMonthlyTminC": [
+        8.650000000000034,
+        9.050000000000011,
+        10.450000000000045,
+        11.550000000000011,
+        13.550000000000011,
+        16.150000000000034,
+        17.650000000000034,
+        18.150000000000034,
+        17.350000000000023,
+        15.150000000000034,
+        12.150000000000034,
+        10.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.050000000000011,
+        14.750000000000057,
+        16.850000000000023,
+        17.650000000000034,
+        19.950000000000045,
+        23.55000000000001,
+        25.850000000000023,
+        26.250000000000057,
+        24.650000000000034,
+        20.850000000000023,
+        17.250000000000057,
+        14.750000000000057
+      ],
+      "chelsaNormalMaximumCU": 1409.9,
+      "chelsaInterpolatedNormalMaximumCU": 1362,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1408.8,
+          "maximumCU": 1409.9,
+          "reachedDate": "2001-12-25",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1408.8,
+          "maximumCU": 1409.9,
+          "reachedDate": "2002-01-17",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1408.8,
+          "maximumCU": 1409.9,
+          "reachedDate": "2002-01-22",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1717.8,
+          "maximumCU": 1717.8,
+          "reachedDate": "2001-12-16",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SF000068438",
+      "name": "KIMBERLEY",
+      "lat": -28.8,
+      "lng": 24.767,
+      "elevationM": 1196,
+      "completeSeasons": 5,
+      "normalMaximumCU": 585,
+      "interpolatedNormalMaximumCU": 578.6,
+      "meanAnnualMaximumCU": 636,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        },
+        "Leccino": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 3,
+          "annualTotal": 5
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 2,
+          "annualTotal": 5
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        }
+      },
+      "chelsaMonthlyTminC": [
+        18.250000000000057,
+        17.750000000000057,
+        15.550000000000011,
+        11.650000000000034,
+        7.4500000000000455,
+        3.8500000000000227,
+        3.250000000000057,
+        5.4500000000000455,
+        9.150000000000034,
+        12.450000000000045,
+        14.550000000000011,
+        16.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        32.25000000000006,
+        30.950000000000045,
+        28.650000000000034,
+        24.950000000000045,
+        21.350000000000023,
+        17.950000000000045,
+        18.250000000000057,
+        21.350000000000023,
+        25.55000000000001,
+        28.05000000000001,
+        29.750000000000057,
+        31.950000000000045
+      ],
+      "chelsaNormalMaximumCU": 862.9,
+      "chelsaInterpolatedNormalMaximumCU": 842.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 650.4,
+          "maximumCU": 862.9,
+          "reachedDate": "2001-06-22",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 650.4,
+          "maximumCU": 862.9,
+          "reachedDate": "2001-07-23",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 650.4,
+          "maximumCU": 862.9,
+          "reachedDate": "2001-07-29",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 954.4,
+          "maximumCU": 1080.1,
+          "reachedDate": "2001-06-14",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SP000003195",
+      "name": "MADRID - RETIRO",
+      "lat": 40.4117,
+      "lng": -3.6781,
+      "elevationM": 667,
+      "completeSeasons": 28,
+      "normalMaximumCU": 2566.6,
+      "interpolatedNormalMaximumCU": 2564.4,
+      "meanAnnualMaximumCU": 2312,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        }
+      },
+      "chelsaMonthlyTminC": [
+        0.5500000000000114,
+        1.2500000000000568,
+        3.5500000000000114,
+        5.650000000000034,
+        9.450000000000045,
+        14.550000000000011,
+        17.750000000000057,
+        17.55000000000001,
+        14.050000000000011,
+        9.250000000000057,
+        4.550000000000011,
+        1.8500000000000227
+      ],
+      "chelsaMonthlyTmaxC": [
+        9.450000000000045,
+        11.450000000000045,
+        15.350000000000023,
+        17.350000000000023,
+        21.350000000000023,
+        27.55000000000001,
+        31.750000000000057,
+        31.250000000000057,
+        26.350000000000023,
+        19.55000000000001,
+        13.450000000000045,
+        9.950000000000045
+      ],
+      "chelsaNormalMaximumCU": 2568.3,
+      "chelsaInterpolatedNormalMaximumCU": 2561,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2568.3,
+          "maximumCU": 2568.3,
+          "reachedDate": "2001-11-14",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2568.3,
+          "maximumCU": 2568.3,
+          "reachedDate": "2001-12-02",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2568.3,
+          "maximumCU": 2568.3,
+          "reachedDate": "2001-12-06",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2741.4,
+          "maximumCU": 2741.4,
+          "reachedDate": "2001-11-10",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SPE00119783",
+      "name": "ALMERIA/AEROPUERTO",
+      "lat": 36.8464,
+      "lng": -2.3567,
+      "elevationM": 21,
+      "completeSeasons": 27,
+      "normalMaximumCU": 676.2,
+      "interpolatedNormalMaximumCU": 645.2,
+      "meanAnnualMaximumCU": 732,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 27,
+          "annualTotal": 27
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 17,
+          "annualTotal": 27
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": false,
+          "annualMet": 15,
+          "annualTotal": 27
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 27,
+          "annualTotal": 27
+        }
+      },
+      "chelsaMonthlyTminC": [
+        8.750000000000057,
+        9.150000000000034,
+        10.750000000000057,
+        12.450000000000045,
+        15.350000000000023,
+        19.150000000000034,
+        21.850000000000023,
+        22.350000000000023,
+        19.950000000000045,
+        16.450000000000045,
+        12.650000000000034,
+        10.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.550000000000011,
+        15.350000000000023,
+        17.450000000000045,
+        19.150000000000034,
+        22.05000000000001,
+        26.150000000000034,
+        29.150000000000034,
+        29.150000000000034,
+        26.150000000000034,
+        22.150000000000034,
+        18.150000000000034,
+        15.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 1134.3,
+      "chelsaInterpolatedNormalMaximumCU": 1116.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1130.8,
+          "maximumCU": 1134.3,
+          "reachedDate": "2002-01-02",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1130.8,
+          "maximumCU": 1134.3,
+          "reachedDate": "2002-01-25",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1130.8,
+          "maximumCU": 1134.3,
+          "reachedDate": "2002-01-30",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1469,
+          "maximumCU": 1470.7,
+          "reachedDate": "2001-12-22",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SPE00120089",
+      "name": "GRANADA/AEROPUERTO",
+      "lat": 37.1894,
+      "lng": -3.7892,
+      "elevationM": 567,
+      "completeSeasons": 33,
+      "normalMaximumCU": 1680.1,
+      "interpolatedNormalMaximumCU": 1684.8,
+      "meanAnnualMaximumCU": 1590,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        }
+      },
+      "chelsaMonthlyTminC": [
+        1.5500000000000114,
+        2.5500000000000114,
+        4.850000000000023,
+        6.550000000000011,
+        10.050000000000011,
+        14.650000000000034,
+        17.750000000000057,
+        17.750000000000057,
+        14.850000000000023,
+        10.450000000000045,
+        5.850000000000023,
+        3.150000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        11.850000000000023,
+        13.450000000000045,
+        16.750000000000057,
+        18.250000000000057,
+        22.250000000000057,
+        28.150000000000034,
+        32.25000000000006,
+        31.750000000000057,
+        27.150000000000034,
+        21.450000000000045,
+        15.750000000000057,
+        12.550000000000011
+      ],
+      "chelsaNormalMaximumCU": 2283.8,
+      "chelsaInterpolatedNormalMaximumCU": 2292.5,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2283.3,
+          "maximumCU": 2283.8,
+          "reachedDate": "2001-11-27",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2283.3,
+          "maximumCU": 2283.8,
+          "reachedDate": "2001-12-16",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2283.3,
+          "maximumCU": 2283.8,
+          "reachedDate": "2001-12-19",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2515.2,
+          "maximumCU": 2515.2,
+          "reachedDate": "2001-11-20",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SPE00120170",
+      "name": "JAEN",
+      "lat": 37.7778,
+      "lng": -3.8075,
+      "elevationM": 582,
+      "completeSeasons": 28,
+      "normalMaximumCU": 2055.2,
+      "interpolatedNormalMaximumCU": 1999.2,
+      "meanAnnualMaximumCU": 1832,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 28,
+          "annualTotal": 28
+        }
+      },
+      "chelsaMonthlyTminC": [
+        2.150000000000034,
+        3.3500000000000227,
+        5.650000000000034,
+        7.550000000000011,
+        11.050000000000011,
+        15.450000000000045,
+        18.350000000000023,
+        18.450000000000045,
+        15.550000000000011,
+        11.250000000000057,
+        6.550000000000011,
+        3.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        11.850000000000023,
+        13.650000000000034,
+        17.250000000000057,
+        18.850000000000023,
+        22.850000000000023,
+        28.55000000000001,
+        32.650000000000034,
+        32.150000000000034,
+        27.55000000000001,
+        21.750000000000057,
+        15.950000000000045,
+        12.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 2253.9,
+      "chelsaInterpolatedNormalMaximumCU": 2237.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2252.3,
+          "maximumCU": 2253.9,
+          "reachedDate": "2001-11-28",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2252.3,
+          "maximumCU": 2253.9,
+          "reachedDate": "2001-12-16",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2252.3,
+          "maximumCU": 2253.9,
+          "reachedDate": "2001-12-20",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2460.3,
+          "maximumCU": 2460.3,
+          "reachedDate": "2001-11-23",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "SZ000003700",
+      "name": "ZUERICH/FLUNTERN",
+      "lat": 47.3831,
+      "lng": 8.5667,
+      "elevationM": 555,
+      "completeSeasons": 32,
+      "normalMaximumCU": 2435.7,
+      "interpolatedNormalMaximumCU": 2465.5,
+      "meanAnnualMaximumCU": 2083,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        }
+      },
+      "chelsaMonthlyTminC": [
+        -2.5499999999999545,
+        -2.249999999999943,
+        0.5500000000000114,
+        3.3500000000000227,
+        8.050000000000011,
+        11.450000000000045,
+        13.950000000000045,
+        14.050000000000011,
+        10.650000000000034,
+        6.750000000000057,
+        1.650000000000034,
+        -1.1499999999999773
+      ],
+      "chelsaMonthlyTmaxC": [
+        4.250000000000057,
+        5.850000000000023,
+        9.850000000000023,
+        13.350000000000023,
+        17.750000000000057,
+        20.750000000000057,
+        23.05000000000001,
+        22.650000000000034,
+        18.750000000000057,
+        14.550000000000011,
+        8.250000000000057,
+        4.850000000000023
+      ],
+      "chelsaNormalMaximumCU": 2333.9,
+      "chelsaInterpolatedNormalMaximumCU": 2359.3,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2333.9,
+          "maximumCU": 2333.9,
+          "reachedDate": "2001-10-24",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2333.9,
+          "maximumCU": 2333.9,
+          "reachedDate": "2001-11-11",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2333.9,
+          "maximumCU": 2333.9,
+          "reachedDate": "2001-11-15",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2390.7,
+          "maximumCU": 2390.7,
+          "reachedDate": "2001-10-23",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "TU000017240",
+      "name": "ISPARTA",
+      "lat": 37.75,
+      "lng": 30.55,
+      "elevationM": 997,
+      "completeSeasons": 5,
+      "normalMaximumCU": 2210.8,
+      "interpolatedNormalMaximumCU": 2222.1,
+      "meanAnnualMaximumCU": 2046,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 5,
+          "annualTotal": 5
+        }
+      },
+      "chelsaMonthlyTminC": [
+        -2.749999999999943,
+        -2.749999999999943,
+        -0.44999999999998863,
+        3.650000000000034,
+        8.050000000000011,
+        12.150000000000034,
+        15.150000000000034,
+        15.350000000000023,
+        11.950000000000045,
+        7.550000000000011,
+        2.5500000000000114,
+        -0.44999999999998863
+      ],
+      "chelsaMonthlyTmaxC": [
+        5.350000000000023,
+        6.150000000000034,
+        10.150000000000034,
+        14.950000000000045,
+        20.05000000000001,
+        24.850000000000023,
+        28.55000000000001,
+        28.650000000000034,
+        24.450000000000045,
+        18.250000000000057,
+        11.550000000000011,
+        6.9500000000000455
+      ],
+      "chelsaNormalMaximumCU": 2237.3,
+      "chelsaInterpolatedNormalMaximumCU": 2258.6,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2237.3,
+          "maximumCU": 2237.3,
+          "reachedDate": "2001-11-06",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2237.3,
+          "maximumCU": 2237.3,
+          "reachedDate": "2001-11-24",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2237.3,
+          "maximumCU": 2237.3,
+          "reachedDate": "2001-11-27",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2331.5,
+          "maximumCU": 2331.5,
+          "reachedDate": "2001-11-02",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USR0000HPUW",
+      "name": "PUU WAAWAA HAWAII",
+      "lat": 19.795,
+      "lng": -155.8453,
+      "elevationM": 709,
+      "completeSeasons": 15,
+      "normalMaximumCU": 1.6,
+      "interpolatedNormalMaximumCU": 1.6,
+      "meanAnnualMaximumCU": 6,
+      "cv": {
+        "Arbequina": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 15
+        },
+        "Leccino": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 15
+        },
+        "Frantoio": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 15
+        },
+        "ArbequinaWarm": {
+          "normalMet": false,
+          "interpolatedNormalMet": false,
+          "annualMet": 0,
+          "annualTotal": 15
+        }
+      },
+      "chelsaMonthlyTminC": [
+        17.950000000000045,
+        17.650000000000034,
+        17.850000000000023,
+        18.150000000000034,
+        18.850000000000023,
+        19.350000000000023,
+        19.950000000000045,
+        20.450000000000045,
+        20.450000000000045,
+        20.150000000000034,
+        19.450000000000045,
+        18.450000000000045
+      ],
+      "chelsaMonthlyTmaxC": [
+        22.350000000000023,
+        22.250000000000057,
+        22.55000000000001,
+        22.750000000000057,
+        23.350000000000023,
+        24.05000000000001,
+        24.650000000000034,
+        25.150000000000034,
+        24.950000000000045,
+        24.650000000000034,
+        24.05000000000001,
+        22.950000000000045
+      ],
+      "chelsaNormalMaximumCU": 0,
+      "chelsaInterpolatedNormalMaximumCU": 0,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 0,
+          "maximumCU": 0,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 0,
+          "maximumCU": 0,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 0,
+          "maximumCU": 0,
+          "reachedDate": null,
+          "requirementMet": false
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 0,
+          "maximumCU": 0,
+          "reachedDate": null,
+          "requirementMet": false
+        }
+      }
+    },
+    {
+      "id": "USW00003927",
+      "name": "DAL-FTW WSCMO AP",
+      "lat": 32.8975,
+      "lng": -97.0219,
+      "elevationM": 165.8,
+      "completeSeasons": 34,
+      "normalMaximumCU": 1379.1,
+      "interpolatedNormalMaximumCU": 1359.5,
+      "meanAnnualMaximumCU": 950,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 34
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 31,
+          "annualTotal": 34
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.750000000000057,
+        5.550000000000011,
+        9.450000000000045,
+        13.750000000000057,
+        18.55000000000001,
+        22.450000000000045,
+        24.750000000000057,
+        24.950000000000045,
+        20.850000000000023,
+        15.450000000000045,
+        9.850000000000023,
+        4.750000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.150000000000034,
+        16.450000000000045,
+        20.55000000000001,
+        24.950000000000045,
+        28.450000000000045,
+        31.850000000000023,
+        34.35000000000002,
+        34.55000000000007,
+        30.650000000000034,
+        25.450000000000045,
+        19.350000000000023,
+        14.250000000000057
+      ],
+      "chelsaNormalMaximumCU": 1393.9,
+      "chelsaInterpolatedNormalMaximumCU": 1382.9,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1195.6,
+          "maximumCU": 1393.9,
+          "reachedDate": "2001-12-17",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1195.6,
+          "maximumCU": 1393.9,
+          "reachedDate": "2002-01-05",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1195.6,
+          "maximumCU": 1393.9,
+          "reachedDate": "2002-01-09",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1479.1,
+          "maximumCU": 1608.4,
+          "reachedDate": "2001-12-11",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00013904",
+      "name": "AUSTIN BERGSTROM INTL AP",
+      "lat": 30.1831,
+      "lng": -97.68,
+      "elevationM": 146.6,
+      "completeSeasons": 26,
+      "normalMaximumCU": 911.7,
+      "interpolatedNormalMaximumCU": 917.9,
+      "meanAnnualMaximumCU": 605,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 25,
+          "annualTotal": 26
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 8,
+          "annualTotal": 26
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 7,
+          "annualTotal": 26
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 26,
+          "annualTotal": 26
+        }
+      },
+      "chelsaMonthlyTminC": [
+        6.250000000000057,
+        7.9500000000000455,
+        11.250000000000057,
+        15.150000000000034,
+        19.450000000000045,
+        22.650000000000034,
+        23.850000000000023,
+        24.150000000000034,
+        21.350000000000023,
+        16.650000000000034,
+        11.650000000000034,
+        7.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        16.650000000000034,
+        18.750000000000057,
+        22.450000000000045,
+        26.450000000000045,
+        29.450000000000045,
+        32.35000000000002,
+        34.150000000000034,
+        34.75000000000006,
+        31.350000000000023,
+        26.750000000000057,
+        21.350000000000023,
+        16.850000000000023
+      ],
+      "chelsaNormalMaximumCU": 892.2,
+      "chelsaInterpolatedNormalMaximumCU": 859.3,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 574.2,
+          "maximumCU": 892.2,
+          "reachedDate": "2002-01-01",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 574.2,
+          "maximumCU": 892.2,
+          "reachedDate": "2002-01-25",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 574.2,
+          "maximumCU": 892.2,
+          "reachedDate": "2002-01-30",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 870.5,
+          "maximumCU": 1065.2,
+          "reachedDate": "2001-12-26",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00023155",
+      "name": "BAKERSFIELD AP",
+      "lat": 35.4342,
+      "lng": -119.0553,
+      "elevationM": 149.4,
+      "completeSeasons": 34,
+      "normalMaximumCU": 1431,
+      "interpolatedNormalMaximumCU": 1377.3,
+      "meanAnnualMaximumCU": 1296,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        }
+      },
+      "chelsaMonthlyTminC": [
+        4.650000000000034,
+        6.150000000000034,
+        8.150000000000034,
+        10.350000000000023,
+        14.250000000000057,
+        17.950000000000045,
+        21.450000000000045,
+        21.05000000000001,
+        17.850000000000023,
+        13.050000000000011,
+        7.9500000000000455,
+        4.550000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        16.05000000000001,
+        17.750000000000057,
+        20.55000000000001,
+        24.350000000000023,
+        29.150000000000034,
+        33.35000000000002,
+        36.55000000000007,
+        35.950000000000045,
+        32.55000000000001,
+        26.650000000000034,
+        19.650000000000034,
+        15.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 1359.6,
+      "chelsaInterpolatedNormalMaximumCU": 1312.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1300.6,
+          "maximumCU": 1359.6,
+          "reachedDate": "2001-12-14",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1300.6,
+          "maximumCU": 1359.6,
+          "reachedDate": "2002-01-04",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1300.6,
+          "maximumCU": 1359.6,
+          "reachedDate": "2002-01-09",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1582.8,
+          "maximumCU": 1588.4,
+          "reachedDate": "2001-12-08",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00023160",
+      "name": "TUCSON INTL AP",
+      "lat": 32.1317,
+      "lng": -110.9564,
+      "elevationM": 777.5,
+      "completeSeasons": 33,
+      "normalMaximumCU": 706,
+      "interpolatedNormalMaximumCU": 707.8,
+      "meanAnnualMaximumCU": 696,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 23,
+          "annualTotal": 33
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 17,
+          "annualTotal": 33
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        }
+      },
+      "chelsaMonthlyTminC": [
+        4.250000000000057,
+        5.4500000000000455,
+        7.9500000000000455,
+        11.550000000000011,
+        16.650000000000034,
+        21.650000000000034,
+        24.05000000000001,
+        23.250000000000057,
+        20.55000000000001,
+        14.550000000000011,
+        8.550000000000011,
+        4.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        17.950000000000045,
+        19.750000000000057,
+        23.05000000000001,
+        27.55000000000001,
+        32.35000000000002,
+        36.85000000000002,
+        36.35000000000002,
+        34.950000000000045,
+        33.55000000000001,
+        28.55000000000001,
+        22.55000000000001,
+        17.650000000000034
+      ],
+      "chelsaNormalMaximumCU": 940.4,
+      "chelsaInterpolatedNormalMaximumCU": 918.5,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 795.6,
+          "maximumCU": 940.4,
+          "reachedDate": "2001-12-29",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 795.6,
+          "maximumCU": 940.4,
+          "reachedDate": "2002-01-27",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 795.6,
+          "maximumCU": 940.4,
+          "reachedDate": "2002-02-02",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1085.7,
+          "maximumCU": 1172.6,
+          "reachedDate": "2001-12-21",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00023213",
+      "name": "SANTA ROSA SONOMA CO AP",
+      "lat": 38.5036,
+      "lng": -122.8111,
+      "elevationM": 36.3,
+      "completeSeasons": 21,
+      "normalMaximumCU": 1883,
+      "interpolatedNormalMaximumCU": 1860.1,
+      "meanAnnualMaximumCU": 1702,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 21,
+          "annualTotal": 21
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.8500000000000227,
+        4.9500000000000455,
+        6.250000000000057,
+        7.550000000000011,
+        10.450000000000045,
+        13.050000000000011,
+        14.650000000000034,
+        14.550000000000011,
+        13.650000000000034,
+        10.950000000000045,
+        6.850000000000023,
+        4.250000000000057
+      ],
+      "chelsaMonthlyTmaxC": [
+        13.950000000000045,
+        15.550000000000011,
+        17.850000000000023,
+        20.650000000000034,
+        24.750000000000057,
+        28.850000000000023,
+        31.450000000000045,
+        30.950000000000045,
+        29.250000000000057,
+        24.55000000000001,
+        17.55000000000001,
+        13.550000000000011
+      ],
+      "chelsaNormalMaximumCU": 2018.2,
+      "chelsaInterpolatedNormalMaximumCU": 1965.7,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2014.7,
+          "maximumCU": 2018.2,
+          "reachedDate": "2001-12-03",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2014.7,
+          "maximumCU": 2018.2,
+          "reachedDate": "2001-12-21",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2014.7,
+          "maximumCU": 2018.2,
+          "reachedDate": "2001-12-25",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2235.7,
+          "maximumCU": 2237.4,
+          "reachedDate": "2001-11-30",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00024225",
+      "name": "MEDFORD INTL AP",
+      "lat": 42.375,
+      "lng": -122.8769,
+      "elevationM": 400.2,
+      "completeSeasons": 33,
+      "normalMaximumCU": 2413.5,
+      "interpolatedNormalMaximumCU": 2407.2,
+      "meanAnnualMaximumCU": 2124,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 33,
+          "annualTotal": 33
+        }
+      },
+      "chelsaMonthlyTminC": [
+        0.6500000000000341,
+        1.2500000000000568,
+        3.0500000000000114,
+        4.850000000000023,
+        8.150000000000034,
+        11.150000000000034,
+        13.950000000000045,
+        13.850000000000023,
+        10.850000000000023,
+        7.050000000000011,
+        3.250000000000057,
+        0.35000000000002274
+      ],
+      "chelsaMonthlyTmaxC": [
+        9.850000000000023,
+        12.150000000000034,
+        15.050000000000011,
+        18.05000000000001,
+        22.05000000000001,
+        26.250000000000057,
+        31.350000000000023,
+        31.05000000000001,
+        27.650000000000034,
+        20.950000000000045,
+        12.650000000000034,
+        8.750000000000057
+      ],
+      "chelsaNormalMaximumCU": 2491.9,
+      "chelsaInterpolatedNormalMaximumCU": 2484.6,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2491.9,
+          "maximumCU": 2491.9,
+          "reachedDate": "2001-11-12",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2491.9,
+          "maximumCU": 2491.9,
+          "reachedDate": "2001-11-30",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2491.9,
+          "maximumCU": 2491.9,
+          "reachedDate": "2001-12-05",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2654.6,
+          "maximumCU": 2654.6,
+          "reachedDate": "2001-11-08",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00024232",
+      "name": "SALEM AP (MCNARY FIELD)",
+      "lat": 44.905,
+      "lng": -123.0011,
+      "elevationM": 63.4,
+      "completeSeasons": 34,
+      "normalMaximumCU": 2961.6,
+      "interpolatedNormalMaximumCU": 2932,
+      "meanAnnualMaximumCU": 2493,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        }
+      },
+      "chelsaMonthlyTminC": [
+        1.7500000000000568,
+        1.8500000000000227,
+        3.650000000000034,
+        4.9500000000000455,
+        7.750000000000057,
+        10.350000000000023,
+        12.750000000000057,
+        13.050000000000011,
+        11.050000000000011,
+        7.550000000000011,
+        4.250000000000057,
+        1.4500000000000455
+      ],
+      "chelsaMonthlyTmaxC": [
+        8.850000000000023,
+        10.650000000000034,
+        13.150000000000034,
+        15.550000000000011,
+        19.150000000000034,
+        22.850000000000023,
+        27.850000000000023,
+        28.150000000000034,
+        24.850000000000023,
+        18.05000000000001,
+        11.350000000000023,
+        7.9500000000000455
+      ],
+      "chelsaNormalMaximumCU": 2990.3,
+      "chelsaInterpolatedNormalMaximumCU": 2973.2,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2990.3,
+          "maximumCU": 2990.3,
+          "reachedDate": "2001-11-05",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2990.3,
+          "maximumCU": 2990.3,
+          "reachedDate": "2001-11-20",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2990.3,
+          "maximumCU": 2990.3,
+          "reachedDate": "2001-11-24",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 3113.4,
+          "maximumCU": 3113.4,
+          "reachedDate": "2001-11-02",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00024257",
+      "name": "REDDING AP",
+      "lat": 40.5147,
+      "lng": -122.2978,
+      "elevationM": 152.7,
+      "completeSeasons": 32,
+      "normalMaximumCU": 1882.1,
+      "interpolatedNormalMaximumCU": 1841.6,
+      "meanAnnualMaximumCU": 1674,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 32,
+          "annualTotal": 32
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.8500000000000227,
+        4.850000000000023,
+        6.4500000000000455,
+        8.650000000000034,
+        12.850000000000023,
+        17.250000000000057,
+        20.650000000000034,
+        19.750000000000057,
+        16.650000000000034,
+        12.150000000000034,
+        7.050000000000011,
+        4.150000000000034
+      ],
+      "chelsaMonthlyTmaxC": [
+        13.050000000000011,
+        15.050000000000011,
+        18.150000000000034,
+        21.850000000000023,
+        27.350000000000023,
+        33.150000000000034,
+        37.450000000000045,
+        36.25000000000006,
+        32.650000000000034,
+        25.55000000000001,
+        16.850000000000023,
+        12.350000000000023
+      ],
+      "chelsaNormalMaximumCU": 2030.1,
+      "chelsaInterpolatedNormalMaximumCU": 1962.4,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 2024.8,
+          "maximumCU": 2030.1,
+          "reachedDate": "2001-12-01",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 2024.8,
+          "maximumCU": 2030.1,
+          "reachedDate": "2001-12-18",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 2024.8,
+          "maximumCU": 2030.1,
+          "reachedDate": "2001-12-22",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 2232.9,
+          "maximumCU": 2236.6,
+          "reachedDate": "2001-11-28",
+          "requirementMet": true
+        }
+      }
+    },
+    {
+      "id": "USW00093193",
+      "name": "FRESNO YOSEMITE INTL",
+      "lat": 36.78,
+      "lng": -119.7203,
+      "elevationM": 101.8,
+      "completeSeasons": 34,
+      "normalMaximumCU": 1613.9,
+      "interpolatedNormalMaximumCU": 1558.7,
+      "meanAnnualMaximumCU": 1459,
+      "cv": {
+        "Arbequina": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Leccino": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "Frantoio": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        },
+        "ArbequinaWarm": {
+          "normalMet": true,
+          "interpolatedNormalMet": true,
+          "annualMet": 34,
+          "annualTotal": 34
+        }
+      },
+      "chelsaMonthlyTminC": [
+        3.8500000000000227,
+        5.4500000000000455,
+        7.4500000000000455,
+        9.850000000000023,
+        13.650000000000034,
+        17.250000000000057,
+        20.350000000000023,
+        19.950000000000045,
+        17.250000000000057,
+        12.650000000000034,
+        7.4500000000000455,
+        4.050000000000011
+      ],
+      "chelsaMonthlyTmaxC": [
+        14.650000000000034,
+        16.750000000000057,
+        19.750000000000057,
+        23.650000000000034,
+        28.750000000000057,
+        32.85000000000002,
+        35.75000000000006,
+        35.05000000000007,
+        31.950000000000045,
+        26.150000000000034,
+        18.950000000000045,
+        14.450000000000045
+      ],
+      "chelsaNormalMaximumCU": 1586.2,
+      "chelsaInterpolatedNormalMaximumCU": 1536.1,
+      "chelsaCultivars": {
+        "Arbequina": {
+          "requirementCU": 339,
+          "totalCU": 1557.8,
+          "maximumCU": 1586.2,
+          "reachedDate": "2001-12-09",
+          "requirementMet": true
+        },
+        "Leccino": {
+          "requirementCU": 612,
+          "totalCU": 1557.8,
+          "maximumCU": 1586.2,
+          "reachedDate": "2001-12-29",
+          "requirementMet": true
+        },
+        "Frantoio": {
+          "requirementCU": 671,
+          "totalCU": 1557.8,
+          "maximumCU": 1586.2,
+          "reachedDate": "2002-01-02",
+          "requirementMet": true
+        },
+        "ArbequinaWarm": {
+          "requirementCU": 339,
+          "totalCU": 1810,
+          "maximumCU": 1815.1,
+          "reachedDate": "2001-12-05",
+          "requirementMet": true
+        }
+      }
+    }
+  ]
+}

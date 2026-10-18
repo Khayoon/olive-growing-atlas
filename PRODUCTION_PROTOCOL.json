@@ -1,0 +1,10 @@
+{
+  "version": "6.0",
+  "declared": "2026-10-18",
+  "target": "Relative biophysical potential for repeated production by cultivated edible olives under a stated cultivar and water scenario; not a probability of annual yield or economic profitability.",
+  "freezeCalibration": "QC-passed station annual minima, >=95% annual and winter completeness. Compare matched years with original ERA5-EX. Stations receive equal aggregate weight. Fit residual models and test by withholding complete geographic regions. Retain the simplest correction with improved out-of-region error; report every fold and the uncorrected baseline.",
+  "freezeSurface": "Correct the distribution of annual minima using transferable climatic features, never distance-to-literature or a score boost at orchard coordinates. Preserve source quantiles and identify corrected estimates separately. Expose uncertainty and coverage independently of suitability.",
+  "flowering": "Use published DMA temperature response and Arbequina339, Leccino612, Frantoio671 CU requirements. Daily station reconstructions test transfer. CHELSA monthly Tmin/Tmax give a modeled normal-climate chilling screen only; smoothing and unknown interannual flowering remain explicit. Chill limitation caps potential but does not assert tree death.",
+  "orchards": "Freeze primary orchard outcome labels before testing scores. Do not treat alternate bearing as a negative climate label. Consecutive yield series, multi-year means, short trials, flowering failures and freeze damage are separate outcomes. No point/radius score overrides. Literature already seen by developers is an external compatibility audit, not newly independent predictive validation.",
+  "evaluation": "Report station geographic holdout accuracy separately from orchard compatibility and numerical/software checks. Compare irrigated evidence with irrigated scores; rainfed with rainfed. Declare contradictions, exclusions, distinct study clusters, and geographic gaps. Do not claim a globally calibrated reliable-yield probability."
+}

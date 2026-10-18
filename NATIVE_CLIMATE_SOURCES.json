@@ -200,7 +200,8 @@
     "library": "GeoTIFF.js 2.1.3 (MIT), bundled in the HTML",
     "source": "Original global CHELSA COGs listed in sources; HTTP range reads, no API key",
     "native_grid": "43200 x 20880, 30 arcseconds; source overviews used for larger windows",
-    "offline": "Global 10 arcminute overview plus native Cyprus window embedded; other native windows require public source access",
-    "freeze": "Existing regional freeze history remains sampled at 10 arcminutes. No elevation adjustment or missing-data infill is applied to it."
+    "offline": "Global overview plus native Cyprus seasonal climate, 14 winter monthly temperature fields and DEM embedded.",
+    "freeze": "Source regional annual TNn is retained at overview support. Production mode adds a distance/climate-limited local station residual and globally validated station-error distribution; it does not claim orchard-scale freeze resolution.",
+    "winter_temperature": "Native monthly tasmin/tasmax COGs are read directly for the seven-month hemisphere-specific winter window; Kelvin source converted to Celsius. Where a detail patch lacks monthly temperatures, the winter climate anomaly is an explicitly approximate fallback."
   }
 }

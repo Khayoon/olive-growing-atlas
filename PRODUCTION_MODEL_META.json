@@ -1,0 +1,22 @@
+{
+  "version": "6.0",
+  "names": [
+    "Arbequina",
+    "Leccino",
+    "Frantoio"
+  ],
+  "grid": {
+    "width": 2160,
+    "height": 1044,
+    "west": -180.00013888885002,
+    "north": 83.99986041515001,
+    "dx": 0.16666666600000002,
+    "dy": 0.166666666
+  },
+  "order": "cultivar order, irrigated then rainfed",
+  "validCells": 2255040,
+  "rawBytes": 13530240,
+  "sha256": "532e8629ce9733bd59bee77d632bcf5f7d855860f40b51caa5ae42114435ad39",
+  "index": "relative production potential, not percent of reliable annual yield",
+  "confidence": "Separate from suitability; no score feature uses presence or absence of orchard studies."
+}
