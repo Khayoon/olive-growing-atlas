@@ -731,7 +731,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <button class="mobile-toggle" id="mobile-toggle" aria-label="Open dashboard" aria-expanded="false" aria-controls="sidebar">☰</button>
   <div id="climate-loading" role="status">Loading climate data and global freeze history…</div>
   <div id="map" aria-label="World map. Click any location to inspect olive suitability."></div>
-  <div class="map-top"><div class="map-caption"><div class="eyebrow">Cultivated olive · fruiting climate</div><p>CHELSA + global ERA5-EX freeze history</p><p>Derived crop screen · not the official<br>USDA Plant Hardiness Zone Map</p></div><div class="map-tools"><button id="share-view" title="Copy a link to this view"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M6 10l4-4M5 7L3 9a3 3 0 004 4l2-2M7 5l2-2a3 3 0 014 4l-2 2"/></svg><span>Share view</span></button><button id="reset-view" title="Return to the world view"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c-4 4-4 8 0 12 4-4 4-8 0-12"/></svg><span>World view</span></button></div></div>
+  <div class="map-top"><div class="map-caption"><div class="eyebrow">Cultivated olive · fruiting climate</div><p>CHELSA + global ERA5-EX freeze history</p><p id="water-caption">Rainfed · no irrigation assumed</p><p>Derived crop screen · not the official<br>USDA Plant Hardiness Zone Map</p></div><div class="map-tools"><button id="share-view" title="Copy a link to this view"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M6 10l4-4M5 7L3 9a3 3 0 004 4l2-2M7 5l2-2a3 3 0 014 4l-2 2"/></svg><span>Share view</span></button><button id="reset-view" title="Return to the world view"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c-4 4-4 8 0 12 4-4 4-8 0-12"/></svg><span>World view</span></button></div></div>
   <div class="tile-loading" id="tile-status" role="status" hidden></div>
   <div class="legend" aria-label="Suitability legend"><div class="legend-head"><strong>Olive suitability</strong><span>Climate screening / 100</span></div><div class="gradient"></div><div class="legend-labels"><span>Favorable</span><span>Marginal</span><span>Poor fruiting</span></div><div class="legend-numbers"><span>100 — 80</span><span>79 — 40</span><span>39 — 0</span></div><div class="legend-foot"><span>⋯ &nbsp;30°–45° olive belts</span><span><i class="pin-key"></i>Microclimate</span></div><div class="confidence">Gray land: incomplete extreme-temperature record.</div></div>
   <div class="map-hint"><span>⊕</span> Click anywhere to inspect a location</div>
@@ -805,6 +805,7 @@ const climateScoresRainfed=new Uint8Array(climateBuffer,climateMeta.score_raster
 let irrigated=false;
 if(new URLSearchParams(location.hash.slice(1)).get('water')==='irrigated')irrigated=true;
 $('water-mode').value=irrigated?'irrigated':'rainfed';
+$('water-caption').textContent=irrigated?'Irrigation assumed · water supply unassessed':'Rainfed · no irrigation assumed';
 function climateAt(lat,lng){
  lng=normalizeLng(lng);
  const x=Math.floor((lng-climateGrid.west)/climateGrid.dx),y=Math.floor((climateGrid.north-lat)/climateGrid.dy);
@@ -1085,6 +1086,7 @@ function toggleSidebar(force){const open=force??!$('sidebar').classList.contains
 $('water-mode').onchange=()=>{
  const tab=document.querySelector('.tab.active').dataset.tab;
  irrigated=$('water-mode').value==='irrigated';
+ $('water-caption').textContent=irrigated?'Irrigation assumed · water supply unassessed':'Rainfed · no irrigation assumed';
  projectClimateScores();if(map.hasLayer(surface))surface.draw();
  for(const z of zones){z.climateScore=model(...z.center).score;const tone=colors[z.climateScore===null?'unknown':z.climateScore>=80?'prime':z.climateScore>=40?'marginal':'bad'];zoneShapes.get(z.id)?.setStyle({color:tone,fillColor:tone});zoneShapes.get(z.id)?.setTooltipContent(z.name+' · '+(z.climateScore??'no data')+'/100');const option=[...$('region-select').options].find(o=>o.value===z.id);if(option)option.textContent=z.name+' · '+(z.climateScore??'no data');}
  if(currentPoint)inspect(...currentPoint);
