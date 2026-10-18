@@ -1,132 +1,535 @@
 {
-  "version": "2.0",
-  "dataset": "CHELSA V2.1 / CHELSA-BIOCLIM+",
-  "period": "1981-2010",
-  "grid": {
-    "width": 2160,
-    "height": 1044,
-    "west": -180.00013888885002,
-    "north": 83.99986041515001,
-    "dx": 0.16666666600000002,
-    "dy": 0.166666666
+  "version": "2.1",
+  "crop": "Fruit production of cultivated Olea europaea subsp. europaea (oil and table cultivars), excluding African/wild olive occurrence data and non-Olea lookalikes.",
+  "sourcePeriods": {
+    "CHELSA": "1981-2010",
+    "PRISM": "1991-2020; CONUS only"
   },
-  "dataSha256": "576ec4784440bba21515cf1b93f5dbee601d81a10fba87371829d32e5ea86bff",
+  "dataSha256": "2b9a4039e80947f84c56b1ee085e530c26cf1c0a82649f63afdd2b339c3aafe9",
   "sampledClimateCells": 27170,
+  "freezeCells": 30403,
   "overlayInspectorMaxDelta": 0,
   "quarterRainMaxDifferenceMm": 2.299999999999983,
   "controls": [
     {
       "name": "Andalusia",
-      "irrigated": 98,
+      "lat": 37.6,
+      "lng": -4.2,
+      "climate": {
+        "bio05": 31.9,
+        "bio06": 1.7,
+        "bio10": 24.6,
+        "bio11": 8.3,
+        "bio12": 564,
+        "bio18": 27,
+        "bio19": 214,
+        "hursmean": 55,
+        "fcf": 1
+      },
+      "previousRainfed": 98,
       "rainfed": 98,
-      "overlay": 98,
-      "factor": "Favorable temperature & seasonal water balance"
-    },
-    {
-      "name": "Shodoshima",
-      "irrigated": 79,
-      "rainfed": 79,
-      "overlay": 79,
-      "factor": "Wet warm season · fungal-management pressure"
+      "irrigated": 98,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": false
     },
     {
       "name": "California",
-      "irrigated": 99,
+      "lat": 37.3,
+      "lng": -120.4,
+      "climate": {
+        "bio05": 35.9,
+        "bio06": 4.1,
+        "bio10": 26.2,
+        "bio11": 9.7,
+        "bio12": 364,
+        "bio18": 3,
+        "bio19": 196,
+        "hursmean": 53,
+        "fcf": 0,
+        "extremeMinC": -4.6
+      },
+      "previousRainfed": 81,
       "rainfed": 81,
-      "overlay": 99,
-      "factor": "Favorable temperature & seasonal water balance"
+      "irrigated": 84,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": true
     },
     {
       "name": "Central Chile",
-      "irrigated": 94,
+      "lat": -34.4,
+      "lng": -71.2,
+      "climate": {
+        "bio05": 28.9,
+        "bio06": 3.9,
+        "bio10": 20.5,
+        "bio11": 9,
+        "bio12": 825,
+        "bio18": 9,
+        "bio19": 507,
+        "hursmean": 58,
+        "fcf": 0
+      },
+      "previousRainfed": 94,
       "rainfed": 94,
-      "overlay": 94,
-      "factor": "Favorable temperature & seasonal water balance"
+      "irrigated": 94,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": false
     },
     {
       "name": "Perth",
-      "irrigated": 96,
+      "lat": -33.1,
+      "lng": 116.1,
+      "climate": {
+        "bio05": 29.6,
+        "bio06": 6.5,
+        "bio10": 21.5,
+        "bio11": 10.9,
+        "bio12": 1074,
+        "bio18": 58,
+        "bio19": 573,
+        "hursmean": 57,
+        "fcf": 0
+      },
+      "previousRainfed": 96,
       "rainfed": 96,
-      "overlay": 96,
-      "factor": "Favorable temperature & seasonal water balance"
+      "irrigated": 96,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": false
     },
     {
       "name": "Western Cape",
-      "irrigated": 95,
+      "lat": -33.6,
+      "lng": 19.3,
+      "climate": {
+        "bio05": 28.8,
+        "bio06": 4.9,
+        "bio10": 21.3,
+        "bio11": 10.3,
+        "bio12": 956,
+        "bio18": 77,
+        "bio19": 468,
+        "hursmean": 55,
+        "fcf": 3
+      },
+      "previousRainfed": 95,
       "rainfed": 95,
-      "overlay": 95,
-      "factor": "Favorable temperature & seasonal water balance"
+      "irrigated": 95,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": false
     },
     {
-      "name": "Toronto",
-      "irrigated": 26,
-      "rainfed": 26,
-      "overlay": 26,
-      "factor": "Cold-winter constraint · monthly mean lows"
+      "name": "Shodoshima",
+      "lat": 34.48,
+      "lng": 134.28,
+      "climate": {
+        "bio05": 28.3,
+        "bio06": 5.4,
+        "bio10": 25.5,
+        "bio11": 8.3,
+        "bio12": 1212,
+        "bio18": 404,
+        "bio19": 152,
+        "hursmean": 58,
+        "fcf": 0
+      },
+      "previousRainfed": 79,
+      "rainfed": 73,
+      "irrigated": 73,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
     },
     {
-      "name": "Sahara",
-      "irrigated": 79,
-      "rainfed": 1,
-      "overlay": 79,
-      "factor": "Excess summer heat / high seasonal heat load"
+      "name": "Texas Hill Country",
+      "lat": 30.1,
+      "lng": -98.9,
+      "climate": {
+        "bio05": 32.9,
+        "bio06": 5.2,
+        "bio10": 26.7,
+        "bio11": 10,
+        "bio12": 889,
+        "bio18": 256,
+        "bio19": 149,
+        "hursmean": 58,
+        "fcf": 0,
+        "extremeMinC": -8.6
+      },
+      "previousRainfed": 98,
+      "rainfed": 45,
+      "irrigated": 45,
+      "factor": "Damaging winter freeze risk \u00c2\u00b7 annual extreme minima",
+      "freezeAssessed": true
     },
     {
-      "name": "Amazon",
-      "irrigated": 0,
-      "rainfed": 0,
-      "overlay": 0,
-      "factor": "Warm-winter flowering / chilling constraint"
+      "name": "Winter Garden",
+      "lat": 28.45,
+      "lng": -99.76,
+      "climate": {
+        "bio05": 37.1,
+        "bio06": 8.6,
+        "bio10": 30.9,
+        "bio11": 14.1,
+        "bio12": 536,
+        "bio18": 164,
+        "bio19": 78,
+        "hursmean": 54,
+        "fcf": 0,
+        "extremeMinC": -4.5
+      },
+      "previousRainfed": 86,
+      "rainfed": 64,
+      "irrigated": 64,
+      "factor": "Warm-winter flowering / chilling constraint",
+      "freezeAssessed": true
     },
     {
-      "name": "Lhasa",
-      "irrigated": 0,
-      "rainfed": 0,
-      "overlay": 0,
-      "factor": "Cold-winter constraint · monthly mean lows"
+      "name": "Laredo",
+      "lat": 27.5,
+      "lng": -99.5,
+      "climate": {
+        "bio05": 37.2,
+        "bio06": 10.2,
+        "bio10": 30.9,
+        "bio11": 15.4,
+        "bio12": 481,
+        "bio18": 131,
+        "bio19": 73,
+        "hursmean": 55,
+        "fcf": 0,
+        "extremeMinC": -1.6
+      },
+      "previousRainfed": 63,
+      "rainfed": 46,
+      "irrigated": 46,
+      "factor": "Warm-winter flowering / chilling constraint",
+      "freezeAssessed": true
     },
     {
-      "name": "Mendoza",
-      "irrigated": 98,
-      "rainfed": 33,
-      "overlay": 98,
-      "factor": "Favorable temperature & seasonal water balance"
-    },
-    {
-      "name": "Southern England",
-      "irrigated": 30,
-      "rainfed": 30,
-      "overlay": 30,
-      "factor": "Insufficient summer warmth for reliable fruiting"
-    },
-    {
-      "name": "Tokyo",
-      "irrigated": 79,
-      "rainfed": 79,
-      "overlay": 79,
-      "factor": "Wet warm season · fungal-management pressure"
-    },
-    {
-      "name": "Delhi",
-      "irrigated": 66,
+      "name": "Willamette",
+      "lat": 45.05,
+      "lng": -123,
+      "climate": {
+        "bio05": 28.5,
+        "bio06": 1.8,
+        "bio10": 19.3,
+        "bio11": 5.6,
+        "bio12": 1238,
+        "bio18": 74,
+        "bio19": 525,
+        "hursmean": 60,
+        "fcf": 0,
+        "extremeMinC": -6.9
+      },
+      "previousRainfed": 88,
       "rainfed": 66,
-      "overlay": 66,
-      "factor": "Warm-winter flowering / chilling constraint"
+      "irrigated": 66,
+      "factor": "Damaging winter freeze risk \u00c2\u00b7 annual extreme minima",
+      "freezeAssessed": true
     },
     {
-      "name": "Qinghai Plateau",
-      "irrigated": 0,
-      "rainfed": 0,
-      "overlay": 0,
-      "factor": "Insufficient summer warmth for reliable fruiting"
+      "name": "Guangzhou",
+      "lat": 23.13,
+      "lng": 113.26,
+      "climate": {
+        "bio05": 31.8,
+        "bio06": 10.1,
+        "bio10": 29.1,
+        "bio11": 15.4,
+        "bio12": 2094,
+        "bio18": 924,
+        "bio19": 170,
+        "hursmean": 62,
+        "fcf": 0
+      },
+      "previousRainfed": 63,
+      "rainfed": 25,
+      "irrigated": 25,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Lishui",
+      "lat": 28.45,
+      "lng": 119.92,
+      "climate": {
+        "bio05": 33,
+        "bio06": 1.3,
+        "bio10": 27.6,
+        "bio11": 7.6,
+        "bio12": 1645,
+        "bio18": 607,
+        "bio19": 222,
+        "hursmean": 61,
+        "fcf": 1
+      },
+      "previousRainfed": 79,
+      "rainfed": 51,
+      "irrigated": 51,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Kunming",
+      "lat": 25.04,
+      "lng": 102.7,
+      "climate": {
+        "bio05": 23.1,
+        "bio06": 3.6,
+        "bio10": 20.2,
+        "bio11": 9.8,
+        "bio12": 1019,
+        "bio18": 580,
+        "bio19": 51,
+        "hursmean": 61,
+        "fcf": 0
+      },
+      "previousRainfed": 79,
+      "rainfed": 54,
+      "irrigated": 54,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Sydney",
+      "lat": -33.87,
+      "lng": 151.2,
+      "climate": {
+        "bio05": 23.2,
+        "bio06": 11.6,
+        "bio10": 21.7,
+        "bio11": 14.3,
+        "bio12": 1139,
+        "bio18": 323,
+        "bio19": 261,
+        "hursmean": 59,
+        "fcf": 0
+      },
+      "previousRainfed": 79,
+      "rainfed": 61,
+      "irrigated": 61,
+      "factor": "Warm-winter flowering / chilling constraint",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Brisbane",
+      "lat": -27.47,
+      "lng": 153.03,
+      "climate": {
+        "bio05": 27.1,
+        "bio06": 12.3,
+        "bio10": 24.4,
+        "bio11": 16.1,
+        "bio12": 1127,
+        "bio18": 403,
+        "bio19": 163,
+        "hursmean": 58,
+        "fcf": 0
+      },
+      "previousRainfed": 50,
+      "rainfed": 35,
+      "irrigated": 35,
+      "factor": "Warm-winter flowering / chilling constraint",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Riverina",
+      "lat": -34.5,
+      "lng": 146.4,
+      "climate": {
+        "bio05": 31.5,
+        "bio06": 4.6,
+        "bio10": 24.4,
+        "bio11": 9.4,
+        "bio12": 437,
+        "bio18": 100,
+        "bio19": 128,
+        "hursmean": 53,
+        "fcf": 0
+      },
+      "previousRainfed": 92,
+      "rainfed": 92,
+      "irrigated": 99,
+      "factor": "Favorable temperature & seasonal water balance",
+      "freezeAssessed": false
+    },
+    {
+      "name": "La Plata",
+      "lat": -34.92,
+      "lng": -57.95,
+      "climate": {
+        "bio05": 26.7,
+        "bio06": 8.2,
+        "bio10": 22.7,
+        "bio11": 11.1,
+        "bio12": 1117,
+        "bio18": 331,
+        "bio19": 184,
+        "hursmean": 60,
+        "fcf": 0
+      },
+      "previousRainfed": 79,
+      "rainfed": 79,
+      "irrigated": 79,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Maldonado",
+      "lat": -34.9,
+      "lng": -54.95,
+      "climate": {
+        "bio05": 24.6,
+        "bio06": 9,
+        "bio10": 21.4,
+        "bio11": 11.6,
+        "bio12": 1189,
+        "bio18": 294,
+        "bio19": 298,
+        "hursmean": 62,
+        "fcf": 0
+      },
+      "previousRainfed": 90,
+      "rainfed": 79,
+      "irrigated": 79,
+      "factor": "Wet warm season \u00c2\u00b7 fungal-management pressure",
+      "freezeAssessed": false
     },
     {
       "name": "Tacna",
-      "irrigated": 72,
+      "lat": -18.15,
+      "lng": -70.45,
+      "climate": {
+        "bio05": 27.1,
+        "bio06": 11.7,
+        "bio10": 22.2,
+        "bio11": 14.9,
+        "bio12": 24,
+        "bio18": 5,
+        "bio19": 8,
+        "hursmean": 71,
+        "fcf": 0
+      },
+      "previousRainfed": 2,
       "rainfed": 2,
-      "overlay": 72,
-      "factor": "Warm-winter flowering / chilling constraint"
+      "irrigated": 53,
+      "factor": "Insufficient rain \u00c2\u00b7 irrigation required",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Mendoza",
+      "lat": -32.9,
+      "lng": -68.8,
+      "climate": {
+        "bio05": 30.8,
+        "bio06": 3.9,
+        "bio10": 24.7,
+        "bio11": 9.3,
+        "bio12": 208,
+        "bio18": 75,
+        "bio19": 28,
+        "hursmean": 51,
+        "fcf": 0
+      },
+      "previousRainfed": 33,
+      "rainfed": 33,
+      "irrigated": 98,
+      "factor": "Insufficient rain \u00c2\u00b7 irrigation required",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Toronto",
+      "lat": 43.65,
+      "lng": -79.38,
+      "climate": {
+        "bio05": 24.7,
+        "bio06": -5.9,
+        "bio10": 20.7,
+        "bio11": -2.2,
+        "bio12": 886,
+        "bio18": 241,
+        "bio19": 183,
+        "hursmean": 59,
+        "fcf": 92
+      },
+      "previousRainfed": 26,
+      "rainfed": 26,
+      "irrigated": 26,
+      "factor": "Cold-winter constraint \u00c2\u00b7 monthly mean lows",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Amazon",
+      "lat": -3,
+      "lng": -60,
+      "climate": {
+        "bio05": 31,
+        "bio06": 22.3,
+        "bio10": 27,
+        "bio11": 25.8,
+        "bio12": 2297,
+        "bio18": 407,
+        "bio19": 816,
+        "hursmean": 68,
+        "fcf": 0
+      },
+      "previousRainfed": 0,
+      "rainfed": 0,
+      "irrigated": 0,
+      "factor": "Warm-winter flowering / chilling constraint",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Lhasa",
+      "lat": 29.65,
+      "lng": 91.17,
+      "climate": {
+        "bio05": 16.2,
+        "bio06": -18.4,
+        "bio10": 10.9,
+        "bio11": -9,
+        "bio12": 893,
+        "bio18": 660,
+        "bio19": 8,
+        "hursmean": 52,
+        "fcf": 141
+      },
+      "previousRainfed": 0,
+      "rainfed": 0,
+      "irrigated": 0,
+      "factor": "Cold-winter constraint \u00c2\u00b7 monthly mean lows",
+      "freezeAssessed": false
+    },
+    {
+      "name": "Sahara",
+      "lat": 25,
+      "lng": 10,
+      "climate": {
+        "bio05": 38.4,
+        "bio06": 4.6,
+        "bio10": 32.6,
+        "bio11": 13.9,
+        "bio12": 12,
+        "bio18": 2,
+        "bio19": 3,
+        "hursmean": 36,
+        "fcf": 0
+      },
+      "previousRainfed": 1,
+      "rainfed": 1,
+      "irrigated": 66,
+      "factor": "Insufficient rain \u00c2\u00b7 irrigation required",
+      "freezeAssessed": false
     }
   ],
-  "failures": []
+  "failures": [],
+  "limitations": [
+    "Index thresholds are not calibrated to yields or cultivar-specific flowering observations.",
+    "Global extreme-freeze data outside CONUS remain unavailable.",
+    "Annual extreme means do not represent rare record lows; PRISM period excludes February 2021.",
+    "Hourly flower-induction temperatures, warm interruptions and freeze duration are not measured."
+  ],
+  "independentSourceChecks": {
+    "originalNineChelsaPlanesPreservedByteForByte": true,
+    "prismFahrenheitToCelsiusControls": 5
+  }
 }

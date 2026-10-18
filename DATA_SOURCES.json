@@ -64,16 +64,23 @@
       "multiplier": 1,
       "source_unit": "count",
       "name": "Frost Change Frequency"
+    },
+    {
+      "id": "extremeMinC",
+      "multiplier": 10,
+      "source_unit": "degC (converted from degF)",
+      "name": "Mean annual extreme minimum temperature, CONUS only",
+      "optional": true
     }
   ],
   "nodata": -32768,
   "encoding": "gzip / little-endian int16 / field-major row-major",
   "resampling": "Nearest-neighbor read of published COG overviews to approximately 10 arc-minute grid; not native 1 km detail",
-  "binary_sha256": "576ec4784440bba21515cf1b93f5dbee601d81a10fba87371829d32e5ea86bff",
-  "compressed_sha256": "d52e0d8a5ac8eb834d201fcc4ae50b3d786d8ed696d0ecd4d0d66d43a5426a24",
+  "binary_sha256": "2b9a4039e80947f84c56b1ee085e530c26cf1c0a82649f63afdd2b339c3aafe9",
+  "compressed_sha256": "28f748a098580e680f7daa1287ddc810dd85f14ab21ab63169847fd797378096",
   "bytes": {
-    "raw": 45100800,
-    "gzip": 12026933
+    "raw": 49610880,
+    "gzip": 12056786
   },
   "sources": {
     "bio05": {
@@ -666,8 +673,8 @@
   "dataset_url": "https://www.chelsa-climate.org/datasets/chelsa_bioclim",
   "citation": "Brun et al. (2022), ESSD 14, 5573–5603, doi:10.5194/essd-14-5573-2022; Karger et al. (2017), Scientific Data 4, 170122, doi:10.1038/sdata.2017.122",
   "score_rasters": {
-    "irrigated_offset": 40590720,
-    "rainfed_offset": 42845760,
+    "irrigated_offset": 45100800,
+    "rainfed_offset": 47355840,
     "type": "uint8",
     "nodata": 255
   },
@@ -681,5 +688,35 @@
   "excluded_fields": {
     "kg0": "Categorical COG overviews can average class codes; omitted rather than publish ambiguous classes.",
     "gdd10": "Contains negative values and nodata in controls; not needed by this model and omitted."
-  }
+  },
+  "supplemental_sources": {
+    "extremeMinC": {
+      "dataset": "PRISM Climate Group / USDA 2023 PHZM underlying temperature grid",
+      "period": "1991-2020",
+      "coverage": "Conterminous United States only",
+      "url": "https://prism.oregonstate.edu/phzm/data/2023/phzm_us_grid_2023.zip",
+      "documentation": "https://prism.oregonstate.edu/phzm/",
+      "source_unit": "degrees Fahrenheit",
+      "packed_unit": "degrees Celsius × 10",
+      "source_shape": [
+        3105,
+        7025
+      ],
+      "source_resolution_degrees": 0.008333333333333333,
+      "resampling": "Nearest 800 m source pixel at each 10-minute CHELSA cell center; no gap filling or geographic extrapolation",
+      "source_bil_sha256": "de59408b14f1ed8f3c5f02b33ef3a16a22e9621d194281199633ab45acdcfde4",
+      "source_zip_sha256": "7834bb8f93e5b62c1e09374ba65afa7c91d638a0456ea241f668d7023cc4b785",
+      "available_climate_cells": 30403,
+      "terms": "OSU permits redistribution and alteration with prominent unofficial-map disclaimer and no agency logos. This crop screen is not the official USDA Plant Hardiness Zone Map.",
+      "caveats": "Mean of annual extremes, not worst historical freeze, event probability, freeze duration or a guarantee of survival. The 1991-2020 baseline excludes February 2021."
+    }
+  },
+  "model_version": "2.1",
+  "crop_scope": "Fruit production of cultivated Olea europaea subsp. europaea (oil and table cultivars), excluding African/wild olive occurrence data and non-Olea lookalikes.",
+  "score_rules": {
+    "warm_winter": "When cold-quarter mean exceeds 11 C, score cannot exceed the cultivar-unspecific flowering-proxy response.",
+    "wet_summer": "Wetness response below 90 caps score to min(79, response).",
+    "freeze": "Where available, PRISM mean annual extreme minimum response independently caps score. Missing extremes remain unknown; no regional box overrides."
+  },
+  "model_core_sha256": "279bf202ede64f2ece2b59aa193083618b3cc20fcadfdaf64e9da58429b9db82"
 }
