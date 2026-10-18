@@ -1302,7 +1302,7 @@
   "stationDocumentation": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
   "validation": {
     "version": "3.1",
-    "timeUTC": "2026-10-18T16:27:01.815Z",
+    "timeUTC": "2026-10-18T16:27:30.636Z",
     "developmentSites": [
       "us-hi-lalamilo",
       "es_pedro_abad_longterm",
