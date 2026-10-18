@@ -896,12 +896,25 @@ function climateAt(lat,lng){
  const hit=patchAt(lat,normalizeLng(lng));
  return hit?readDetailClimate(hit.patch,hit.index,lat,normalizeLng(lng)):coarseClimateAt(lat,lng);
 }
-function scoreTerrainPatch(p){
- const g=p.grid,n=g.width*g.height;p.rainfed=new Uint8Array(n);p.irrigated=new Uint8Array(n);
- for(let i=0;i<n;i++){
+function scoreTerrainChunk(p,start,end){
+ const g=p.grid;
+ for(let i=start;i<end;i++){
   const lat=g.north-(Math.floor(i/g.width)+.5)*g.dy,lng=g.west+(i%g.width+.5)*g.dx,c=readDetailClimate(p,i,lat,lng);
   p.rainfed[i]=c?scoreOliveTerrain(c,false).score:255;p.irrigated[i]=c?scoreOliveTerrain(c,true).score:255;
  }
+}
+function scoreTerrainPatch(p){
+ const n=p.grid.width*p.grid.height;p.rainfed=new Uint8Array(n);p.irrigated=new Uint8Array(n);
+ scoreTerrainChunk(p,0,n);
+}
+async function scoreTerrainPatchAsync(p,signal){
+ const n=p.grid.width*p.grid.height;p.rainfed=new Uint8Array(n);p.irrigated=new Uint8Array(n);
+ for(let start=0;start<n;start+=2048){
+  if(signal?.aborted)return false;
+  scoreTerrainChunk(p,start,Math.min(start+2048,n));
+  await new Promise(resolve=>setTimeout(resolve,0));
+ }
+ return !signal?.aborted;
 }
 
 const landBytes=Uint8Array.from(atob($('land-data').textContent.trim()),c=>c.charCodeAt(0));
@@ -1477,7 +1490,7 @@ async function loadNativeTerrain(){
  try{
   await Promise.all([worker(),worker(),worker()]);if(generation!==detailGeneration||signal.aborted)return;
   const p={grid:{west:nativeWest+x0*dx,north:nativeNorth-y0*dx,dx,dy:dx,width:W,height:H},fields:results.map(r=>r.field),planes:results.map(r=>r.plane),resolutionLabel:level===0?'Native 30″ · approximately 0.9 km':`Source overview · approximately ${(dx*111.32).toFixed(1)} km`};
-  scoreTerrainPatch(p);if(generation!==detailGeneration)return;activeTerrainDetail=p;surface.draw();refreshRegionScores();
+  if(!await scoreTerrainPatchAsync(p,signal)||generation!==detailGeneration)return;activeTerrainDetail=p;surface.draw();refreshRegionScores();
   $('terrain-status').textContent=p.resolutionLabel+' · seasonal climate';
   if(currentPoint){const tab=document.querySelector('.tab.active')?.dataset.tab,scroll=$('sidebar').scrollTop;inspect(...currentPoint);renderOrchardEvidence();bindLocalCultivar();setTab(tab||'explore');$('sidebar').scrollTop=scroll;}
  }catch(e){if(generation!==detailGeneration||signal.aborted)return;$('terrain-status').textContent='Online detail unavailable · embedded climate shown';}
