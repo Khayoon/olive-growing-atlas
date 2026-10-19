@@ -1,0 +1,3504 @@
+{
+  "date": "2026-10-19",
+  "scope": "v7 source model, coarse grid desert points; existing native orchard controls only",
+  "rows": [
+    {
+      "name": "Siwa",
+      "lat": 29.203,
+      "lng": 25.519,
+      "climate": {
+        "bio05": 36.3,
+        "bio06": 6.5,
+        "bio10": 29.9,
+        "bio11": 13.3,
+        "bio12": 11,
+        "bio17": 0,
+        "bio18": 0,
+        "bio19": 7,
+        "hursmean": 47,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.2,
+        "freezeWorstC": -1.5
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 6.5,
+          "max": 17.2
+        },
+        {
+          "month": 2,
+          "min": 7.1,
+          "max": 19
+        },
+        {
+          "month": 3,
+          "min": 9.7,
+          "max": 22.6
+        },
+        {
+          "month": 4,
+          "min": 13.7,
+          "max": 28
+        },
+        {
+          "month": 10,
+          "min": 16.6,
+          "max": 28.6
+        },
+        {
+          "month": 11,
+          "min": 11.5,
+          "max": 22.8
+        },
+        {
+          "month": 12,
+          "min": 7.6,
+          "max": 18.3
+        }
+      ],
+      "irrigated": 94,
+      "rainfed": 1,
+      "unvalidatedNonCompensatingThermalCandidate": 86,
+      "chillCU": 1034,
+      "chillAttainment": 0.9866830993861747,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 98.75,
+        "chill": 98.93464795089398,
+        "summer": 85.5,
+        "heat": 90.90000000000002,
+        "wet": 100,
+        "water": 92.44,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.24100151062015,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 99.24100151062015,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 1.2,
+        "adjustedWorstC": -1.5,
+        "adjustedDecileC": -0.1,
+        "rawMeanC": 1.2,
+        "quantiles": [
+          -1.5,
+          -0.8,
+          -0.1,
+          0.5,
+          1.2,
+          1.5,
+          2,
+          2.8,
+          4.6
+        ],
+        "support": 0,
+        "nearestStationKm": 7342.335380134428
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 94,
+          "cu": 1034,
+          "chill": 98.93464795089398,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 75,
+          "cu": 834,
+          "chill": 75.13342279243699,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 69,
+          "cu": 834,
+          "chill": 68.99091823933725,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Biskra",
+      "lat": 34.851,
+      "lng": 5.728,
+      "climate": {
+        "bio05": 39.1,
+        "bio06": 5.9,
+        "bio10": 33.4,
+        "bio11": 12.4,
+        "bio12": 142,
+        "bio17": 12,
+        "bio18": 12,
+        "bio19": 42,
+        "hursmean": 46,
+        "fcf": 0,
+        "globalExtremeMeanC": 0,
+        "freezeWorstC": -2.9
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.9,
+          "max": 15.6
+        },
+        {
+          "month": 2,
+          "min": 7.1,
+          "max": 17.9
+        },
+        {
+          "month": 3,
+          "min": 10.4,
+          "max": 22
+        },
+        {
+          "month": 4,
+          "min": 13.9,
+          "max": 25.8
+        },
+        {
+          "month": 10,
+          "min": 17.3,
+          "max": 27.5
+        },
+        {
+          "month": 11,
+          "min": 11.2,
+          "max": 20.6
+        },
+        {
+          "month": 12,
+          "min": 7.1,
+          "max": 16.3
+        }
+      ],
+      "irrigated": 65,
+      "rainfed": 17,
+      "unvalidatedNonCompensatingThermalCandidate": 48,
+      "chillCU": 1280,
+      "chillAttainment": 0.9954061472327408,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 98.25,
+        "chill": 99.63249177861927,
+        "summer": 48.000000000000014,
+        "heat": 71.29999999999998,
+        "wet": 100,
+        "water": 96.84,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 97.30147781372068,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 97.30147781372068,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 0,
+        "adjustedWorstC": -2.9,
+        "adjustedDecileC": -1.5,
+        "rawMeanC": 0,
+        "quantiles": [
+          -2.9,
+          -2.3,
+          -1.5,
+          -0.7,
+          -0.1,
+          0.2,
+          0.5,
+          1.2,
+          1.5
+        ],
+        "support": 0,
+        "nearestStationKm": 760.9363917896128
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 65,
+          "cu": 1280,
+          "chill": 99.63249177861927,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 65,
+          "cu": 1038,
+          "chill": 87.17110998135047,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 65,
+          "cu": 1038,
+          "chill": 82.66439764941438,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Ghardaia",
+      "lat": 32.489,
+      "lng": 3.674,
+      "climate": {
+        "bio05": 39.1,
+        "bio06": 4.7,
+        "bio10": 32.6,
+        "bio11": 11.5,
+        "bio12": 77,
+        "bio17": 8,
+        "bio18": 8,
+        "bio19": 19,
+        "hursmean": 44,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.7,
+        "freezeWorstC": -2.7
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 4.7,
+          "max": 14.9
+        },
+        {
+          "month": 2,
+          "min": 6.3,
+          "max": 17.8
+        },
+        {
+          "month": 3,
+          "min": 9.4,
+          "max": 21.6
+        },
+        {
+          "month": 4,
+          "min": 12.9,
+          "max": 25.8
+        },
+        {
+          "month": 10,
+          "min": 16.1,
+          "max": 27.2
+        },
+        {
+          "month": 11,
+          "min": 10,
+          "max": 20.2
+        },
+        {
+          "month": 12,
+          "min": 6.1,
+          "max": 15.9
+        }
+      ],
+      "irrigated": 79,
+      "rainfed": 6,
+      "unvalidatedNonCompensatingThermalCandidate": 59,
+      "chillCU": 1427,
+      "chillAttainment": 0.9973861432781859,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 97.25,
+        "chill": 99.79089146225488,
+        "summer": 58.66666666666664,
+        "heat": 71.29999999999998,
+        "wet": 100,
+        "water": 95.08,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 95.05494270324706,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 95.05494270324706,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -0.7,
+        "adjustedWorstC": -2.7,
+        "adjustedDecileC": -2.2,
+        "rawMeanC": -0.7,
+        "quantiles": [
+          -2.7,
+          -2.6,
+          -2.2,
+          -1.8,
+          -1.4,
+          -1.1,
+          0,
+          0.9,
+          1.5
+        ],
+        "support": 0,
+        "nearestStationKm": 744.5273578384871
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 79,
+          "cu": 1427,
+          "chill": 99.79089146225488,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 79,
+          "cu": 1188,
+          "chill": 92.17728230351429,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 79,
+          "cu": 1188,
+          "chill": 88.96780130482283,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Adrar",
+      "lat": 27.877,
+      "lng": -0.294,
+      "climate": {
+        "bio05": 44.5,
+        "bio06": 5.6,
+        "bio10": 37,
+        "bio11": 14.4,
+        "bio12": 20,
+        "bio17": 1,
+        "bio18": 2,
+        "bio19": 6,
+        "hursmean": 36,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.2,
+        "freezeWorstC": -2.9
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.6,
+          "max": 18.6
+        },
+        {
+          "month": 2,
+          "min": 8.9,
+          "max": 22.5
+        },
+        {
+          "month": 3,
+          "min": 12.7,
+          "max": 27.1
+        },
+        {
+          "month": 4,
+          "min": 17.1,
+          "max": 31.8
+        },
+        {
+          "month": 10,
+          "min": 19.2,
+          "max": 32.6
+        },
+        {
+          "month": 11,
+          "min": 11.8,
+          "max": 24.8
+        },
+        {
+          "month": 12,
+          "min": 7,
+          "max": 19.6
+        }
+      ],
+      "irrigated": 14,
+      "rainfed": 2,
+      "unvalidatedNonCompensatingThermalCandidate": 10,
+      "chillCU": 697,
+      "chillAttainment": 0.9221235218988325,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 98,
+        "chill": 93.7698817519066,
+        "summer": 10,
+        "heat": 29,
+        "wet": 100,
+        "water": 92.8,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 97.58342170715332,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 97.58342170715332,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 0.2,
+        "adjustedWorstC": -2.9,
+        "adjustedDecileC": -1.4,
+        "rawMeanC": 0.2,
+        "quantiles": [
+          -2.9,
+          -1.9,
+          -1.4,
+          -0.7,
+          -0.3,
+          0.2,
+          1.2,
+          1.9,
+          2.8
+        ],
+        "support": 0,
+        "nearestStationKm": 9134.444612156118
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 14,
+          "cu": 697,
+          "chill": 93.7698817519066,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 14,
+          "cu": 545,
+          "chill": 47.338684973785455,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 14,
+          "cu": 545,
+          "chill": 42.61765069333913,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "In Salah",
+      "lat": 27.192,
+      "lng": 2.483,
+      "climate": {
+        "bio05": 44.1,
+        "bio06": 6.2,
+        "bio10": 37,
+        "bio11": 14.9,
+        "bio12": 15,
+        "bio17": 1,
+        "bio18": 1,
+        "bio19": 6,
+        "hursmean": 37,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.6,
+        "freezeWorstC": -3.3
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 6.2,
+          "max": 19.1
+        },
+        {
+          "month": 2,
+          "min": 9.2,
+          "max": 22.9
+        },
+        {
+          "month": 3,
+          "min": 13.2,
+          "max": 27.6
+        },
+        {
+          "month": 4,
+          "min": 17.7,
+          "max": 32.5
+        },
+        {
+          "month": 10,
+          "min": 19.8,
+          "max": 33.4
+        },
+        {
+          "month": 11,
+          "min": 12.4,
+          "max": 25.5
+        },
+        {
+          "month": 12,
+          "min": 7.5,
+          "max": 20.3
+        }
+      ],
+      "irrigated": 14,
+      "rainfed": 1,
+      "unvalidatedNonCompensatingThermalCandidate": 10,
+      "chillCU": 613,
+      "chillAttainment": 0.8722481155932573,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 98.5,
+        "chill": 89.77984924746059,
+        "summer": 10,
+        "heat": 32.19999999999999,
+        "wet": 100,
+        "water": 92.6,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 97.92907218933107,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 97.92907218933107,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 0.6,
+        "adjustedWorstC": -3.3,
+        "adjustedDecileC": -1.1,
+        "rawMeanC": 0.6,
+        "quantiles": [
+          -3.3,
+          -1.6,
+          -1.1,
+          -0.6,
+          -0.2,
+          0.9,
+          1.7,
+          2.9,
+          4.7
+        ],
+        "support": 0,
+        "nearestStationKm": 9398.30882151617
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 14,
+          "cu": 613,
+          "chill": 89.77984924746059,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 14,
+          "cu": 453,
+          "chill": 38.58828179390666,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 14,
+          "cu": 453,
+          "chill": 35.2832433898368,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Tamanrasset",
+      "lat": 22.786,
+      "lng": 5.523,
+      "climate": {
+        "bio05": 35.5,
+        "bio06": 5.7,
+        "bio10": 29.9,
+        "bio11": 14.1,
+        "bio12": 48,
+        "bio17": 6,
+        "bio18": 20,
+        "bio19": 6,
+        "hursmean": 34,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.6,
+        "freezeWorstC": -3.3
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.7,
+          "max": 19.1
+        },
+        {
+          "month": 2,
+          "min": 7.9,
+          "max": 21.9
+        },
+        {
+          "month": 3,
+          "min": 11.6,
+          "max": 25.4
+        },
+        {
+          "month": 4,
+          "min": 16.4,
+          "max": 30.4
+        },
+        {
+          "month": 10,
+          "min": 17.1,
+          "max": 29.2
+        },
+        {
+          "month": 11,
+          "min": 11.5,
+          "max": 24.1
+        },
+        {
+          "month": 12,
+          "min": 7.5,
+          "max": 20.5
+        }
+      ],
+      "irrigated": 93,
+      "rainfed": 4,
+      "unvalidatedNonCompensatingThermalCandidate": 86,
+      "chillCU": 673,
+      "chillAttainment": 0.9104336761128481,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 98.08333333333333,
+        "chill": 92.83469408902785,
+        "summer": 85.5,
+        "heat": 96.5,
+        "wet": 100,
+        "water": 93.92,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 96.04034347534179,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 96.04034347534179,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -0.6,
+        "adjustedWorstC": -3.3,
+        "adjustedDecileC": -2,
+        "rawMeanC": -0.6,
+        "quantiles": [
+          -3.3,
+          -2.6,
+          -2,
+          -1.5,
+          -1.1,
+          -0.3,
+          0.5,
+          1.9,
+          3.6
+        ],
+        "support": 0,
+        "nearestStationKm": 9623.488117695142
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 93,
+          "cu": 673,
+          "chill": 92.83469408902785,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 44,
+          "cu": 513,
+          "chill": 44.15310284368421,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 40,
+          "cu": 513,
+          "chill": 39.90958869437837,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Kufra",
+      "lat": 24.183,
+      "lng": 23.312,
+      "climate": {
+        "bio05": 37,
+        "bio06": 4.4,
+        "bio10": 31.3,
+        "bio11": 13.5,
+        "bio12": 1,
+        "bio17": 0,
+        "bio18": 0,
+        "bio19": 0,
+        "hursmean": 40,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.5,
+        "freezeWorstC": -3
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 4.4,
+          "max": 18.1
+        },
+        {
+          "month": 2,
+          "min": 6.1,
+          "max": 20.8
+        },
+        {
+          "month": 3,
+          "min": 10.3,
+          "max": 25.5
+        },
+        {
+          "month": 4,
+          "min": 16,
+          "max": 31.8
+        },
+        {
+          "month": 10,
+          "min": 15.8,
+          "max": 29.8
+        },
+        {
+          "month": 11,
+          "min": 9.7,
+          "max": 23.6
+        },
+        {
+          "month": 12,
+          "min": 5.4,
+          "max": 19.2
+        }
+      ],
+      "irrigated": 90,
+      "rainfed": 0,
+      "unvalidatedNonCompensatingThermalCandidate": 76,
+      "chillCU": 915,
+      "chillAttainment": 0.9762238818942429,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 97,
+        "chill": 98.09791055153943,
+        "summer": 75.99999999999999,
+        "heat": 86,
+        "wet": 100,
+        "water": 92.04,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 96.47047271728513,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 96.47047271728513,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -0.5,
+        "adjustedWorstC": -3,
+        "adjustedDecileC": -2.1,
+        "rawMeanC": -0.5,
+        "quantiles": [
+          -3,
+          -2.3,
+          -2.1,
+          -1.2,
+          -0.8,
+          -0.1,
+          0.3,
+          1.5,
+          3.4
+        ],
+        "support": 0,
+        "nearestStationKm": 7758.671703878814
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 90,
+          "cu": 915,
+          "chill": 98.09791055153943,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 66,
+          "cu": 724,
+          "chill": 65.58443482057486,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 59,
+          "cu": 724,
+          "chill": 59.263353627057846,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Farafra",
+      "lat": 27.059,
+      "lng": 27.97,
+      "climate": {
+        "bio05": 36.8,
+        "bio06": 5.3,
+        "bio10": 30.9,
+        "bio11": 13.4,
+        "bio12": 2,
+        "bio17": 0,
+        "bio18": 0,
+        "bio19": 1,
+        "hursmean": 44,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.1,
+        "freezeWorstC": -3
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.3,
+          "max": 17.6
+        },
+        {
+          "month": 2,
+          "min": 6.5,
+          "max": 19.7
+        },
+        {
+          "month": 3,
+          "min": 9.8,
+          "max": 23.9
+        },
+        {
+          "month": 4,
+          "min": 14.5,
+          "max": 29.7
+        },
+        {
+          "month": 10,
+          "min": 16.2,
+          "max": 29.3
+        },
+        {
+          "month": 11,
+          "min": 10.7,
+          "max": 23.1
+        },
+        {
+          "month": 12,
+          "min": 6.4,
+          "max": 18.5
+        }
+      ],
+      "irrigated": 91,
+      "rainfed": 0,
+      "unvalidatedNonCompensatingThermalCandidate": 81,
+      "chillCU": 1001,
+      "chillAttainment": 0.984432911809072,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 97.75,
+        "chill": 98.75463294472576,
+        "summer": 80.5,
+        "heat": 87.40000000000002,
+        "wet": 100,
+        "water": 92.08,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 97.571150970459,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 97.571150970459,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 0.1,
+        "adjustedWorstC": -3,
+        "adjustedDecileC": -1.3,
+        "rawMeanC": 0.1,
+        "quantiles": [
+          -3,
+          -1.6,
+          -1.3,
+          -0.9,
+          -0.4,
+          0.5,
+          1,
+          1.7,
+          4.3
+        ],
+        "support": 0,
+        "nearestStationKm": 7208.823396341934
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 91,
+          "cu": 1001,
+          "chill": 98.75463294472576,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 74,
+          "cu": 816,
+          "chill": 73.71458478400946,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 67,
+          "cu": 816,
+          "chill": 67.49075176405591,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Dakhla",
+      "lat": 25.486,
+      "lng": 28.979,
+      "climate": {
+        "bio05": 36.9,
+        "bio06": 4.7,
+        "bio10": 31,
+        "bio11": 13.6,
+        "bio12": 0,
+        "bio17": 0,
+        "bio18": 0,
+        "bio19": 0,
+        "hursmean": 40,
+        "fcf": 0,
+        "globalExtremeMeanC": 0,
+        "freezeWorstC": -2.5
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 4.7,
+          "max": 18.3
+        },
+        {
+          "month": 2,
+          "min": 6,
+          "max": 20.5
+        },
+        {
+          "month": 3,
+          "min": 9.7,
+          "max": 25.1
+        },
+        {
+          "month": 4,
+          "min": 14.9,
+          "max": 31
+        },
+        {
+          "month": 10,
+          "min": 15.6,
+          "max": 30
+        },
+        {
+          "month": 11,
+          "min": 9.9,
+          "max": 23.9
+        },
+        {
+          "month": 12,
+          "min": 5.9,
+          "max": 19.4
+        }
+      ],
+      "irrigated": 91,
+      "rainfed": 0,
+      "unvalidatedNonCompensatingThermalCandidate": 80,
+      "chillCU": 892,
+      "chillAttainment": 0.9732596527291998,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 97.25,
+        "chill": 97.86077221833598,
+        "summer": 80,
+        "heat": 86.70000000000002,
+        "wet": 100,
+        "water": 92,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 97.55732574462888,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 97.55732574462888,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 0,
+        "adjustedWorstC": -2.5,
+        "adjustedDecileC": -1.4,
+        "rawMeanC": 0,
+        "quantiles": [
+          -2.5,
+          -1.7,
+          -1.4,
+          -0.9,
+          -0.3,
+          0.1,
+          0.9,
+          1.8,
+          2.5
+        ],
+        "support": 0,
+        "nearestStationKm": 7178.933611500618
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 91,
+          "cu": 892,
+          "chill": 97.86077221833598,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 63,
+          "cu": 701,
+          "chill": 63.351861644740936,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 57,
+          "cu": 701,
+          "chill": 57.10338562503702,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Kharga",
+      "lat": 25.442,
+      "lng": 30.557,
+      "climate": {
+        "bio05": 38.6,
+        "bio06": 6.3,
+        "bio10": 32.7,
+        "bio11": 15,
+        "bio12": 1,
+        "bio17": 0,
+        "bio18": 0,
+        "bio19": 0,
+        "hursmean": 41,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.5,
+        "freezeWorstC": -0.4
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 6.3,
+          "max": 19.7
+        },
+        {
+          "month": 2,
+          "min": 7.6,
+          "max": 21.9
+        },
+        {
+          "month": 3,
+          "min": 11.5,
+          "max": 26.5
+        },
+        {
+          "month": 4,
+          "min": 16.7,
+          "max": 32.4
+        },
+        {
+          "month": 10,
+          "min": 18,
+          "max": 32
+        },
+        {
+          "month": 11,
+          "min": 11.9,
+          "max": 25.7
+        },
+        {
+          "month": 12,
+          "min": 7.5,
+          "max": 20.9
+        }
+      ],
+      "irrigated": 77,
+      "rainfed": 0,
+      "unvalidatedNonCompensatingThermalCandidate": 57,
+      "chillCU": 648,
+      "chillAttainment": 0.8962347619651782,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 98.58333333333333,
+        "chill": 91.69878095721425,
+        "summer": 57.3333333333333,
+        "heat": 74.79999999999998,
+        "wet": 100,
+        "water": 92.04,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.36594047546384,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 99.36594047546384,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 1.5,
+        "adjustedWorstC": -0.4,
+        "adjustedDecileC": -0.1,
+        "rawMeanC": 1.5,
+        "quantiles": [
+          -0.4,
+          -0.2,
+          -0.1,
+          0.2,
+          1.1,
+          1.6,
+          2.2,
+          3.2,
+          4.4
+        ],
+        "support": 0,
+        "nearestStationKm": 7021.754690840351
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 77,
+          "cu": 648,
+          "chill": 91.69878095721425,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 41,
+          "cu": 484,
+          "chill": 41.38584453941458,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 38,
+          "cu": 484,
+          "chill": 37.59383964648366,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "El Oued",
+      "lat": 33.36,
+      "lng": 6.86,
+      "climate": {
+        "bio05": 39.3,
+        "bio06": 5,
+        "bio10": 32.5,
+        "bio11": 11.7,
+        "bio12": 72,
+        "bio17": 4,
+        "bio18": 4,
+        "bio19": 30,
+        "hursmean": 46,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.1,
+        "freezeWorstC": -3.9
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5,
+          "max": 15
+        },
+        {
+          "month": 2,
+          "min": 6.4,
+          "max": 17.7
+        },
+        {
+          "month": 3,
+          "min": 9.7,
+          "max": 22
+        },
+        {
+          "month": 4,
+          "min": 13.5,
+          "max": 26.5
+        },
+        {
+          "month": 10,
+          "min": 16.9,
+          "max": 28
+        },
+        {
+          "month": 11,
+          "min": 10.6,
+          "max": 20.7
+        },
+        {
+          "month": 12,
+          "min": 6.4,
+          "max": 15.8
+        }
+      ],
+      "irrigated": 81,
+      "rainfed": 6,
+      "unvalidatedNonCompensatingThermalCandidate": 60,
+      "chillCU": 1395,
+      "chillAttainment": 0.9970566103013383,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 97.5,
+        "chill": 99.76452882410706,
+        "summer": 60,
+        "heat": 69.90000000000002,
+        "wet": 100,
+        "water": 94.88,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 96.9210132598877,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 96.9210132598877,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -0.1,
+        "adjustedWorstC": -3.9,
+        "adjustedDecileC": -1.5,
+        "rawMeanC": -0.1,
+        "quantiles": [
+          -3.9,
+          -1.9,
+          -1.5,
+          -0.9,
+          -0.7,
+          0,
+          0.7,
+          1.9,
+          2.2
+        ],
+        "support": 0,
+        "nearestStationKm": 924.9661143306765
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 81,
+          "cu": 1395,
+          "chill": 99.76452882410706,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 81,
+          "cu": 1156,
+          "chill": 91.31335714124042,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Frantoio": {
+          "score": 81,
+          "cu": 1156,
+          "chill": 87.84788073222776,
+          "limiting": "Favorable modeled production conditions"
+        }
+      }
+    },
+    {
+      "name": "Touggourt",
+      "lat": 33.1,
+      "lng": 6.07,
+      "climate": {
+        "bio05": 39.9,
+        "bio06": 5.1,
+        "bio10": 33.1,
+        "bio11": 11.9,
+        "bio12": 63,
+        "bio17": 3,
+        "bio18": 3,
+        "bio19": 30,
+        "hursmean": 45,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.3,
+        "freezeWorstC": -3.2
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.1,
+          "max": 15.5
+        },
+        {
+          "month": 2,
+          "min": 6.5,
+          "max": 18.3
+        },
+        {
+          "month": 3,
+          "min": 9.8,
+          "max": 22.4
+        },
+        {
+          "month": 4,
+          "min": 13.9,
+          "max": 26.9
+        },
+        {
+          "month": 10,
+          "min": 16.9,
+          "max": 28.3
+        },
+        {
+          "month": 11,
+          "min": 10.5,
+          "max": 21
+        },
+        {
+          "month": 12,
+          "min": 6.4,
+          "max": 16.3
+        }
+      ],
+      "irrigated": 70,
+      "rainfed": 5,
+      "unvalidatedNonCompensatingThermalCandidate": 52,
+      "chillCU": 1272,
+      "chillAttainment": 0.9952562771363965,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 97.58333333333333,
+        "chill": 99.62050217091172,
+        "summer": 51.999999999999986,
+        "heat": 65.70000000000002,
+        "wet": 100,
+        "water": 94.52,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 96.28896903991699,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 96.28896903991699,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -0.3,
+        "adjustedWorstC": -3.2,
+        "adjustedDecileC": -1.7,
+        "rawMeanC": -0.3,
+        "quantiles": [
+          -3.2,
+          -2.1,
+          -1.7,
+          -1.4,
+          -1,
+          -0.4,
+          0.2,
+          1.5,
+          2.2
+        ],
+        "support": 0,
+        "nearestStationKm": 875.0497174136685
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 70,
+          "cu": 1272,
+          "chill": 99.62050217091172,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 70,
+          "cu": 1030,
+          "chill": 86.82655288669282,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 70,
+          "cu": 1030,
+          "chill": 82.24595160936161,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Ouargla",
+      "lat": 31.954,
+      "lng": 5.325,
+      "climate": {
+        "bio05": 40.9,
+        "bio06": 5.1,
+        "bio10": 34.1,
+        "bio11": 12.4,
+        "bio12": 40,
+        "bio17": 2,
+        "bio18": 2,
+        "bio19": 13,
+        "hursmean": 43,
+        "fcf": 0,
+        "globalExtremeMeanC": -1,
+        "freezeWorstC": -3.3
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 5.1,
+          "max": 15.9
+        },
+        {
+          "month": 2,
+          "min": 7,
+          "max": 19
+        },
+        {
+          "month": 3,
+          "min": 10.4,
+          "max": 23.2
+        },
+        {
+          "month": 4,
+          "min": 14.6,
+          "max": 27.9
+        },
+        {
+          "month": 10,
+          "min": 17.2,
+          "max": 29
+        },
+        {
+          "month": 11,
+          "min": 10.7,
+          "max": 21.6
+        },
+        {
+          "month": 12,
+          "min": 6.5,
+          "max": 16.8
+        }
+      ],
+      "irrigated": 53,
+      "rainfed": 3,
+      "unvalidatedNonCompensatingThermalCandidate": 39,
+      "chillCU": 1162,
+      "chillAttainment": 0.9925026630730688,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 97.58333333333333,
+        "chill": 99.4002130458455,
+        "summer": 38.999999999999986,
+        "heat": 57.80000000000001,
+        "wet": 100,
+        "water": 93.6,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 93.81697578430177,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 93.81697578430177,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -1,
+        "adjustedWorstC": -3.3,
+        "adjustedDecileC": -2.7,
+        "rawMeanC": -1,
+        "quantiles": [
+          -3.3,
+          -2.8,
+          -2.7,
+          -1.9,
+          -1.6,
+          -1.4,
+          -0.7,
+          0.8,
+          1.8
+        ],
+        "support": 0,
+        "nearestStationKm": 2573.2544205514155
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 53,
+          "cu": 1162,
+          "chill": 99.4002130458455,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 53,
+          "cu": 948,
+          "chill": 82.73628429866397,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 53,
+          "cu": 948,
+          "chill": 77.41105410605917,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Timbuktu",
+      "lat": 16.773,
+      "lng": -3.008,
+      "climate": {
+        "bio05": 40.9,
+        "bio06": 14.1,
+        "bio10": 34.2,
+        "bio11": 22.5,
+        "bio12": 163,
+        "bio17": 1,
+        "bio18": 65,
+        "bio19": 1,
+        "hursmean": 38,
+        "fcf": 0,
+        "globalExtremeMeanC": 9.9,
+        "freezeWorstC": 7.2
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 14.1,
+          "max": 27.5
+        },
+        {
+          "month": 2,
+          "min": 16.6,
+          "max": 31.2
+        },
+        {
+          "month": 3,
+          "min": 19.8,
+          "max": 34.9
+        },
+        {
+          "month": 4,
+          "min": 23.9,
+          "max": 38.8
+        },
+        {
+          "month": 10,
+          "min": 24.5,
+          "max": 37.8
+        },
+        {
+          "month": 11,
+          "min": 19.5,
+          "max": 33.5
+        },
+        {
+          "month": 12,
+          "min": 15.5,
+          "max": 29.1
+        }
+      ],
+      "irrigated": 21,
+      "rainfed": 21,
+      "unvalidatedNonCompensatingThermalCandidate": 21,
+      "chillCU": 1,
+      "chillAttainment": 0.008300627346712285,
+      "limiting": "Cultivar flowering / winter-chill limitation",
+      "components": {
+        "cold": 64,
+        "chill": 20.664050187736983,
+        "summer": 37.99999999999997,
+        "heat": 57.80000000000001,
+        "wet": 100,
+        "water": 97.26,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 100,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 100,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 9.9,
+        "adjustedWorstC": 7.2,
+        "adjustedDecileC": 8,
+        "rawMeanC": 9.9,
+        "quantiles": [
+          7.2,
+          7.9,
+          8,
+          8.6,
+          9.4,
+          10.1,
+          10.8,
+          12.4,
+          13.3
+        ],
+        "support": 0,
+        "nearestStationKm": 14978.735934343571
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 21,
+          "cu": 1,
+          "chill": 20.664050187736983,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Leccino": {
+          "score": 21,
+          "cu": 1,
+          "chill": 20.658444407436384,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 21,
+          "cu": 1,
+          "chill": 20.65783474065144,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Bilma",
+      "lat": 18.685,
+      "lng": 12.923,
+      "climate": {
+        "bio05": 40.6,
+        "bio06": 7.7,
+        "bio10": 33.4,
+        "bio11": 17,
+        "bio12": 8,
+        "bio17": 0,
+        "bio18": 7,
+        "bio19": 0,
+        "hursmean": 36,
+        "fcf": 0,
+        "globalExtremeMeanC": 3.1,
+        "freezeWorstC": 0.6
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 7.7,
+          "max": 22.5
+        },
+        {
+          "month": 2,
+          "min": 10.1,
+          "max": 25.9
+        },
+        {
+          "month": 3,
+          "min": 14.8,
+          "max": 31
+        },
+        {
+          "month": 4,
+          "min": 19.6,
+          "max": 36.9
+        },
+        {
+          "month": 10,
+          "min": 18.7,
+          "max": 34.3
+        },
+        {
+          "month": 11,
+          "min": 12.6,
+          "max": 28.2
+        },
+        {
+          "month": 12,
+          "min": 8.7,
+          "max": 23.7
+        }
+      ],
+      "irrigated": 38,
+      "rainfed": 1,
+      "unvalidatedNonCompensatingThermalCandidate": 38,
+      "chillCU": 249,
+      "chillAttainment": 0.2285763900739448,
+      "limiting": "Cultivar flowering / winter-chill limitation",
+      "components": {
+        "cold": 99.75,
+        "chill": 38.28611120591559,
+        "summer": 48.000000000000014,
+        "heat": 60.19999999999999,
+        "wet": 100,
+        "water": 92.32,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.95940513610839,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 99.95940513610839,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": 3.1,
+        "adjustedWorstC": 0.6,
+        "adjustedDecileC": 1.9,
+        "rawMeanC": 3.1,
+        "quantiles": [
+          0.6,
+          1.5,
+          1.9,
+          2.4,
+          2.7,
+          3,
+          4,
+          5,
+          6
+        ],
+        "support": 0,
+        "nearestStationKm": 10216.978737633326
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 38,
+          "cu": 249,
+          "chill": 38.28611120591559,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Leccino": {
+          "score": 22,
+          "cu": 141,
+          "chill": 22.456078606294305,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 22,
+          "cu": 141,
+          "chill": 22.21138516402023,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Merzouga",
+      "lat": 31.099,
+      "lng": -4.013,
+      "climate": {
+        "bio05": 40.9,
+        "bio06": 4,
+        "bio10": 34.1,
+        "bio11": 12.6,
+        "bio12": 72,
+        "bio17": 7,
+        "bio18": 7,
+        "bio19": 21,
+        "hursmean": 39,
+        "fcf": 0,
+        "globalExtremeMeanC": -2,
+        "freezeWorstC": -5.6
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 4,
+          "max": 16.4
+        },
+        {
+          "month": 2,
+          "min": 6.8,
+          "max": 19.6
+        },
+        {
+          "month": 3,
+          "min": 10.6,
+          "max": 24
+        },
+        {
+          "month": 4,
+          "min": 14,
+          "max": 27.8
+        },
+        {
+          "month": 10,
+          "min": 16.3,
+          "max": 28.4
+        },
+        {
+          "month": 11,
+          "min": 10.2,
+          "max": 21.8
+        },
+        {
+          "month": 12,
+          "min": 5.8,
+          "max": 17.4
+        }
+      ],
+      "irrigated": 53,
+      "rainfed": 6,
+      "unvalidatedNonCompensatingThermalCandidate": 39,
+      "chillCU": 1080,
+      "chillAttainment": 0.9892270688935823,
+      "limiting": "Seasonal warmth / ripening constraint",
+      "components": {
+        "cold": 96.66666666666667,
+        "chill": 99.13816551148658,
+        "summer": 38.999999999999986,
+        "heat": 57.80000000000001,
+        "wet": 100,
+        "water": 94.88,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 88.66963233947754,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 88.66963233947754,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -2,
+        "adjustedWorstC": -5.6,
+        "adjustedDecileC": -3.7,
+        "rawMeanC": -2,
+        "quantiles": [
+          -5.6,
+          -5,
+          -3.7,
+          -3.1,
+          -2.2,
+          -1.7,
+          -1.1,
+          0.2,
+          0.8
+        ],
+        "support": 0,
+        "nearestStationKm": 3449.0433768132975
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 53,
+          "cu": 1080,
+          "chill": 99.13816551148658,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Leccino": {
+          "score": 53,
+          "cu": 886,
+          "chill": 78.8953873556056,
+          "limiting": "Seasonal warmth / ripening constraint"
+        },
+        "Frantoio": {
+          "score": 53,
+          "cu": 886,
+          "chill": 73.07280157131477,
+          "limiting": "Seasonal warmth / ripening constraint"
+        }
+      }
+    },
+    {
+      "name": "Ouarzazate",
+      "lat": 30.921,
+      "lng": -6.91,
+      "climate": {
+        "bio05": 37.3,
+        "bio06": 1.4,
+        "bio10": 28.9,
+        "bio11": 10.5,
+        "bio12": 118,
+        "bio17": 14,
+        "bio18": 17,
+        "bio19": 41,
+        "hursmean": 44,
+        "fcf": 0,
+        "globalExtremeMeanC": -3.3,
+        "freezeWorstC": -6.7
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 1.4,
+          "max": 15.7
+        },
+        {
+          "month": 2,
+          "min": 3.5,
+          "max": 17.8
+        },
+        {
+          "month": 3,
+          "min": 6.4,
+          "max": 21.7
+        },
+        {
+          "month": 4,
+          "min": 9.1,
+          "max": 25.3
+        },
+        {
+          "month": 10,
+          "min": 11.9,
+          "max": 25.7
+        },
+        {
+          "month": 11,
+          "min": 6.4,
+          "max": 19.9
+        },
+        {
+          "month": 12,
+          "min": 2.9,
+          "max": 16.4
+        }
+      ],
+      "irrigated": 79,
+      "rainfed": 12,
+      "unvalidatedNonCompensatingThermalCandidate": 79,
+      "chillCU": 1516,
+      "chillAttainment": 0.9981008576611299,
+      "limiting": "Damaging freeze exposure · station-calibrated distribution",
+      "components": {
+        "cold": 89.9,
+        "chill": 99.84806861289039,
+        "summer": 90.5,
+        "heat": 83.90000000000002,
+        "wet": 100,
+        "water": 96.36,
+        "frost": 100,
+        "extreme": 92.2,
+        "freeze": 79.36822662353515,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 79.36822662353515,
+        "terrainConflict": false,
+        "correctionC": 0,
+        "adjustedMeanC": -3.3,
+        "adjustedWorstC": -6.7,
+        "adjustedDecileC": -4.6,
+        "rawMeanC": -3.3,
+        "quantiles": [
+          -6.7,
+          -4.7,
+          -4.6,
+          -4.2,
+          -3.6,
+          -3.2,
+          -2.8,
+          -1.6,
+          -0.3
+        ],
+        "support": 0,
+        "nearestStationKm": 3712.2124460958853
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 79,
+          "cu": 1516,
+          "chill": 99.84806861289039,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        },
+        "Leccino": {
+          "score": 79,
+          "cu": 1281,
+          "chill": 94.20643800351827,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        },
+        "Frantoio": {
+          "score": 79,
+          "cu": 1281,
+          "chill": 91.6585215345748,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        }
+      }
+    },
+    {
+      "name": "Negev Revivim",
+      "lat": 31.044,
+      "lng": 34.721,
+      "climate": {
+        "bio05": 33.1,
+        "bio06": 7.4,
+        "bio10": 25.9,
+        "bio11": 12.5,
+        "bio12": 190,
+        "bio17": 2,
+        "bio18": 2,
+        "bio19": 122,
+        "hursmean": 56,
+        "fcf": 0,
+        "globalExtremeMeanC": 2.6,
+        "freezeWorstC": 0.2
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 7.4,
+          "max": 15.9
+        },
+        {
+          "month": 2,
+          "min": 7.5,
+          "max": 17
+        },
+        {
+          "month": 3,
+          "min": 9.3,
+          "max": 20.5
+        },
+        {
+          "month": 4,
+          "min": 12.3,
+          "max": 25.7
+        },
+        {
+          "month": 10,
+          "min": 17.1,
+          "max": 28
+        },
+        {
+          "month": 11,
+          "min": 12.9,
+          "max": 22.6
+        },
+        {
+          "month": 12,
+          "min": 9.1,
+          "max": 17.8
+        }
+      ],
+      "irrigated": 99,
+      "rainfed": 28,
+      "unvalidatedNonCompensatingThermalCandidate": 99,
+      "chillCU": 1169,
+      "chillAttainment": 0.9927247600676996,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 99.5,
+        "chill": 99.41798080541597,
+        "summer": 98.9,
+        "heat": 98.94444444444444,
+        "wet": 100,
+        "water": 97.8,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.21996887962564,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 99.21996887962564,
+        "terrainConflict": false,
+        "correctionC": -1.0468335386274101,
+        "adjustedMeanC": 1.55316646137259,
+        "adjustedWorstC": -0.8468335386274102,
+        "adjustedDecileC": -0.44683353862741015,
+        "rawMeanC": 2.6,
+        "quantiles": [
+          -0.8468335386274102,
+          -0.7468335386274101,
+          -0.44683353862741015,
+          0.15316646137258982,
+          1.2531664613725897,
+          1.7531664613725897,
+          2.35316646137259,
+          2.95316646137259,
+          4.953166461372589
+        ],
+        "support": 0.33891477340010084,
+        "nearestStationKm": 435.170018258952
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 99,
+          "cu": 1169,
+          "chill": 99.41798080541597,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 84,
+          "cu": 968,
+          "chill": 83.83275999957914,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Frantoio": {
+          "score": 79,
+          "cu": 968,
+          "chill": 78.68414534523765,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Cordoba Spain",
+      "lat": 37.8442,
+      "lng": -4.8458,
+      "climate": {
+        "bio05": 34.1,
+        "bio06": 3.7,
+        "bio10": 26.6,
+        "bio11": 9.5,
+        "bio12": 751,
+        "bio17": 28,
+        "bio18": 28,
+        "bio19": 296,
+        "hursmean": 54,
+        "fcf": 0,
+        "globalExtremeMeanC": -1.4,
+        "freezeWorstC": -3.5
+      },
+      "winter": [
+        {
+          "month": 1,
+          "min": 3.7,
+          "max": 12.9
+        },
+        {
+          "month": 2,
+          "min": 4.7,
+          "max": 14.7
+        },
+        {
+          "month": 3,
+          "min": 7.1,
+          "max": 18.3
+        },
+        {
+          "month": 4,
+          "min": 8.9,
+          "max": 20
+        },
+        {
+          "month": 10,
+          "min": 12.9,
+          "max": 22.8
+        },
+        {
+          "month": 11,
+          "min": 8.1,
+          "max": 17
+        },
+        {
+          "month": 12,
+          "min": 5.3,
+          "max": 13.6
+        }
+      ],
+      "irrigated": 89,
+      "rainfed": 89,
+      "unvalidatedNonCompensatingThermalCandidate": 89,
+      "chillCU": 1907,
+      "chillAttainment": 0.9994526239226581,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 96.41666666666667,
+        "chill": 99.95620991381264,
+        "summer": 99.6,
+        "heat": 99.5,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 89.47068317878217,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 89.47068317878217,
+        "terrainConflict": false,
+        "correctionC": -0.6141779894479011,
+        "adjustedMeanC": -2.014177989447901,
+        "adjustedWorstC": -4.114177989447901,
+        "adjustedDecileC": -3.514177989447901,
+        "rawMeanC": -1.4,
+        "quantiles": [
+          -4.114177989447901,
+          -3.8141779894479013,
+          -3.514177989447901,
+          -3.014177989447901,
+          -2.414177989447901,
+          -1.9141779894479012,
+          -1.314177989447901,
+          -0.7141779894479011,
+          0.7858220105520988
+        ],
+        "support": 3.9269943487219954,
+        "nearestStationKm": 10.174340360647571
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 89,
+          "cu": 1907,
+          "chill": 99.95620991381264,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 89,
+          "cu": 1645,
+          "chill": 98.06087949920797,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Frantoio": {
+          "score": 89,
+          "cu": 1645,
+          "chill": 97.05384945239344,
+          "limiting": "Favorable modeled production conditions"
+        }
+      }
+    },
+    {
+      "name": "Huasco",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "climate": {
+        "bio05": 29.2,
+        "bio06": 7.5,
+        "bio10": 22.1,
+        "bio11": 13.7,
+        "bio12": 59,
+        "bio17": 2,
+        "bio18": 3,
+        "bio19": 44,
+        "hursmean": 50,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.7,
+        "freezeWorstC": -2.1
+      },
+      "winter": [
+        {
+          "month": 4,
+          "min": 13.8,
+          "max": 26
+        },
+        {
+          "month": 5,
+          "min": 10.9,
+          "max": 23.6
+        },
+        {
+          "month": 6,
+          "min": 8.8,
+          "max": 22.2
+        },
+        {
+          "month": 7,
+          "min": 7.5,
+          "max": 21.6
+        },
+        {
+          "month": 8,
+          "min": 8.8,
+          "max": 22.8
+        },
+        {
+          "month": 9,
+          "min": 10.2,
+          "max": 24
+        },
+        {
+          "month": 10,
+          "min": 12.6,
+          "max": 25.8
+        }
+      ],
+      "irrigated": 88,
+      "rainfed": 5,
+      "unvalidatedNonCompensatingThermalCandidate": 88,
+      "chillCU": 586,
+      "chillAttainment": 0.8498784260973824,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 99.58333333333333,
+        "chill": 87.9902740877906,
+        "summer": 89.70000000000002,
+        "heat": 96.77777777777777,
+        "wet": 100,
+        "water": 94.36,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 98.1069860306225,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 98.1069860306225,
+        "terrainConflict": false,
+        "correctionC": -1.0137042571609114,
+        "adjustedMeanC": 0.6862957428390886,
+        "adjustedWorstC": -3.1137042571609115,
+        "adjustedDecileC": -1.0137042571609114,
+        "rawMeanC": 1.7,
+        "quantiles": [
+          -3.1137042571609115,
+          -1.8137042571609114,
+          -1.0137042571609114,
+          -0.4137042571609114,
+          0.4862957428390886,
+          0.8862957428390885,
+          1.2862957428390884,
+          2.5862957428390887,
+          2.7862957428390884
+        ],
+        "support": 0.7336338283191448,
+        "nearestStationKm": 392.7437118180324
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 88,
+          "cu": 586,
+          "chill": 87.9902740877906,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 31,
+          "cu": 349,
+          "chill": 30.73775890708794,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 29,
+          "cu": 349,
+          "chill": 28.920521435673788,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Aimogasta",
+      "lat": -28.5667,
+      "lng": -66.8,
+      "climate": {
+        "bio05": 29.8,
+        "bio06": 7.3,
+        "bio10": 25.1,
+        "bio11": 13.7,
+        "bio12": 233,
+        "bio17": 7,
+        "bio18": 142,
+        "bio19": 7,
+        "hursmean": 53,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.5,
+        "freezeWorstC": -2.8
+      },
+      "winter": [
+        {
+          "month": 4,
+          "min": 15.2,
+          "max": 24.2
+        },
+        {
+          "month": 5,
+          "min": 11.4,
+          "max": 21.3
+        },
+        {
+          "month": 6,
+          "min": 8.2,
+          "max": 19.8
+        },
+        {
+          "month": 7,
+          "min": 7.3,
+          "max": 19.3
+        },
+        {
+          "month": 8,
+          "min": 9.6,
+          "max": 22.2
+        },
+        {
+          "month": 9,
+          "min": 12.2,
+          "max": 23.8
+        },
+        {
+          "month": 10,
+          "min": 16.1,
+          "max": 26.9
+        }
+      ],
+      "irrigated": 92,
+      "rainfed": 42,
+      "unvalidatedNonCompensatingThermalCandidate": 92,
+      "chillCU": 646,
+      "chillAttainment": 0.8950000624545937,
+      "limiting": "Favorable modeled production conditions",
+      "components": {
+        "cold": 99.41666666666667,
+        "chill": 91.6000049963675,
+        "summer": 98.1,
+        "heat": 97.11111111111111,
+        "wet": 98.71666666666667,
+        "water": 98.66,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 94.5338125408559,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 94.5338125408559,
+        "terrainConflict": false,
+        "correctionC": -1.22115734413711,
+        "adjustedMeanC": -0.72115734413711,
+        "adjustedWorstC": -4.02115734413711,
+        "adjustedDecileC": -2.52115734413711,
+        "rawMeanC": 0.5,
+        "quantiles": [
+          -4.02115734413711,
+          -3.12115734413711,
+          -2.52115734413711,
+          -1.92115734413711,
+          -1.42115734413711,
+          -0.72115734413711,
+          -0.021157344137110012,
+          1.67884265586289,
+          2.6788426558628897
+        ],
+        "support": 0.9840967067952205,
+        "nearestStationKm": 89.14095188702441
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 92,
+          "cu": 646,
+          "chill": 91.6000049963675,
+          "limiting": "Favorable modeled production conditions"
+        },
+        "Leccino": {
+          "score": 37,
+          "cu": 439,
+          "chill": 37.38726988544322,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        },
+        "Frantoio": {
+          "score": 34,
+          "cu": 439,
+          "chill": 34.299605546532405,
+          "limiting": "Cultivar flowering / winter-chill limitation"
+        }
+      }
+    },
+    {
+      "name": "Mendoza",
+      "lat": -33,
+      "lng": -68.75,
+      "climate": {
+        "bio05": 30.8,
+        "bio06": 3.9,
+        "bio10": 24.7,
+        "bio11": 9.3,
+        "bio12": 208,
+        "bio17": 28,
+        "bio18": 75,
+        "bio19": 28,
+        "hursmean": 51,
+        "fcf": 0,
+        "globalExtremeMeanC": -2.9,
+        "freezeWorstC": -9
+      },
+      "winter": [
+        {
+          "month": 4,
+          "min": 12.1,
+          "max": 21.8
+        },
+        {
+          "month": 5,
+          "min": 8.3,
+          "max": 17.8
+        },
+        {
+          "month": 6,
+          "min": 4.9,
+          "max": 14.9
+        },
+        {
+          "month": 7,
+          "min": 3.9,
+          "max": 14.3
+        },
+        {
+          "month": 8,
+          "min": 5.5,
+          "max": 17.2
+        },
+        {
+          "month": 9,
+          "min": 7.9,
+          "max": 20.1
+        },
+        {
+          "month": 10,
+          "min": 12.3,
+          "max": 24.6
+        }
+      ],
+      "irrigated": 68,
+      "rainfed": 33,
+      "unvalidatedNonCompensatingThermalCandidate": 68,
+      "chillCU": 1706,
+      "chillAttainment": 0.9989926060342543,
+      "limiting": "Damaging freeze exposure · station-calibrated distribution",
+      "components": {
+        "cold": 96.58333333333333,
+        "chill": 99.91940848274035,
+        "summer": 97.7,
+        "heat": 97.66666666666667,
+        "wet": 100,
+        "water": 98.16,
+        "frost": 100,
+        "extreme": 94.6,
+        "freeze": 67.87395659899946,
+        "drySeason": 100
+      },
+      "freeze": {
+        "score": 67.87395659899946,
+        "terrainConflict": false,
+        "correctionC": -0.7844532550750416,
+        "adjustedMeanC": -3.6844532550750415,
+        "adjustedWorstC": -9.784453255075041,
+        "adjustedDecileC": -5.884453255075041,
+        "rawMeanC": -2.9,
+        "quantiles": [
+          -9.784453255075041,
+          -6.484453255075042,
+          -5.884453255075041,
+          -4.584453255075042,
+          -3.9844532550750418,
+          -3.5844532550750414,
+          -2.8844532550750417,
+          -1.5844532550750416,
+          -0.9844532550750416
+        ],
+        "support": 2.317145349041991,
+        "nearestStationKm": 9.811069570675889
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 68,
+          "cu": 1706,
+          "chill": 99.91940848274035,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        },
+        "Leccino": {
+          "score": 68,
+          "cu": 1484,
+          "chill": 96.90679754283511,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        },
+        "Frantoio": {
+          "score": 68,
+          "cu": 1484,
+          "chill": 95.39182372847695,
+          "limiting": "Damaging freeze exposure · station-calibrated distribution"
+        }
+      }
+    },
+    {
+      "name": "La Plata",
+      "lat": -34.92,
+      "lng": -57.95,
+      "climate": {
+        "bio05": 26.7,
+        "bio06": 8.2,
+        "bio10": 22.7,
+        "bio11": 11.1,
+        "bio12": 1117,
+        "bio17": 184,
+        "bio18": 331,
+        "bio19": 184,
+        "hursmean": 60,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.1,
+        "freezeWorstC": -1
+      },
+      "winter": [
+        {
+          "month": 4,
+          "min": 15.1,
+          "max": 20.3
+        },
+        {
+          "month": 5,
+          "min": 12,
+          "max": 16.9
+        },
+        {
+          "month": 6,
+          "min": 9.2,
+          "max": 13.8
+        },
+        {
+          "month": 7,
+          "min": 8.2,
+          "max": 13
+        },
+        {
+          "month": 8,
+          "min": 9.4,
+          "max": 14.8
+        },
+        {
+          "month": 9,
+          "min": 10.7,
+          "max": 16.3
+        },
+        {
+          "month": 10,
+          "min": 13.7,
+          "max": 19.4
+        }
+      ],
+      "irrigated": 79,
+      "rainfed": 79,
+      "unvalidatedNonCompensatingThermalCandidate": 79,
+      "chillCU": 1754,
+      "chillAttainment": 0.999133728072111,
+      "limiting": "Limited dry season · fungal-management burden",
+      "components": {
+        "cold": 99.25,
+        "chill": 99.93069824576888,
+        "summer": 93.89999999999999,
+        "heat": 95.38888888888889,
+        "wet": 80.46666666666667,
+        "water": 99.592,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 95.46063609183568,
+        "drySeason": 80.46666666666667
+      },
+      "freeze": {
+        "score": 95.46063609183568,
+        "terrainConflict": false,
+        "correctionC": -1.8776006971347186,
+        "adjustedMeanC": -0.7776006971347185,
+        "adjustedWorstC": -2.8776006971347186,
+        "adjustedDecileC": -2.0776006971347187,
+        "rawMeanC": 1.1,
+        "quantiles": [
+          -2.8776006971347186,
+          -2.4776006971347186,
+          -2.0776006971347187,
+          -1.4776006971347186,
+          -1.0776006971347185,
+          -0.9776006971347185,
+          -0.07760069713471851,
+          0.3223993028652816,
+          1.8223993028652816
+        ],
+        "support": 0.7971211364350754,
+        "nearestStationKm": 334.12303049238966
+      },
+      "cultivars": {
+        "Arbequina": {
+          "score": 79,
+          "cu": 1754,
+          "chill": 99.93069824576888,
+          "limiting": "Limited dry season · fungal-management burden"
+        },
+        "Leccino": {
+          "score": 79,
+          "cu": 1515,
+          "chill": 97.17885712615852,
+          "limiting": "Limited dry season · fungal-management burden"
+        },
+        "Frantoio": {
+          "score": 79,
+          "cu": 1515,
+          "chill": 95.7794598387507,
+          "limiting": "Limited dry season · fungal-management burden"
+        }
+      }
+    }
+  ],
+  "nativeRows": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "score": 82,
+      "rainfed": 82,
+      "unvalidatedNonCompensatingThermalCandidate": 82,
+      "climate": {
+        "bio05": 35.95,
+        "bio06": 4.35,
+        "bio10": 28.35,
+        "bio11": 10.55,
+        "bio12": 553,
+        "bio17": 21.4,
+        "bio18": 21.4,
+        "bio19": 211.6,
+        "hursmean": 53.54,
+        "fcf": 0,
+        "globalExtremeMeanC": -2.4,
+        "freezeWorstC": -4.9
+      },
+      "cu": 1730,
+      "components": {
+        "cold": 96.95833333333333,
+        "chill": 99.93277492677453,
+        "summer": 93.25,
+        "heat": 93.34999999999998,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 97.6,
+        "freeze": 82.23975961281533,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "lat": 37.64889,
+      "lng": -4.731579,
+      "score": 85,
+      "rainfed": 85,
+      "unvalidatedNonCompensatingThermalCandidate": 85,
+      "climate": {
+        "bio05": 34.05,
+        "bio06": 3.25,
+        "bio10": 26.15,
+        "bio11": 9.65,
+        "bio12": 672,
+        "bio17": 24.4,
+        "bio18": 24.4,
+        "bio19": 257.7,
+        "hursmean": 53.83,
+        "fcf": 0,
+        "globalExtremeMeanC": -2.1,
+        "freezeWorstC": -4.7
+      },
+      "cu": 2064,
+      "components": {
+        "cold": 96.04166666666667,
+        "chill": 99.97488762665989,
+        "summer": 99.15,
+        "heat": 99.47222222222221,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 99.4,
+        "freeze": 84.95042815550966,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "lat": 41.446556,
+      "lng": -6.822067,
+      "score": 74,
+      "rainfed": 74,
+      "unvalidatedNonCompensatingThermalCandidate": 74,
+      "climate": {
+        "bio05": 29.75,
+        "bio06": 1.85,
+        "bio10": 22.35,
+        "bio11": 7.05,
+        "bio12": 708,
+        "bio17": 61,
+        "bio18": 61,
+        "bio19": 244.8,
+        "hursmean": 57.62,
+        "fcf": 0,
+        "globalExtremeMeanC": -3.8,
+        "freezeWorstC": -6.8
+      },
+      "cu": 2827,
+      "components": {
+        "cold": 93.725,
+        "chill": 99.99591115144733,
+        "summer": 91.45000000000002,
+        "heat": 97.08333333333333,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 89.2,
+        "freeze": 73.93377999847198,
+        "drySeason": 100
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "pt_lombo_madural",
+      "lat": 41.457075,
+      "lng": -6.832459,
+      "score": 74,
+      "rainfed": 74,
+      "unvalidatedNonCompensatingThermalCandidate": 74,
+      "climate": {
+        "bio05": 28.85,
+        "bio06": 1.25,
+        "bio10": 21.45,
+        "bio11": 6.45,
+        "bio12": 723,
+        "bio17": 62.4,
+        "bio18": 62.4,
+        "bio19": 250.1,
+        "hursmean": 57.31,
+        "fcf": 0,
+        "globalExtremeMeanC": -3.8,
+        "freezeWorstC": -6.8
+      },
+      "cu": 2889,
+      "components": {
+        "cold": 88.625,
+        "chill": 99.99640122396274,
+        "summer": 85.14999999999999,
+        "heat": 96.58333333333333,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 89.2,
+        "freeze": 74.28491838687091,
+        "drySeason": 100
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "gr_messinia_ac",
+      "lat": 37.0389675,
+      "lng": 21.9130617,
+      "score": 96,
+      "rainfed": 96,
+      "unvalidatedNonCompensatingThermalCandidate": 96,
+      "climate": {
+        "bio05": 29.95,
+        "bio06": 7.35,
+        "bio10": 24.65,
+        "bio11": 10.75,
+        "bio12": 750,
+        "bio17": 19.8,
+        "bio18": 19.8,
+        "bio19": 347.9,
+        "hursmean": 58.22,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.3,
+        "freezeWorstC": -3.3
+      },
+      "cu": 2176,
+      "components": {
+        "cold": 99.45833333333333,
+        "chill": 99.98139297137632,
+        "summer": 97.65,
+        "heat": 97.19444444444444,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 95.55428592132864,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "gr_messinia_al",
+      "lat": 37.0363786,
+      "lng": 21.9075306,
+      "score": 96,
+      "rainfed": 96,
+      "unvalidatedNonCompensatingThermalCandidate": 96,
+      "climate": {
+        "bio05": 30.05,
+        "bio06": 7.35,
+        "bio10": 24.75,
+        "bio11": 10.75,
+        "bio12": 764,
+        "bio17": 20.1,
+        "bio18": 20.1,
+        "bio19": 354.2,
+        "hursmean": 58.34,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.3,
+        "freezeWorstC": -3.3
+      },
+      "cu": 2157,
+      "components": {
+        "cold": 99.45833333333333,
+        "chill": 99.98044069350193,
+        "summer": 97.75,
+        "heat": 97.25,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 95.5552148996151,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "lat": 37.7666667,
+      "lng": 12.5,
+      "score": 98,
+      "rainfed": 97,
+      "unvalidatedNonCompensatingThermalCandidate": 97,
+      "climate": {
+        "bio05": 29.05,
+        "bio06": 9.45,
+        "bio10": 24.95,
+        "bio11": 12.55,
+        "bio12": 564,
+        "bio17": 15.4,
+        "bio18": 63.9,
+        "bio19": 177.5,
+        "hursmean": 59.96,
+        "fcf": 0,
+        "globalExtremeMeanC": 4.4,
+        "freezeWorstC": 1.9
+      },
+      "cu": 1610,
+      "components": {
+        "cold": 94.5625,
+        "chill": 99.90041727590389,
+        "summer": 97.95,
+        "heat": 96.69444444444444,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.9997299295627,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "lat": 41.0166667,
+      "lng": 16.75,
+      "score": 98,
+      "rainfed": 98,
+      "unvalidatedNonCompensatingThermalCandidate": 97,
+      "climate": {
+        "bio05": 30.05,
+        "bio06": 4.65,
+        "bio10": 24.65,
+        "bio11": 9.05,
+        "bio12": 592,
+        "bio17": 84.2,
+        "bio18": 84.2,
+        "bio19": 182.4,
+        "hursmean": 58.59,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.2,
+        "freezeWorstC": -6.4
+      },
+      "cu": 2616,
+      "components": {
+        "cold": 97.20833333333333,
+        "chill": 99.9935615462407,
+        "summer": 97.65,
+        "heat": 97.25,
+        "wet": 98.16,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 98.8521208390473,
+        "drySeason": 98.16
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "lat": 42.95,
+      "lng": 12.4166667,
+      "score": 40,
+      "rainfed": 40,
+      "unvalidatedNonCompensatingThermalCandidate": 40,
+      "climate": {
+        "bio05": 29.85,
+        "bio06": 0.95,
+        "bio10": 23.05,
+        "bio11": 5.55,
+        "bio12": 715,
+        "bio17": 118.4,
+        "bio18": 118.4,
+        "bio19": 169.8,
+        "hursmean": 57.48,
+        "fcf": 0,
+        "globalExtremeMeanC": -6.6,
+        "freezeWorstC": -20.1
+      },
+      "cu": 2919,
+      "components": {
+        "cold": 86.075,
+        "chill": 99.99661384302489,
+        "summer": 96.05,
+        "heat": 97.13888888888889,
+        "wet": 91.32,
+        "water": 100,
+        "frost": 100,
+        "extreme": 68.4,
+        "freeze": 40,
+        "drySeason": 91.32
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "score": 0,
+      "rainfed": 0,
+      "unvalidatedNonCompensatingThermalCandidate": 0,
+      "climate": {
+        "bio05": 28.25,
+        "bio06": 0.15,
+        "bio10": 22.35,
+        "bio11": 4.95,
+        "bio12": 808,
+        "bio17": 160.1,
+        "bio18": 189.8,
+        "bio19": 177.3,
+        "hursmean": 58.65,
+        "fcf": 9,
+        "globalExtremeMeanC": -10.3,
+        "freezeWorstC": -17.5
+      },
+      "cu": 2970,
+      "components": {
+        "cold": 79.275,
+        "chill": 99.99694296942239,
+        "summer": 91.45000000000002,
+        "heat": 96.25,
+        "wet": 83.65333333333334,
+        "water": 100,
+        "frost": 98.2,
+        "extreme": 26.321428571428566,
+        "freeze": 0,
+        "drySeason": 83.65333333333334
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "lat": 34.9333333,
+      "lng": 10.6,
+      "score": 99,
+      "rainfed": 50,
+      "unvalidatedNonCompensatingThermalCandidate": 99,
+      "climate": {
+        "bio05": 33.55,
+        "bio06": 7.05,
+        "bio10": 27.15,
+        "bio11": 12.35,
+        "bio12": 257,
+        "bio17": 13.2,
+        "bio18": 38.2,
+        "bio19": 81,
+        "hursmean": 56.26,
+        "fcf": 0,
+        "globalExtremeMeanC": 2.5,
+        "freezeWorstC": -0.4
+      },
+      "cu": 1390,
+      "components": {
+        "cold": 99.20833333333333,
+        "chill": 99.78123400518321,
+        "summer": 99.25,
+        "heat": 99.19444444444444,
+        "wet": 100,
+        "water": 99.14,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.81949005126955,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "lat": -34.52,
+      "lng": 138.68,
+      "score": 96,
+      "rainfed": 93,
+      "unvalidatedNonCompensatingThermalCandidate": 90,
+      "climate": {
+        "bio05": 29.05,
+        "bio06": 6.95,
+        "bio10": 22.15,
+        "bio11": 10.95,
+        "bio12": 455,
+        "bio17": 55.9,
+        "bio18": 61.2,
+        "bio19": 175.2,
+        "hursmean": 54.69,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.6,
+        "freezeWorstC": -0.9
+      },
+      "cu": 1915,
+      "components": {
+        "cold": 99.125,
+        "chill": 99.96173233283054,
+        "summer": 90.04999999999998,
+        "heat": 96.69444444444444,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 98.17771806304955,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "uy-las-brujas",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "score": 72,
+      "rainfed": 72,
+      "unvalidatedNonCompensatingThermalCandidate": 72,
+      "climate": {
+        "bio05": 28.35,
+        "bio06": 7.05,
+        "bio10": 22.35,
+        "bio11": 10.95,
+        "bio12": 1149,
+        "bio17": 245.9,
+        "bio18": 280,
+        "bio19": 249.2,
+        "hursmean": 59.88,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.4,
+        "freezeWorstC": -3.5
+      },
+      "cu": 1805,
+      "components": {
+        "cold": 99.20833333333333,
+        "chill": 99.94681354909189,
+        "summer": 91.45000000000002,
+        "heat": 96.30555555555556,
+        "wet": 72.21333333333334,
+        "water": 98.824,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 86.06308970995408,
+        "drySeason": 72.21333333333334
+      },
+      "limiting": "Limited dry season · fungal-management burden"
+    },
+    {
+      "id": "uy-salto-grande",
+      "lat": -31.266667,
+      "lng": -57.883333,
+      "score": 75,
+      "rainfed": 75,
+      "unvalidatedNonCompensatingThermalCandidate": 75,
+      "climate": {
+        "bio05": 30.85,
+        "bio06": 8.55,
+        "bio10": 24.95,
+        "bio11": 12.95,
+        "bio12": 1307,
+        "bio17": 179.7,
+        "bio18": 386.5,
+        "bio19": 181,
+        "hursmean": 58.44,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.9,
+        "freezeWorstC": -1.7
+      },
+      "cu": 977,
+      "components": {
+        "cold": 97.9375,
+        "chill": 98.69854863754887,
+        "summer": 97.95,
+        "heat": 97.69444444444444,
+        "wet": 75.05555555555556,
+        "water": 95.032,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 95.30172415971393,
+        "drySeason": 81.04
+      },
+      "limiting": "Limited dry season · fungal-management burden"
+    },
+    {
+      "id": "cl-huasco-inia",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "score": 88,
+      "rainfed": 4,
+      "unvalidatedNonCompensatingThermalCandidate": 88,
+      "climate": {
+        "bio05": 29.35,
+        "bio06": 7.65,
+        "bio10": 22.15,
+        "bio11": 13.75,
+        "bio12": 49,
+        "bio17": 1.4,
+        "bio18": 1.6,
+        "bio19": 37.9,
+        "hursmean": 51.01,
+        "fcf": 0,
+        "globalExtremeMeanC": 1.7,
+        "freezeWorstC": -2.1
+      },
+      "cu": 586,
+      "components": {
+        "cold": 99.70833333333333,
+        "chill": 88.4669683469323,
+        "summer": 90.04999999999998,
+        "heat": 96.86111111111111,
+        "wet": 100,
+        "water": 93.96,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 98.11723827495075,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "lat": -32.783333,
+      "lng": -70.7,
+      "score": 44,
+      "rainfed": 44,
+      "unvalidatedNonCompensatingThermalCandidate": 44,
+      "climate": {
+        "bio05": 30.15,
+        "bio06": 4.95,
+        "bio10": 23.25,
+        "bio11": 10.95,
+        "bio12": 390,
+        "bio17": 6.9,
+        "bio18": 6.9,
+        "bio19": 253.2,
+        "hursmean": 50.46,
+        "fcf": 0,
+        "globalExtremeMeanC": -4.8,
+        "freezeWorstC": -12.5
+      },
+      "cu": 1385,
+      "components": {
+        "cold": 97.45833333333333,
+        "chill": 99.77703483242139,
+        "summer": 96.25,
+        "heat": 97.30555555555556,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 83.2,
+        "freeze": 44.15038719435074,
+        "drySeason": 100
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "lat": -28.55,
+      "lng": -66.816667,
+      "score": 91,
+      "rainfed": 42,
+      "unvalidatedNonCompensatingThermalCandidate": 91,
+      "climate": {
+        "bio05": 29.65,
+        "bio06": 7.15,
+        "bio10": 24.85,
+        "bio11": 13.65,
+        "bio12": 234,
+        "bio17": 6.4,
+        "bio18": 145.3,
+        "bio19": 6.4,
+        "hursmean": 52.69,
+        "fcf": 0,
+        "globalExtremeMeanC": 0.5,
+        "freezeWorstC": -2.8
+      },
+      "cu": 635,
+      "components": {
+        "cold": 99.29166666666667,
+        "chill": 91.43383656647916,
+        "summer": 97.85,
+        "heat": 97.02777777777777,
+        "wet": 98.52416666666667,
+        "water": 98.68,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 94.54260382284642,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "ar-junin-inta",
+      "lat": -33.1,
+      "lng": -68.483333,
+      "score": 82,
+      "rainfed": 41,
+      "unvalidatedNonCompensatingThermalCandidate": 82,
+      "climate": {
+        "bio05": 31.35,
+        "bio06": 3.25,
+        "bio10": 24.75,
+        "bio11": 9.15,
+        "bio12": 231,
+        "bio17": 22.1,
+        "bio18": 98.5,
+        "bio19": 22.1,
+        "hursmean": 51.3,
+        "fcf": 0,
+        "globalExtremeMeanC": -2.2,
+        "freezeWorstC": -4.3
+      },
+      "cu": 1589,
+      "components": {
+        "cold": 96.04166666666667,
+        "chill": 99.8930656191393,
+        "summer": 97.75,
+        "heat": 97.97222222222223,
+        "wet": 100,
+        "water": 98.62,
+        "frost": 100,
+        "extreme": 98.8,
+        "freeze": 81.66828674079204,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "score": 43,
+      "rainfed": 43,
+      "unvalidatedNonCompensatingThermalCandidate": 43,
+      "climate": {
+        "bio05": 25.75,
+        "bio06": 3.05,
+        "bio10": 22.55,
+        "bio11": 10.55,
+        "bio12": 1137,
+        "bio17": 24.8,
+        "bio18": 674,
+        "bio19": 24.8,
+        "hursmean": 56.46,
+        "fcf": 0,
+        "globalExtremeMeanC": -5.3,
+        "freezeWorstC": -10.5
+      },
+      "cu": 1361,
+      "components": {
+        "cold": 95.875,
+        "chill": 99.75554351216185,
+        "summer": 92.85000000000001,
+        "heat": 92.5,
+        "wet": 43.32380952380953,
+        "water": 99.112,
+        "frost": 100,
+        "extreme": 79.45,
+        "freeze": 84.65435388736302,
+        "drySeason": 100
+      },
+      "limiting": "Warm-season wetness / disease pressure"
+    },
+    {
+      "id": "us-tx-weslaco",
+      "lat": 26.16,
+      "lng": -97.93,
+      "score": 21,
+      "rainfed": 21,
+      "unvalidatedNonCompensatingThermalCandidate": 21,
+      "climate": {
+        "bio05": 35.25,
+        "bio06": 12.75,
+        "bio10": 29.45,
+        "bio11": 16.95,
+        "bio12": 642,
+        "bio17": 94.9,
+        "bio18": 173.9,
+        "bio19": 97,
+        "hursmean": 59.16,
+        "fcf": 0,
+        "globalExtremeMeanC": 2.2,
+        "freezeWorstC": -4.1
+      },
+      "cu": 3,
+      "components": {
+        "cold": 77.5,
+        "chill": 20.6732818692264,
+        "summer": 87.75,
+        "heat": 98.25,
+        "wet": 96.02,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 96.86086430338162,
+        "drySeason": 96.02
+      },
+      "limiting": "Cultivar flowering / winter-chill limitation"
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "lat": 28.41,
+      "lng": -99.73,
+      "score": 57,
+      "rainfed": 57,
+      "unvalidatedNonCompensatingThermalCandidate": 57,
+      "climate": {
+        "bio05": 37.05,
+        "bio06": 8.65,
+        "bio10": 30.75,
+        "bio11": 14.05,
+        "bio12": 542,
+        "bio17": 77.3,
+        "bio18": 166.1,
+        "bio19": 79.1,
+        "hursmean": 54.39,
+        "fcf": 0,
+        "globalExtremeMeanC": -0.5,
+        "freezeWorstC": -9.1
+      },
+      "cu": 360,
+      "components": {
+        "cold": 97.5625,
+        "chill": 58.73766184453859,
+        "summer": 81.25,
+        "heat": 85.65000000000002,
+        "wet": 97.31083333333333,
+        "water": 100,
+        "frost": 100,
+        "extreme": 85,
+        "freeze": 56.94509337673512,
+        "drySeason": 99.54
+      },
+      "limiting": "Damaging freeze exposure · station-calibrated distribution"
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "score": 21,
+      "rainfed": 21,
+      "unvalidatedNonCompensatingThermalCandidate": 21,
+      "climate": {
+        "bio05": 24.55,
+        "bio06": 14.65,
+        "bio10": 21.05,
+        "bio11": 17.75,
+        "bio12": 1476,
+        "bio17": 270.7,
+        "bio18": 288.1,
+        "bio19": 452.9,
+        "hursmean": 66.93,
+        "fcf": 0,
+        "globalExtremeMeanC": 14.1,
+        "freezeWorstC": 12.3
+      },
+      "cu": 2,
+      "components": {
+        "cold": 58.5,
+        "chill": 20.660532986484647,
+        "summer": 82.35000000000001,
+        "heat": 80.5,
+        "wet": 68.90666666666667,
+        "water": 90.976,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 100,
+        "drySeason": 68.90666666666667
+      },
+      "limiting": "Cultivar flowering / winter-chill limitation"
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "lat": 35.1862611111,
+      "lng": 32.9724555556,
+      "score": 98,
+      "rainfed": 93,
+      "unvalidatedNonCompensatingThermalCandidate": 93,
+      "climate": {
+        "bio05": 34.25,
+        "bio06": 8.05,
+        "bio10": 28.35,
+        "bio11": 12.45,
+        "bio12": 454,
+        "bio17": 12.4,
+        "bio18": 15.5,
+        "bio19": 255.5,
+        "hursmean": 56.85,
+        "fcf": 0,
+        "globalExtremeMeanC": 4.6,
+        "freezeWorstC": 2.9
+      },
+      "cu": 1444,
+      "components": {
+        "cold": 99.8125,
+        "chill": 99.82124085474773,
+        "summer": 93.25,
+        "heat": 99.58333333333333,
+        "wet": 100,
+        "water": 100,
+        "frost": 100,
+        "extreme": 100,
+        "freeze": 99.96578673526045,
+        "drySeason": 100
+      },
+      "limiting": "Favorable modeled production conditions"
+    }
+  ]
+}

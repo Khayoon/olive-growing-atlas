@@ -1,0 +1,101 @@
+{
+  "created": "2026-10-19",
+  "scope": "Primary evidence for cultivated edible-olive heat and irrigation constraints; not a fitted global yield model.",
+  "recommendation": {
+    "generalModelIssue": "The v7 heat response is 65/100 at BIO5=40 C but multiplying its limiting cap by 1.35 permits an 88/100 final score. Favorable winter and wetness components can therefore conceal chronic heat stress.",
+    "boundedFix": "Use the existing heat component as an uncompensated upper bound on production potential, rather than permitting a 1.35 multiplier. Apply identically worldwide and retain irrigation as a water-supply scenario. Describe the heat response as a precautionary planning curve, not an experimentally calibrated probability of reliable yield.",
+    "doNotDo": [
+      "Do not impose a low-rainfall or desert-extent cap under the full-irrigation scenario: productive Negev and Huasco orchards contradict it.",
+      "Do not interpret CHELSA BIO5 as an absolute record temperature: it is the warmest-month mean daily maximum.",
+      "Do not equate a constant 30 C bloom chamber experiment to occasional 30 C field maxima.",
+      "Do not treat annual mean RH plus BIO5 as observed afternoon VPD or use it to invent a precise VPD yield penalty.",
+      "Do not call climatic potential proof of sustainable water availability, soil suitability, or salinity safety."
+    ]
+  },
+  "evidence": [
+    {
+      "id": "wortmann2024-reproductive-heat-genotype",
+      "citation": "Wortmann K, Biton I, Zemach H, Many Y, Ben-Ari G (2024). Heat stress during reproductive development inhibits fertilization in olives. Scientia Horticulturae338:113680.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304423824008331",
+      "doi": "10.1016/j.scienta.2024.113680",
+      "design": "Olive floral development BBCH53-60 studied under prolonged moderately high temperature and two-hour heat shock; in-vitro pollen heat tolerance assessed across54cultivars.",
+      "findings": "Heat impaired tapetum development and pollen germination/tube elongation. Arbequina pollen was relatively more tolerant than Koroneiki; Souri was highly sensitive. Seven other cultivars had exceptional pollen heat tolerance, showing that cultivar and pollen-donor choice matter.",
+      "limits": "Accessible abstract does not expose the precise treatment temperatures. Do not invent a numerical bloom threshold from it, or equate pollen viability with orchard harvest reliability."
+    },
+    {
+      "id": "weissbein2008-negev-irrigated-production",
+      "citation": "Weissbein S, Wiesman Z, Ephrath Y, Silberbush M (2008). Vegetative and Reproductive Response of Olive Cultivars to Moderate Saline Water Irrigation. HortScience 43(2):320-327.",
+      "url": "https://journals.ashs.org/downloadpdf/view/journals/hortsci/43/2/article-p320.pdf",
+      "doi": "10.21273/HORTSCI.43.2.320",
+      "design": "Twelve cultivars planted 1997 at Ramat Negev, 31.083333 N 34.684167 E, 305 m. Five mature-yield years; drip irrigation 1.2 versus 4.2 dS/m, similar fertilizer and leaching management.",
+      "findings": "The site receives about50mm annual rain. Arbequina fresh-water harvests were12.3,38.2,43.7,51.6kg/tree in2001-04, with published table mean42.5; saline-water mean45.3kg/tree. These are edible-olive harvests, not survival observations. Irrigation base6560m3/ha/yr plus two1000m3 leaching additions totals8560m3/ha/yr. Saline groundwater was about300m belowground.",
+      "limits": "Irrigation and leaching were supplied, not demonstrated sustainable everywhere. Hotter central-Sahara climates are not equivalent. The published42.5mean is not the simple arithmetic mean of the displayed annual values; its estimator is not resolved here."
+    },
+    {
+      "id": "nissim2020-irrigated-hot-fruit-development",
+      "citation": "Nissim Y et al. (2020). High temperature environment reduces olive oil yield and quality. PLOS ONE 15(4):e0231956.",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231956",
+      "doi": "10.1371/journal.pone.0231956",
+      "design": "Five-year-old potted Barnea, Coratina, Koroneiki, Souri and Picholine trees moved only after fruit set to Tirat Zvi or Tzuba in 2016 and 2017. Excess drip water supplied, one-third more at the hot site; six trees per cultivar/site.",
+      "findings": "Tirat Zvi mean daily maxima exceeded 40 C in June-September 2016, with monthly mean minima above 21 C. Fruit growth, oil concentration or oil composition were harmed in cultivar-specific ways. Barnea maintained final fruit weight and oil concentration, but no tested cultivar retained every quality trait.",
+      "limits": "Arbequina was not tested. Fruit load was not measured. The trial began after fruit set, so it does not establish bloom-failure thresholds. Continued oil production under high heat contradicts a lethal 40 C rule; it supports conditional rather than uniformly optimal classification."
+    },
+    {
+      "id": "miserere2023-arbequina-warming",
+      "citation": "Influence of Experimental Warming on the Rate and Duration of Fruit Growth and Oil Accumulation in Young Olive Trees (cvs. Arbequina, Coratina). Plants (2023) 12:1942.",
+      "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/220830/CONICET_Digital_Nro.b2895610-707c-49da-bdcd-e6dfa2b0ec04_B.pdf?isAllowed=y&sequence=2",
+      "doi": "10.3390/plants12101942",
+      "design": "Whole-tree open-top warming chambers, irrigated young Arbequina and Coratina, Anillaco/La Rioja 1325 m. December-early May 2014/15 and 2015/16; four chambers per treatment.",
+      "findings": "Mean oil-phase temperature rose from 22.2 to24.9 C and from22.5 to26.1 C. VPD increased about35%. Fruit growth and oil accumulation rates declined, without consistent shortening of duration. Arbequina oil per fruit declined33% in2014/15; pulp/pit ratio fell43% in2015/16. Irrigation met tree and soil evaporation needs.",
+      "limits": "Two seasons of potted young trees, not commercial multi-year yield. Heat and VPD changes co-occurred. Warmest-quarter BIO10 is a broad exposure proxy, not the measured December-May oil-phase mean. Do not directly translate the33% reduction into a worldwide score coefficient."
+    },
+    {
+      "id": "garcia-inza2014-chronic-fruit-heat",
+      "citation": "Garcia-Inza GP, Castro DN, Hall AJ, Rousseaux MC (2014). Responses to temperature of fruit dry weight, oil concentration, and oil fatty acid composition in olive (Olea europaea L. var. Arauco). European Journal of Agronomy 54:107-115.",
+      "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/12102/CONICET_Digital_Nro.15296_A.pdf?sequence=2",
+      "design": "Temperature-controlled fruiting branches, four treatment means16.7,20.6,25.4,30.7 C from January-May. Separate one-month warming treatments tested persistent effects.",
+      "findings": "Fruit dry weight was stable16-25 C, declining0.08g/degree above25. Oil concentration fit58.4-1.13*T percent dryweight, R2=.74. Final oil per fruit was0.80g at16.7 C versus0.35g at30.7 C. One-month warming had persistent oil-concentration effects after cooling.",
+      "limits": "Arauco branches, not Arbequina orchards. These are oil-phase mean temperatures, not maximum daily temperatures or BIO5. Mechanistic support for chronic heat cost, not a validated global yield-potential equation."
+    },
+    {
+      "id": "malik-perez2011-induction-warm-interruptions",
+      "citation": "Malik NS, Perez JL (2011). The effect of high temperature interruptions during inductive period on the extent of flowering and on metabolic responses in olives. Scientia Horticulturae129:207-212.",
+      "url": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=259672",
+      "fullTextUrl": "https://www.sciencedirect.com/science/article/pii/S0304423811001361",
+      "doi": "10.1016/j.scienta.2011.03.028",
+      "design": "Potted Arbequina during75-day inductive growth-chamber period. Warm interruption26+/-1 C daytime,16+/-1 C nighttime;3,6or12days.",
+      "findings": "Three-day interruptions did not significantly reduce flowering; six or12days did. Six-day interruptions at tested induction timings reduced inflorescence production by more than83%. Twelve-day treatment additionally reduced flowers per inflorescence.",
+      "limits": "Monthly climate normals cannot determine the frequency of six-day warm spells. A kernel already has warm reversals, so a second indiscriminate penalty could double-count heat. This evidence supports using daily winter weather for future reliability assessment, not adding a geographic desert exception."
+    },
+    {
+      "id": "cuevas1994-bloom-constant-temperature",
+      "citation": "Cuevas J, Rallo L, Rapoport HF (1994). Initial fruit set at high temperature in olive, Olea europaea L. Journal of Horticultural Science69:665-672.",
+      "url": "https://doi.org/10.1080/14620316.1994.11516498",
+      "authorRecordUrl": "https://brujula.ual.es/authors/220.html?pageType=CONFERENCE&publicationJournal=&sortBy=dateAsc&title=&yearFrom=&yearUntil=",
+      "findings": "Cross-pollinated Manzanillo at constant30 C did not set fruit;25 C was most favorable, while20 C delayed fertilization. The study examines fertilization and initial fruit set, not whole-season survival.",
+      "limits": "Constant chamber temperature is not a warmest-month maximum. Cultivar differs from Arbequina; monthly climate and calendar-spring windows cannot establish bloom-specific exposure."
+    },
+    {
+      "id": "campos2025-field-spring-heat",
+      "citation": "Campos J et al. (2025). Olive Tree Vegetative Growth and Fruit Yield at High Air Temperatures. Journal of Horticultural Research33(1):15-28.",
+      "url": "https://reference-global.com/article/10.2478/johr-2025-0010",
+      "pdfUrl": "https://www.cncalteracoesclimaticas.pt/images/Artigos/Olive-Tree-Vegetative-Growth-and-Fruit-Yield-at-High-Air-TemperaturesArtigo.pdf",
+      "doi": "10.2478/johr-2025-0010",
+      "findings": "Fifteen Portuguese cultivars planted2012: fruit yield negatively correlated with days above35 C, especially April-May. Spring2022 had11days reaching/exceeding35 C. Authors infer reproductive vulnerability rather than demonstrate a universal per-day loss function.",
+      "limits": "Correlative genotype-environment study. Do not use fixed April-May globally or assume a single number of hot days causes crop failure in every cultivar."
+    },
+    {
+      "id": "moriana2002-vpd",
+      "citation": "Moriana A et al. (2002). Stomatal and photosynthetic responses of olive leaves to water deficits. Plant, Cell & Environment.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1046/j.0016-8025.2001.00822.x",
+      "findings": "Even without soil-water stress, assimilation and stomatal conductance were lower on high-VPD days. Transpiration efficiency varied with VPD; observed efficiencies at1.0 and2.5kPa were5.2 and2.7mmolCO2/molH2O.",
+      "limits": "Leaf gas exchange is not fruit-yield reliability. Annual RH and monthly temperatures cannot reconstruct observed daily VPD, canopy temperature or hydraulic stress accurately enough for a calibrated yield penalty."
+    }
+  ],
+  "requiredDistinctions": {
+    "survival": "A live tree tolerating extreme heat is not evidence of a dependable harvest.",
+    "climaticPotentialWithIrrigation": "Assumes sufficient appropriately managed water; it can be favorable in productive deserts but is conditional on physical inputs not guaranteed by the map.",
+    "reliableHarvest": "Requires multi-year flowering, fruit set, harvest and water-management records. Monthly-normal suitability plus a freeze history does not establish this probability.",
+    "economicWaterFeasibility": "Requires aquifer or surface-water renewability, pumping cost, legal access, salinity, leaching and drainage. None is encoded in current climate inputs."
+  }
+}

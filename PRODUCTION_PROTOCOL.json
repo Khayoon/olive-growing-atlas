@@ -1,6 +1,6 @@
 {
-  "version": "7.0",
-  "declared": "2026-10-18",
+  "version": "8.0",
+  "declared": "2026-10-19",
   "target": "Relative biophysical potential for repeated production by cultivated edible olives under a stated cultivar and water scenario; not a probability of annual yield or economic profitability.",
   "freezeCalibration": "QC-passed station annual minima, >=95% annual and winter completeness. Compare matched years with original ERA5-EX. Stations receive equal aggregate weight. Fit residual models and test by withholding complete geographic regions. Retain the simplest correction with improved out-of-region error; report every fold and the uncorrected baseline.",
   "freezeSurface": "Correct the distribution of annual minima using transferable climatic features, never distance-to-literature or a score boost at orchard coordinates. Preserve source quantiles and identify corrected estimates separately. Expose uncertainty and coverage independently of suitability.",
@@ -14,5 +14,8 @@
     "LalamiloHawaii: incompletehistoricalstationrecord andyounglowchillcultivarfruitingtrial",
     "LaPlata/Uruguay/CoronelDorrego: actualproductionwithdisease/springfrost/alternatebearingconstraints"
   ],
-  "palette": "Green reserved for80-100; amber40-79; red0-39. Interpolation within each tier, no green below80."
+  "palette": "Green reserved for80-100; amber40-79; red0-39. Interpolation within each tier, no green below80.",
+  "heat": "Globally cap final relative climate potential by both existing heat and summer response components, without allowing a1.35thermal allowance or compensating favorable conditions. Response curves are explicit planning choices; monthly climate does not provide flowering-stage heatwave records or calibrated crop-loss probabilities.",
+  "resourceDisplay": "For the irrigation-assumed potential view, annual CHELSA BIO12<200mm and climate score>=40 triggers muted amber/neutral diagonal striping globally. Low scores remain low. The literal rainfall flag is separate from numeric scores and does not infer water availability, salinity, drainage or sustainable supply. Identical rule flags Huasco,Negev and Sahara, with no orchard-location exceptions.",
+  "newDesertChecks": "Five-year ElOuedharvests for local/table cultivars, measured Negev Arbequina production, two-year WadiAlNatrunArbequina production, Siwa salinity/yield decline and long-term Revivim salinity. Development compatibility checks only; do not treat unknown cultivar parameters as validated."
 }

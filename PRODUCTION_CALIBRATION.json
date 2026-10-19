@@ -1,5 +1,5 @@
 {
-  "version": "7.0",
+  "version": "8.0",
   "freeze": {
     "method": "local500_convolution",
     "errorNodesC": [
@@ -8639,5 +8639,6 @@
     "primaryWeatherStations": 44,
     "partialDevelopmentStations": 2,
     "fullPipeline": true
-  }
+  },
+  "calibrationMethodsUnchangedFromVersion7": true
 }

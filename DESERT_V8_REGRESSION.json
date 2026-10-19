@@ -1,0 +1,497 @@
+{
+  "version": "8.0",
+  "date": "2026-10-19",
+  "scope": "Development regression/compatibility checks; neither independent global yield validation nor measured irrigation resources.",
+  "passed": true,
+  "changes": "Thermal constraints are non-compensatory; rainfall resource-dependence context is separately flagged without changing numeric scores.",
+  "points": [
+    {
+      "name": "Siwa",
+      "lat": 29.203,
+      "lng": 25.519,
+      "previousIrrigated": 94,
+      "currentIrrigated": 86,
+      "rainfed": 1,
+      "warmQuarterMeanC": 29.9,
+      "warmestMonthMeanHighC": 36.3,
+      "annualRainMm": 11,
+      "heatResponse": 90.90000000000002,
+      "summerResponse": 85.5,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Biskra",
+      "lat": 34.851,
+      "lng": 5.728,
+      "previousIrrigated": 65,
+      "currentIrrigated": 48,
+      "rainfed": 17,
+      "warmQuarterMeanC": 33.4,
+      "warmestMonthMeanHighC": 39.1,
+      "annualRainMm": 142,
+      "heatResponse": 71.29999999999998,
+      "summerResponse": 48.000000000000014,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Ghardaia",
+      "lat": 32.489,
+      "lng": 3.674,
+      "previousIrrigated": 79,
+      "currentIrrigated": 59,
+      "rainfed": 6,
+      "warmQuarterMeanC": 32.6,
+      "warmestMonthMeanHighC": 39.1,
+      "annualRainMm": 77,
+      "heatResponse": 71.29999999999998,
+      "summerResponse": 58.66666666666664,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Adrar",
+      "lat": 27.877,
+      "lng": -0.294,
+      "previousIrrigated": 14,
+      "currentIrrigated": 10,
+      "rainfed": 2,
+      "warmQuarterMeanC": 37,
+      "warmestMonthMeanHighC": 44.5,
+      "annualRainMm": 20,
+      "heatResponse": 29,
+      "summerResponse": 10,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "In Salah",
+      "lat": 27.192,
+      "lng": 2.483,
+      "previousIrrigated": 14,
+      "currentIrrigated": 10,
+      "rainfed": 1,
+      "warmQuarterMeanC": 37,
+      "warmestMonthMeanHighC": 44.1,
+      "annualRainMm": 15,
+      "heatResponse": 32.19999999999999,
+      "summerResponse": 10,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Tamanrasset",
+      "lat": 22.786,
+      "lng": 5.523,
+      "previousIrrigated": 93,
+      "currentIrrigated": 86,
+      "rainfed": 4,
+      "warmQuarterMeanC": 29.9,
+      "warmestMonthMeanHighC": 35.5,
+      "annualRainMm": 48,
+      "heatResponse": 96.5,
+      "summerResponse": 85.5,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Kufra",
+      "lat": 24.183,
+      "lng": 23.312,
+      "previousIrrigated": 90,
+      "currentIrrigated": 76,
+      "rainfed": 0,
+      "warmQuarterMeanC": 31.3,
+      "warmestMonthMeanHighC": 37,
+      "annualRainMm": 1,
+      "heatResponse": 86,
+      "summerResponse": 75.99999999999999,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Farafra",
+      "lat": 27.059,
+      "lng": 27.97,
+      "previousIrrigated": 91,
+      "currentIrrigated": 81,
+      "rainfed": 0,
+      "warmQuarterMeanC": 30.9,
+      "warmestMonthMeanHighC": 36.8,
+      "annualRainMm": 2,
+      "heatResponse": 87.40000000000002,
+      "summerResponse": 80.5,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Dakhla",
+      "lat": 25.486,
+      "lng": 28.979,
+      "previousIrrigated": 91,
+      "currentIrrigated": 80,
+      "rainfed": 0,
+      "warmQuarterMeanC": 31,
+      "warmestMonthMeanHighC": 36.9,
+      "annualRainMm": 0,
+      "heatResponse": 86.70000000000002,
+      "summerResponse": 80,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Kharga",
+      "lat": 25.442,
+      "lng": 30.557,
+      "previousIrrigated": 77,
+      "currentIrrigated": 57,
+      "rainfed": 0,
+      "warmQuarterMeanC": 32.7,
+      "warmestMonthMeanHighC": 38.6,
+      "annualRainMm": 1,
+      "heatResponse": 74.79999999999998,
+      "summerResponse": 57.3333333333333,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "El Oued",
+      "lat": 33.36,
+      "lng": 6.86,
+      "previousIrrigated": 81,
+      "currentIrrigated": 60,
+      "rainfed": 6,
+      "warmQuarterMeanC": 32.5,
+      "warmestMonthMeanHighC": 39.3,
+      "annualRainMm": 72,
+      "heatResponse": 69.90000000000002,
+      "summerResponse": 60,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Touggourt",
+      "lat": 33.1,
+      "lng": 6.07,
+      "previousIrrigated": 70,
+      "currentIrrigated": 52,
+      "rainfed": 5,
+      "warmQuarterMeanC": 33.1,
+      "warmestMonthMeanHighC": 39.9,
+      "annualRainMm": 63,
+      "heatResponse": 65.70000000000002,
+      "summerResponse": 51.999999999999986,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Ouargla",
+      "lat": 31.954,
+      "lng": 5.325,
+      "previousIrrigated": 53,
+      "currentIrrigated": 39,
+      "rainfed": 3,
+      "warmQuarterMeanC": 34.1,
+      "warmestMonthMeanHighC": 40.9,
+      "annualRainMm": 40,
+      "heatResponse": 57.80000000000001,
+      "summerResponse": 38.999999999999986,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Timbuktu",
+      "lat": 16.773,
+      "lng": -3.008,
+      "previousIrrigated": 21,
+      "currentIrrigated": 21,
+      "rainfed": 21,
+      "warmQuarterMeanC": 34.2,
+      "warmestMonthMeanHighC": 40.9,
+      "annualRainMm": 163,
+      "heatResponse": 57.80000000000001,
+      "summerResponse": 37.99999999999997,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Bilma",
+      "lat": 18.685,
+      "lng": 12.923,
+      "previousIrrigated": 38,
+      "currentIrrigated": 38,
+      "rainfed": 1,
+      "warmQuarterMeanC": 33.4,
+      "warmestMonthMeanHighC": 40.6,
+      "annualRainMm": 8,
+      "heatResponse": 60.19999999999999,
+      "summerResponse": 48.000000000000014,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Merzouga",
+      "lat": 31.099,
+      "lng": -4.013,
+      "previousIrrigated": 53,
+      "currentIrrigated": 39,
+      "rainfed": 6,
+      "warmQuarterMeanC": 34.1,
+      "warmestMonthMeanHighC": 40.9,
+      "annualRainMm": 72,
+      "heatResponse": 57.80000000000001,
+      "summerResponse": 38.999999999999986,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Ouarzazate",
+      "lat": 30.921,
+      "lng": -6.91,
+      "previousIrrigated": 79,
+      "currentIrrigated": 79,
+      "rainfed": 12,
+      "warmQuarterMeanC": 28.9,
+      "warmestMonthMeanHighC": 37.3,
+      "annualRainMm": 118,
+      "heatResponse": 83.90000000000002,
+      "summerResponse": 90.5,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Negev Revivim",
+      "lat": 31.044,
+      "lng": 34.721,
+      "previousIrrigated": 99,
+      "currentIrrigated": 99,
+      "rainfed": 28,
+      "warmQuarterMeanC": 25.9,
+      "warmestMonthMeanHighC": 33.1,
+      "annualRainMm": 190,
+      "heatResponse": 98.94444444444444,
+      "summerResponse": 98.9,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Cordoba Spain",
+      "lat": 37.8442,
+      "lng": -4.8458,
+      "previousIrrigated": 89,
+      "currentIrrigated": 89,
+      "rainfed": 89,
+      "warmQuarterMeanC": 26.6,
+      "warmestMonthMeanHighC": 34.1,
+      "annualRainMm": 751,
+      "heatResponse": 99.5,
+      "summerResponse": 99.6,
+      "resourceDependenceFlag": false,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Huasco",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "previousIrrigated": 88,
+      "currentIrrigated": 88,
+      "rainfed": 5,
+      "warmQuarterMeanC": 22.1,
+      "warmestMonthMeanHighC": 29.2,
+      "annualRainMm": 59,
+      "heatResponse": 96.77777777777777,
+      "summerResponse": 89.70000000000002,
+      "resourceDependenceFlag": true,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Aimogasta",
+      "lat": -28.5667,
+      "lng": -66.8,
+      "previousIrrigated": 92,
+      "currentIrrigated": 92,
+      "rainfed": 42,
+      "warmQuarterMeanC": 25.1,
+      "warmestMonthMeanHighC": 29.8,
+      "annualRainMm": 233,
+      "heatResponse": 97.11111111111111,
+      "summerResponse": 98.1,
+      "resourceDependenceFlag": false,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "Mendoza",
+      "lat": -33,
+      "lng": -68.75,
+      "previousIrrigated": 68,
+      "currentIrrigated": 68,
+      "rainfed": 33,
+      "warmQuarterMeanC": 24.7,
+      "warmestMonthMeanHighC": 30.8,
+      "annualRainMm": 208,
+      "heatResponse": 97.66666666666667,
+      "summerResponse": 97.7,
+      "resourceDependenceFlag": false,
+      "climateScoreNotYieldProbability": true
+    },
+    {
+      "name": "La Plata",
+      "lat": -34.92,
+      "lng": -57.95,
+      "previousIrrigated": 79,
+      "currentIrrigated": 79,
+      "rainfed": 79,
+      "warmQuarterMeanC": 22.7,
+      "warmestMonthMeanHighC": 26.7,
+      "annualRainMm": 1117,
+      "heatResponse": 95.38888888888889,
+      "summerResponse": 93.89999999999999,
+      "resourceDependenceFlag": false,
+      "climateScoreNotYieldProbability": true
+    }
+  ],
+  "nativeOrchardChecks": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "previous": 82,
+      "current": 82,
+      "tier": "prime"
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "previous": 85,
+      "current": 85,
+      "tier": "prime"
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "previous": 74,
+      "current": 74,
+      "tier": "marginal"
+    },
+    {
+      "id": "pt_lombo_madural",
+      "previous": 74,
+      "current": 74,
+      "tier": "marginal"
+    },
+    {
+      "id": "gr_messinia_ac",
+      "previous": 96,
+      "current": 96,
+      "tier": "prime"
+    },
+    {
+      "id": "gr_messinia_al",
+      "previous": 96,
+      "current": 96,
+      "tier": "prime"
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "previous": 98,
+      "current": 97,
+      "tier": "prime"
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "previous": 98,
+      "current": 97,
+      "tier": "prime"
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "previous": 40,
+      "current": 40,
+      "tier": "marginal"
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "previous": 0,
+      "current": 0,
+      "tier": "bad"
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "previous": 99,
+      "current": 99,
+      "tier": "prime"
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "previous": 96,
+      "current": 90,
+      "tier": "prime"
+    },
+    {
+      "id": "uy-las-brujas",
+      "previous": 72,
+      "current": 72,
+      "tier": "marginal"
+    },
+    {
+      "id": "uy-salto-grande",
+      "previous": 75,
+      "current": 75,
+      "tier": "marginal"
+    },
+    {
+      "id": "cl-huasco-inia",
+      "previous": 88,
+      "current": 88,
+      "tier": "prime"
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "previous": 44,
+      "current": 44,
+      "tier": "marginal"
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "previous": 91,
+      "current": 91,
+      "tier": "prime"
+    },
+    {
+      "id": "ar-junin-inta",
+      "previous": 82,
+      "current": 82,
+      "tier": "prime"
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "previous": 43,
+      "current": 43,
+      "tier": "marginal"
+    },
+    {
+      "id": "us-tx-weslaco",
+      "previous": 21,
+      "current": 21,
+      "tier": "bad"
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "previous": 57,
+      "current": 57,
+      "tier": "marginal"
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "previous": 21,
+      "current": 21,
+      "tier": "bad"
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "previous": 98,
+      "current": 93,
+      "tier": "prime"
+    }
+  ],
+  "unchangedNativeOrchardTiers": 23,
+  "freezeAndChillingUnchanged": true,
+  "allPointScoresNoGreaterThanV7": true
+}

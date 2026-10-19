@@ -1,0 +1,109 @@
+{
+  "reviewDate": "2026-10-19",
+  "scope": "Cultivated edible olive orchard evidence, not wild African or Laperrine olives. Cases inform validation; do not add geographic score bonuses or blanket desert exclusions.",
+  "cases": [
+    {
+      "id": "daouia-el-oued-2010-2014",
+      "source": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/19050/1/ACILA.Smail.pdf",
+      "citation": "Acila, Smail (2018), Universite Kasdi Merbah Ouargla doctorate, experimental chapters V-VIII.",
+      "kind": "Five-year measured fruit yields, irrigated experimental commercial-farm trees",
+      "latitude": 33.334167,
+      "longitude": 6.813889,
+      "elevationM": 80,
+      "coordinateCaution": "Chapter VI p90 gives 33deg20min3sec N, 6deg48min50sec E; reject erroneous 30deg30min elsewhere in thesis.",
+      "years": [2010, 2011, 2012, 2013, 2014],
+      "fruitKgPerTree": {
+        "Chemlal": [43, 72, 55, 70, 66.6],
+        "Sigoise": [41.8, 70, 41.6, 71, 53],
+        "Gordal": [31, 48, 33, 32.6, 46],
+        "Manzanilla": [25, 42, 32.4, 53, 44]
+      },
+      "table": "VIII.1, printed p107, PDF page124",
+      "irrigationLitersPerTreePerDayJanuary": 52,
+      "irrigationLitersPerTreePerDayAugust": 150,
+      "treesPerHaMethods": 280,
+      "irrigationWaterEC_dSm": 3.73,
+      "weather": {
+        "origin": "ONM Guemar aerodrome station, quoted in TableV.1 p82, 2004-2014",
+        "monthlyMeanTmaxC": [17.65, 19.51, 24.21, 28.69, 33.28, 38.62, 42.07, 41.13, 35.53, 30.55, 22.96, 17.99],
+        "monthlyMeanTminC": [4.91, 6.23, 10.61, 14.68, 18.7, 23.69, 27.08, 26.46, 22.49, 17.11, 9.94, 6.75],
+        "annualRainMm": 69.58,
+        "annualEvaporationMm": 2334.05
+      },
+      "limitations": "Not Arbequina. Small cultivar samples, no randomized water treatment, five years only. Generally low oil content and regional economic/yield concerns. Windbreaks, fertilizer and irrigation essential; does not establish unassisted broad Sahara suitability."
+    },
+    {
+      "id": "wadi-al-natrun-2024-2025",
+      "source": "https://www.nature.com/articles/s41598-026-57940-1",
+      "doi": "10.1038/s41598-026-57940-1",
+      "citation": "Hamdy et al., Scientific Reports16,23462, published2026-07-28",
+      "kind": "Two measured mature-orchard harvests, four randomized blocks",
+      "latitude": 30.400472,
+      "longitude": 30.039056,
+      "coordinatePrecision": "Authors say approximate",
+      "plantingYear": 2015,
+      "spacingM": [4, 6],
+      "years": [2024, 2025],
+      "fruitKgPerTree": {
+        "Arbequina": [12.1, 11.8],
+        "Arbosana": [13.5, 13.0],
+        "Coratina": [22.5, 21.2],
+        "Maraqi": [16.2, 14.5]
+      },
+      "annualIrrigationM3PerHa": 4500,
+      "soilEC_dSmRange": [0.4, 1.15],
+      "weather": "On-site weather used for FAO56 scheduling; no daily numeric temperature series extracted.",
+      "limitations": "Only two seasons; non-saline trial despite desert-land setting. Fruiting benchmark for Arbequina, not proven multi-decade yield reliability or central-Sahara climate."
+    },
+    {
+      "id": "siwa-regional-records-2000-2011",
+      "source": "https://digitalcommons.usu.edu/cee_facpub/3756/",
+      "doi": "10.1016/j.aej.2019.12.018",
+      "citation": "Moghazy and Kaluarachchi, Alexandria Engineering Journal59,149-163 (online2019-12-24; issue2020)",
+      "kind": "Regional agricultural and groundwater time series, not cultivar trial",
+      "oliveYieldChangePercent2000To2011": -46,
+      "groundwaterEC_dSm1996": 4.5,
+      "groundwaterEC_dSm2013": 10.5,
+      "limitations": "Observed correlation does not isolate climate or prove salinity alone caused each orchard's decline. Demonstrates existing olive production and irrigation sustainability risk."
+    },
+    {
+      "id": "siwa-hamid-wetteken-1998-1999",
+      "source": "https://journals.ekb.eg/article_258944_a1b3505abbfea3f6010430e4ce1e4503.pdf",
+      "citation": "Abdel-Nasser, Harhash and El-Shazly (2000), Response of some olive cultivars grown in Siwa Oasis to well water quality, Mansoura University Journal of Agricultural Sciences25,p2877",
+      "kind": "Ten existing orchards, two seasons of yield and water-quality observations",
+      "cultivars": ["Hamid", "Wetteken"],
+      "irrigationEC_dSm1998Range": [2.47, 7.23],
+      "irrigationEC_dSm1999Range": [2.62, 7.51],
+      "observedDirection": "Increasing irrigation-water salinity accompanied lower fruit yield, oil content and fruit size; Wetteken yield more sensitive than Hamid.",
+      "limitations": "PDF fetch timed out, but publisher indexed abstract and water tables accessible in web search. Do not extract exact yield magnitudes without full table. Cultivar differences prevent assigning this response to Arbequina."
+    },
+    {
+      "id": "revivim-negev-longterm-salinity",
+      "source": "https://mdpi-res.com/d_attachment/water/water-11-02556/article_deploy/water-11-02556.pdf",
+      "doi": "10.3390/w11122556",
+      "citation": "Katuri, Trifonov and Arye (2019), Water11,2556",
+      "kind": "Twenty-year orchard salinity investigation with fifteen-year yield trend figure",
+      "latitude": 31.0436,
+      "longitude": 34.7212,
+      "cultivar": "Barnea",
+      "plantingYear": 1995,
+      "irrigationWaterEC_dSm": 4.4,
+      "annualIrrigationMm": 800,
+      "additionalLeachingMm": 100,
+      "annualRainMmRange": [75, 125],
+      "potentialEvapotranspirationMm2014_2015": 2500,
+      "soilEC_dSmAlongDriplineRange": [10, 40],
+      "soilEC_dSmAcrossDriplineRange": [40, 120],
+      "observedDirection": "Yield decline and uprooting motivated sampling; long-term root-zone salinity and sodicity accumulated despite drip irrigation and explicit leaching water.",
+      "limitations": "Comparator arid region outside Sahara; soil EC measured spatially, not a scalar farm-average. Do not treat climate aridity as measured global groundwater salinity."
+    }
+  ],
+  "modelImplications": [
+    "Northern Saharan orchards can fruit for multiple years with selected cultivated olives, substantial irrigation and management. A global hard BIO5>40C exclusion would contradict the Oued Souf measurements.",
+    "Irrigation assumed must state adequate quantity and quality plus drainage/leaching. It does not establish availability, cost or sustainability of that water at every desert cell.",
+    "Do not infer water salinity solely from climate. If map lacks global usable-water and soils layers, express hyper-arid areas as resource-dependent rather than confidently prime reliable production.",
+    "Use heat exposure at reproductive/oil accumulation stages and cultivar-specific chilling where measured; summer maxima alone do not establish total crop failure.",
+    "Do not transfer mature Chemlal/Sigoise or Barnea performance automatically to Arbequina. Wadi Al-Natrun provides an Arbequina fruiting check but only two years.",
+    "No adequately verified central/southern Sahara multi-year edible-olive orchard case was located within this bounded search; absence of evidence is not a score penalty."
+  ]
+}
