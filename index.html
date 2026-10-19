@@ -1071,6 +1071,7 @@ async function scoreTerrainPatchAsync(p,signal){
  p.productionScores=Object.fromEntries(['Arbequina','Leccino','Frantoio'].map(k=>[k,{rainfed:new Uint8Array(n),irrigated:new Uint8Array(n)}]));
  for(let start=0;start<n;start+=2048){
   if(signal?.aborted)return false;
+  if(p!==embeddedTerrainDetail&&start%32768===0)$('terrain-status').textContent=`Computing terrain production constraints · ${Math.round(100*start/n)}%`;
   scoreTerrainChunk(p,start,Math.min(start+2048,n));
   await new Promise(resolve=>setTimeout(resolve,0));
  }
@@ -1653,11 +1654,14 @@ window.OleaAtlas=Object.freeze({model,assessProductionAt,productionRiskCode,harv
 // The embedded Cyprus window remains available without a network connection.
 const detailTiffs=new Map(),detailImages=new Map();let detailAbort=null,detailGeneration=0,detailTimer;
 const demPointCache=new Map();
+function detailDeadline(promise,ms=45000){
+ let timer;return Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Public climate detail source timed out')),ms);})]).finally(()=>clearTimeout(timer));
+}
 async function detailedImage(name,level){
  const key=name+':'+level;
  if(!detailImages.has(key))detailImages.set(key,(async()=>{
-  if(!detailTiffs.has(name))detailTiffs.set(name,GeoTIFF.fromUrl(nativeSource(name).url));
-  const t=await detailTiffs.get(name);return t.getImage(level);
+  if(!detailTiffs.has(name))detailTiffs.set(name,detailDeadline(GeoTIFF.fromUrl(nativeSource(name).url)));
+  const t=await detailTiffs.get(name);return detailDeadline(t.getImage(level));
  })().catch(e=>{detailImages.delete(key);detailTiffs.delete(name);throw e;}));
  return detailImages.get(key);
 }
@@ -1687,10 +1691,11 @@ async function loadNativeTerrain(){
  const winterMonths=b.north>=0?[10,11,12,1,2,3,4]:[4,5,6,7,8,9,10];
  const names=[...Object.keys(climateMeta.sources),'bio17',...['tasmin','tasmax'].flatMap(v=>winterMonths.map(m=>v+String(m).padStart(2,'0')))],results=new Array(names.length);let next=0;
  async function worker(){while(next<names.length){const f=next++,name=names[f],src=nativeSource(name),img=await detailedImage(name,level);if(signal.aborted)return;
-  const values=await img.readRasters({window:[x0,y0,x1,y1],samples:[0],interleave:true,signal});
+  const values=await detailDeadline(img.readRasters({window:[x0,y0,x1,y1],samples:[0],interleave:true,signal}));
   const mult=['bio05','bio06','bio10','bio11'].includes(name)||name.startsWith('tas')?10:1,packed=new Int16Array(W*H);
   for(let i=0;i<packed.length;i++){const v=values[i];packed[i]=v===src.nodata||!Number.isFinite(v)?-32768:Math.round((v*src.scale+src.offset)*mult);}
   results[f]={field:{id:name,multiplier:mult},plane:packed};
+  if(generation===detailGeneration&&!signal.aborted)$('terrain-status').textContent=`Loading terrain climate · ${results.filter(Boolean).length}/${names.length} layers`;
  }}
  try{
   await Promise.all([worker(),worker(),worker()]);if(generation!==detailGeneration||signal.aborted)return;
@@ -1698,7 +1703,7 @@ async function loadNativeTerrain(){
   if(!await scoreTerrainPatchAsync(p,signal)||generation!==detailGeneration)return;activeTerrainDetail=p;surface.draw();refreshRegionScores();
   $('terrain-status').textContent=p.resolutionLabel+' · climate & winter temperatures';
   if(currentPoint){const tab=document.querySelector('.tab.active')?.dataset.tab,scroll=$('sidebar').scrollTop;inspect(...currentPoint);renderOrchardEvidence();bindLocalCultivar();setTab(tab||'explore');$('sidebar').scrollTop=scroll;}
- }catch(e){if(generation!==detailGeneration||signal.aborted)return;$('terrain-status').textContent='Online detail unavailable · embedded climate shown';}
+ }catch(e){if(generation!==detailGeneration||signal.aborted)return;detailAbort.abort();detailImages.clear();detailTiffs.clear();$('terrain-status').textContent='Online detail unavailable · embedded climate shown';}
 }
 function scheduleNativeTerrain(){clearTimeout(detailTimer);detailTimer=setTimeout(loadNativeTerrain,180);}
 map.on('moveend zoomend',scheduleNativeTerrain);scheduleNativeTerrain();
