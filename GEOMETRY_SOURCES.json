@@ -1,5 +1,5 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "source": "https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/geojson/ne_10m_land.geojson",
   "dataset": "Natural Earth land v5.1.2 at 1:10 million scale",
   "licence": "public domain",

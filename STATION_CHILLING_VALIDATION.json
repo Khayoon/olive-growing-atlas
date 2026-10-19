@@ -1,878 +1,4674 @@
 {
-  "scope": "Calibration of modeled daily-weather DMA requirement attainment from modeled CHELSA normal-year CU. Not observed flower/fruit or yield probability.",
-  "stations": 45,
-  "completeStationSeasons": 919,
-  "cultivars": 3,
-  "crossValidation": "Leave complete geographic regions out; all cultivar outcomes of a station stay together. Station/cultivar equal weighting. Selection using these folds is not an independent final test.",
-  "coefficients": {
-    "intercept": -4.524002702022282,
-    "slope": 6.1948447502388895
-  },
-  "rawBrier": 0.0558243769463813,
-  "calibratedBrier": 0.039320039262867965,
-  "rawFractionMAE": 0.0558243769463813,
-  "calibratedFractionMAE": 0.04721971991751493,
-  "folds": [
+  "scope": "Geographic heldout full pipeline: weather correction nodes of heldout region are excluded, then chill logistic fits only training-region cases. Modeled DMA attainment is not observed flowering or yield. All candidate choices use same developmentfolds.",
+  "weatherNodes": "44matchedperiodprimary plus2shortpartialdevelopmentstations, permonthsampleyears/15supportweights, fixed250kmGaussian max500km with3C/4.5C climate matching. No radius tuned to orchard outcomes.",
+  "results": [
     {
-      "region": "east-asia",
-      "stationCultivarCases": 15,
-      "rawBrier": 0.022222222222222223,
-      "calibratedBrier": 0.02284846463138878
+      "support": "coarse",
+      "mode": "rawWarm",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.554710729088588,
+        "slope": 6.1576372604983876
+      },
+      "brier": 0.03737437362636187,
+      "fractionMAE": 0.043592144837161784,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.021999208307444087,
+          "fractionMAE": 0.03713022711834498,
+          "chillCoefficients": [
+            -4.166320522967339,
+            5.790379821059713
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 0.00013297342094422312,
+          "fractionMAE": 0.006851445618478003,
+          "chillCoefficients": [
+            -4.500319386443546,
+            6.083235582751138
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.029632762648459477,
+          "fractionMAE": 0.03513819830912414,
+          "chillCoefficients": [
+            -4.4438605036255066,
+            6.092253897699327
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.024588734106685637,
+          "fractionMAE": 0.052973748867228464,
+          "chillCoefficients": [
+            -4.656448785813489,
+            6.037229643252362
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.04776504682590977,
+          "fractionMAE": 0.05189097938330343,
+          "chillCoefficients": [
+            -4.039484899800115,
+            5.762047961688127
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.04570455587244073,
+          "fractionMAE": 0.0371218398241857,
+          "chillCoefficients": [
+            -4.724672634096913,
+            6.235288489979871
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07131545719524995,
+          "fractionMAE": 0.07371420591326437,
+          "chillCoefficients": [
+            -4.331103544598884,
+            5.9439280279566455
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.18126183694346207,
+          "fractionMAE": 0.1155192962518982,
+          "chillCoefficients": [
+            -4.438054591538842,
+            6.092359800433264
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996247307892673
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9879452736480354
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9816811112631085
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9544420683382555
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.42938056786385304
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.3662757928494782
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984648285003341
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9592799934587964
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9411842349363589
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9788750471293461
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.5744261836769499
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.4972406638787721
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987521153080484
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9475750145661332
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.923811621705859
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9191302850088261
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.233454941703324
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.19296960718404355
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999157078530666
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9972100433995165
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9955653159416035
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997957133690067
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9912329964215623
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9864094885056354
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989196989660706
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9790144468265327
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9686242568063059
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999522178561837
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9898340369339383
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9847462416301364
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99881419996681
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.967647015343647
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9532230354995236
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9993024262584743
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.980672399466322
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9715331530390504
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9994655096639657
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988002797155681
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9820776087653201
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.7809260641298708
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.16351256627670968
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.1399569267018719
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9727031395827456
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.5530396137787928
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.4779355730799492
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999362745542463
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9980811680873959
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9969635412023732
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996342446523512
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9901635959960146
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9849353549853543
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997572027621044
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9928287202445439
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9889323614704865
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9934904621216385
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8079046860862626
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.7482518557917953
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992612878157143
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.974935412902091
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9626830377406852
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999354972156286
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9979586817856472
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9967715934440472
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995208404363249
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9844170664756922
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9764354427315317
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999030212942341
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9970119180412381
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9953070560689956
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987503586793471
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9567045771587414
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9369594077286554
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998604265052023
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.994267800755588
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9910230033376457
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999450217922342
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9979670902038729
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9967499109844681
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999640584642884
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987302620569952
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9979538862456657
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9985105086590541
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9425545782663854
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9178423840224377
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9858157444112068
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.7015795348286246
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.6307940983382768
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998741144059302
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9962063800651134
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9940734802954746
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996765998793505
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.871184434576642
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.8255276625633552
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997869740150049
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9928725870947696
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9890195924208632
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997685957191667
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.992962559360001
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9891548948010725
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997363676749471
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9939553589660088
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.990644755488608
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995871744728865
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9902254611490702
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9850276947982838
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.0173019124127952
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.0173019124127952
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.0173019124127952
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9975642200850111
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.9411563204966218
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.9175682562163914
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9822942329028513
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.739791253669472
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6769860894575903
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9974833381249396
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9385348670924529
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9140970163173088
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9898840995512791
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.7895955457007449
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.7324628852682702
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999533814457777
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9876721251226738
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9816665108575741
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998077374556779
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9953163116356406
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9928704981353316
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999160931513347
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9980241511611484
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9969429932723576
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995243629859423
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9878303826578487
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9818953750449481
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998587896856306
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9635622498694159
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9477832644789036
+        }
+      ]
     },
     {
-      "region": "europe-fringe",
-      "stationCultivarCases": 12,
-      "rawBrier": 0.0,
-      "calibratedBrier": 0.0001130447320292401
+      "support": "coarse",
+      "mode": "localOnly",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.802267762553598,
+        "slope": 6.511214475748246
+      },
+      "brier": 0.0369773478854641,
+      "fractionMAE": 0.04106167805567676,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.020770152336012652,
+          "fractionMAE": 0.03162326729934107,
+          "chillCoefficients": [
+            -4.613177270313965,
+            6.237268028910364
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 8.320903185923822e-05,
+          "fractionMAE": 0.0052545451416120366,
+          "chillCoefficients": [
+            -4.75537881438886,
+            6.450426927823331
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.029536465351597336,
+          "fractionMAE": 0.034575131939027046,
+          "chillCoefficients": [
+            -4.647810446433697,
+            6.282058843815977
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.02173162636720402,
+          "fractionMAE": 0.044181056977151245,
+          "chillCoefficients": [
+            -4.6423511824266175,
+            6.2259245325978805
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.04897061938543644,
+          "fractionMAE": 0.05197012121257217,
+          "chillCoefficients": [
+            -4.359508369592634,
+            6.23726174581714
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.04544862169135875,
+          "fractionMAE": 0.03637956901362589,
+          "chillCoefficients": [
+            -4.7191973510278595,
+            6.382976037379842
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07148219776437349,
+          "fractionMAE": 0.0712719792703019,
+          "chillCoefficients": [
+            -4.506354134106841,
+            6.240890958650321
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.18292922572558915,
+          "fractionMAE": 0.11988489327656877,
+          "chillCoefficients": [
+            -4.690814715861716,
+            6.436316608573878
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996866030317575
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9887707929692843
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9827046660487428
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.962139980684197
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.4359901241303011
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.3694719925197849
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989335316966721
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9663803573758353
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9503763712715702
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9827778909111743
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.6045404504076322
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.5264961208389198
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990525420924101
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.956079694727325
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9353410717243571
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9312173745479221
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.24979952957150398
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.2063062205288684
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999399768179115
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9978401734126023
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996527729830207
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998514431079133
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.993017369731998
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9890517693990568
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992961580757646
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9835565519553756
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9747524944886149
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999699742778588
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9918902055491131
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9874312203691509
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992004982796867
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9716705153642734
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9577829606262559
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995486251570965
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9837686885575763
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9753320529674749
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996612073069076
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9903024206413699
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.985039965663149
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.7762351619392465
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.1319747496926669
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.11094889891395197
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9790537644055954
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.593692599358778
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.5171334202967309
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999496442504227
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9983135891327767
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9972925443477229
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999756498539576
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9927217360515559
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9886880047232308
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998404215556608
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9947497366095497
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9917777374862444
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9952494911755917
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8376689127702249
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.7829588189869634
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9994972149421948
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9808285188461073
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9710132196883662
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999641656946776
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998607401897809
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977351638811301
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996196577206116
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9859037330799689
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9784782279618522
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999453933579725
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9979285289794644
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9966549759971061
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991352310257573
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9661647919776725
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9499244927673114
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998994158911407
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9954831423510021
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9928457920056618
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999612454510111
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984382694955987
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9974745833203505
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999749184734736
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990355482892758
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998427879905433
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987012862467696
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9437163805963497
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9185700167971377
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9887779567193224
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.7111326761193554
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.6372999604296734
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998983916920899
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9965935986633523
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9946027899806998
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9971106744678762
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.8705153781668957
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.8230542208100194
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998252124057629
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9934710267556196
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9898020423799719
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999809642251905
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9935560462969873
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9899316947569332
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998423057198864
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9956234117441463
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9930389065087081
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997241152331432
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9927690593097099
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9887597734905184
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012623286862974988
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012623286862974988
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012623286862974988
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998534737273002
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.9532018922721144
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.932240213635987
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9873870446512962
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.7584469813313905
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6929839846200797
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984819449719782
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9509109489062029
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9290949290015662
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9931362794296887
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.809178977223754
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.7508859085577745
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997555345882451
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9914913993990003
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9868997014416856
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999062944003846
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9970236329262456
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9953052321661765
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999618105760955
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9988319855113669
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9981257589524036
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997501638480949
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9916100243973063
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9870775655990723
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991882569717847
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.972300725925303
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9589447454010832
+        }
+      ]
     },
     {
-      "region": "iberia",
-      "stationCultivarCases": 21,
-      "rawBrier": 0.03880070546737213,
-      "calibratedBrier": 0.030005267847797185
+      "support": "coarse",
+      "mode": "globalPlusLocal",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.561303979731634,
+        "slope": 6.513516422393782
+      },
+      "brier": 0.03725118686513117,
+      "fractionMAE": 0.04261354901887915,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.019188681838303762,
+          "fractionMAE": 0.024481102491515347,
+          "chillCoefficients": [
+            -4.491454436643959,
+            6.308966643992994
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 5.693673939667169e-05,
+          "fractionMAE": 0.0046140897428343835,
+          "chillCoefficients": [
+            -4.605576591302302,
+            6.510452348608538
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.027778353839632786,
+          "fractionMAE": 0.03329780290546813,
+          "chillCoefficients": [
+            -4.543890960433027,
+            6.350414275348188
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.026698548817807147,
+          "fractionMAE": 0.05750859023010369,
+          "chillCoefficients": [
+            -4.38636304706086,
+            6.208625064896313
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.04501168732852933,
+          "fractionMAE": 0.04677066137973506,
+          "chillCoefficients": [
+            -4.032226191653682,
+            6.192200104335638
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.05201301655394178,
+          "fractionMAE": 0.05147945412621733,
+          "chillCoefficients": [
+            -4.539430094056982,
+            6.397960556931845
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07095130376477961,
+          "fractionMAE": 0.07769006811887012,
+          "chillCoefficients": [
+            -4.230113197158356,
+            6.208390767562571
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.16397177211552352,
+          "fractionMAE": 0.0486721091967115,
+          "chillCoefficients": [
+            -4.470805283089079,
+            6.445876214716366
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996258881275335
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.985597398068329
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9779770855523982
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9451945829693801
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.4129315714460561
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.35187920497482805
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998082119673242
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9403250777784887
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9150685872865526
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9677820965463076
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.4410918402332629
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.37326097614605086
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9982893956153973
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9164193216660809
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8819628465784912
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8117038963598034
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.11759991370754977
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.0996223748704084
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999111894636782
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996597571872976
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9945931971981368
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997509249492171
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9873667728531702
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9805746476352734
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999467672435015
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.986707301550375
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9794811787232132
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996962466705236
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9913826875538939
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9866631866213273
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989381960917972
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9626038548860777
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9449712310391307
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9993986288288558
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.976845116051479
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9652520342255602
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996219932002035
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9885698390564635
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9824473177411365
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.7064080266124882
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.09222824596386342
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.07925631104854165
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9761141891736573
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.5569362750725197
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.4839070545834125
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999364985567275
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977230990636844
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9963596276945218
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999735746173978
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9921225089069284
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9878532958841388
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997842431197554
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9926569949014077
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988657287034599
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9923377994783927
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.757324386514029
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.6916289840886465
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9993347898689401
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9735383858388093
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9607169513885726
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999619468586946
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984913624191771
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9975493094203579
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9994766958893151
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9798033509605565
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9697183339050229
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999317163316523
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9973479994074753
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9957384011773719
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987607930933575
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9507102816562448
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9288234003870102
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998453489239422
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.992392781524325
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9881361378382632
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999467978654626
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977165832629811
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9963420523963763
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999673204788476
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9986767986697777
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9978589809816709
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99842461440944
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9261409858387495
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8949457561052768
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9785574347501129
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.5807027781113406
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.5052765404515881
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999869088761973
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9953298644513566
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9926435453667515
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9960149379567506
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.8273497007619034
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.770681349086826
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997509525859186
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9906155857732144
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.985470249321963
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997623699513374
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9911414191782287
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9862630368845589
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998695670053752
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9961783291281163
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9939061386291635
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999791119530345
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9943295695460035
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9911859429364143
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.017425762403696397
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.017425762403696397
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.017425762403696397
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9975781472967805
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.925730301548706
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.896292261044914
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9811668464522252
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.7097260790823614
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6428765872815557
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9973871185882417
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9180892674826512
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8863452056370922
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9875225998751704
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.7030795180501193
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.635795753904063
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999582384436099
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9853913713565327
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9780591457497084
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998646749328266
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9957494560537905
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9934007112409613
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999949612278625
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984479452326757
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9975404177014797
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999616844067749
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.98704402366646
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.980467633029201
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987891415809208
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9592805098809486
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9412366524296764
+        }
+      ]
     },
     {
-      "region": "mediterranean-east",
-      "stationCultivarCases": 24,
-      "rawBrier": 0.02083333333333333,
-      "calibratedBrier": 0.024952498976623192
+      "support": "native",
+      "mode": "rawWarm",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.55876481492459,
+        "slope": 6.3527010966268245
+      },
+      "brier": 0.03738019853235504,
+      "fractionMAE": 0.03971422377618414,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.01945275672989847,
+          "fractionMAE": 0.025794485107556317,
+          "chillCoefficients": [
+            -4.261740824697316,
+            6.032252744095313
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 4.811298336230655e-05,
+          "fractionMAE": 0.004595454394544248,
+          "chillCoefficients": [
+            -4.511927831013728,
+            6.28898406348108
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.023591594130483205,
+          "fractionMAE": 0.015954594490989512,
+          "chillCoefficients": [
+            -4.4448952740412135,
+            6.160254793455068
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.030217491007292836,
+          "fractionMAE": 0.05872407366171393,
+          "chillCoefficients": [
+            -4.820129999968523,
+            6.37841370103894
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.04748798039810787,
+          "fractionMAE": 0.048043578686999204,
+          "chillCoefficients": [
+            -4.081285090226239,
+            5.991333856774357
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.044199208917204025,
+          "fractionMAE": 0.03266653870377095,
+          "chillCoefficients": [
+            -4.31333013490018,
+            6.108312286274108
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07805880730125163,
+          "fractionMAE": 0.08559050153882597,
+          "chillCoefficients": [
+            -4.2943311707702385,
+            6.118124354164558
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.19318052148009554,
+          "fractionMAE": 0.14536197650387805,
+          "chillCoefficients": [
+            -4.44608742789189,
+            6.308347883786579
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9988557824571405
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9592716020826937
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.940628010163284
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.967658355568847
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.49408702911033
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.42553397824787625
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991827955756236
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9755115694276604
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9637252775531193
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9869752210483042
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.6885615561576276
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.618045072380666
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9984388403501969
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9364135213873226
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9098476585630286
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9737441514956937
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.4751791216517676
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.4077985120975123
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999234141989911
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9975703873532119
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996177295062046
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998746957116234
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9952532767941829
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9926326819411034
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995078630224409
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9884658368326157
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9822968998904255
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997220594502446
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9929501365941045
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9892017997412728
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990589105747468
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9715291261980195
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9582149097568954
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990162107848143
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9654084503307976
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9496339247049912
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996297499776051
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9904576440712803
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9854956067435686
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.7004358121239413
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.10141722720823368
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.08800056574333859
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9606326742274479
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.3978089033803369
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.33166688404265754
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999436050389655
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9982097626970093
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9971545589884921
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998215680127173
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9942283301183426
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9908924947025863
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997323894921835
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9895141667519531
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9837002887358284
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977303906488427
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9025051242774089
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8628172487777863
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998765260032408
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9436689653669366
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.91792534968191
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999313599864369
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977233280462959
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996371940072063
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997210515864767
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9888965566590383
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9827675991600191
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999382363957497
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9978080575302816
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9965044685239599
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991828408883352
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.964635385418257
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9472853444013681
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998991104763528
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.996238577233844
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9941328060506656
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997543813955507
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9897889598037527
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9844459425206714
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999742836067995
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991908254349495
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987030596652445
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9986723440309264
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9464153042501626
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9229364820533648
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9898162344031907
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.7468393252688674
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.6790628386459574
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998915173462735
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9966027277199786
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.994664995157887
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9845383242962603
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.6109781911635085
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.5366870239841912
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997574285169817
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9923653947896569
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988226161028601
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998220604387086
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9939301185695174
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9905873061008019
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997848350870706
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9947475870850404
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.991774134793089
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999759343435455
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9931634310034165
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9892551867716994
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.01689600748373435
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.016605358031436628
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.016605358031436628
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9983780920741865
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.9551369886431278
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.9358197275975096
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9841865578844854
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.7539374638409682
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6912502444740026
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9985280646738094
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9558941522014374
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9368514383778385
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9888364271168052
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.7454233275717735
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.6818677295372275
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996219406251083
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9882137973462857
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9822855066610834
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998748681186658
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9965042970148563
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9945895636017814
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999458044187535
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9985237385029433
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9976780724789988
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99961920773916
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988618783950233
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9828771616450491
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992079552700266
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9756949010103069
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.964319048374549
+        }
+      ]
     },
     {
-      "region": "north-america",
-      "stationCultivarCases": 30,
-      "rawBrier": 0.07988253576488871,
-      "calibratedBrier": 0.04988517399835214
+      "support": "native",
+      "mode": "localOnly",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.827169499769783,
+        "slope": 6.583330956332344
+      },
+      "brier": 0.036575297773593016,
+      "fractionMAE": 0.03764811761811431,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.018831589906849376,
+          "fractionMAE": 0.02024141942366365,
+          "chillCoefficients": [
+            -4.720906792526586,
+            6.3786365874975255
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 4.249976677470069e-05,
+          "fractionMAE": 0.004228712417172015,
+          "chillCoefficients": [
+            -4.779463707739466,
+            6.52140357640388
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.023782562958206497,
+          "fractionMAE": 0.018557935534233856,
+          "chillCoefficients": [
+            -4.721691856199595,
+            6.378310936594468
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.02882721290284961,
+          "fractionMAE": 0.0564000279758897,
+          "chillCoefficients": [
+            -4.688019430283171,
+            6.301203039447896
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.046754434355516926,
+          "fractionMAE": 0.04585657328294362,
+          "chillCoefficients": [
+            -4.3538174596744,
+            6.259248544330411
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.04361124485649251,
+          "fractionMAE": 0.030997295113176147,
+          "chillCoefficients": [
+            -4.558533415734342,
+            6.306065309699631
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07511188660065714,
+          "fractionMAE": 0.07790378923578582,
+          "chillCoefficients": [
+            -4.508456987118696,
+            6.301183578080606
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.18780673167167403,
+          "fractionMAE": 0.1325859012749657,
+          "chillCoefficients": [
+            -4.708360791467399,
+            6.509313541358761
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989852890269866
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9589724259438227
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9394063835613977
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9681569169596812
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.4725285279480879
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.4025836845061307
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992802372815133
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9760927606965414
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9641595621017678
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9874119486629156
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.6711800774901391
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.5965901926080001
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9985922666257573
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9353039024155743
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9072959813008142
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9740344304761785
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.44815109883553816
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.37972549693467456
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999937374385317
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977773835155083
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9964508901007948
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998958892138788
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9955617181239723
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9930115733970771
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995891789986248
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9891699167903386
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9831064733592351
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997847592230446
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.993421373208433
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9896715950840884
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999218233048924
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9712023264587265
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9568085303026872
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991806709359222
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9646220577075862
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.947396986215309
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997085067327535
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9909379412308353
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9858876255603582
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.6645636281425227
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.0743787638463267
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.06374398646873022
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9619385113779861
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.41682486662839463
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.3501428703114591
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999550497333686
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9983869182967364
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9973934750150681
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998160031330648
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9942935744731429
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9910446074946614
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997253946843749
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.989706626028544
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9840827132214063
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977306022225864
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9065482779703052
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8688002313211357
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987562396151958
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9457396954779675
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9212187458222545
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999506877279627
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9981509298658113
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9969970036770053
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.999683824229741
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9878736292232908
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9813340883332339
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999522523331038
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9980659159567088
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9968615567145119
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9991727445791596
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9657686296229672
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9491893339544596
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999167609902113
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9965096288187981
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9944758919301477
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997914248721681
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.990209866119791
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9848796348302737
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999797014085071
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9992857677808837
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9988375505124788
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9988163745263814
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9455044138880105
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9206608403254629
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9900668193384149
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.7302035629858551
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.6576209601774569
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999115059944327
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9968682453848298
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9950020537530383
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9849525121058906
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.5861193113025771
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.508188434766118
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997964016657086
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9927554386210421
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988652921925519
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998522801409905
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9942873043647319
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9910009586241607
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998258044473377
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9952118152769287
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9923739158463671
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997527354216569
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9932544652540595
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9894554636321449
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012927575124462349
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012694415110397114
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.012694415110397114
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99866794026771
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.9570971726245487
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.9375864767664794
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9855947109397428
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.7464495156954953
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6796104213373058
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9987963792379798
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9578548831778506
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9386362435207855
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9899923654088112
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.7373736750511988
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.6696118210563622
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997091539659533
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9894078185650372
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9837779801680712
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999083842588194
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9970277589726525
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.995307683981338
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999617785945486
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998792682243532
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9980619333788409
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997069569586918
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9897882030803792
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9843444248636662
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9993701224524976
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9774133452761861
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.966242074560367
+        }
+      ]
     },
     {
-      "region": "oceania",
-      "stationCultivarCases": 24,
-      "rawBrier": 0.08298611111111111,
-      "calibratedBrier": 0.051336962472995774
-    },
-    {
-      "region": "south-america",
-      "stationCultivarCases": 6,
-      "rawBrier": 0.08333333333333333,
-      "calibratedBrier": 0.07542772133086846
-    },
-    {
-      "region": "southern-africa",
-      "stationCultivarCases": 3,
-      "rawBrier": 0.3333333333333333,
-      "calibratedBrier": 0.18464751556720724
+      "support": "native",
+      "mode": "globalPlusLocal",
+      "stations": 45,
+      "stationSeasons": 919,
+      "coefficients": {
+        "intercept": -4.693858877818298,
+        "slope": 6.613064482223936
+      },
+      "brier": 0.03606841523794372,
+      "fractionMAE": 0.03709048185111695,
+      "folds": [
+        {
+          "region": "east-asia",
+          "cases": 15,
+          "brier": 0.01925745705966917,
+          "fractionMAE": 0.025886546902155527,
+          "chillCoefficients": [
+            -4.608707404216228,
+            6.398217867190728
+          ]
+        },
+        {
+          "region": "europe-fringe",
+          "cases": 12,
+          "brier": 4.870085866667817e-05,
+          "fractionMAE": 0.004587961414162604,
+          "chillCoefficients": [
+            -4.672149684104477,
+            6.563863533361149
+          ]
+        },
+        {
+          "region": "iberia",
+          "cases": 21,
+          "brier": 0.023624768899976396,
+          "fractionMAE": 0.01635447526019838,
+          "chillCoefficients": [
+            -4.603936239079879,
+            6.408050603485567
+          ]
+        },
+        {
+          "region": "mediterranean-east",
+          "cases": 24,
+          "brier": 0.031088895022056005,
+          "fractionMAE": 0.06041421469074201,
+          "chillCoefficients": [
+            -4.506395499144881,
+            6.3010469778269815
+          ]
+        },
+        {
+          "region": "north-america",
+          "cases": 30,
+          "brier": 0.04439424353411511,
+          "fractionMAE": 0.043582251174053864,
+          "chillCoefficients": [
+            -4.191816965806356,
+            6.270168975104903
+          ]
+        },
+        {
+          "region": "oceania",
+          "cases": 24,
+          "brier": 0.04283258968609608,
+          "fractionMAE": 0.02948771445395885,
+          "chillCoefficients": [
+            -4.463834802703111,
+            6.340736424356739
+          ]
+        },
+        {
+          "region": "south-america",
+          "cases": 6,
+          "brier": 0.07897849176615254,
+          "fractionMAE": 0.09344094739290565,
+          "chillCoefficients": [
+            -4.433482239406741,
+            6.3649851984952015
+          ]
+        },
+        {
+          "region": "southern-africa",
+          "cases": 3,
+          "brier": 0.16795191813594715,
+          "fractionMAE": 0.06488593662748914,
+          "chillCoefficients": [
+            -4.597648849952507,
+            6.542822467385788
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "id": "SP000008410:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9988714900352847
+        },
+        {
+          "id": "SP000008410:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9522973807069716
+        },
+        {
+          "id": "SP000008410:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9302244376162514
+        },
+        {
+          "id": "AR000087217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9705329625920559
+        },
+        {
+          "id": "AR000087217:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.49719530944555457
+        },
+        {
+          "id": "AR000087217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.25,
+          "geographicHeldoutPrediction": 0.4260792838247112
+        },
+        {
+          "id": "AR000087418:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.998789657099618
+        },
+        {
+          "id": "AR000087418:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9566523998176257
+        },
+        {
+          "id": "AR000087418:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9366538894035323
+        },
+        {
+          "id": "ASN00009021:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9821017433956418
+        },
+        {
+          "id": "ASN00009021:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.53125,
+          "geographicHeldoutPrediction": 0.5847716585086105
+        },
+        {
+          "id": "ASN00009021:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.375,
+          "geographicHeldoutPrediction": 0.509743611337643
+        },
+        {
+          "id": "ASN00023034:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9982455132842442
+        },
+        {
+          "id": "ASN00023034:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9147520754135375
+        },
+        {
+          "id": "ASN00023034:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8801784835205124
+        },
+        {
+          "id": "ASN00066037:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9628113801778739
+        },
+        {
+          "id": "ASN00066037:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.5333333333333333,
+          "geographicHeldoutPrediction": 0.36645782290022477
+        },
+        {
+          "id": "ASN00066037:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.3333333333333333,
+          "geographicHeldoutPrediction": 0.30795461731301754
+        },
+        {
+          "id": "ASN00070339:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999061807086369
+        },
+        {
+          "id": "ASN00070339:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9964851880020684
+        },
+        {
+          "id": "ASN00070339:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9944398199920024
+        },
+        {
+          "id": "ASN00086038:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998665392958328
+        },
+        {
+          "id": "ASN00086038:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9939581447067424
+        },
+        {
+          "id": "ASN00086038:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9905587714654748
+        },
+        {
+          "id": "AU000016402:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995736932069809
+        },
+        {
+          "id": "AU000016402:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9884415516040611
+        },
+        {
+          "id": "AU000016402:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9820210961157001
+        },
+        {
+          "id": "CHM00056187:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997599594499301
+        },
+        {
+          "id": "CHM00056187:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9926591710268287
+        },
+        {
+          "id": "CHM00056187:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9885241330680767
+        },
+        {
+          "id": "CHM00056571:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989101929082952
+        },
+        {
+          "id": "CHM00056571:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9617629558432113
+        },
+        {
+          "id": "CHM00056571:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9523809523809523,
+          "geographicHeldoutPrediction": 0.9434748176662814
+        },
+        {
+          "id": "CHM00056778:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989924726091263
+        },
+        {
+          "id": "CHM00056778:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9578209921574583
+        },
+        {
+          "id": "CHM00056778:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9379349453018199
+        },
+        {
+          "id": "CHM00057411:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996746475020625
+        },
+        {
+          "id": "CHM00057411:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9897965082742692
+        },
+        {
+          "id": "CHM00057411:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9841882861830977
+        },
+        {
+          "id": "CHM00059287:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.6666666666666666,
+          "geographicHeldoutPrediction": 0.6977717078261889
+        },
+        {
+          "id": "CHM00059287:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.08527128117556063
+        },
+        {
+          "id": "CHM00059287:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.07304001080675494
+        },
+        {
+          "id": "CY000176090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9572097774033388
+        },
+        {
+          "id": "CY000176090:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.8181818181818182,
+          "geographicHeldoutPrediction": 0.3816219869766297
+        },
+        {
+          "id": "CY000176090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.7272727272727273,
+          "geographicHeldoutPrediction": 0.32087914736490125
+        },
+        {
+          "id": "FR000007510:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999387771848668
+        },
+        {
+          "id": "FR000007510:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9977252406218077
+        },
+        {
+          "id": "FR000007510:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9963498333052239
+        },
+        {
+          "id": "GR000016648:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997741951707247
+        },
+        {
+          "id": "GR000016648:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9928874301700199
+        },
+        {
+          "id": "GR000016648:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9889374381016329
+        },
+        {
+          "id": "GR000016716:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997013877973889
+        },
+        {
+          "id": "GR000016716:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.988498692035664
+        },
+        {
+          "id": "GR000016716:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9823403601392262
+        },
+        {
+          "id": "GR000016734:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99770035143851
+        },
+        {
+          "id": "GR000016734:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9098826904849993
+        },
+        {
+          "id": "GR000016734:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.8737832963329237
+        },
+        {
+          "id": "GR000167230:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9986856334038089
+        },
+        {
+          "id": "GR000167230:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9410154546873891
+        },
+        {
+          "id": "GR000167230:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9151604522538397
+        },
+        {
+          "id": "HRE00105217:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999471688897186
+        },
+        {
+          "id": "HRE00105217:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9979496091049409
+        },
+        {
+          "id": "HRE00105217:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9966765965516515
+        },
+        {
+          "id": "IT000016320:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996827806577052
+        },
+        {
+          "id": "IT000016320:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9875837942126856
+        },
+        {
+          "id": "IT000016320:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9809781067539669
+        },
+        {
+          "id": "IT000162240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999410856451106
+        },
+        {
+          "id": "IT000162240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9976201752545271
+        },
+        {
+          "id": "IT000162240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9961539046591137
+        },
+        {
+          "id": "ITW00033126:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99899342793583
+        },
+        {
+          "id": "ITW00033126:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9584455570237188
+        },
+        {
+          "id": "ITW00033126:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9391404224841648
+        },
+        {
+          "id": "NZ000093417:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999143817367827
+        },
+        {
+          "id": "NZ000093417:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9962480321368955
+        },
+        {
+          "id": "NZ000093417:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9940729314529339
+        },
+        {
+          "id": "NZ000933090:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997773942762813
+        },
+        {
+          "id": "NZ000933090:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9889858733163405
+        },
+        {
+          "id": "NZ000933090:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9830593070000625
+        },
+        {
+          "id": "NZ000936150:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999737344316338
+        },
+        {
+          "id": "NZ000936150:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990378774712178
+        },
+        {
+          "id": "NZ000936150:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.99844097761995
+        },
+        {
+          "id": "PO000008535:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9989476302215717
+        },
+        {
+          "id": "PO000008535:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9502135845997496
+        },
+        {
+          "id": "PO000008535:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9273370900737294
+        },
+        {
+          "id": "SF000068438:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9847291139797315
+        },
+        {
+          "id": "SF000068438:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6,
+          "geographicHeldoutPrediction": 0.6283227839911169
+        },
+        {
+          "id": "SF000068438:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.4,
+          "geographicHeldoutPrediction": 0.551064139871082
+        },
+        {
+          "id": "SP000003195:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998569541657465
+        },
+        {
+          "id": "SP000003195:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9947881154125559
+        },
+        {
+          "id": "SP000003195:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9917818697403342
+        },
+        {
+          "id": "SPE00119783:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9871987528814009
+        },
+        {
+          "id": "SPE00119783:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.6296296296296297,
+          "geographicHeldoutPrediction": 0.6210639284871277
+        },
+        {
+          "id": "SPE00119783:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5555555555555556,
+          "geographicHeldoutPrediction": 0.5441871116545005
+        },
+        {
+          "id": "SPE00120089:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997181797987149
+        },
+        {
+          "id": "SPE00120089:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9893452530591087
+        },
+        {
+          "id": "SPE00120089:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.983504979950723
+        },
+        {
+          "id": "SPE00120170:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997879255301589
+        },
+        {
+          "id": "SPE00120170:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9916365810103391
+        },
+        {
+          "id": "SPE00120170:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9869660886648521
+        },
+        {
+          "id": "SZ000003700:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998202948074439
+        },
+        {
+          "id": "SZ000003700:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9949024340836748
+        },
+        {
+          "id": "SZ000003700:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9918968531071255
+        },
+        {
+          "id": "TU000017240:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9997584260247334
+        },
+        {
+          "id": "TU000017240:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9932955897414448
+        },
+        {
+          "id": "TU000017240:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9895569942814906
+        },
+        {
+          "id": "USR0000HPUW:Arbequina",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.015167029121631875
+        },
+        {
+          "id": "USR0000HPUW:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.014893616129591763
+        },
+        {
+          "id": "USR0000HPUW:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.0,
+          "geographicHeldoutPrediction": 0.014893616129591763
+        },
+        {
+          "id": "USW00003927:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9981235445455036
+        },
+        {
+          "id": "USW00003927:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.9411764705882353,
+          "geographicHeldoutPrediction": 0.9397825570408495
+        },
+        {
+          "id": "USW00003927:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.9117647058823529,
+          "geographicHeldoutPrediction": 0.914302688794018
+        },
+        {
+          "id": "USW00013904:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9822794206366223
+        },
+        {
+          "id": "USW00013904:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.3076923076923077,
+          "geographicHeldoutPrediction": 0.7085386831432217
+        },
+        {
+          "id": "USW00013904:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.2692307692307692,
+          "geographicHeldoutPrediction": 0.6397912428518692
+        },
+        {
+          "id": "USW00023155:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9981235445455036
+        },
+        {
+          "id": "USW00023155:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9335029317286169
+        },
+        {
+          "id": "USW00023155:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9059142615452886
+        },
+        {
+          "id": "USW00023160:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9857414731733591
+        },
+        {
+          "id": "USW00023160:Leccino",
+          "targetModeledDMAAttainmentFraction": 0.696969696969697,
+          "geographicHeldoutPrediction": 0.6668405369861989
+        },
+        {
+          "id": "USW00023160:Frantoio",
+          "targetModeledDMAAttainmentFraction": 0.5151515151515151,
+          "geographicHeldoutPrediction": 0.5958497584131113
+        },
+        {
+          "id": "USW00023213:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9995539055844431
+        },
+        {
+          "id": "USW00023213:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9834976724018967
+        },
+        {
+          "id": "USW00023213:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.975153781984826
+        },
+        {
+          "id": "USW00024225:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9998616816552431
+        },
+        {
+          "id": "USW00024225:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9954775220950399
+        },
+        {
+          "id": "USW00024225:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9929438197396006
+        },
+        {
+          "id": "USW00024232:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9999472937498494
+        },
+        {
+          "id": "USW00024232:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9982895289769923
+        },
+        {
+          "id": "USW00024232:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9972771983415997
+        },
+        {
+          "id": "USW00024257:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9996002801621641
+        },
+        {
+          "id": "USW00024257:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9858572393090957
+        },
+        {
+          "id": "USW00024257:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9785993210185314
+        },
+        {
+          "id": "USW00093193:Arbequina",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9990713587355637
+        },
+        {
+          "id": "USW00093193:Leccino",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.965429496176804
+        },
+        {
+          "id": "USW00093193:Frantoio",
+          "targetModeledDMAAttainmentFraction": 1.0,
+          "geographicHeldoutPrediction": 0.9494075988288149
+        }
+      ]
     }
   ],
-  "cases": [
-    {
-      "id": "SP000008410:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9994200417146997,
-      "normalToRequirementRatio": 5.911504424778762
-    },
-    {
-      "id": "SP000008410:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9890081582982783,
-      "normalToRequirementRatio": 3.2745098039215685
-    },
-    {
-      "id": "SP000008410:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9832272753393637,
-      "normalToRequirementRatio": 2.986587183308495
-    },
-    {
-      "id": "AR000087217:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.8527310622088229,
-      "normalToRequirementRatio": 1.7610619469026547
-    },
-    {
-      "id": "AR000087217:Leccino",
-      "observedModeledAttainmentFraction": 0.25,
-      "geographicHeldoutPrediction": 0.43888208968364495,
-      "normalToRequirementRatio": 0.9754901960784312
-    },
-    {
-      "id": "AR000087217:Frantoio",
-      "observedModeledAttainmentFraction": 0.25,
-      "geographicHeldoutPrediction": 0.37493061138193096,
-      "normalToRequirementRatio": 0.8897168405365126
-    },
-    {
-      "id": "AR000087418:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9973804853601869,
-      "normalToRequirementRatio": 4.560471976401181
-    },
-    {
-      "id": "AR000087418:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9615309793724433,
-      "normalToRequirementRatio": 2.526143790849673
-    },
-    {
-      "id": "AR000087418:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9442563090695096,
-      "normalToRequirementRatio": 2.3040238450074515
-    },
-    {
-      "id": "ASN00009021:Arbequina",
-      "observedModeledAttainmentFraction": 0.96875,
-      "geographicHeldoutPrediction": 0.9341086246665966,
-      "normalToRequirementRatio": 2.2359882005899707
-    },
-    {
-      "id": "ASN00009021:Leccino",
-      "observedModeledAttainmentFraction": 0.53125,
-      "geographicHeldoutPrediction": 0.579495239276202,
-      "normalToRequirementRatio": 1.238562091503268
-    },
-    {
-      "id": "ASN00009021:Frantoio",
-      "observedModeledAttainmentFraction": 0.375,
-      "geographicHeldoutPrediction": 0.5013102461260736,
-      "normalToRequirementRatio": 1.1296572280178836
-    },
-    {
-      "id": "ASN00023034:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9969754703550607,
-      "normalToRequirementRatio": 4.321533923303834
-    },
-    {
-      "id": "ASN00023034:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9503934759148212,
-      "normalToRequirementRatio": 2.393790849673202
-    },
-    {
-      "id": "ASN00023034:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9274232823159778,
-      "normalToRequirementRatio": 2.183308494783905
-    },
-    {
-      "id": "ASN00066037:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.6685870462082383,
-      "normalToRequirementRatio": 1.3775811209439528
-    },
-    {
-      "id": "ASN00066037:Leccino",
-      "observedModeledAttainmentFraction": 0.5333333333333333,
-      "geographicHeldoutPrediction": 0.2333246179650932,
-      "normalToRequirementRatio": 0.7630718954248366
-    },
-    {
-      "id": "ASN00066037:Frantoio",
-      "observedModeledAttainmentFraction": 0.3333333333333333,
-      "geographicHeldoutPrediction": 0.19231304087447748,
-      "normalToRequirementRatio": 0.6959761549925483
-    },
-    {
-      "id": "ASN00070339:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9998968760408229,
-      "normalToRequirementRatio": 8.082595870206488
-    },
-    {
-      "id": "ASN00070339:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9974781998236748,
-      "normalToRequirementRatio": 4.477124183006536
-    },
-    {
-      "id": "ASN00070339:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9959640164746858,
-      "normalToRequirementRatio": 4.083457526080478
-    },
-    {
-      "id": "ASN00086038:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9996283348522151,
-      "normalToRequirementRatio": 6.4159292035398225
-    },
-    {
-      "id": "ASN00086038:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9919392702877387,
-      "normalToRequirementRatio": 3.553921568627451
-    },
-    {
-      "id": "ASN00086038:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9874201952724148,
-      "normalToRequirementRatio": 3.2414307004470935
-    },
-    {
-      "id": "AU000016402:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9988976385121483,
-      "normalToRequirementRatio": 5.3097345132743365
-    },
-    {
-      "id": "AU000016402:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9806768379032907,
-      "normalToRequirementRatio": 2.9411764705882355
-    },
-    {
-      "id": "AU000016402:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9710067411794981,
-      "normalToRequirementRatio": 2.6825633383010428
-    },
-    {
-      "id": "CHM00056187:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9994056081144367,
-      "normalToRequirementRatio": 6.368731563421828
-    },
-    {
-      "id": "CHM00056187:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9903163211682992,
-      "normalToRequirementRatio": 3.5277777777777786
-    },
-    {
-      "id": "CHM00056187:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9855084580549961,
-      "normalToRequirementRatio": 3.217585692995529
-    },
-    {
-      "id": "CHM00056571:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9977880342634028,
-      "normalToRequirementRatio": 4.861356932153392
-    },
-    {
-      "id": "CHM00056571:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.969400902944231,
-      "normalToRequirementRatio": 2.69281045751634
-    },
-    {
-      "id": "CHM00056571:Frantoio",
-      "observedModeledAttainmentFraction": 0.9523809523809523,
-      "geographicHeldoutPrediction": 0.9558392627312267,
-      "normalToRequirementRatio": 2.4560357675111772
-    },
-    {
-      "id": "CHM00056778:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9987766173091646,
-      "normalToRequirementRatio": 5.498525073746313
-    },
-    {
-      "id": "CHM00056778:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9816654684052295,
-      "normalToRequirementRatio": 3.045751633986928
-    },
-    {
-      "id": "CHM00056778:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9730574528546029,
-      "normalToRequirementRatio": 2.7779433681073025
-    },
-    {
-      "id": "CHM00057411:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9992850834727418,
-      "normalToRequirementRatio": 6.135693215339233
-    },
-    {
-      "id": "CHM00057411:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9885845030326086,
-      "normalToRequirementRatio": 3.3986928104575167
-    },
-    {
-      "id": "CHM00057411:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9829905173808704,
-      "normalToRequirementRatio": 3.0998509687034277
-    },
-    {
-      "id": "CHM00059287:Arbequina",
-      "observedModeledAttainmentFraction": 0.2857142857142857,
-      "geographicHeldoutPrediction": 0.47620728400324847,
-      "normalToRequirementRatio": 0.9911504424778761
-    },
-    {
-      "id": "CHM00059287:Leccino",
-      "observedModeledAttainmentFraction": 0.0,
-      "geographicHeldoutPrediction": 0.17671922225163292,
-      "normalToRequirementRatio": 0.5490196078431373
-    },
-    {
-      "id": "CHM00059287:Frantoio",
-      "observedModeledAttainmentFraction": 0.0,
-      "geographicHeldoutPrediction": 0.1517748598395445,
-      "normalToRequirementRatio": 0.5007451564828616
-    },
-    {
-      "id": "CY000176090:Arbequina",
-      "observedModeledAttainmentFraction": 0.9545454545454546,
-      "geographicHeldoutPrediction": 0.9260119417770318,
-      "normalToRequirementRatio": 2.2389380530973453
-    },
-    {
-      "id": "CY000176090:Leccino",
-      "observedModeledAttainmentFraction": 0.8181818181818182,
-      "geographicHeldoutPrediction": 0.5740656529421765,
-      "normalToRequirementRatio": 1.2401960784313726
-    },
-    {
-      "id": "CY000176090:Frantoio",
-      "observedModeledAttainmentFraction": 0.7272727272727273,
-      "geographicHeldoutPrediction": 0.49920437917509236,
-      "normalToRequirementRatio": 1.1311475409836067
-    },
-    {
-      "id": "FR000007510:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.999925169493171,
-      "normalToRequirementRatio": 8.646017699115045
-    },
-    {
-      "id": "FR000007510:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9982792458735508,
-      "normalToRequirementRatio": 4.78921568627451
-    },
-    {
-      "id": "FR000007510:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9972659879567288,
-      "normalToRequirementRatio": 4.368107302533533
-    },
-    {
-      "id": "GR000016648:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9995301720368927,
-      "normalToRequirementRatio": 6.575221238938053
-    },
-    {
-      "id": "GR000016648:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9910101372588492,
-      "normalToRequirementRatio": 3.6421568627450984
-    },
-    {
-      "id": "GR000016648:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9862184602754986,
-      "normalToRequirementRatio": 3.321907600596125
-    },
-    {
-      "id": "GR000016716:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9996695441144959,
-      "normalToRequirementRatio": 7.029498525073745
-    },
-    {
-      "id": "GR000016716:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9934499351870358,
-      "normalToRequirementRatio": 3.893790849673202
-    },
-    {
-      "id": "GR000016716:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.989882331571536,
-      "normalToRequirementRatio": 3.5514157973174365
-    },
-    {
-      "id": "GR000016734:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9823905706737324,
-      "normalToRequirementRatio": 3.1474926253687316
-    },
-    {
-      "id": "GR000016734:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.8210443157728451,
-      "normalToRequirementRatio": 1.7434640522875817
-    },
-    {
-      "id": "GR000016734:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.7642052829930223,
-      "normalToRequirementRatio": 1.5901639344262293
-    },
-    {
-      "id": "GR000167230:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9986415258211481,
-      "normalToRequirementRatio": 5.353982300884955
-    },
-    {
-      "id": "GR000167230:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9770362381152083,
-      "normalToRequirementRatio": 2.9656862745098045
-    },
-    {
-      "id": "GR000167230:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9657582556797594,
-      "normalToRequirementRatio": 2.7049180327868854
-    },
-    {
-      "id": "HRE00105217:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9999189174658847,
-      "normalToRequirementRatio": 8.663716814159292
-    },
-    {
-      "id": "HRE00105217:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9981528529871297,
-      "normalToRequirementRatio": 4.799019607843137
-    },
-    {
-      "id": "HRE00105217:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.997069263401671,
-      "normalToRequirementRatio": 4.377049180327868
-    },
-    {
-      "id": "IT000016320:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9992113713934049,
-      "normalToRequirementRatio": 5.952802359882006
-    },
-    {
-      "id": "IT000016320:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9857430901711383,
-      "normalToRequirementRatio": 3.2973856209150325
-    },
-    {
-      "id": "IT000016320:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9784149487152698,
-      "normalToRequirementRatio": 3.0074515648286138
-    },
-    {
-      "id": "IT000162240:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9998768794070307,
-      "normalToRequirementRatio": 8.026548672566372
-    },
-    {
-      "id": "IT000162240:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9972889117610652,
-      "normalToRequirementRatio": 4.446078431372549
-    },
-    {
-      "id": "IT000162240:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9957283728315354,
-      "normalToRequirementRatio": 4.055141579731743
-    },
-    {
-      "id": "ITW00033126:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9974220612118491,
-      "normalToRequirementRatio": 4.713864306784661
-    },
-    {
-      "id": "ITW00033126:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.960244940847928,
-      "normalToRequirementRatio": 2.6111111111111116
-    },
-    {
-      "id": "ITW00033126:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9419901772962763,
-      "normalToRequirementRatio": 2.381520119225037
-    },
-    {
-      "id": "NZ000093417:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9997698791559232,
-      "normalToRequirementRatio": 6.999999999999998
-    },
-    {
-      "id": "NZ000093417:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.994763176865987,
-      "normalToRequirementRatio": 3.8774509803921564
-    },
-    {
-      "id": "NZ000093417:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9917432303046837,
-      "normalToRequirementRatio": 3.536512667660208
-    },
-    {
-      "id": "NZ000933090:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9999273031738876,
-      "normalToRequirementRatio": 8.59882005899705
-    },
-    {
-      "id": "NZ000933090:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9981710008146518,
-      "normalToRequirementRatio": 4.7630718954248366
-    },
-    {
-      "id": "NZ000933090:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9970556796312658,
-      "normalToRequirementRatio": 4.344262295081967
-    },
-    {
-      "id": "NZ000936150:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9999566384452983,
-      "normalToRequirementRatio": 9.415929203539822
-    },
-    {
-      "id": "NZ000936150:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9988654505324814,
-      "normalToRequirementRatio": 5.215686274509804
-    },
-    {
-      "id": "NZ000936150:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9981589467105331,
-      "normalToRequirementRatio": 4.757078986587183
-    },
-    {
-      "id": "PO000008535:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.996350933058328,
-      "normalToRequirementRatio": 4.12094395280236
-    },
-    {
-      "id": "PO000008535:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.946718278398312,
-      "normalToRequirementRatio": 2.2826797385620914
-    },
-    {
-      "id": "PO000008535:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9234204737381434,
-      "normalToRequirementRatio": 2.081967213114754
-    },
-    {
-      "id": "SF000068438:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9631823981945595,
-      "normalToRequirementRatio": 2.498525073746312
-    },
-    {
-      "id": "SF000068438:Leccino",
-      "observedModeledAttainmentFraction": 0.6,
-      "geographicHeldoutPrediction": 0.7139063432734085,
-      "normalToRequirementRatio": 1.3839869281045751
-    },
-    {
-      "id": "SF000068438:Frantoio",
-      "observedModeledAttainmentFraction": 0.4,
-      "geographicHeldoutPrediction": 0.6441564167925925,
-      "normalToRequirementRatio": 1.2622950819672134
-    },
-    {
-      "id": "SP000003195:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9998415141925395,
-      "normalToRequirementRatio": 7.536873156342184
-    },
-    {
-      "id": "SP000003195:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9965774879761218,
-      "normalToRequirementRatio": 4.17483660130719
-    },
-    {
-      "id": "SP000003195:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9946317259309041,
-      "normalToRequirementRatio": 3.8077496274217584
-    },
-    {
-      "id": "SPE00119783:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9896726446219394,
-      "normalToRequirementRatio": 3.31858407079646
-    },
-    {
-      "id": "SPE00119783:Leccino",
-      "observedModeledAttainmentFraction": 0.6296296296296297,
-      "geographicHeldoutPrediction": 0.8790597886272593,
-      "normalToRequirementRatio": 1.8382352941176463
-    },
-    {
-      "id": "SPE00119783:Frantoio",
-      "observedModeledAttainmentFraction": 0.5555555555555556,
-      "geographicHeldoutPrediction": 0.8352486392981902,
-      "normalToRequirementRatio": 1.6766020864381521
-    },
-    {
-      "id": "SPE00120089:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.999679849396079,
-      "normalToRequirementRatio": 6.613569321533922
-    },
-    {
-      "id": "SPE00120089:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9935330379697942,
-      "normalToRequirementRatio": 3.663398692810457
-    },
-    {
-      "id": "SPE00120089:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9899966981230848,
-      "normalToRequirementRatio": 3.341281669150522
-    },
-    {
-      "id": "SPE00120170:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9996843830790524,
-      "normalToRequirementRatio": 6.631268436578172
-    },
-    {
-      "id": "SPE00120170:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9936154195544024,
-      "normalToRequirementRatio": 3.6732026143790835
-    },
-    {
-      "id": "SPE00120170:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9901211273770073,
-      "normalToRequirementRatio": 3.350223546944859
-    },
-    {
-      "id": "SZ000003700:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9997314060769426,
-      "normalToRequirementRatio": 6.946902654867257
-    },
-    {
-      "id": "SZ000003700:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9944879103767916,
-      "normalToRequirementRatio": 3.848039215686275
-    },
-    {
-      "id": "SZ000003700:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9914412058043568,
-      "normalToRequirementRatio": 3.5096870342771984
-    },
-    {
-      "id": "TU000017240:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9995334745361587,
-      "normalToRequirementRatio": 6.584070796460177
-    },
-    {
-      "id": "TU000017240:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.991066794792881,
-      "normalToRequirementRatio": 3.6470588235294112
-    },
-    {
-      "id": "TU000017240:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9863031471057839,
-      "normalToRequirementRatio": 3.3263785394932937
-    },
-    {
-      "id": "USR0000HPUW:Arbequina",
-      "observedModeledAttainmentFraction": 0.0,
-      "geographicHeldoutPrediction": 0.01708819447096194,
-      "normalToRequirementRatio": 0.0
-    },
-    {
-      "id": "USR0000HPUW:Leccino",
-      "observedModeledAttainmentFraction": 0.0,
-      "geographicHeldoutPrediction": 0.01708819447096194,
-      "normalToRequirementRatio": 0.0
-    },
-    {
-      "id": "USR0000HPUW:Frantoio",
-      "observedModeledAttainmentFraction": 0.0,
-      "geographicHeldoutPrediction": 0.01708819447096194,
-      "normalToRequirementRatio": 0.0
-    },
-    {
-      "id": "USW00003927:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9957503475549766,
-      "normalToRequirementRatio": 4.0825958702064895
-    },
-    {
-      "id": "USW00003927:Leccino",
-      "observedModeledAttainmentFraction": 0.9411764705882353,
-      "geographicHeldoutPrediction": 0.9459307008702521,
-      "normalToRequirementRatio": 2.2614379084967324
-    },
-    {
-      "id": "USW00003927:Frantoio",
-      "observedModeledAttainmentFraction": 0.9117647058823529,
-      "geographicHeldoutPrediction": 0.9237193764799108,
-      "normalToRequirementRatio": 2.0625931445603576
-    },
-    {
-      "id": "USW00013904:Arbequina",
-      "observedModeledAttainmentFraction": 0.9615384615384616,
-      "geographicHeldoutPrediction": 0.9667576661935265,
-      "normalToRequirementRatio": 2.5575221238938055
-    },
-    {
-      "id": "USW00013904:Leccino",
-      "observedModeledAttainmentFraction": 0.3076923076923077,
-      "geographicHeldoutPrediction": 0.7518706168258746,
-      "normalToRequirementRatio": 1.4166666666666665
-    },
-    {
-      "id": "USW00013904:Frantoio",
-      "observedModeledAttainmentFraction": 0.2692307692307692,
-      "geographicHeldoutPrediction": 0.6897829573143069,
-      "normalToRequirementRatio": 1.2921013412816689
-    },
-    {
-      "id": "USW00023155:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9955130932503513,
-      "normalToRequirementRatio": 4.035398230088495
-    },
-    {
-      "id": "USW00023155:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9434720348934285,
-      "normalToRequirementRatio": 2.2352941176470584
-    },
-    {
-      "id": "USW00023155:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9204351831212019,
-      "normalToRequirementRatio": 2.0387481371087928
-    },
-    {
-      "id": "USW00023160:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9761967682187146,
-      "normalToRequirementRatio": 2.772861356932153
-    },
-    {
-      "id": "USW00023160:Leccino",
-      "observedModeledAttainmentFraction": 0.696969696969697,
-      "geographicHeldoutPrediction": 0.800654402847377,
-      "normalToRequirementRatio": 1.5359477124183005
-    },
-    {
-      "id": "USW00023160:Frantoio",
-      "observedModeledAttainmentFraction": 0.5151515151515151,
-      "geographicHeldoutPrediction": 0.7446573218808716,
-      "normalToRequirementRatio": 1.4008941877794339
-    },
-    {
-      "id": "USW00023213:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9993342438116471,
-      "normalToRequirementRatio": 5.982300884955753
-    },
-    {
-      "id": "USW00023213:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9889844420528947,
-      "normalToRequirementRatio": 3.313725490196079
-    },
-    {
-      "id": "USW00023213:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9835096337894395,
-      "normalToRequirementRatio": 3.022354694485842
-    },
-    {
-      "id": "USW00024225:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9997770153028943,
-      "normalToRequirementRatio": 7.4188790560471976
-    },
-    {
-      "id": "USW00024225:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.995878920093827,
-      "normalToRequirementRatio": 4.109477124183006
-    },
-    {
-      "id": "USW00024225:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9936853367211258,
-      "normalToRequirementRatio": 3.7481371087928466
-    },
-    {
-      "id": "USW00024232:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9999142964727702,
-      "normalToRequirementRatio": 8.914454277286136
-    },
-    {
-      "id": "USW00024232:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9982844784641276,
-      "normalToRequirementRatio": 4.937908496732026
-    },
-    {
-      "id": "USW00024232:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9973279314340409,
-      "normalToRequirementRatio": 4.503725782414307
-    },
-    {
-      "id": "USW00024257:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9993440223600459,
-      "normalToRequirementRatio": 5.999999999999999
-    },
-    {
-      "id": "USW00024257:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9891281516215548,
-      "normalToRequirementRatio": 3.3235294117647065
-    },
-    {
-      "id": "USW00024257:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.983718949867625,
-      "normalToRequirementRatio": 3.031296572280178
-    },
-    {
-      "id": "USW00093193:Arbequina",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9976334372065138,
-      "normalToRequirementRatio": 4.619469026548673
-    },
-    {
-      "id": "USW00093193:Leccino",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.966826343528686,
-      "normalToRequirementRatio": 2.558823529411764
-    },
-    {
-      "id": "USW00093193:Frantoio",
-      "observedModeledAttainmentFraction": 1.0,
-      "geographicHeldoutPrediction": 0.9521340296559894,
-      "normalToRequirementRatio": 2.3338301043219074
+  "development": {
+    "HuascoINIA65": {
+      "rawWarm": {
+        "warmNormalCU": 416,
+        "standardNormalCU": 237,
+        "modeledChillAttainment": 0.6290060282424602,
+        "chillPotentialComponent20to100": 70.32048225939681
+      },
+      "localOnly": {
+        "warmNormalCU": 586,
+        "standardNormalCU": 349,
+        "modeledChillAttainment": 0.8558371043366538,
+        "chillPotentialComponent20to100": 88.4669683469323
+      },
+      "globalPlusLocal": {
+        "warmNormalCU": 590,
+        "standardNormalCU": 356,
+        "modeledChillAttainment": 0.877914598327462,
+        "chillPotentialComponent20to100": 90.23316786619696
+      }
+    },
+    "Lalamilo": {
+      "rawWarm": {
+        "warmNormalCU": 2,
+        "standardNormalCU": 1,
+        "modeledChillAttainment": 0.010756866149739372,
+        "chillPotentialComponent20to100": 20.86054929197915
+      },
+      "localOnly": {
+        "warmNormalCU": 2,
+        "standardNormalCU": 2,
+        "modeledChillAttainment": 0.008256662331058063,
+        "chillPotentialComponent20to100": 20.660532986484647
+      },
+      "globalPlusLocal": {
+        "warmNormalCU": 2,
+        "standardNormalCU": 2,
+        "modeledChillAttainment": 0.009424640218194807,
+        "chillPotentialComponent20to100": 20.753971217455586
+      }
     }
-  ],
-  "selected": true
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "names": [
     "Arbequina",
     "Leccino",
@@ -16,7 +16,7 @@
   "order": "cultivar order, irrigated then rainfed",
   "validCells": 2255040,
   "rawBytes": 13530240,
-  "sha256": "532e8629ce9733bd59bee77d632bcf5f7d855860f40b51caa5ae42114435ad39",
+  "sha256": "7390a2cd2e90d24c700f53e7380a868e66d007173fe132be96e4af061cadc8bf",
   "index": "relative production potential, not percent of reliable annual yield",
   "confidence": "Separate from suitability; no score feature uses presence or absence of orchard studies."
 }

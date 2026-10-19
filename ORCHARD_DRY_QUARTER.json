@@ -1,0 +1,641 @@
+{
+  "version": "la-plata-native-dryquarter-v7",
+  "sampledUtc": "2026-10-19T01:11:41.781001+00:00",
+  "dataset": "CHELSA V2.1 1981-2010 native BIO17",
+  "license": "CC0 1.0",
+  "method": "Single containing native30-arcsecond pixel; no overview, interpolation or missing-value filling. Existing INIA controls and new checks may share coordinates but keep source IDs.",
+  "interpretation": "Scaled source BIO17 precipitation of driest quarter. Tag interpretation should be cross-checked against monthly precipitation before assigning a score. No leaf-wetness or infection probability inferred.",
+  "inputs": [
+    {
+      "file": "global-orchard-native-climate.json",
+      "sha256": "824ef30e455c4ef24ed2a6ed5768879db6370b4cdab15298223241f0b44ddf03"
+    },
+    {
+      "file": "la-plata-v7\\native-climate.json",
+      "sha256": "9037b82e3e9003243148b0bbe9424a5b183f6a035b083cd1a773c48d3f06b3ef"
+    }
+  ],
+  "source": {
+    "url": "https://os.unil.cloud.switch.ch/chelsa02/chelsa/global/bioclim/bio17/1981-2010/CHELSA_bio17_1981-2010_V.2.1.tif",
+    "scale": 0.1,
+    "offset": 0.0,
+    "nodata": 65535.0,
+    "tags": {
+      "cf_standard_name": "precipitation_flux",
+      "citation1": "Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E., Linder, P., Kessler, M. (2017). Climatologies at high resolution for the Earth land surface areas. Scientific Data. 4 170122. https://doi.org/10.1038/sdata.2017.122",
+      "contact": "dirk.karger@wsl.ch",
+      "data_cite": "Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E,, Linder, H.P., Kessler, M. (2021) Climatologies at high resolution for the earth’s land surface areas, Version 2.1. EnviDat. https://dx.doi.org/10.16904/envidat.228.v2.1 ",
+      "datetime": "1981-2010",
+      "forcing_activity_id": "Reanalysis",
+      "forcing_citation": "https://doi.org/10.24381/cds.adbb2d47",
+      "forcing_experiment_id": "Observation",
+      "forcing_institution_id": "Copernicus Climate Change Service at ECMWF",
+      "forcing_source_id": "ERA5",
+      "frequency": "bioclim",
+      "institution_id": "WSL",
+      "note": "-",
+      "product": "model-output",
+      "project": "CHELSA",
+      "source_id": "CHELSA_V2.1",
+      "variable": "bio17",
+      "variable_long_name": "Mean Monthly Precipitation of the Driest Quarter",
+      "variable_unit": "kg m-2 month-1",
+      "version": "2.1",
+      "AREA_OR_POINT": "Area"
+    },
+    "bounds": [
+      -180.00013888885002,
+      -90.00013888885,
+      179.99985967115003,
+      83.99986041515
+    ],
+    "width": 43200,
+    "height": 20880,
+    "resolutionDegrees": {
+      "dx": 0.0083333333,
+      "dy": 0.0083333333
+    }
+  },
+  "sites": [
+    {
+      "id": "es_pedro_abad_longterm",
+      "name": "Pedro Abad cultivar and density trials, Cordoba, Spain",
+      "lat": 37.9588889,
+      "lng": -4.4622222,
+      "bio17": 21.4,
+      "pixel": {
+        "row": 5524,
+        "column": 21064,
+        "pixelCenter": {
+          "lat": 37.96236059929999,
+          "lng": -4.4626395909999985
+        },
+        "rawValue": 214,
+        "value": 21.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "es_cordoba_commercial",
+      "name": "Commercial Arbequina orchard, Cordoba, Spain",
+      "lat": 37.64889,
+      "lng": -4.731579,
+      "bio17": 24.4,
+      "pixel": {
+        "row": 5562,
+        "column": 21032,
+        "pixelCenter": {
+          "lat": 37.64569393389999,
+          "lng": -4.729306256600012
+        },
+        "rawValue": 244,
+        "value": 24.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "pt_lombo_cobrancosa",
+      "name": "Lombo rainfed Cobrancosa orchard, Portugal",
+      "lat": 41.446556,
+      "lng": -6.822067,
+      "bio17": 61.0,
+      "pixel": {
+        "row": 5106,
+        "column": 20781,
+        "pixelCenter": {
+          "lat": 41.445693918699995,
+          "lng": -6.820972914900011
+        },
+        "rawValue": 610,
+        "value": 61.0,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "pt_lombo_madural",
+      "name": "Lombo rainfed Madural orchard, Portugal",
+      "lat": 41.457075,
+      "lng": -6.832459,
+      "bio17": 62.4,
+      "pixel": {
+        "row": 5105,
+        "column": 20780,
+        "pixelCenter": {
+          "lat": 41.454027251999996,
+          "lng": -6.829306248199998
+        },
+        "rawValue": 624,
+        "value": 62.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "gr_messinia_ac",
+      "name": "Messinia non-calcareous rainfed orchard, Greece",
+      "lat": 37.0389675,
+      "lng": 21.9130617,
+      "bio17": 19.8,
+      "pixel": {
+        "row": 5635,
+        "column": 24229,
+        "pixelCenter": {
+          "lat": 37.037360602999996,
+          "lng": 21.91236030350001
+        },
+        "rawValue": 198,
+        "value": 19.8,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "gr_messinia_al",
+      "name": "Messinia calcareous rainfed orchard, Greece",
+      "lat": 37.0363786,
+      "lng": 21.9075306,
+      "bio17": 20.1,
+      "pixel": {
+        "row": 5635,
+        "column": 24228,
+        "pixelCenter": {
+          "lat": 37.037360602999996,
+          "lng": 21.904026970199993
+        },
+        "rawValue": 201,
+        "value": 20.1,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "it_sicily_arbequina",
+      "name": "Sicily Arbequina high-density trial, Italy",
+      "lat": 37.7666667,
+      "lng": 12.5,
+      "bio17": 15.4,
+      "pixel": {
+        "row": 5547,
+        "column": 23100,
+        "pixelCenter": {
+          "lat": 37.77069393339999,
+          "lng": 12.504027007800005
+        },
+        "rawValue": 154,
+        "value": 15.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "it_apulia_arbequina",
+      "name": "Apulia Arbequina high-density trial, Italy",
+      "lat": 41.0166667,
+      "lng": 16.75,
+      "bio17": 84.2,
+      "pixel": {
+        "row": 5157,
+        "column": 23610,
+        "pixelCenter": {
+          "lat": 41.02069392039999,
+          "lng": 16.754026990799986
+        },
+        "rawValue": 842,
+        "value": 84.2,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "it_umbria_arbequina",
+      "name": "Umbria Arbequina high-density trial, Italy",
+      "lat": 42.95,
+      "lng": 12.4166667,
+      "bio17": 118.4,
+      "pixel": {
+        "row": 4925,
+        "column": 23090,
+        "pixelCenter": {
+          "lat": 42.954027245999995,
+          "lng": 12.420693674799992
+        },
+        "rawValue": 1184,
+        "value": 118.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "it_maiolati_freeze",
+      "name": "Maiolati Spontini frost-damage orchard, Italy",
+      "lat": 43.4769444,
+      "lng": 13.1191667,
+      "bio17": 160.1,
+      "pixel": {
+        "row": 4862,
+        "column": 23174,
+        "pixelCenter": {
+          "lat": 43.47902724389999,
+          "lng": 13.120693671999987
+        },
+        "rawValue": 1601,
+        "value": 160.1,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "tn_taous_ennwader",
+      "name": "Taous comparative cultivated-olive trial, Tunisia",
+      "lat": 34.9333333,
+      "lng": 10.6,
+      "bio17": 13.2,
+      "pixel": {
+        "row": 5887,
+        "column": 22872,
+        "pixelCenter": {
+          "lat": 34.937360611399995,
+          "lng": 10.604027015399993
+        },
+        "rawValue": 132,
+        "value": 13.2,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "au_roseworthy_nova",
+      "name": "Roseworthy NOVA cultivated variety collection, South Australia",
+      "lat": -34.52,
+      "lng": 138.68,
+      "bio17": 55.9,
+      "pixel": {
+        "row": 14222,
+        "column": 38241,
+        "pixelCenter": {
+          "lat": -34.52097244410001,
+          "lng": 138.67902650310003
+        },
+        "rawValue": 559,
+        "value": 55.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "uy-las-brujas",
+      "name": "INIA Las Brujas, Uruguay",
+      "lat": -34.666667,
+      "lng": -56.333333,
+      "bio17": 245.9,
+      "pixel": {
+        "row": 14239,
+        "column": 14840,
+        "pixelCenter": {
+          "lat": -34.66263911020002,
+          "lng": -56.3293060502
+        },
+        "rawValue": 2459,
+        "value": 245.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "uy-salto-grande",
+      "name": "INIA Salto Grande, Uruguay",
+      "lat": -31.266667,
+      "lng": -57.883333,
+      "bio17": 179.7,
+      "pixel": {
+        "row": 13831,
+        "column": 14654,
+        "pixelCenter": {
+          "lat": -31.262639123800014,
+          "lng": -57.879306044
+        },
+        "rawValue": 1797,
+        "value": 179.7,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "cl-huasco-inia",
+      "name": "INIA Huasco Experimental Station, Vallenar, Chile",
+      "lat": -28.566667,
+      "lng": -70.783333,
+      "bio17": 1.4,
+      "pixel": {
+        "row": 13507,
+        "column": 13106,
+        "pixelCenter": {
+          "lat": -28.56263913460002,
+          "lng": -70.77930599240001
+        },
+        "rawValue": 14,
+        "value": 1.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "cl-tierras-blancas",
+      "name": "Tierras Blancas, San Felipe, Chile",
+      "lat": -32.783333,
+      "lng": -70.7,
+      "bio17": 6.9,
+      "pixel": {
+        "row": 14013,
+        "column": 13116,
+        "pixelCenter": {
+          "lat": -32.77930578440001,
+          "lng": -70.69597265940001
+        },
+        "rawValue": 69,
+        "value": 6.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "ar-aimogasta-manzanilla",
+      "name": "Commercial orchard 15 km east of Aimogasta, Argentina",
+      "lat": -28.55,
+      "lng": -66.816667,
+      "bio17": 6.4,
+      "pixel": {
+        "row": 13505,
+        "column": 13582,
+        "pixelCenter": {
+          "lat": -28.545972468000016,
+          "lng": -66.8126393416
+        },
+        "rawValue": 64,
+        "value": 6.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "ar-junin-inta",
+      "name": "INTA Junín Olive Germplasm Collection, Mendoza, Argentina",
+      "lat": -33.1,
+      "lng": -68.483333,
+      "bio17": 22.1,
+      "pixel": {
+        "row": 14051,
+        "column": 13382,
+        "pixelCenter": {
+          "lat": -33.095972449800016,
+          "lng": -68.47930600160001
+        },
+        "rawValue": 221,
+        "value": 22.1,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "cn-beihe-xichang",
+      "name": "Beihe Olive Commercial Orchard, Xixi village, Xichang, China",
+      "lat": 27.733333,
+      "lng": 102.233333,
+      "bio17": 24.8,
+      "pixel": {
+        "row": 6751,
+        "column": 33868,
+        "pixelCenter": {
+          "lat": 27.737360640199995,
+          "lng": 102.23735998220002
+        },
+        "rawValue": 248,
+        "value": 24.8,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "us-tx-weslaco",
+      "name": "Established Arbequina grove near Weslaco, Texas, USA",
+      "lat": 26.16,
+      "lng": -97.93,
+      "bio17": 94.9,
+      "pixel": {
+        "row": 6940,
+        "column": 9848,
+        "pixelCenter": {
+          "lat": 26.16236064649999,
+          "lng": -97.92930588380001
+        },
+        "rawValue": 949,
+        "value": 94.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "us-tx-carrizo-springs",
+      "name": "Texas Olive Ranch, Carrizo Springs, Texas, USA",
+      "lat": 28.41,
+      "lng": -99.73,
+      "bio17": 77.3,
+      "pixel": {
+        "row": 6670,
+        "column": 9632,
+        "pixelCenter": {
+          "lat": 28.412360637499994,
+          "lng": -99.72930587660001
+        },
+        "rawValue": 773,
+        "value": 77.3,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "us-hi-lalamilo",
+      "name": "Lalamilo Experiment Station, Hawaii Island, USA",
+      "lat": 20.0176,
+      "lng": -155.6827,
+      "bio17": 270.7,
+      "pixel": {
+        "row": 7677,
+        "column": 2918,
+        "pixelCenter": {
+          "lat": 20.020694004399992,
+          "lng": -155.67930565280002
+        },
+        "rawValue": 2707,
+        "value": 270.7,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "eul-guzelyurt-koroneiki-2013-2017",
+      "name": "Guzelyurt · five crop-year Koroneiki trial",
+      "lat": 35.1862611111,
+      "lng": 32.9724555556,
+      "bio17": 12.4,
+      "pixel": {
+        "row": 5857,
+        "column": 25556,
+        "pixelCenter": {
+          "lat": 35.18736061039999,
+          "lng": 32.970693592599986
+        },
+        "rawValue": 124,
+        "value": 12.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "puan_orchard",
+      "name": "Puan trial orchard",
+      "lat": -37.5166667,
+      "lng": -62.7666667,
+      "bio17": 83.7,
+      "pixel": {
+        "row": 14581,
+        "column": 14068,
+        "pixelCenter": {
+          "lat": -37.51263909880001,
+          "lng": -62.76263935780001
+        },
+        "rawValue": 837,
+        "value": 83.7,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "cabildo_orchard",
+      "name": "Cabildo trial orchard",
+      "lat": -38.5666667,
+      "lng": -61.9833333,
+      "bio17": 101.4,
+      "pixel": {
+        "row": 14707,
+        "column": 14162,
+        "pixelCenter": {
+          "lat": -38.562639094600016,
+          "lng": -61.9793060276
+        },
+        "rawValue": 1014,
+        "value": 101.4,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "dorrego1_orchard",
+      "name": "Coronel Dorrego 1 trial orchard",
+      "lat": -38.8333333,
+      "lng": -61.1,
+      "bio17": 106.9,
+      "pixel": {
+        "row": 14739,
+        "column": 14268,
+        "pixelCenter": {
+          "lat": -38.829305760200015,
+          "lng": -61.09597269780001
+        },
+        "rawValue": 1069,
+        "value": 106.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "dorrego2_orchard",
+      "name": "Coronel Dorrego 2 trial orchard",
+      "lat": -38.7333333,
+      "lng": -61.5166667,
+      "bio17": 100.3,
+      "pixel": {
+        "row": 14727,
+        "column": 14218,
+        "pixelCenter": {
+          "lat": -38.72930576060001,
+          "lng": -61.512639362800016
+        },
+        "rawValue": 1003,
+        "value": 100.3,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "la_plata_station",
+      "name": "La Plata GHCN weather station",
+      "lat": -34.972,
+      "lng": -57.895,
+      "bio17": 177.1,
+      "pixel": {
+        "row": 14276,
+        "column": 14652,
+        "pixelCenter": {
+          "lat": -34.97097244230001,
+          "lng": -57.895972710600006
+        },
+        "rawValue": 1771,
+        "value": 177.1,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "mar_del_plata_station",
+      "name": "Mar del Plata aero GHCN weather station",
+      "lat": -37.933,
+      "lng": -57.583,
+      "bio17": 170.5,
+      "pixel": {
+        "row": 14631,
+        "column": 14690,
+        "pixelCenter": {
+          "lat": -37.929305763800016,
+          "lng": -57.57930604520001
+        },
+        "rawValue": 1705,
+        "value": 170.5,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "olavarria_station",
+      "name": "Olavarria aero GHCN weather station",
+      "lat": -36.883,
+      "lng": -60.217,
+      "bio17": 113.6,
+      "pixel": {
+        "row": 14505,
+        "column": 14373,
+        "pixelCenter": {
+          "lat": -36.87930576800001,
+          "lng": -60.22097270130001
+        },
+        "rawValue": 1136,
+        "value": 113.6,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "las_brujas_orchard",
+      "name": "INIA Las Brujas irrigated orchard trial",
+      "lat": -34.6666667,
+      "lng": -56.3333333,
+      "bio17": 245.9,
+      "pixel": {
+        "row": 14239,
+        "column": 14840,
+        "pixelCenter": {
+          "lat": -34.66263911020002,
+          "lng": -56.3293060502
+        },
+        "rawValue": 2459,
+        "value": 245.9,
+        "missingReason": null
+      }
+    },
+    {
+      "id": "salto_grande_orchard",
+      "name": "INIA Salto Grande irrigated orchard trial",
+      "lat": -31.2666667,
+      "lng": -57.8833333,
+      "bio17": 179.7,
+      "pixel": {
+        "row": 13831,
+        "column": 14654,
+        "pixelCenter": {
+          "lat": -31.262639123800014,
+          "lng": -57.879306044
+        },
+        "rawValue": 1797,
+        "value": 179.7,
+        "missingReason": null
+      }
+    }
+  ],
+  "summary": {
+    "sites": 32,
+    "missing": 0
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "version": "la-plata-research-v7",
+  "purpose": "Independent field and station evidence for a global production-potential model; no location score or country mask.",
+  "sources": [
+    {
+      "id": "goni_thesis2020",
+      "title": "Estudio de la fenologia del olivo cv. Arbequina en el Sudoeste Bonaerense",
+      "url": "https://repositoriodigital.uns.edu.ar/bitstream/handle/123456789/5185/GO%C3%91I%20L._TESIS.pdf?isAllowed=y&sequence=5",
+      "type": "Original Universidad Nacional del Sur MSc field thesis",
+      "locator": "Printed pp20-21/Table1 orchards; pp39-40/Tables9-11 monthly frost counts; p45/Table16 annual minima; p64/Table27 young-orchard yield"
+    },
+    {
+      "id": "goni2023",
+      "title": "Comportamiento agronomico del olivo en relacion a las temperaturas locales en el sudoeste bonaerense",
+      "url": "https://rclimatol.eu/wp-content/uploads/2023/12/Articulo-C23-Goni-1.pdf",
+      "doi": "10.59427/rcli/2023/v23.157-166",
+      "type": "Original field and local weather study",
+      "locator": "Table2 printedp162; Methods hourly station records2005-2017"
+    },
+    {
+      "id": "inta2023",
+      "title": "Buenos Aires se fortalece como productor de aceite de oliva de alta calidad",
+      "url": "https://www.argentina.gob.ar/noticias/buenos-aires-se-fortalece-como-productor-de-aceite-de-oliva-de-alta-calidad",
+      "type": "INTA official direct researcher and grower report",
+      "facts": {
+        "coronelDorregoOliveAreaHaApprox": 2500,
+        "establishedSince": "late1940s",
+        "commercialFarmExample": "Finca Don Nicolas / Estilo Oliva",
+        "farmAreaHa": 130,
+        "cultivars": [
+          "Arbequina",
+          "Coratina",
+          "Arbosana",
+          "Koroneiki"
+        ],
+        "mainSitingAdvantages": [
+          "coastal maritime temperature moderation",
+          "well-drained sandy-loam soils"
+        ]
+      }
+    },
+    {
+      "id": "conde2019",
+      "title": "It Is Feasible to Produce Olive Oil in Temperate Humid Climate Regions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6893176/",
+      "doi": "10.3389/fpls.2019.01544",
+      "type": "Original multi-year INIA orchard trial",
+      "locator": "Materials climate/management; Tables5/6; Discussion"
+    },
+    {
+      "id": "inia754",
+      "title": "Resultados experimentales en olivo, Serie Actividades de Difusion754",
+      "url": "https://ainfo.inia.uy/digital/bitstream/item/5100/1/ad-754.pdf",
+      "type": "Original INIA field and experimental report",
+      "locator": "Printedp9:2013 harvest failure; pp38-42 anthracnose fruit/oil experiments"
+    },
+    {
+      "id": "moral2012",
+      "title": "Effect of temperature, wetness duration, and planting density on olive anthracnose caused by Colletotrichum spp.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22957821/",
+      "doi": "10.1094/PHYTO-12-11-0343",
+      "type": "Original laboratory and field study",
+      "facts": {
+        "testedEdibleCultivars": [
+          "Arbequina",
+          "Hojiblanca",
+          "Picual"
+        ],
+        "infectionObservedTemperatureC": [
+          10,
+          25
+        ],
+        "severestTemperatureC": [
+          17,
+          20
+        ],
+        "wetnessResponse": "Severity increased over tested0-48h wetness; high density accelerated field epidemics.",
+        "scopeCaveat": "Does not provide a valid disease probability or crop loss from quarterly rainfall totals."
+      }
+    },
+    {
+      "id": "inta2026water",
+      "title": "Olivo: mejoran la eficiencia del riego en plantaciones superintensivas",
+      "url": "https://www.argentina.gob.ar/node/502092",
+      "type": "INTA official field research report",
+      "facts": {
+        "region": "Chilecito, La Rioja",
+        "controlledDeficitAnnualWaterSavingPercent": 13,
+        "reportedEffect": "No reduction of productivity or oil quality in the tested irrigation treatment.",
+        "structuralConstraint": "Arid/semiarid production depends on irrigation; surface-water scarcity increases groundwater demand."
+      }
+    }
+  ],
+  "orchards": [
+    {
+      "id": "puan_orchard",
+      "name": "Puan",
+      "lat": -37.5166667,
+      "lng": -62.7666667,
+      "elevationM": 234,
+      "cultivar": "Arbequina",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "plantingYear": 2008,
+      "water": "irrigated",
+      "coordinatePrecisionKmApprox": 2,
+      "coordinateProvenance": "goni_thesis2020 Table1; degree-minute published orchard coordinates"
+    },
+    {
+      "id": "cabildo_orchard",
+      "name": "Cabildo",
+      "lat": -38.5666667,
+      "lng": -61.9833333,
+      "elevationM": 154,
+      "cultivar": "Arbequina",
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "plantingYear": 2008,
+      "water": "irrigated",
+      "coordinatePrecisionKmApprox": 2,
+      "coordinateProvenance": "goni_thesis2020 Table1; degree-minute published orchard coordinates"
+    },
+    {
+      "id": "dorrego1_orchard",
+      "name": "Dorrego1",
+      "lat": -38.8333333,
+      "lng": -61.1,
+      "elevationM": 49,
+      "cultivar": "Arbequina",
+      "years": [
+        2014,
+        2015
+      ],
+      "plantingYears": [
+        2006,
+        2008,
+        2010
+      ],
+      "water": "irrigated",
+      "coordinatePrecisionKmApprox": 2,
+      "coordinateProvenance": "goni_thesis2020 Table1; degree-minute published orchard coordinates",
+      "youngOrchardYield2015_2016KgPerTreeByAge": {
+        "5": 30.8,
+        "7": 46.1,
+        "9": 54.4
+      },
+      "yieldCaveat": "Single season/age comparison, not a mature annual reliability series; source Table27 printedp64/PDFp77."
+    },
+    {
+      "id": "dorrego2_orchard",
+      "name": "Dorrego2",
+      "lat": -38.7333333,
+      "lng": -61.5166667,
+      "elevationM": 80,
+      "cultivar": "Arbequina",
+      "years": [
+        2016,
+        2017
+      ],
+      "plantingYear": 2008,
+      "water": "irrigated",
+      "coordinatePrecisionKmApprox": 2,
+      "coordinateProvenance": "goni_thesis2020 Table1; degree-minute published orchard coordinates"
+    },
+    {
+      "id": "las_brujas_orchard",
+      "name": "INIA Las Brujas",
+      "lat": -34.6666667,
+      "lng": -56.3333333,
+      "elevationM": 21,
+      "coordinatePrecisionKmApprox": 2,
+      "source": "conde2019",
+      "water": "Irrigated to100%ETc; raised beds on clay-textured shallow soil;4-6 preventive fungicide treatments each season",
+      "harvestYears": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "arbequinaMeanFruitYieldTonnesHaYear": 11.1,
+      "arbequinaAlternateBearingIndex": 0.59,
+      "arbequina2013FruitYieldTonnesHa": 0,
+      "reliability": "Strong alternate bearing despite substantial managed average productivity."
+    },
+    {
+      "id": "salto_grande_orchard",
+      "name": "INIA Salto Grande",
+      "lat": -31.2666667,
+      "lng": -57.8833333,
+      "elevationM": 41,
+      "coordinatePrecisionKmApprox": 2,
+      "source": "conde2019",
+      "water": "Irrigated to100%ETc; naturally well-drained soil;4-6 preventive fungicide treatments each season",
+      "harvestYears": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "arbequinaMeanFruitYieldTonnesHaYear": 7.9,
+      "frantoioMeanFruitYieldTonnesHaYear": 2.3,
+      "reliability": "Substantial cultivar differences; Frantoio not recommended because of higher chilling requirement."
+    }
+  ],
+  "publishedLocalWeather": {
+    "source": "goni_thesis2020 Table16; goni2023 Table2",
+    "years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "sourceType": "Published annual aggregates of local hourly station records; raw observations and QC completeness not retrieved.",
+    "stationCoordinateCaveat": "Orchard coordinates above are not necessarily exact locations of the INTA/Malteria/ACA thermometers. Do not create fictitious exact station coordinates from orchard locations.",
+    "annualAbsoluteMinimumC": {
+      "Puan": [
+        -6.1,
+        -3.4,
+        -9.7,
+        -3.8,
+        -3.6,
+        -6.8,
+        -4.8,
+        -6.2,
+        -6.0,
+        -4.1,
+        -3.9,
+        -2.4,
+        -4.2
+      ],
+      "Dorrego": [
+        -4.0,
+        -1.0,
+        -4.2,
+        -3.2,
+        -2.7,
+        -3.9,
+        -3.2,
+        -2.8,
+        -3.3,
+        -2.2,
+        -2.3,
+        -1.3,
+        -2.1
+      ],
+      "Cabildo": [
+        -8.5,
+        -3.0,
+        -6.4,
+        -4.9,
+        -4.4,
+        -6.6,
+        -4.2,
+        -5.8,
+        -6.5,
+        -2.1,
+        -2.5,
+        -3.2,
+        -2.6
+      ]
+    },
+    "journalPublishedPostMeanBudbreakFrostProbabilityPercent": {
+      "Puan": 42,
+      "Dorrego": 49,
+      "Cabildo": 94
+    },
+    "journalPublishedFrostBeforeMay15ProbabilityPercent": {
+      "Puan": 45,
+      "Dorrego": 1,
+      "Cabildo": 26
+    },
+    "sourceConflict": "Cabildo absolute minimum-8.5C is dated2005-06-14 in thesisTable16 but2007-06-14 in journalTable2. Do not silently choose2007.",
+    "interpretationWarning": "Reported10-year Gumbel risk is probability of at least one event in10years, not percent of years experiencing that event. Do not repeat the paper's parenthetical '8 of10years' interpretation of77%10-year risk."
+  },
+  "modelImplications": [
+    "Cultivated edible olives already have a commercial history on parts of Buenos Aires coast. Absence of a literature pin is not absence of cultivation.",
+    "Winter tree-survival minima, spring-bud/flower frost, and autumn fruit frost affect different parts of the crop cycle. Annual minima alone cannot predict reliable harvests.",
+    "Rainfed mode makes arid irrigated western commercial valleys look less favorable than rainier coasts. Compare identical water assumptions before drawing regional quality conclusions.",
+    "Humid Uruguay can match Mediterranean average managed fruit yields while having poor annual regularity. The data do not justify classing all humid climates unsuitable.",
+    "Use globally available rainfall seasonality/absence of a dry quarter as an additional disease-management and production-variability screen; retain warm-season wetness and label as proxy. Literature supplies mechanism, not a calibrated rainfall-to-yield probability.",
+    "Monthly normals and annual RH cannot represent rain frequency, canopy wetness duration, spring frost timing, pollination, disease control, soil drainage, or alternate-bearing state. Confidence and numeric model scope must disclose these gaps.",
+    "CHELSA annual RH at native INIA orchard pixels is~58-60%, whereas local paper discusses Uruguay annualRH70-78% and station bloom-monthRH>70%Oct/>60%Nov. These differ in period/spatial support, so avoid a made-up global RH correction or treating an annualRH70% threshold as a definitive screen."
+  ]
+}

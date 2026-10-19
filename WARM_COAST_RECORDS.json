@@ -1,0 +1,551 @@
+{
+  "version": "warm-coast-v7",
+  "purpose": "Local weather and orchard checks for model development. Evidence presence does not increase map scores.",
+  "chillInterpretation": "CU are modeled chilling units from reconstructed hourly temperatures, not observed hourly chill. Published requirements: Arbequina339CU,Leccino612CU,Frantoio671CU. Warm Arbequina coefficients are not transferred to other cultivars.",
+  "sites": [
+    {
+      "id": "huasco-inia-local-weather",
+      "name": "Huasco, Chile",
+      "orchardLocation": {
+        "lat": -28.566667,
+        "lng": -70.783333,
+        "precisionKm": 2,
+        "provenance": "Trial paper reports28°34′S70°47′W; weather station about2.1km from this rounded orchard coordinate."
+      },
+      "station": {
+        "id": "INIA-65",
+        "name": "Centro Experimental Huasco",
+        "lat": -28.58113,
+        "lng": -70.79829,
+        "elevationM": 470,
+        "coordinateSource": "Official INIA public map metadata",
+        "url": "https://agrometeorologia.cl/"
+      },
+      "weather": {
+        "retrievedSeasons": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "completeSeasons": [
+          {
+            "year": 2014,
+            "startDate": "2014-04-01",
+            "endDate": "2014-10-31",
+            "acceptedDailyPairs": 214,
+            "modeledDays": 214,
+            "standardKernelMaximumCU": 1451.6,
+            "warmArbequinaKernelMaximumCU": 1778.6,
+            "requirementMet": {
+              "Arbequina": true,
+              "Leccino": true,
+              "Frantoio": true,
+              "ArbequinaWarm": true
+            }
+          },
+          {
+            "year": 2015,
+            "startDate": "2015-04-01",
+            "endDate": "2015-10-31",
+            "acceptedDailyPairs": 214,
+            "modeledDays": 214,
+            "standardKernelMaximumCU": 1025.4,
+            "warmArbequinaKernelMaximumCU": 1341.8,
+            "requirementMet": {
+              "Arbequina": true,
+              "Leccino": true,
+              "Frantoio": true,
+              "ArbequinaWarm": true
+            }
+          },
+          {
+            "year": 2024,
+            "startDate": "2024-04-01",
+            "endDate": "2024-10-31",
+            "acceptedDailyPairs": 214,
+            "modeledDays": 214,
+            "standardKernelMaximumCU": 1089.3,
+            "warmArbequinaKernelMaximumCU": 1437.9,
+            "requirementMet": {
+              "Arbequina": true,
+              "Leccino": true,
+              "Frantoio": true,
+              "ArbequinaWarm": true
+            }
+          },
+          {
+            "year": 2025,
+            "startDate": "2025-04-01",
+            "endDate": "2025-10-31",
+            "acceptedDailyPairs": 214,
+            "modeledDays": 214,
+            "standardKernelMaximumCU": 1184.5,
+            "warmArbequinaKernelMaximumCU": 1542.8,
+            "requirementMet": {
+              "Arbequina": true,
+              "Leccino": true,
+              "Frantoio": true,
+              "ArbequinaWarm": true
+            }
+          }
+        ],
+        "qc": "Each day requires finite paired Tmin/Tmax, Tmin<=Tmax, plausible temperatures and >=95% source within-day coverage. Missing dates are unfilled. Source QC flags are not exposed. Only complete214-day seasons plus preceding/following daily neighbors classify chilling attainment.",
+        "completeSeasonMonthlyMeans": [
+          {
+            "month": 4,
+            "observedTminC": 9.67333,
+            "observedTmaxC": 21.73667,
+            "pairedDays": 120,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 13.75,
+            "nativeCHELSATmaxC": 25.85
+          },
+          {
+            "month": 5,
+            "observedTminC": 7.48468,
+            "observedTmaxC": 19.74274,
+            "pairedDays": 124,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 10.85,
+            "nativeCHELSATmaxC": 23.45
+          },
+          {
+            "month": 6,
+            "observedTminC": 6.24583,
+            "observedTmaxC": 18.86167,
+            "pairedDays": 120,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 8.65,
+            "nativeCHELSATmaxC": 22.05
+          },
+          {
+            "month": 7,
+            "observedTminC": 5.67823,
+            "observedTmaxC": 18.23468,
+            "pairedDays": 124,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 7.55,
+            "nativeCHELSATmaxC": 21.55
+          },
+          {
+            "month": 8,
+            "observedTminC": 7.34032,
+            "observedTmaxC": 19.18387,
+            "pairedDays": 124,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 8.75,
+            "nativeCHELSATmaxC": 22.65
+          },
+          {
+            "month": 9,
+            "observedTminC": 7.95667,
+            "observedTmaxC": 21.46833,
+            "pairedDays": 120,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 10.25,
+            "nativeCHELSATmaxC": 23.95
+          },
+          {
+            "month": 10,
+            "observedTminC": 8.90484,
+            "observedTmaxC": 22.59194,
+            "pairedDays": 124,
+            "contributingYears": [
+              2014,
+              2015,
+              2024,
+              2025
+            ],
+            "completeCalendarMonths": 4,
+            "nativeCHELSATminC": 12.45,
+            "nativeCHELSATmaxC": 25.65
+          }
+        ],
+        "nativeMonthlyNormalMaximumCU": {
+          "Arbequina": 204.4,
+          "Leccino": 204.4,
+          "Frantoio": 204.4,
+          "ArbequinaWarm": 411.4
+        },
+        "normalPeriod": "CHELSA1981–2010 original30arcsecond station pixel",
+        "periodCaution": "Weather2014/2015/2024/2025 postdates orchard trial2003–2007. Differences from CHELSA are not a matched-period bias estimate."
+      },
+      "orchard": {
+        "years": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007
+        ],
+        "water": "Drip irrigated, approximately8000m³/ha/year",
+        "cultivars": {
+          "Arbequina": {
+            "meanFruitKgTree": 58.8,
+            "cumulativeFruitKgTree": 291.7,
+            "alternateBearingIndex": 0.28
+          },
+          "Leccino": {
+            "meanFruitKgTree": 61.8,
+            "cumulativeFruitKgTree": 306.5
+          },
+          "Frantoio": {
+            "meanFruitKgTree": 52.8,
+            "cumulativeFruitKgTree": 261.6,
+            "alternateBearingIndex": 0.4
+          }
+        },
+        "sourceUrl": "https://biblioteca.inia.cl/server/api/core/bitstreams/2f836c71-a326-4a01-8bd3-afdf6a7d0af8/content",
+        "locator": "Journalp329,Table3; methods for location/irrigation",
+        "caution": "Five measured harvest years support managed production with alternate bearing. Annual cultivar yield series are not reconstructed from adjusted/cumulative means."
+      },
+      "finding": "Actual daily weather supports chilling attainment in all four complete seasons. Native monthly-normal screening underestimates chilling, particularly for higher-chill cultivars. Warm Arbequina coefficients alone do not explain Leccino/Frantoio production."
+    },
+    {
+      "id": "peru-la-yarada-local-monitoring",
+      "name": "La Yarada, Peru",
+      "orchardLocation": null,
+      "locationCaution": "Exact monitoring station/plot coordinates were not verified. No nearby airport is substituted. Official bulletin reports station elevation40m.",
+      "cultivar": "Sevillana",
+      "requirementCU": null,
+      "requirementCaution": "A published Sevillana DMA requirement was not established. Arbequina339CU is not a Sevillana physiological limit.",
+      "weatherAndOrchard": [
+        {
+          "source": "https://www.senamhi.gob.pe/load/file/02972SENA-10.pdf",
+          "date": "2023-08-15/2023-08-21",
+          "locator": "Tacna,monitoringolivephenologytable",
+          "harvests2023": [
+            {
+              "dates": "2023-04-03/2023-04-11",
+              "yieldKgHa": 1908,
+              "stage": "greenharvest"
+            },
+            {
+              "dates": "2023-05-08/2023-05-17",
+              "yieldKgHa": 3074,
+              "stage": "fullripeharvest"
+            }
+          ],
+          "phenology": [
+            {
+              "stage": "floralinduction",
+              "start": "2023-07-14",
+              "end": "2023-07-21",
+              "meanTmaxC": 21.4,
+              "meanTminC": 16.3
+            },
+            {
+              "stage": "floraldifferentiation",
+              "start": "2023-07-22",
+              "end": "2023-07-25",
+              "meanTmaxC": 21.4,
+              "meanTminC": 16.2
+            },
+            {
+              "stage": "flowerclusterappearance",
+              "start": "2023-07-26",
+              "end": "2023-08-18",
+              "meanTmaxC": 21.6,
+              "meanTminC": 15.8
+            }
+          ]
+        },
+        {
+          "source": "https://www.senamhi.gob.pe/load/file/04105SENA-96.pdf",
+          "date": "2024-02",
+          "locator": "PDFp8Table5andFigure12",
+          "observedMonths": [
+            "2023-07",
+            "2023-08",
+            "2023-09",
+            "2023-10",
+            "2023-11",
+            "2023-12",
+            "2024-01",
+            "2024-02"
+          ],
+          "observedMonthlyTmaxC": [
+            21.7,
+            21.7,
+            22.1,
+            22.5,
+            23,
+            23.4,
+            24,
+            24.7
+          ],
+          "observedMonthlyTminC": [
+            15.3,
+            15,
+            15,
+            15.3,
+            16,
+            16.5,
+            17,
+            17.5
+          ],
+          "normalTmaxC": [
+            19.7,
+            19.5,
+            19.5,
+            19.8,
+            20,
+            20.2,
+            20.4,
+            20.7
+          ],
+          "normalTminC": [
+            14,
+            13.8,
+            13.8,
+            14,
+            14.2,
+            14.5,
+            14.8,
+            15
+          ],
+          "phenologyDates": {
+            "floralInduction": "2023-07-14",
+            "differentiation": "2023-07-22",
+            "flowerClusters": "2023-07-30",
+            "flowerBud": "2023-08-17",
+            "flowering": "2023-08-24",
+            "fruitSet": "2023-10-02",
+            "greenMaturity": "2024-02-16"
+          }
+        },
+        {
+          "source": "https://www.senamhi.gob.pe/load/file/02972SENA-50.pdf",
+          "date": "2024-06-18/2024-06-24",
+          "harvests2024": [
+            {
+              "dates": "2024-04-17/2024-05-06",
+              "yieldKgHa": 859
+            },
+            {
+              "dates": "2024-05-13/2024-05-20",
+              "yieldKgHa": 290
+            }
+          ],
+          "interpretation": "Warmseasonyieldlowerthan2023;reportedstageresponsedoesnotestablishcultivarCUrequirementorcausalattribution."
+        },
+        {
+          "source": "https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/informe-n-02-2024_senamhi-dma-dhi-dam.pdf",
+          "locator": "PDFp32-33section6.1.5,Figures26-27",
+          "localFile": "SENAMHI-special2024.pdf",
+          "finding": "WarmnightsandlowerchillduringMay-Oct2023/24comparedwithfiveprecedingseasonscoincidedwithreducedsoutherncoastoliveproduction,fruitweightandripeningeffects."
+        }
+      ],
+      "finding": "Official station/crop monitoring records fruiting and harvest in a warm coastal climate; a much lower2024 harvest and reported warm-winter effects show a genuine reliability constraint. This is neither tropical latitude exclusion nor unconditional prime production.",
+      "caution": "Monthly station table values are not daily/hourly observations. No annual yield probability was fitted to two crop reports."
+    },
+    {
+      "id": "hawaii-lalamilo-local-check",
+      "name": "Lalamilo, Hawaii",
+      "orchardLocation": {
+        "lat": 20.0176,
+        "lng": -155.6827,
+        "elevationM": 823,
+        "precisionKm": 1,
+        "provenance": "Final2016 trial paper reports20.0176N155.6827W,2700ft; earlier conference coordinate differs."
+      },
+      "station": {
+        "id": "USC00515260",
+        "name": "Lalamilo Field Office191.1",
+        "lat": 20.0131,
+        "lng": -155.6686,
+        "elevationM": 797.1,
+        "distanceToPublishedOrchardKm": 1.6,
+        "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/USC00515260.dly"
+      },
+      "weather": {
+        "period": "1981–2010 available paired daily observations",
+        "acceptedPairedDays": 7473,
+        "calendarDays": 10957,
+        "pairedCoverage": 0.6820297527,
+        "longestMissingRunDays": 38,
+        "medianMissingRunDays": 2,
+        "flags": "All accepted pairs have blank measurement and QC flags, source0(DSI3200). No reported hourly-extreme or multiday modifier is exposed. Time-of-observation adjustment was not available.",
+        "noCompleteDailyChillSeasons": true,
+        "officialMonthlyCrosscheck": {
+          "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-month/access/USC00515260.csv",
+          "months": [
+            {
+              "month": 1,
+              "reportedMonthlyMeans": 4,
+              "gsomTminC": 9.555,
+              "gsomTmaxC": 24.815,
+              "monthDates": [
+                "1981-01",
+                "1982-01",
+                "1983-01",
+                "1984-01"
+              ]
+            },
+            {
+              "month": 2,
+              "reportedMonthlyMeans": 3,
+              "gsomTminC": 9.793,
+              "gsomTmaxC": 24.023,
+              "monthDates": [
+                "1982-02",
+                "1983-02",
+                "1984-02"
+              ]
+            },
+            {
+              "month": 3,
+              "reportedMonthlyMeans": 4,
+              "gsomTminC": 9.895,
+              "gsomTmaxC": 24.38,
+              "monthDates": [
+                "1981-03",
+                "1982-03",
+                "1983-03",
+                "1984-03"
+              ]
+            },
+            {
+              "month": 4,
+              "reportedMonthlyMeans": 3,
+              "gsomTminC": 11.523,
+              "gsomTmaxC": 23.733,
+              "monthDates": [
+                "1981-04",
+                "1982-04",
+                "1983-04"
+              ]
+            },
+            {
+              "month": 10,
+              "reportedMonthlyMeans": 3,
+              "gsomTminC": 14.687,
+              "gsomTmaxC": 25.623,
+              "monthDates": [
+                "1981-10",
+                "1982-10",
+                "1983-10"
+              ]
+            },
+            {
+              "month": 11,
+              "reportedMonthlyMeans": 2,
+              "gsomTminC": 13.205,
+              "gsomTmaxC": 25.435,
+              "monthDates": [
+                "1982-11",
+                "1983-11"
+              ]
+            },
+            {
+              "month": 12,
+              "reportedMonthlyMeans": 3,
+              "gsomTminC": 10.76,
+              "gsomTmaxC": 24.29,
+              "monthDates": [
+                "1981-12",
+                "1982-12",
+                "1983-12"
+              ]
+            }
+          ],
+          "caution": "Only2–4 eligible monthly records from1981–1984 per winter month; NOAA monthly aggregation uses the same daily source, not an independent thermometer."
+        },
+        "normalModeledMaximumCU": {
+          "standardAvailableDayMonthlyReference": 16.1,
+          "warmArbequinaAvailableDayMonthlyReference": 180.4
+        },
+        "caution": "Sparse historical weather is not a30-year observed normal or the2012–2015 trial weather. It confirms historical cooler minima but does not justify an exact5°C correction."
+      },
+      "orchard": {
+        "years": [
+          2013,
+          2014,
+          2015
+        ],
+        "fruitedCultivars": [
+          "Arbequina",
+          "Arbosana",
+          "Koroneiki"
+        ],
+        "notHarvestableCultivars": [
+          "Coratina",
+          "Frantoio",
+          "Leccino",
+          "Mission",
+          "Moraiolo",
+          "Pendolino",
+          "Taggiasca"
+        ],
+        "mean2013to2014FruitKgTreeRange": [
+          2.14,
+          2.45
+        ],
+        "reportedObservedHoursBelow12point5C": {
+          "2012-2013": 141,
+          "2013-2014": 161
+        },
+        "sourceUrl": "https://journals.ashs.org/downloadpdf/journals/horttech/26/4/article-p497.pdf",
+        "doi": "10.21273/HORTTECH.26.4.497",
+        "caution": "Hours below12.5°C cannot be equated to DMA chilling units. Small young-tree trial with low yields and heavy2015 fruit drop does not establish reliable annual economic production."
+      },
+      "finding": "Both gridded climate bias and chilling-model transfer remain concerns. Warm DMA still fails to represent the observed low-chill cultivar fruiting; report model uncertainty rather than force a green location override."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aybar etal.2015 low-latitude olive flowering model",
+      "url": "https://doi.org/10.5424/sjar/2015131-6375",
+      "locator": "Table2 and methods; original warm Arbequina parameter alternative"
+    },
+    {
+      "title": "SENAMHI2024 national climate/agricultural report",
+      "url": "https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/informe-n-02-2024_senamhi-dma-dhi-dam.pdf",
+      "locator": "PDFp32–33,section6.1.5,Figures26–27"
+    }
+  ]
+}

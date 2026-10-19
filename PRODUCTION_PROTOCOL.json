@@ -1,10 +1,18 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "declared": "2026-10-18",
   "target": "Relative biophysical potential for repeated production by cultivated edible olives under a stated cultivar and water scenario; not a probability of annual yield or economic profitability.",
   "freezeCalibration": "QC-passed station annual minima, >=95% annual and winter completeness. Compare matched years with original ERA5-EX. Stations receive equal aggregate weight. Fit residual models and test by withholding complete geographic regions. Retain the simplest correction with improved out-of-region error; report every fold and the uncorrected baseline.",
   "freezeSurface": "Correct the distribution of annual minima using transferable climatic features, never distance-to-literature or a score boost at orchard coordinates. Preserve source quantiles and identify corrected estimates separately. Expose uncertainty and coverage independently of suitability.",
-  "flowering": "Use published DMA temperature response and Arbequina339, Leccino612, Frantoio671 CU requirements. Daily station reconstructions test transfer. CHELSA monthly Tmin/Tmax give a modeled normal-climate chilling screen only; smoothing and unknown interannual flowering remain explicit. Chill limitation caps potential but does not assert tree death.",
+  "flowering": "Arbequina warm response: optimum7.3C, breakpoint21.7C, rate-0.50,339CU; Leccino/Frantoio original20.7C/-0.56 and612/671CU. Both normal weather and daily reconstructions use matched cultivar responses. Seven winter-month temperature residuals are assimilated using fixed250km Gaussian,max500km,source winter-min3C and winter-mean4.5C climate similarity; monthly support shrinks toward zero and short records receive min(1,accepted month-years/15) weight. Separate native/overview logistic fits recalibrated after weather correction. Entire geographic regions are removed from weather nodes and chilling-fit training before evaluation. Huasco2014/15/24/25 and Lalamilo2-4month-years are explicitly short development records; no30yearnormal is fabricated.",
   "orchards": "Freeze primary orchard outcome labels before testing scores. Do not treat alternate bearing as a negative climate label. Consecutive yield series, multi-year means, short trials, flowering failures and freeze damage are separate outcomes. No point/radius score overrides. Literature already seen by developers is an external compatibility audit, not newly independent predictive validation.",
-  "evaluation": "Report station geographic holdout accuracy separately from orchard compatibility and numerical/software checks. Compare irrigated evidence with irrigated scores; rainfed with rainfed. Declare contradictions, exclusions, distinct study clusters, and geographic gaps. Do not claim a globally calibrated reliable-yield probability."
+  "evaluation": "Report station geographic holdout accuracy separately from orchard compatibility and numerical/software checks. Compare irrigated evidence with irrigated scores; rainfed with rainfed. Declare contradictions, exclusions, distinct study clusters, and geographic gaps. Do not claim a globally calibrated reliable-yield probability.",
+  "wetness": "Add CHELSA BIO17 driest consecutive3month total. Its numeric interpretation exactly matches independently fetched monthly-pr sums at32nativecontrols. Management response [mm,score]:[0,100],[75,100],[150,85],[225,75],[300,65],[450,50],[600,30],[900,5]; combine with prior warm-quarter wetness by minimum. If wetness<90, cap potential at79. These thresholds are explicit agronomic planning choices, not fitted infection or crop-loss probabilities.",
+  "newDevelopmentCases": [
+    "Huasco: newINIAstationweather and2003-2007irrigatedcultivarharvests",
+    "LaYaradaPeru: officialstation/cropmonitoring, Sevillanarequirementunknown",
+    "LalamiloHawaii: incompletehistoricalstationrecord andyounglowchillcultivarfruitingtrial",
+    "LaPlata/Uruguay/CoronelDorrego: actualproductionwithdisease/springfrost/alternatebearingconstraints"
+  ],
+  "palette": "Green reserved for80-100; amber40-79; red0-39. Interpolation within each tier, no green below80."
 }
